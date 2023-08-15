@@ -1,0 +1,8 @@
+../Software/Peripheral/motor_driver.cpp:12:1:Motor::Motor(USART_TypeDef*)	1
+../Software/Peripheral/motor_driver.cpp:17:6:void Motor::init()	1
+../Software/Peripheral/motor_driver.cpp:28:6:void Motor::change_power(int8_t, int8_t)	6
+../Software/Peripheral/motor_driver.cpp:63:6:bool Motor::is_Safe(uint8_t*)	3
+../Software/Peripheral/motor_driver.cpp:76:6:void Motor::reprocess_History(uint8_t*, uint8_t)	3
+../Software/Peripheral/motor_driver.cpp:101:9:uint8_t Motor::power_to_motor_input(int8_t, bool)	3
+../Software/Peripheral/motor_driver.cpp:121:1:Motor::~Motor()	1
+../Software/Peripheral/motor_driver.cpp:121:1:virtual Motor::~Motor()	1

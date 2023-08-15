@@ -1,0 +1,5 @@
+../Software/Peripheral/trimpot_driver.cpp:14:1:Trimpot::Trimpot(ADC_HandleTypeDef*, uint32_t)	24	static
+../Software/Peripheral/trimpot_driver.cpp:21:10:uint16_t Trimpot::read()	32	static
+../Software/Peripheral/trimpot_driver.cpp:46:9:int32_t Trimpot::scale_data(int32_t, int32_t)	32	static
+../Software/Peripheral/trimpot_driver.cpp:55:1:Trimpot::~Trimpot()	16	static
+../Software/Peripheral/trimpot_driver.cpp:55:1:virtual Trimpot::~Trimpot()	16	static

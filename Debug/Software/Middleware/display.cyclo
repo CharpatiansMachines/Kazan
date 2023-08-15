@@ -1,0 +1,12 @@
+../Software/Middleware/display.cpp:16:6:void Display_Init()	1
+../Software/Middleware/display.cpp:20:6:void Draw_Center_Text(char*, FontDef*, uint16_t)	1
+../Software/Middleware/display.cpp:47:6:void Draw_Left_Text(char*, FontDef*, uint16_t)	1
+../Software/Middleware/display.cpp:53:6:void Draw_Right_Text(char*, FontDef*, uint16_t)	1
+../Software/Middleware/display.cpp:67:6:void Display_Title_Screen(char*)	1
+../Software/Middleware/display.cpp:83:6:void Display_Small_Title_Screen(char*)	1
+../Software/Middleware/display.cpp:99:6:void Display_2_Numbers(char*, double, double)	1
+../Software/Middleware/display.cpp:117:6:void Draw_3_Points_Line(bool*, char*, char*, uint16_t)	4
+../Software/Middleware/display.cpp:136:6:void Display_Enemy_Sensors_Output(uint32_t)	1
+../Software/Middleware/display.cpp:155:6:void Display_Line_Output_Screen(LinePosition, uint8_t, uint8_t, char*)	1
+../Software/Middleware/display.cpp:188:6:void Display_Error()	1
+../Software/Middleware/display.cpp:193:10:uint16_t Display_Get_Bottom_YPosition(FontDef*)	1

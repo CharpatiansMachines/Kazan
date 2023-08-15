@@ -1,0 +1,12 @@
+../Core/Src/main.cpp:77:10:uint32_t readADC1(uint32_t)	2
+../Core/Src/main.cpp:95:10:uint32_t readADC2(uint32_t)	2
+../Core/Src/main.cpp:118:5:int main()	1
+../Core/Src/main.cpp:215:6:void SystemClock_Config()	4
+../Core/Src/main.cpp:270:13:void MX_ADC1_Init()	8
+../Core/Src/main.cpp:367:13:void MX_ADC2_Init()	6
+../Core/Src/main.cpp:448:13:void MX_I2C2_Init()	2
+../Core/Src/main.cpp:482:13:void MX_SPI1_Init()	2
+../Core/Src/main.cpp:520:13:void MX_UART4_Init()	2
+../Core/Src/main.cpp:553:13:void MX_USART1_UART_Init()	2
+../Core/Src/main.cpp:586:13:void MX_GPIO_Init()	1
+../Core/Src/main.cpp:640:6:void Error_Handler()	1
