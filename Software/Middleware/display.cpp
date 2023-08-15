@@ -14,7 +14,7 @@
 #include "string.h"
 
 void Display_Init(){
-//	SSD1306_Init(0x79);
+//	ssd1306_Init();
 }
 
 void Draw_Center_Text( char *text, FontDef* font, uint16_t height){
