@@ -15,9 +15,9 @@
 
 Application::Application()
     : userInputs(UserInputsConfig{
-          { GPIOB, GPIO_PIN_7 },  // startButton
-          { GPIOB, GPIO_PIN_6 },  // backButton
-          { GPIOC, GPIO_PIN_7 },  // nextButton
+          { B1_SELECT_GPIO_Port, B1_SELECT_Pin },  // startButton
+          { B2_DOWN_GPIO_Port, B2_DOWN_Pin },  // backButton
+          { B0_UP_GPIO_Port, B0_UP_Pin },  // nextButton
           { &hadc2, TRIMPOT_0_CHANNEL },  // trimpotLeft
           { &hadc2, TRIMPOT_1_CHANNEL }   // trimpotRight
       }),

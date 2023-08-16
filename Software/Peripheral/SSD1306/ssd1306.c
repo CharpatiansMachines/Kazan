@@ -57,7 +57,7 @@ void ssd1306_WriteData(uint8_t* buffer, size_t buff_size) {
 static uint8_t SSD1306_Buffer[SSD1306_BUFFER_SIZE];
 
 // Screen object
-static SSD1306_t SSD1306;
+SSD1306_t SSD1306;
 
 /* Fills the Screenbuffer with values from a given buffer of a fixed length */
 SSD1306_Error_t ssd1306_FillBuffer(uint8_t* buf, uint32_t len) {

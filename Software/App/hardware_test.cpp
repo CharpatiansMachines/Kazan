@@ -121,7 +121,7 @@ void HardwareTestApp::runLineDetectionTest(){
 	Trimpot trimpotRight = userInputs.trimpotRight;
 
 	LineDetection& lineDetecion = sensorsHub.lineDetection;
-	bool isChangeScreen = false;
+	Line_Detection_Test_Screen lineDetectionScreen = LINE_POSITION_SCREEN;
 
 	///LOOP
 	while(true){
@@ -134,19 +134,22 @@ void HardwareTestApp::runLineDetectionTest(){
 		Trimpot trimpotRight = userInputs.trimpotRight;
 
 
-		LinePosition linePosition = lineDetecion.readAndConvert();
-		if(backOutput != NO_CLICK){
-			return;
+		if(backOutput == HOLD_CLICK){
+			return; ///get out
+		}else if(backOutput != NO_CLICK){
+			lineDetectionScreen--;
 		}
 		if(nextOutput != NO_CLICK){
-			isChangeScreen =! isChangeScreen;
+			lineDetectionScreen ++;
 		}
 
 		///UI
-		switch(isChangeScreen){
-			case false:
-				/// Normal Screen
-				Display_Line_Output_Screen(
+		switch(lineDetectionScreen){
+			case LINE_POSITION_SCREEN:
+			{
+				/// Line Position Screen
+				LinePosition linePosition = lineDetecion.readAndConvert();
+				Display_Line_Position_Screen(
 							linePosition,
 							lineDetecion.isWhiteFilter, //whiteFilter
 							lineDetecion.isBlackFilter, //BlackFilter
@@ -156,12 +159,17 @@ void HardwareTestApp::runLineDetectionTest(){
 					lineDetecion.resetFiltersToDefault();
 				}
 				break;
-			case true:
+			}
+
+
+			case FILTER_CHANGE_SCREEN:
+			{
 				///Change Filter Screen;
 				trimpotLeft.read();
 				trimpotRight.read();
+				LinePosition linePosition = lineDetecion.readAndConvert();
 
-				Display_Line_Output_Screen(
+				Display_Line_Position_Screen(
 						linePosition,
 						trimpotLeft.scale_data(0, 255), //whiteFilter
 						trimpotRight.scale_data(0, 255), //BlackFilter
@@ -170,8 +178,19 @@ void HardwareTestApp::runLineDetectionTest(){
 				if(startOutput == HOLD_CLICK){
 					lineDetecion.isWhiteFilter = trimpotLeft.scale_data(0, 255);
 					lineDetecion.isBlackFilter = trimpotRight.scale_data(0, 255);
-					isChangeScreen = false;
+					lineDetectionScreen = LINE_POSITION_SCREEN;
 				}
+				break;
+			}
+
+			case SENSORS_OUTPUT_SCREEN:
+			{
+				///Sensors Output View
+				uint8_t sensorsValues[LineDetection::LINE_SENSORS_NUMBER];
+				lineDetecion.read(sensorsValues);
+				Display_Line_Sensors_Output(sensorsValues, LineDetection::LINE_SENSORS_NUMBER);
+
+			}
 				break;
 			default:
 				Display_Error();
@@ -204,6 +223,32 @@ Hardware_Test_Screen operator--(Hardware_Test_Screen& screen, int) {
     }
 
     return current; // Return old value for postfix increment
+}
+
+// Increment (++) operator
+Line_Detection_Test_Screen operator++(Line_Detection_Test_Screen& screen, int) {
+    Line_Detection_Test_Screen current = screen;
+
+    if (screen == SENSORS_OUTPUT_SCREEN) {
+        screen = LINE_POSITION_SCREEN;  // loop back to the start if at the end
+    } else {
+        screen = static_cast<Line_Detection_Test_Screen>(static_cast<int>(screen) + 1);
+    }
+
+    return current; // Return old value for postfix increment
+}
+
+// Decrement (--) operator
+Line_Detection_Test_Screen operator--(Line_Detection_Test_Screen& screen, int) {
+    Line_Detection_Test_Screen current = screen;
+
+    if (screen == LINE_POSITION_SCREEN) {
+        screen = SENSORS_OUTPUT_SCREEN;  // loop back to the end if at the start
+    } else {
+        screen = static_cast<Line_Detection_Test_Screen>(static_cast<int>(screen) - 1);
+    }
+
+    return current; // Return old value for postfix decrement
 }
 
 

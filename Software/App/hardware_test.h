@@ -22,9 +22,18 @@ enum Hardware_Test_Screen{
 	ENEMY_SENSORS_TEST,
 	MOTOR_TEST,
 };
-
 Hardware_Test_Screen operator++(Hardware_Test_Screen& screen, int);
 Hardware_Test_Screen operator--(Hardware_Test_Screen& screen, int);
+
+enum Line_Detection_Test_Screen{
+	LINE_POSITION_SCREEN = 0x00,
+	FILTER_CHANGE_SCREEN,
+	SENSORS_OUTPUT_SCREEN,
+};
+Line_Detection_Test_Screen operator++(Line_Detection_Test_Screen& screen, int);
+Line_Detection_Test_Screen operator--(Line_Detection_Test_Screen& screen, int);
+
+
 
 class HardwareTestApp {
 	public:

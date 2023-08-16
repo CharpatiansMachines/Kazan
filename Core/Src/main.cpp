@@ -24,7 +24,6 @@
 #include "ssd1306.h"
 #include "application.h"
 #include "stm32f4xx_hal_gpio.h"
-#include "ssd1306_tests.h"
 
 /* USER CODE END Includes */
 

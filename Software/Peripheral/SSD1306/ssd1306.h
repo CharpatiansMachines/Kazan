@@ -139,6 +139,8 @@ typedef struct {
     uint8_t y;
 } SSD1306_VERTEX;
 
+extern SSD1306_t SSD1306;
+
 // Procedure definitions
 void ssd1306_Init(void);
 void ssd1306_Fill(SSD1306_COLOR color);
