@@ -1,6 +1,6 @@
 ../Core/Src/main.cpp:76:10:uint32_t readADC1(uint32_t)	40	static
 ../Core/Src/main.cpp:94:10:uint32_t readADC2(uint32_t)	40	static
-../Core/Src/main.cpp:117:5:int main()	424	static
+../Core/Src/main.cpp:117:5:int main()	432	static
 ../Core/Src/main.cpp:213:6:void SystemClock_Config()	88	static
 ../Core/Src/main.cpp:268:13:void MX_ADC1_Init()	24	static
 ../Core/Src/main.cpp:365:13:void MX_ADC2_Init()	24	static

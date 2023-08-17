@@ -15,10 +15,11 @@
 class Trimpot {
 public:
 	Trimpot(ADC_HandleTypeDef *hadc,uint32_t ADC_CHANNEL);
+	void config();
 
 	uint16_t read();
-	int32_t scale_data(int32_t min, int32_t max);
-	virtual ~Trimpot();
+	uint16_t getData() const;
+	float getData(float min, float max) const;
 private:
 
 	ADC_HandleTypeDef *hadc;

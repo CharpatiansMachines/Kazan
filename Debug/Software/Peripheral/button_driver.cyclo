@@ -1,3 +1,4 @@
 ../Software/Peripheral/button_driver.cpp:12:1:ComplexButton::ComplexButton(GPIO_TypeDef*, uint16_t)	1
 ../Software/Peripheral/button_driver.cpp:20:6:void ComplexButton::config()	1
-../Software/Peripheral/button_driver.cpp:30:14:ButtonOutput ComplexButton::read()	11
+../Software/Peripheral/button_driver.cpp:29:14:ButtonOutput ComplexButton::getLastValue() const	1
+../Software/Peripheral/button_driver.cpp:34:14:ButtonOutput ComplexButton::read()	12

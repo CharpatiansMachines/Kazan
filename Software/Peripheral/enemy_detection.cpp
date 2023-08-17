@@ -37,7 +37,7 @@ uint32_t EnemyDetection::readSensors() {
 }
 
 // Evaluate the votes of each sensor
-uint8_t EnemyDetection::takeSensorsVotes(int8_t sensors_votes[EnemyPosition::POSITIONED_NO]) {
+uint8_t EnemyDetection::readAndTakeSensorsVotes(int8_t sensors_votes[EnemyPosition::POSITIONED_NO]) {
 
 	for(uint8_t i = 0; i <= EnemyPosition::POSITIONED_NO;i++){
 		sensors_votes[i] = 0;
@@ -187,7 +187,7 @@ uint8_t EnemyDetection::takeSensorsVotes(int8_t sensors_votes[EnemyPosition::POS
 EnemyPosition EnemyDetection::getMostVotedPosition() {
 	int8_t sensors_votes[EnemyPosition::POSITIONED_NO];
 
-	uint8_t votingSensorsNo = takeSensorsVotes(sensors_votes);
+	uint8_t votingSensorsNo = readAndTakeSensorsVotes(sensors_votes);
 	if(votingSensorsNo == 0){
 		return EnemyPosition(); ///Unknown
 	}

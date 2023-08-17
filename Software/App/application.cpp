@@ -18,8 +18,8 @@ Application::Application()
           { B1_SELECT_GPIO_Port, B1_SELECT_Pin },  // startButton
           { B2_DOWN_GPIO_Port, B2_DOWN_Pin },  // backButton
           { B0_UP_GPIO_Port, B0_UP_Pin },  // nextButton
-          { &hadc2, TRIMPOT_0_CHANNEL },  // trimpotLeft
-          { &hadc2, TRIMPOT_1_CHANNEL }   // trimpotRight
+          { &hadc2, TRIMPOT_0_CHANNEL },  // trimpot0
+          { &hadc2, TRIMPOT_1_CHANNEL }   // trimpot1
       }),
       sensorsHub(SensorsHubConfig{
           { // Line Detection Config
@@ -53,29 +53,24 @@ Application::Application()
       communication(USART2),     // communication driver
       screen(Hardware_Test)      //initial screen
 {
-    communication.config();
-    Display_Init();
 }
 
 void Application::run()
 {
-	ComplexButton &startButton = userInputs.startButton;
-	ComplexButton &backButton =  userInputs.backButton;
-	ComplexButton &nextButton =  userInputs.nextButton;
+	userInputs.configAll();
+	communication.config();
+	Display_Init();
 
 
 	while(1)
 	{
-		/// User Input reading
-		ButtonOutput startOutput = startButton.read();
-		ButtonOutput backOutput = backButton.read();
-		ButtonOutput nextOutput = nextButton.read();
+		userInputs.readInputs();
 
 		///user input management
-		if(backOutput != NO_CLICK){
+		if(userInputs.isBackRequest()){
 			screen--;
 		}
-		if(nextOutput != NO_CLICK){
+		if(userInputs.isNextRequest()){
 			screen++;
 		}
 
@@ -83,7 +78,7 @@ void Application::run()
 		switch(screen){
 			case Information_Screen:
 				Display_Title_Screen((char *)"Last Information");
-				if(startOutput != NO_CLICK){
+				if(userInputs.isSelectRequest()){
 
 				}
 				break;
@@ -91,7 +86,7 @@ void Application::run()
 			case Hardware_Test:
 				Display_Title_Screen((char *)"Hardware Test");
 
-				if(startOutput != NO_CLICK)
+				if(userInputs.isSelectRequest())
 				{
 					HardwareTestApp hardwareTestApp = HardwareTestApp(userInputs,sensorsHub, communication);
 					hardwareTestApp.run();
@@ -100,13 +95,13 @@ void Application::run()
 				break;
 			case SoftwareTest:
 				Display_Title_Screen((char *)"Software Test");
-				if(startOutput != NO_CLICK){
+				if(userInputs.isSelectRequest()){
 
 				}
 				break;
 			case Battle_Application:
 				Display_Title_Screen((char *)"Battle");
-				if(startOutput != NO_CLICK){
+				if(userInputs.isSelectRequest()){
 
 				}
 				break;

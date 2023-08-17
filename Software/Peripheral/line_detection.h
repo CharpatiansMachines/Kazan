@@ -30,27 +30,21 @@ public:
 	LineDetection(const LineDetectionConfig &config);
 
     void init();
-    void read(uint8_t values[LINE_SENSORS_NUMBER]);
+    void readAll(uint8_t values[LINE_SENSORS_NUMBER]);
     void resetFiltersToDefault();
-    LinePosition readAndConvert();
+    LinePosition readAndConvertToLinePosition();
     uint8_t isWhiteFilter = DEFAULT_IS_WHITE_FILTER;
     uint8_t isBlackFilter = DEFAULT_IS_BLACK_FILTER;
 
 
 private:
-    static constexpr uint8_t LINE_DETECTION_FRONTL_MASK = 0x01;
-    static constexpr uint8_t LINE_DETECTION_FRONTR_MASK = 0x02;
-    static constexpr uint8_t LINE_DETECTION_BACKL_MASK = 0x04;
-    static constexpr uint8_t LINE_DETECTION_BACKR_MASK = 0x08;
-
-
     static constexpr uint8_t DEFAULT_IS_WHITE_FILTER = 25;
     static constexpr uint8_t DEFAULT_IS_BLACK_FILTER = 70;
 
     LineDetectionConfig configData;
 
     uint8_t selectAndRead(ADC_HandleTypeDef *hadc, uint32_t ADC_CHANNEL);
-    uint8_t outputToValue(uint32_t sensor_output);
+    bool sensorOutputToBool(uint32_t sensor_output);
 };
 
 

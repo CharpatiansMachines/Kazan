@@ -20,7 +20,7 @@ void LineDetection::resetFiltersToDefault(){
 	isBlackFilter = DEFAULT_IS_BLACK_FILTER;
 }
 
-void LineDetection::read(uint8_t values[LINE_SENSORS_NUMBER]) {
+void LineDetection::readAll(uint8_t values[LINE_SENSORS_NUMBER]) {
 
 	///Read Front Values
 	for(uint8_t i = 0 ; i < LINE_FRONT_SENSORS_NUMBER;i++){
@@ -34,31 +34,48 @@ void LineDetection::read(uint8_t values[LINE_SENSORS_NUMBER]) {
 	}
 }
 
-LinePosition LineDetection::readAndConvert() {
-    uint8_t values[LINE_SENSORS_NUMBER];
-    read(values);
+LinePosition LineDetection::readAndConvertToLinePosition() {
+    uint8_t sensorsOutput[LINE_SENSORS_NUMBER];
+
+    // Read sensors' output
+    readAll(sensorsOutput);
+
+    // Check if the sensors see the white line
+    // Grouped for FrontLeft, FrontRight, BackLeft, and BackRight respectively
+    bool isWhite[4];
+    isWhite[0] = sensorOutputToBool(sensorsOutput[0]) ||
+                 sensorOutputToBool(sensorsOutput[1]) ||
+                 sensorOutputToBool(sensorsOutput[2]);
+
+    isWhite[1] = sensorOutputToBool(sensorsOutput[3]) ||
+                 sensorOutputToBool(sensorsOutput[4]) ||
+                 sensorOutputToBool(sensorsOutput[5]);
+
+    isWhite[2] = sensorOutputToBool(sensorsOutput[6]);
+    isWhite[3] = sensorOutputToBool(sensorsOutput[7]);
+
     LinePosition output;
 
-    // Assuming that a value of 1 means the line is detected.
-//    if (values[0] && values[1]) {
-//        output.setLinePosition(LineOutput::LinePosition::Front);
-//    } else if (values[2] && values[3]) {
-//        output.setLinePosition(LineOutput::LinePosition::Back);
-//    } else if (values[1] && values[2]) {
-//        output.setLinePosition(LineOutput::LinePosition::Left);
-//    } else if (values[0] && values[3]) {
-//        output.setLinePosition(LineOutput::LinePosition::Right);
-//    } else if (values[0]) {
-//        output.setLinePosition(LineOutput::LinePosition::FrontLeft);
-//    } else if (values[1]) {
-//        output.setLinePosition(LineOutput::LinePosition::FrontRight);
-//    } else if (values[2]) {
-//        output.setLinePosition(LineOutput::LinePosition::BackLeft);
-//    } else if (values[3]) {
-//        output.setLinePosition(LineOutput::LinePosition::BackRight);
-//    } else {
-//        output.setLinePosition(LineOutput::LinePosition::None);
-//    }
+    // Determine robot's position based on the sensors' reading
+    if (isWhite[0] && isWhite[1]) {
+        output.setLinePosition(LinePosition::LinePositionType::Front);
+    } else if (isWhite[2] && isWhite[3]) {
+        output.setLinePosition(LinePosition::LinePositionType::Back);
+    } else if (isWhite[1] && isWhite[2]) {
+        output.setLinePosition(LinePosition::LinePositionType::Left);
+    } else if (isWhite[0] && isWhite[3]) {
+        output.setLinePosition(LinePosition::LinePositionType::Right);
+    } else if (isWhite[0]) {
+        output.setLinePosition(LinePosition::LinePositionType::FrontLeft);
+    } else if (isWhite[1]) {
+        output.setLinePosition(LinePosition::LinePositionType::FrontRight);
+    } else if (isWhite[2]) {
+        output.setLinePosition(LinePosition::LinePositionType::BackLeft);
+    } else if (isWhite[3]) {
+        output.setLinePosition(LinePosition::LinePositionType::BackRight);
+    } else {
+        output.setLinePosition(LinePosition::LinePositionType::None);
+    }
 
     return output;
 }
@@ -81,12 +98,10 @@ uint8_t LineDetection:: selectAndRead(ADC_HandleTypeDef *hadc, uint32_t ADC_CHAN
 	  return value;
 }
 
-uint8_t LineDetection::outputToValue(uint32_t sensor_output) {
-	if(sensor_output >= isBlackFilter)
-		return 0;
+bool LineDetection::sensorOutputToBool(uint32_t sensor_output) {
 	if(sensor_output <= isWhiteFilter)
-		return 1;
-	return 2;
+		return true;
+	return false;
 }
 
 

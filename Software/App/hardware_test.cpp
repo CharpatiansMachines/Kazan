@@ -14,56 +14,42 @@
 
 void HardwareTestApp::run()
 {
-	ComplexButton &startButton = userInputs.startButton;
-	ComplexButton &backButton =  userInputs.backButton;
-	ComplexButton &nextButton =  userInputs.nextButton;
-
-	Trimpot trimpotLeft = userInputs.trimpotLeft;
-	Trimpot trimpotRight = userInputs.trimpotRight;
 
 	while(1)
 	{
-		ButtonOutput backOutput = backButton.read();
-		ButtonOutput nextOutput = nextButton.read();
-		ButtonOutput startOutput = startButton.read();
+		userInputs.readInputs();
 
-		trimpotLeft.read();
-		trimpotRight.read();
-
-		/// BACK Button
-		switch(backOutput){
-			case HOLD_CLICK:
-				/// EXIT
-				return ;
-			case NO_CLICK:
-				///NOTHING
-				break;
-			default :
-				screen--;
+		///user input management
+		if(userInputs.isReturnBackRequest()){
+			return;
 		}
-
-
-		if(nextOutput != NO_CLICK){
+		if(userInputs.isBackRequest()){
+			screen--;
+		}
+		if(userInputs.isNextRequest()){
 			screen++;
-		 }
+		}
 
 		/// UI Displayinh
 		switch(screen){
 			case TRIMPOTS_TEST:
 				Display_2_Numbers(
 						(char *)"Trimpots values",
-						(double)trimpotLeft.read() ,
-						(double) trimpotRight.read()
+						(double) userInputs.getData0() ,
+						(double) userInputs.getData1()
 						);
 				break;
 			case LINE_SENSORS_TEST:
 				Display_Small_Title_Screen((char *)"Line Detection Output Test");
-				if(startOutput != NO_CLICK){
+				if(userInputs.isSelectRequest()){
 					runLineDetectionTest();
 				}
 				break;
 			case ENEMY_SENSORS_TEST:
 				Display_Title_Screen((char *)"Enemy Sensor Test");
+				if(userInputs.isSelectRequest()){
+					runEnemySensorsTest();
+				}
 				break;
 			case MOTOR_TEST:
 				Display_Title_Screen((char *)"Motor Test");
@@ -78,69 +64,77 @@ void HardwareTestApp::run()
 }
 void HardwareTestApp::runEnemySensorsTest(){
 	///Extract components
-	ComplexButton &startButton = userInputs.startButton;
-	ComplexButton &backButton =  userInputs.backButton;
-	ComplexButton &nextButton =  userInputs.nextButton;
-
-
-	Trimpot trimpotLeft = userInputs.trimpotLeft;
-	Trimpot trimpotRight = userInputs.trimpotRight;
 
 	EnemyDetection enemyDetection = sensorsHub.enemyDetection;
 
-	uint8_t enemySensorsScren = 0;
+	Enemy_Detection_Screen_Type  enemySensorsScren = ENEMY_SENSORS_OUTPUT_SCREEN;
 
+	while(true)
+	{
+		userInputs.readInputs();
 
-
-	while(true){
-		switch(enemySensorsScren){
-		case 0:
-
-		case 1:
-
-		case 2:
-
-		default:
-			Display_Error();
+		///user input management
+		if(userInputs.isReturnBackRequest()){
+			return;
+		}
+		if(userInputs.isBackRequest()){
+			enemySensorsScren--;
+		}
+		if(userInputs.isNextRequest()){
+			enemySensorsScren++;
 		}
 
+
+		 switch(enemySensorsScren) {
+				case ENEMY_SENSORS_OUTPUT_SCREEN:
+				{
+					uint32_t sensorsValues = enemyDetection.readSensors();
+					uint8_t values[EnemyDetection::NUMBER_OF_SENSORS];
+					for(uint8_t i = 0; i < EnemyDetection::NUMBER_OF_SENSORS; i ++){
+						values[i] = (sensorsValues & (1 << i)) != 0;
+					}
+					Display_N_Values_Screen(values, EnemyDetection::NUMBER_OF_SENSORS);
+					break;
+
+				}
+
+				case ENEMY_POSITION_VOTING_SCREEN:
+				{
+					int8_t votes[EnemyPosition::POSITIONED_NO];
+					enemyDetection.readAndTakeSensorsVotes(votes);
+					Display_Enemy_Sensors_Votes(votes);
+
+					break;
+				}
+
+
+				default:
+					Display_Error();
+					break;
+			}
 	}
-
-
 }
 
-void HardwareTestApp::runLineDetectionTest(){
-
-	///Extract components
-	ComplexButton &startButton = userInputs.startButton;
-	ComplexButton &backButton =  userInputs.backButton;
-	ComplexButton &nextButton =  userInputs.nextButton;
-
-
-	Trimpot trimpotLeft = userInputs.trimpotLeft;
-	Trimpot trimpotRight = userInputs.trimpotRight;
+void HardwareTestApp::runLineDetectionTest()
+{
 
 	LineDetection& lineDetecion = sensorsHub.lineDetection;
-	Line_Detection_Test_Screen lineDetectionScreen = LINE_POSITION_SCREEN;
+	Line_Detection_Screen_Type lineDetectionScreen = LINE_POSITION_SCREEN;
 
 	///LOOP
-	while(true){
-		///Read values
-		ButtonOutput backOutput = backButton.read();
-		ButtonOutput nextOutput = nextButton.read();
-		ButtonOutput startOutput = startButton.read();
+	while(true)
+	{
+		userInputs.readInputs();
 
-		Trimpot trimpotLeft = userInputs.trimpotLeft;
-		Trimpot trimpotRight = userInputs.trimpotRight;
-
-
-		if(backOutput == HOLD_CLICK){
-			return; ///get out
-		}else if(backOutput != NO_CLICK){
+		///user input management
+		if(userInputs.isReturnBackRequest()){
+			return;
+		}
+		if(userInputs.isBackRequest()){
 			lineDetectionScreen--;
 		}
-		if(nextOutput != NO_CLICK){
-			lineDetectionScreen ++;
+		if(userInputs.isNextRequest()){
+			lineDetectionScreen++;
 		}
 
 		///UI
@@ -148,14 +142,14 @@ void HardwareTestApp::runLineDetectionTest(){
 			case LINE_POSITION_SCREEN:
 			{
 				/// Line Position Screen
-				LinePosition linePosition = lineDetecion.readAndConvert();
+				LinePosition linePosition = lineDetecion.readAndConvertToLinePosition();
 				Display_Line_Position_Screen(
 							linePosition,
 							lineDetecion.isWhiteFilter, //whiteFilter
 							lineDetecion.isBlackFilter, //BlackFilter
 							(char *)"Hstart to reset>"     //description
 				);
-				if(startOutput == HOLD_CLICK){
+				if(userInputs.isSetValueRequest()){
 					lineDetecion.resetFiltersToDefault();
 				}
 				break;
@@ -165,19 +159,19 @@ void HardwareTestApp::runLineDetectionTest(){
 			case FILTER_CHANGE_SCREEN:
 			{
 				///Change Filter Screen;
-				trimpotLeft.read();
-				trimpotRight.read();
-				LinePosition linePosition = lineDetecion.readAndConvert();
+				LinePosition linePosition = lineDetecion.readAndConvertToLinePosition();
+				float data0 = userInputs.getData0(0, 255);
+				float data1 = userInputs.getData1(0, 255);
 
 				Display_Line_Position_Screen(
 						linePosition,
-						trimpotLeft.scale_data(0, 255), //whiteFilter
-						trimpotRight.scale_data(0, 255), //BlackFilter
+						data0, //whiteFilter
+						data1, //BlackFilter
 						(char *)"Hstart to change>"              //description
 				);
-				if(startOutput == HOLD_CLICK){
-					lineDetecion.isWhiteFilter = trimpotLeft.scale_data(0, 255);
-					lineDetecion.isBlackFilter = trimpotRight.scale_data(0, 255);
+				if(userInputs.isSetValueRequest()){
+					lineDetecion.isWhiteFilter = data0;
+					lineDetecion.isBlackFilter = data1;
 					lineDetectionScreen = LINE_POSITION_SCREEN;
 				}
 				break;
@@ -187,8 +181,8 @@ void HardwareTestApp::runLineDetectionTest(){
 			{
 				///Sensors Output View
 				uint8_t sensorsValues[LineDetection::LINE_SENSORS_NUMBER];
-				lineDetecion.read(sensorsValues);
-				Display_Line_Sensors_Output(sensorsValues, LineDetection::LINE_SENSORS_NUMBER);
+				lineDetecion.readAll(sensorsValues);
+				Display_N_Values_Screen(sensorsValues, LineDetection::LINE_SENSORS_NUMBER);
 
 			}
 				break;
@@ -199,53 +193,79 @@ void HardwareTestApp::runLineDetectionTest(){
 	}
 }
 
-// The actual implementation
-Hardware_Test_Screen operator++(Hardware_Test_Screen& screen, int) {
-    Hardware_Test_Screen current = screen;
+///                       Implementation of Types Operations
+///
+///
+Hardware_Test_Screen_Type operator++(Hardware_Test_Screen_Type& screen, int) {
+    Hardware_Test_Screen_Type current = screen;
 
     if (screen == MOTOR_TEST) {
         screen = TRIMPOTS_TEST;
     } else {
-        screen = static_cast<Hardware_Test_Screen>(static_cast<int>(screen) + 1);
+        screen = static_cast<Hardware_Test_Screen_Type>(static_cast<int>(screen) + 1);
     }
 
     return current; // Return old value for postfix increment
 }
 
 // The actual implementation
-Hardware_Test_Screen operator--(Hardware_Test_Screen& screen, int) {
-    Hardware_Test_Screen current = screen;
+Hardware_Test_Screen_Type operator--(Hardware_Test_Screen_Type& screen, int) {
+    Hardware_Test_Screen_Type current = screen;
 
     if (screen == TRIMPOTS_TEST) {
         screen = MOTOR_TEST;
     } else {
-        screen = static_cast<Hardware_Test_Screen>(static_cast<int>(screen) - 1);
+        screen = static_cast<Hardware_Test_Screen_Type>(static_cast<int>(screen) - 1);
     }
 
     return current; // Return old value for postfix increment
 }
 
 // Increment (++) operator
-Line_Detection_Test_Screen operator++(Line_Detection_Test_Screen& screen, int) {
-    Line_Detection_Test_Screen current = screen;
+Line_Detection_Screen_Type operator++(Line_Detection_Screen_Type& screen, int) {
+    Line_Detection_Screen_Type current = screen;
 
     if (screen == SENSORS_OUTPUT_SCREEN) {
         screen = LINE_POSITION_SCREEN;  // loop back to the start if at the end
     } else {
-        screen = static_cast<Line_Detection_Test_Screen>(static_cast<int>(screen) + 1);
+        screen = static_cast<Line_Detection_Screen_Type>(static_cast<int>(screen) + 1);
     }
 
     return current; // Return old value for postfix increment
 }
 
 // Decrement (--) operator
-Line_Detection_Test_Screen operator--(Line_Detection_Test_Screen& screen, int) {
-    Line_Detection_Test_Screen current = screen;
+Line_Detection_Screen_Type operator--(Line_Detection_Screen_Type& screen, int) {
+    Line_Detection_Screen_Type current = screen;
 
     if (screen == LINE_POSITION_SCREEN) {
         screen = SENSORS_OUTPUT_SCREEN;  // loop back to the end if at the start
     } else {
-        screen = static_cast<Line_Detection_Test_Screen>(static_cast<int>(screen) - 1);
+        screen = static_cast<Line_Detection_Screen_Type>(static_cast<int>(screen) - 1);
+    }
+
+    return current; // Return old value for postfix decrement
+}
+
+Enemy_Detection_Screen_Type operator++(Enemy_Detection_Screen_Type& screen, int) {
+    Enemy_Detection_Screen_Type current = screen;
+
+    if (screen == ENEMY_POSITION_VOTING_SCREEN) {
+        screen = ENEMY_SENSORS_OUTPUT_SCREEN;  // loop back to the start if at the end
+    } else {
+        screen = static_cast<Enemy_Detection_Screen_Type>(static_cast<int>(screen) + 1);
+    }
+
+    return current; // Return old value for postfix increment
+}
+
+Enemy_Detection_Screen_Type operator--(Enemy_Detection_Screen_Type& screen, int) {
+    Enemy_Detection_Screen_Type current = screen;
+
+    if (screen == ENEMY_SENSORS_OUTPUT_SCREEN) {
+        screen = ENEMY_POSITION_VOTING_SCREEN;  // loop back to the end if at the start
+    } else {
+        screen = static_cast<Enemy_Detection_Screen_Type>(static_cast<int>(screen) - 1);
     }
 
     return current; // Return old value for postfix decrement

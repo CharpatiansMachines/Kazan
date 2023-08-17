@@ -12,6 +12,7 @@
 #include "ssd1306.h"
 #include "stdio.h"
 #include "string.h"
+#include <cmath>
 
 void Display_Clear(){
 	ssd1306_Fill(Black);
@@ -43,7 +44,7 @@ void Draw_Center_Text( char *text, FontDef* font, uint16_t height){
 
 
     	}else{
-        	Draw_Center_Text(text, font, height);
+        	Draw_Left_Text(text, font, height);
     	}
     }
 }
@@ -141,7 +142,7 @@ void Display_Enemy_Sensors_Output(uint32_t value){
 	char s[80];
 	Display_Clear();
 
-	Draw_Center_Text("Enemy Sensors", &Font_7x10, 0);
+	Draw_Center_Text((char *)"Enemy Sensors", &Font_7x10, 0);
 	sprintf(s, "s0=%d, s1=%d, s2=%d, s3=%d, s4=%d, s5=%d, s6=%d, s7=%d",
 	    value & 0x01 ? 1 : 0,
 	    (value & 0x02) >> 1,
@@ -156,7 +157,68 @@ void Display_Enemy_Sensors_Output(uint32_t value){
 
 }
 
-void Display_Line_Sensors_Output(uint8_t *values, uint8_t valuesNo){
+void Draw_Circular_Arc_Text( char *text, FontDef* font, uint16_t height)
+{
+	uint16_t length = strlen(text);
+	float wDistance = SSD1306_WIDTH;
+		wDistance /= length;
+	float heightDiff = 1;
+	for(uint8_t i = 0; i< length; i++)
+	{
+		uint8_t x = wDistance * i;
+		uint8_t y = height + std::abs(length/2 - i) * heightDiff;
+		ssd1306_SetCursor(x,  y);
+		ssd1306_WriteChar(text[i], *font, White);
+	}
+	ssd1306_SetCursor(0, height + font->FontHeight + 1);
+}
+
+//void Display_Enemy_Sensors_Votes(int8_t votes[EnemyPosition::POSITIONED_NO]){
+//	FontDef font = Font_6x8;
+//	char s[50] ="";
+//	Display_Clear();
+//	Draw_Circular_Arc_Text((char *)"0|1|2|3|4|5|6|7|8|9|A|B|C", &Font_6x8, 0);
+//	for(int i = 0; i < 13; i++) {
+//		char temp[12];
+//		if(votes[i] < 10){
+//			snprintf(temp, sizeof(temp), "%d|", votes[i]);
+//		}else{
+//			snprintf(temp, sizeof(temp), "%c|",'A' + votes[i]);
+//		}
+//
+//		strcat(s, temp);
+//	}
+//	strcpy(s,"");
+//}
+
+void Display_Enemy_Sensors_Votes(int8_t votes[EnemyPosition::POSITIONED_NO]){
+	FontDef font = Font_6x8;
+	Display_Clear();
+	float hDistance = SSD1306_HEIGHT;
+	hDistance/= EnemyPosition::PROXIMITY_NO;
+	float wDistance = SSD1306_WIDTH;
+	wDistance /= EnemyPosition::DIRECTIONS_NO;
+	float rowHeight = 2;
+
+
+
+	for(uint8_t id = 0; id <EnemyPosition::POSITIONED_NO; id++)
+	{
+		EnemyPosition pos(id);
+		uint8_t x = pos.direction * wDistance;
+		float yBase = (EnemyPosition::PROXIMITY_NO - pos.proximity -1) * hDistance;
+		uint8_t y = yBase + pos.getDistanceFromCenterDirection() * rowHeight;
+
+		ssd1306_SetCursor((uint8_t)x, (uint8_t) y);
+		ssd1306_WriteChar('a' + id, font, White);
+	}
+	ssd1306_UpdateScreen();
+
+}
+
+
+
+void Display_N_Values_Screen(uint8_t *values, uint8_t valuesNo){
 	Display_Clear();
 	ssd1306_SetCursor (0, 0);
 	for(uint8_t i = 0; i < valuesNo; i+=2)

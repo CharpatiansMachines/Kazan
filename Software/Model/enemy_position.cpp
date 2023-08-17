@@ -42,6 +42,16 @@ uint8_t EnemyPosition::toID() const {
     return proximity * DIRECTIONS_NO + newDirection;
 }
 
+uint8_t EnemyPosition::getCenterDirection() {
+    // Assuming center direction is halfway through DIRECTIONS_NO
+    return DIRECTIONS_NO / 2;
+}
+
+uint8_t EnemyPosition::getDistanceFromCenterDirection() {
+    int8_t center = getCenterDirection();
+    return std::abs(direction - center);
+}
+
 
 
 

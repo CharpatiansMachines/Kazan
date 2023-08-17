@@ -16,22 +16,30 @@
 #include "sensors_hub.h"
 #include "user_inputs.h"
 
-enum Hardware_Test_Screen{
+enum Hardware_Test_Screen_Type{
 	TRIMPOTS_TEST = 0x00,
 	LINE_SENSORS_TEST,
 	ENEMY_SENSORS_TEST,
 	MOTOR_TEST,
 };
-Hardware_Test_Screen operator++(Hardware_Test_Screen& screen, int);
-Hardware_Test_Screen operator--(Hardware_Test_Screen& screen, int);
+Hardware_Test_Screen_Type operator++(Hardware_Test_Screen_Type& screen, int);
+Hardware_Test_Screen_Type operator--(Hardware_Test_Screen_Type& screen, int);
 
-enum Line_Detection_Test_Screen{
+enum Line_Detection_Screen_Type{
 	LINE_POSITION_SCREEN = 0x00,
 	FILTER_CHANGE_SCREEN,
 	SENSORS_OUTPUT_SCREEN,
 };
-Line_Detection_Test_Screen operator++(Line_Detection_Test_Screen& screen, int);
-Line_Detection_Test_Screen operator--(Line_Detection_Test_Screen& screen, int);
+Line_Detection_Screen_Type operator++(Line_Detection_Screen_Type& screen, int);
+Line_Detection_Screen_Type operator--(Line_Detection_Screen_Type& screen, int);
+
+enum Enemy_Detection_Screen_Type{
+	ENEMY_SENSORS_OUTPUT_SCREEN,
+	ENEMY_POSITION_VOTING_SCREEN,
+};
+Enemy_Detection_Screen_Type operator++(Enemy_Detection_Screen_Type& screen, int);
+
+Enemy_Detection_Screen_Type operator--(Enemy_Detection_Screen_Type& screen, int);
 
 
 
@@ -49,7 +57,7 @@ private:
 	UserInputs &userInputs;
 	SensorsHub &sensorsHub;
 	Communication_Driver &communication;
-	Hardware_Test_Screen screen;
+	Hardware_Test_Screen_Type screen;
 	void runLineDetectionTest();
 	void runEnemySensorsTest();
 

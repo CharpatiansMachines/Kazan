@@ -18,6 +18,10 @@ data(0)
 {
 
 }
+
+void Trimpot::config(){
+
+}
 uint16_t Trimpot::read()
 {
 	ADC_ChannelConfTypeDef sConfig = {0};
@@ -42,16 +46,14 @@ uint16_t Trimpot::read()
 	}
 	return data;
 }
+uint16_t Trimpot::getData()const{
+	return data;
+}
 
-int32_t Trimpot::scale_data(int32_t min, int32_t max)
+float Trimpot::getData(float min, float max) const
 {
 	float diff = max - min;
 	diff = diff / MAX_DATA_VALUE * data;
 	return min + diff;
-}
-
-
-
-Trimpot::~Trimpot() {
 }
 

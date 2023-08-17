@@ -23,8 +23,9 @@ void Draw_Right_Text(char *text, FontDef* font, uint16_t height);
 void Display_Title_Screen(char*  title);
 void Display_Small_Title_Screen(char*  title);
 void Display_2_Numbers(char * title, double number1, double number2);
-void Display_Line_Sensors_Output(uint8_t *values, uint8_t valuesNo);
+void Display_N_Values_Screen(uint8_t *values, uint8_t valuesNo);
 void Display_Enemy_Sensors_Output(uint32_t value);
+void Display_Enemy_Sensors_Votes(int8_t votes[EnemyPosition::POSITIONED_NO]);
 void Display_Line_Position_Screen(LinePosition lineOutput,uint8_t whiteFilter, uint8_t darkFilter,char *descrition);
 void Display_Error();
 

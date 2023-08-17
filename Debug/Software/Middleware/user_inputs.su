@@ -1,1 +1,12 @@
 ../Software/Middleware/user_inputs.cpp:13:1:UserInputs::UserInputs(const UserInputsConfig&)	16	static
+../Software/Middleware/user_inputs.cpp:23:6:void UserInputs::configAll()	16	static
+../Software/Middleware/user_inputs.cpp:30:6:void UserInputs::readInputs()	16	static
+../Software/Middleware/user_inputs.cpp:38:6:bool UserInputs::isReturnBackRequest()	24	static
+../Software/Middleware/user_inputs.cpp:42:6:bool UserInputs::isBackRequest()	24	static
+../Software/Middleware/user_inputs.cpp:47:6:bool UserInputs::isNextRequest()	24	static
+../Software/Middleware/user_inputs.cpp:52:6:bool UserInputs::isSelectRequest()	24	static
+../Software/Middleware/user_inputs.cpp:57:6:bool UserInputs::isSetValueRequest()	24	static
+../Software/Middleware/user_inputs.cpp:64:10:uint16_t UserInputs::getData0() const	16	static
+../Software/Middleware/user_inputs.cpp:68:10:uint16_t UserInputs::getData1() const	16	static
+../Software/Middleware/user_inputs.cpp:72:7:float UserInputs::getData0(float, float) const	24	static
+../Software/Middleware/user_inputs.cpp:76:7:float UserInputs::getData1(float, float) const	24	static

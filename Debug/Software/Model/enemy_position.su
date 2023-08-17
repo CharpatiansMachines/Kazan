@@ -2,3 +2,5 @@
 ../Software/Model/enemy_position.cpp:15:1:EnemyPosition::EnemyPosition(int8_t, int8_t)	16	static
 ../Software/Model/enemy_position.cpp:17:1:EnemyPosition::EnemyPosition(uint8_t)	16	static
 ../Software/Model/enemy_position.cpp:31:9:uint8_t EnemyPosition::toID() const	24	static
+../Software/Model/enemy_position.cpp:45:9:uint8_t EnemyPosition::getCenterDirection()	16	static
+../Software/Model/enemy_position.cpp:50:9:uint8_t EnemyPosition::getDistanceFromCenterDirection()	24	static

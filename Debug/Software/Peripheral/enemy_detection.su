@@ -1,5 +1,5 @@
 ../Software/Peripheral/enemy_detection.cpp:11:1:EnemyDetection::EnemyDetection(const EnemyDetectionConfig*)	24	static
 ../Software/Peripheral/enemy_detection.cpp:19:6:void EnemyDetection::init()	24	static
 ../Software/Peripheral/enemy_detection.cpp:27:10:uint32_t EnemyDetection::readSensors()	24	static
-../Software/Peripheral/enemy_detection.cpp:40:9:uint8_t EnemyDetection::takeSensorsVotes(int8_t*)	24	static
-../Software/Peripheral/enemy_detection.cpp:187:15:EnemyPosition EnemyDetection::getMostVotedPosition()	72	static
+../Software/Peripheral/enemy_detection.cpp:40:9:uint8_t EnemyDetection::readAndTakeSensorsVotes(int8_t*)	24	static
+../Software/Peripheral/enemy_detection.cpp:187:15:EnemyPosition EnemyDetection::getMostVotedPosition()	64	static

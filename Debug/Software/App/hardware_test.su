@@ -1,8 +1,9 @@
-D:/Proiecte/STMCUBE/Kazan/Software/Peripheral/trimpot_driver.h:15:7:constexpr Trimpot::Trimpot(const Trimpot&)	16	static
-../Software/App/hardware_test.cpp:15:6:void HardwareTestApp::run()	72	static
-../Software/App/hardware_test.cpp:79:6:void HardwareTestApp::runEnemySensorsTest()	120	static
-../Software/App/hardware_test.cpp:112:6:void HardwareTestApp::runLineDetectionTest()	128	static
-../Software/App/hardware_test.cpp:203:22:Hardware_Test_Screen operator++(Hardware_Test_Screen&, int)	24	static
-../Software/App/hardware_test.cpp:216:22:Hardware_Test_Screen operator--(Hardware_Test_Screen&, int)	24	static
-../Software/App/hardware_test.cpp:229:28:Line_Detection_Test_Screen operator++(Line_Detection_Test_Screen&, int)	24	static
-../Software/App/hardware_test.cpp:242:28:Line_Detection_Test_Screen operator--(Line_Detection_Test_Screen&, int)	24	static
+../Software/App/hardware_test.cpp:15:6:void HardwareTestApp::run()	24	static
+../Software/App/hardware_test.cpp:65:6:void HardwareTestApp::runEnemySensorsTest()	128	static
+../Software/App/hardware_test.cpp:118:6:void HardwareTestApp::runLineDetectionTest()	48	static
+../Software/App/hardware_test.cpp:199:27:Hardware_Test_Screen_Type operator++(Hardware_Test_Screen_Type&, int)	24	static
+../Software/App/hardware_test.cpp:212:27:Hardware_Test_Screen_Type operator--(Hardware_Test_Screen_Type&, int)	24	static
+../Software/App/hardware_test.cpp:225:28:Line_Detection_Screen_Type operator++(Line_Detection_Screen_Type&, int)	24	static
+../Software/App/hardware_test.cpp:238:28:Line_Detection_Screen_Type operator--(Line_Detection_Screen_Type&, int)	24	static
+../Software/App/hardware_test.cpp:250:29:Enemy_Detection_Screen_Type operator++(Enemy_Detection_Screen_Type&, int)	24	static
+../Software/App/hardware_test.cpp:262:29:Enemy_Detection_Screen_Type operator--(Enemy_Detection_Screen_Type&, int)	24	static

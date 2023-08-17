@@ -19,15 +19,24 @@ public:
 	ComplexButton(GPIO_TypeDef * GPIOX,uint16_t PIN);
 	void config();
 	ButtonOutput read();
+	ButtonOutput getLastValue() const ;
 
 
 private:
+  enum ButtonState {
+		WaitForPress,
+		WaitForRelease,
+		CheckDoubleClick,
+		IdleAfterClick
+	};
 	const uint16_t HOLD_CLICK_PRESSING_TIME_MS = 500;
 	const uint16_t DOUBLE_CLICK_TIME_MS = 300;
+
+	ButtonOutput lastValue;
 	GPIO_TypeDef * GPIOX;
 	uint16_t PIN;
 	uint32_t clock;
-	uint8_t state;
+	ButtonState buttonState;
 
 
 

@@ -30,15 +30,29 @@ struct UserInputsConfig {
 class UserInputs{
 public:
 	UserInputs(const UserInputsConfig& config);
+	void configAll();
+	void readInputs();
+
+	bool isReturnBackRequest();
+	bool isBackRequest();
+	bool isNextRequest();
+	bool isSelectRequest();
+	bool isSetValueRequest();
+
+	uint16_t getData0() const;
+	uint16_t getData1() const;
+	float getData0(float min,float max) const;
+	float getData1(float min, float max) const;
+
+
+private:
 	ComplexButton startButton;
 	ComplexButton backButton;
 	ComplexButton nextButton;
 
-	Trimpot trimpotLeft;
-	Trimpot trimpotRight;
+	Trimpot trimpot0;
+	Trimpot trimpot1;
 
-
-private:
 };
 
 

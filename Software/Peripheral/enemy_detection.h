@@ -29,7 +29,7 @@ public:
 
     void init();
     uint32_t readSensors();
-    uint8_t takeSensorsVotes(int8_t sensors_votes[EnemyPosition::POSITIONED_NO]);
+    uint8_t readAndTakeSensorsVotes(int8_t sensors_votes[EnemyPosition::POSITIONED_NO]);
     EnemyPosition getMostVotedPosition();
 
 private:
