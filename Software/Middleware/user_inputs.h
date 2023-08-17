@@ -33,6 +33,7 @@ public:
 	void configAll();
 	void readInputs();
 
+	bool isAnyKey();
 	bool isReturnBackRequest();
 	bool isBackRequest();
 	bool isNextRequest();

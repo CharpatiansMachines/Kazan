@@ -21,7 +21,8 @@ public:
 	uint16_t getData() const;
 	float getData(float min, float max) const;
 private:
-
+	static const uint16_t MIN_DATA_VALUE = 40;
+	static const uint16_t MAX_DATA_VALUE = 4000;
 	ADC_HandleTypeDef *hadc;
 	uint32_t ADC_CHANNEL;
 	uint16_t data;

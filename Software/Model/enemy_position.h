@@ -13,24 +13,33 @@
 
 class EnemyPosition {
 public:
-	static const uint8_t POSITIONED_NO = 32;
+	static const uint8_t ALL_POSITIONS_NO = 33;
+	static const uint8_t KNOWN_POSITIONS_NO = ALL_POSITIONS_NO - 1;  ///32
+
     static const uint8_t DIRECTIONS_NO = 13;
     static const uint8_t PROXIMITY_NO = 3;
     // Constructors
 	EnemyPosition();
 	EnemyPosition(uint8_t enemyPositionId);
 	EnemyPosition(int8_t direction, int8_t proximity);
+
+    bool operator==(const EnemyPosition& other) const;
+    bool operator!=(const EnemyPosition& other) const;
+
+
     uint8_t toID() const;
     int8_t direction;
     int8_t proximity;
     uint8_t getCenterDirection();
     uint8_t getDistanceFromCenterDirection();
+    bool isNotKnown();
+    bool isntNotKnown();
 
 private:
     // Member variables
 
     // Constants
-    static const uint8_t NOT_KNOWN_POSITION = POSITIONED_NO;
+    static const uint8_t NOT_KNOWN_POSITION_ID = KNOWN_POSITIONS_NO;
 };
 
 

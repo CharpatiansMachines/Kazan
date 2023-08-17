@@ -1,9 +1,17 @@
-../Software/App/hardware_test.cpp:15:6:void HardwareTestApp::run()	24	static
-../Software/App/hardware_test.cpp:65:6:void HardwareTestApp::runEnemySensorsTest()	128	static
-../Software/App/hardware_test.cpp:118:6:void HardwareTestApp::runLineDetectionTest()	48	static
-../Software/App/hardware_test.cpp:199:27:Hardware_Test_Screen_Type operator++(Hardware_Test_Screen_Type&, int)	24	static
-../Software/App/hardware_test.cpp:212:27:Hardware_Test_Screen_Type operator--(Hardware_Test_Screen_Type&, int)	24	static
-../Software/App/hardware_test.cpp:225:28:Line_Detection_Screen_Type operator++(Line_Detection_Screen_Type&, int)	24	static
-../Software/App/hardware_test.cpp:238:28:Line_Detection_Screen_Type operator--(Line_Detection_Screen_Type&, int)	24	static
-../Software/App/hardware_test.cpp:250:29:Enemy_Detection_Screen_Type operator++(Enemy_Detection_Screen_Type&, int)	24	static
-../Software/App/hardware_test.cpp:262:29:Enemy_Detection_Screen_Type operator--(Enemy_Detection_Screen_Type&, int)	24	static
+D:/Proiecte/STMCUBE/Kazan/Software/Peripheral/timer.h:17:17:uint32_t Timer_Get_Now_Time()	8	static
+D:/Proiecte/STMCUBE/Kazan/Software/Peripheral/timer.h:21:17:uint32_t Timer_Set_Clock(uint32_t)	16	static
+D:/Proiecte/STMCUBE/Kazan/Software/Peripheral/timer.h:25:16:int64_t Timer_Get_Remain_Time(uint32_t)	40	static
+../Software/App/hardware_test.cpp:16:6:void HardwareTestApp::run()	24	static
+../Software/App/hardware_test.cpp:69:6:void HardwareTestApp::runEnemySensorsTest()	128	static
+../Software/App/hardware_test.cpp:122:6:void HardwareTestApp::runLineDetectionTest()	48	static
+../Software/App/hardware_test.cpp:200:6:void HardwareTestApp::runMotorTest()	88	static
+../Software/App/hardware_test.cpp:262:27:Hardware_Test_Screen_Type operator++(Hardware_Test_Screen_Type&, int)	24	static
+../Software/App/hardware_test.cpp:275:27:Hardware_Test_Screen_Type operator--(Hardware_Test_Screen_Type&, int)	24	static
+../Software/App/hardware_test.cpp:288:28:Line_Detection_Screen_Type operator++(Line_Detection_Screen_Type&, int)	24	static
+../Software/App/hardware_test.cpp:301:28:Line_Detection_Screen_Type operator--(Line_Detection_Screen_Type&, int)	24	static
+../Software/App/hardware_test.cpp:313:29:Enemy_Detection_Screen_Type operator++(Enemy_Detection_Screen_Type&, int)	24	static
+../Software/App/hardware_test.cpp:325:29:Enemy_Detection_Screen_Type operator--(Enemy_Detection_Screen_Type&, int)	24	static
+../Software/App/hardware_test.cpp:338:24:Motor_Test_Screen_Type operator++(Motor_Test_Screen_Type&, int)	24	static
+../Software/App/hardware_test.cpp:355:24:Motor_Test_Screen_Type operator--(Motor_Test_Screen_Type&, int)	24	static
+../Software/App/hardware_test.cpp:369:1:void __static_initialization_and_destruction_0(int, int)	16	static
+../Software/App/hardware_test.cpp:369:1:cpp)	8	static

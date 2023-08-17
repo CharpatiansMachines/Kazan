@@ -35,16 +35,20 @@ Core/Src/main.o: ../Core/Src/main.cpp ../Core/Inc/main.h \
  D:/Proiecte/STMCUBE/Kazan/Software/Peripheral/SSD1306/ssd1306_conf.h \
  D:/Proiecte/STMCUBE/Kazan/Software/Peripheral/SSD1306/ssd1306_fonts.h \
  D:/Proiecte/STMCUBE/Kazan/Software/App/application.h \
- D:/Proiecte/STMCUBE/Kazan/Software/Middleware/communication_driver.h \
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h \
- D:/Proiecte/STMCUBE/Kazan/Software/Middleware/sensors_hub.h \
+ D:/Proiecte/STMCUBE/Kazan/Software/Middleware/state_control.h \
  D:/Proiecte/STMCUBE/Kazan/Software/Peripheral/enemy_detection.h \
  D:/Proiecte/STMCUBE/Kazan/Software/Model/enemy_position.h \
  D:/Proiecte/STMCUBE/Kazan/Software/Peripheral/line_detection.h \
  D:/Proiecte/STMCUBE/Kazan/Software/Model/line_position.h \
+ D:/Proiecte/STMCUBE/Kazan/Software/Model/state.h \
+ D:/Proiecte/STMCUBE/Kazan/Software/Model/line_position.h \
+ D:/Proiecte/STMCUBE/Kazan/Software/Model/enemy_position.h \
+ D:/Proiecte/STMCUBE/Kazan/Software/Middleware/communication_driver.h \
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h \
  D:/Proiecte/STMCUBE/Kazan/Software/Middleware/user_inputs.h \
  D:/Proiecte/STMCUBE/Kazan/Software/Peripheral/button_driver.h \
- D:/Proiecte/STMCUBE/Kazan/Software/Peripheral/trimpot_driver.h
+ D:/Proiecte/STMCUBE/Kazan/Software/Peripheral/trimpot_driver.h \
+ D:/Proiecte/STMCUBE/Kazan/Software/Peripheral/motor_driver.h
 ../Core/Inc/main.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:
 ../Core/Inc/stm32f4xx_hal_conf.h:
@@ -82,13 +86,17 @@ D:/Proiecte/STMCUBE/Kazan/Software/Peripheral/SSD1306/ssd1306.h:
 D:/Proiecte/STMCUBE/Kazan/Software/Peripheral/SSD1306/ssd1306_conf.h:
 D:/Proiecte/STMCUBE/Kazan/Software/Peripheral/SSD1306/ssd1306_fonts.h:
 D:/Proiecte/STMCUBE/Kazan/Software/App/application.h:
-D:/Proiecte/STMCUBE/Kazan/Software/Middleware/communication_driver.h:
-../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:
-D:/Proiecte/STMCUBE/Kazan/Software/Middleware/sensors_hub.h:
+D:/Proiecte/STMCUBE/Kazan/Software/Middleware/state_control.h:
 D:/Proiecte/STMCUBE/Kazan/Software/Peripheral/enemy_detection.h:
 D:/Proiecte/STMCUBE/Kazan/Software/Model/enemy_position.h:
 D:/Proiecte/STMCUBE/Kazan/Software/Peripheral/line_detection.h:
 D:/Proiecte/STMCUBE/Kazan/Software/Model/line_position.h:
+D:/Proiecte/STMCUBE/Kazan/Software/Model/state.h:
+D:/Proiecte/STMCUBE/Kazan/Software/Model/line_position.h:
+D:/Proiecte/STMCUBE/Kazan/Software/Model/enemy_position.h:
+D:/Proiecte/STMCUBE/Kazan/Software/Middleware/communication_driver.h:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:
 D:/Proiecte/STMCUBE/Kazan/Software/Middleware/user_inputs.h:
 D:/Proiecte/STMCUBE/Kazan/Software/Peripheral/button_driver.h:
 D:/Proiecte/STMCUBE/Kazan/Software/Peripheral/trimpot_driver.h:
+D:/Proiecte/STMCUBE/Kazan/Software/Peripheral/motor_driver.h:

@@ -7,10 +7,6 @@
 
 #include "trimpot_driver.h"
 
-
-#define MIN_DATA_VALUE 40
-#define MAX_DATA_VALUE 4000
-
 Trimpot::Trimpot(ADC_HandleTypeDef *hadc,uint32_t ADC_CHANNEL):
 hadc(hadc),
 ADC_CHANNEL(ADC_CHANNEL),

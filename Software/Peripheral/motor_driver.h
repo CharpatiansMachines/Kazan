@@ -13,9 +13,9 @@
 
 class Motor {
 public:
-	static const uint8_t MAX_POWER = 100;
-	static const uint8_t MAX_REVERSE_POWER = -MAX_POWER;
-	static const uint8_t STOP_POWER = 0;
+	static const int8_t MAX_POWER = 100;
+	static const int8_t MAX_REVERSE_POWER = -MAX_POWER;
+	static const int8_t STOP_POWER = 0;
 
 	Motor(USART_TypeDef * UARTX);
 	void init();

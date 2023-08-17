@@ -51,7 +51,7 @@ I2C_HandleTypeDef hi2c2;
 SPI_HandleTypeDef hspi1;
 
 UART_HandleTypeDef huart4_data;
-UART_HandleTypeDef huart1;
+UART_HandleTypeDef huart1_motor;
 
 /* USER CODE BEGIN PV */
 
@@ -153,55 +153,10 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   Application application;
-  application.run();
 
-  uint8_t esensor[8];
-  uint8_t buttons[3];
-  uint32_t lsensor[8];
-  uint32_t trimpots[2];
   while (1)
   {
-     char s[100] = "--------------------------Mori-----------------------------------\r\n";
-     HAL_UART_Transmit(&huart4_data, (uint8_t *)s,strlen(s) , 100);
-     HAL_GPIO_TogglePin(CEVA_LED_GPIO_Port, CEVA_LED_Pin);
-//
-//	 esensor[0] = HAL_GPIO_ReadPin(ENEMY_SENSOR_0_GPIO_Port, ENEMY_SENSOR_0_Pin);
-//	 esensor[1] = HAL_GPIO_ReadPin(ENEMY_SENSOR_1_GPIO_Port, ENEMY_SENSOR_1_Pin);
-//	 esensor[2] = HAL_GPIO_ReadPin(ENEMY_SENSOR_2_GPIO_Port, ENEMY_SENSOR_2_Pin);
-//	 esensor[3] = HAL_GPIO_ReadPin(ENEMY_SENSOR_3_GPIO_Port, ENEMY_SENSOR_3_Pin);
-//	 esensor[4] = HAL_GPIO_ReadPin(ENEMY_SENSOR_4_GPIO_Port, ENEMY_SENSOR_4_Pin);
-//	 esensor[5] = HAL_GPIO_ReadPin(ENEMY_SENSOR_5_GPIO_Port, ENEMY_SENSOR_5_Pin);
-//	 esensor[6] = HAL_GPIO_ReadPin(ENEMY_SENSOR_6_GPIO_Port, ENEMY_SENSOR_6_Pin);
-//	 esensor[7] = HAL_GPIO_ReadPin(ENEMY_SENSOR_7_GPIO_Port, ENEMY_SENSOR_7_Pin);
-//	 sprintf(s,"Enemy Sensors\r\n%d %d %d %d %d %d %d %d\r\n",esensor[0],esensor[1],esensor[2],esensor[3],esensor[4],esensor[5],esensor[6],esensor[7]);
-//	 HAL_UART_Transmit(&huart4_data, (uint8_t *)s,strlen(s) , 100);
-//
-//
-//	 buttons[0] = HAL_GPIO_ReadPin(B0_UP_GPIO_Port, B0_UP_Pin);
-//	 buttons[1] = HAL_GPIO_ReadPin(B1_SELECT_GPIO_Port, B1_SELECT_Pin);
-//	 buttons[2] = HAL_GPIO_ReadPin(B2_DOWN_GPIO_Port, B2_DOWN_Pin);
-//	 sprintf(s,"Buttons : %d %d %d\r\n",buttons[0],buttons[1],buttons[2]);
-//	 HAL_UART_Transmit(&huart4_data, (uint8_t *)s,strlen(s) , 100);
-//
-//	 lsensor[0] = readADC2(LINE_SENSOR_0_CHANNEL);
-//	 lsensor[1] = readADC2(LINE_SENSOR_1_CHANNEL);
-//	 lsensor[2] = readADC1(LINE_SENSOR_2_1_CHANNEL);
-//	 lsensor[3] = readADC1(LINE_SENSOR_2_2_CHANNEL);
-//	 lsensor[4] = readADC1(LINE_SENSOR_2_3_CHANNEL);
-//	 lsensor[5] = readADC1(LINE_SENSOR_3_1_CHANNEL);
-//	 lsensor[6] = readADC1(LINE_SENSOR_3_2_CHANNEL);
-//	 lsensor[7] = readADC1(LINE_SENSOR_3_3_CHANNEL);
-//	 sprintf(s,"Line Sensors\r\n%lu %lu %lu %lu %lu %lu %lu %lu\r\n",lsensor[0],lsensor[1],lsensor[2],lsensor[3],lsensor[4],lsensor[5],lsensor[6],lsensor[7]);
-//	 HAL_UART_Transmit(&huart4_data, (uint8_t *)s,strlen(s) , 100);
-//
-//	 trimpots[0] = readADC2(TRIMPOT_0_CHANNEL);
-//	 trimpots[1] = readADC2(TRIMPOT_1_CHANNEL);
-//	 sprintf(s,"Trimpots : %lu %lu\r\n",trimpots[0],trimpots[1]);
-//	 HAL_UART_Transmit(&huart4_data, (uint8_t *)s,strlen(s) , 100);
-//	 HAL_Delay(100);
-    /* USER CODE END WHILE */
-
-    /* USER CODE BEGIN 3 */
+	  application.run();
   }
   /* USER CODE END 3 */
 }
@@ -558,15 +513,15 @@ static void MX_USART1_UART_Init(void)
   /* USER CODE BEGIN USART1_Init 1 */
 
   /* USER CODE END USART1_Init 1 */
-  huart1.Instance = USART1;
-  huart1.Init.BaudRate = 115200;
-  huart1.Init.WordLength = UART_WORDLENGTH_8B;
-  huart1.Init.StopBits = UART_STOPBITS_1;
-  huart1.Init.Parity = UART_PARITY_NONE;
-  huart1.Init.Mode = UART_MODE_TX_RX;
-  huart1.Init.HwFlowCtl = UART_HWCONTROL_NONE;
-  huart1.Init.OverSampling = UART_OVERSAMPLING_16;
-  if (HAL_HalfDuplex_Init(&huart1) != HAL_OK)
+  huart1_motor.Instance = USART1;
+  huart1_motor.Init.BaudRate = 115200;
+  huart1_motor.Init.WordLength = UART_WORDLENGTH_8B;
+  huart1_motor.Init.StopBits = UART_STOPBITS_1;
+  huart1_motor.Init.Parity = UART_PARITY_NONE;
+  huart1_motor.Init.Mode = UART_MODE_TX_RX;
+  huart1_motor.Init.HwFlowCtl = UART_HWCONTROL_NONE;
+  huart1_motor.Init.OverSampling = UART_OVERSAMPLING_16;
+  if (HAL_HalfDuplex_Init(&huart1_motor) != HAL_OK)
   {
     Error_Handler();
   }

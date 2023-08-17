@@ -12,5 +12,6 @@
 ../Software/Middleware/display.cpp:194:6:void Display_Enemy_Sensors_Votes(int8_t*)	56	static
 ../Software/Middleware/display.cpp:221:6:void Display_N_Values_Screen(uint8_t*, uint8_t)	120	static
 ../Software/Middleware/display.cpp:234:6:void Display_Line_Position_Screen(LinePosition, uint8_t, uint8_t, char*)	88	static
-../Software/Middleware/display.cpp:267:6:void Display_Error()	8	static
-../Software/Middleware/display.cpp:272:10:uint16_t Display_Get_Bottom_YPosition(FontDef*)	16	static
+../Software/Middleware/display.cpp:265:6:void Display_Motor_Test_Screen(char*, int8_t, int8_t, int64_t, char*)	80	static
+../Software/Middleware/display.cpp:285:6:void Display_Error()	8	static
+../Software/Middleware/display.cpp:290:10:uint16_t Display_Get_Bottom_YPosition(FontDef*)	16	static

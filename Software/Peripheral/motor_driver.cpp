@@ -46,9 +46,7 @@ void Motor::changePower(int8_t leftPower, int8_t rightPower)
 		motor_input_left_right[1] = power_to_motor_input(rightPower, true);
 
 		//Transmit Three Times
-		while(HAL_UART_Transmit(&h_uart, motor_input_left_right, 2, 100) != HAL_OK);
-		while(HAL_UART_Transmit(&h_uart, motor_input_left_right, 2, 100) != HAL_OK);
-		while(HAL_UART_Transmit(&h_uart, motor_input_left_right, 2, 100) != HAL_OK);
+		HAL_UART_Transmit(&h_uart, motor_input_left_right, 2, 400) != HAL_OK;
 	}
 }
 

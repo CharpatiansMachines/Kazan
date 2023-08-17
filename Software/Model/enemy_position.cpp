@@ -15,7 +15,7 @@ EnemyPosition::EnemyPosition() : direction(0), proximity(PROXIMITY_NO) {}
 EnemyPosition::EnemyPosition(int8_t dir, int8_t prox) : direction(dir), proximity(prox) {}
 
 EnemyPosition::EnemyPosition(uint8_t enemyPositionId) {
-	if(enemyPositionId >= NOT_KNOWN_POSITION) {
+	if(enemyPositionId >= NOT_KNOWN_POSITION_ID) {
 	        proximity = PROXIMITY_NO;
 	        return;
 	}
@@ -28,9 +28,17 @@ EnemyPosition::EnemyPosition(uint8_t enemyPositionId) {
 	}
 }
 
+bool EnemyPosition::operator==(const EnemyPosition& other) const {
+    return this->toID() == other.toID();
+}
+
+bool EnemyPosition::operator!=(const EnemyPosition& other) const {
+    return !(*this == other);  // Or alternatively, return this->toID() != other.toID();
+}
+
 uint8_t EnemyPosition::toID() const {
     if(proximity == PROXIMITY_NO)
-        return NOT_KNOWN_POSITION;
+        return NOT_KNOWN_POSITION_ID;
     uint8_t newDirection = direction;
     if(proximity == 2){
         if(direction > 6){
@@ -50,6 +58,12 @@ uint8_t EnemyPosition::getCenterDirection() {
 uint8_t EnemyPosition::getDistanceFromCenterDirection() {
     int8_t center = getCenterDirection();
     return std::abs(direction - center);
+}
+bool EnemyPosition::isNotKnown(){
+	return proximity >= PROXIMITY_NO;
+}
+bool EnemyPosition::isntNotKnown(){
+	return !isNotKnown();
 }
 
 

@@ -27,9 +27,9 @@ public:
 	EnemyDetection(const EnemyDetectionConfig config[NUMBER_OF_SENSORS]);
 
 
-    void init();
+    void config();
     uint32_t readSensors();
-    uint8_t readAndTakeSensorsVotes(int8_t sensors_votes[EnemyPosition::POSITIONED_NO]);
+    uint8_t readAndTakeSensorsVotes(int8_t sensors_votes[EnemyPosition::KNOWN_POSITIONS_NO]);
     EnemyPosition getMostVotedPosition();
 
 private:

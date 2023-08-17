@@ -31,6 +31,9 @@ public:
 
     LinePositionType getLinePosition() const;
 
+    bool operator==(const LinePosition& other) const;
+    bool operator!=(const LinePosition& other) const;
+
     bool isFrontLeft() const;
     bool isFront() const;
     bool isFrontRight() const;
@@ -41,6 +44,7 @@ public:
     bool isRight() const;
     bool isNone() const;
     bool isNotNone() const;
+
 
 private:
     LinePositionType linePosition;

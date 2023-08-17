@@ -21,7 +21,7 @@ Application::Application()
           { &hadc2, TRIMPOT_0_CHANNEL },  // trimpot0
           { &hadc2, TRIMPOT_1_CHANNEL }   // trimpot1
       }),
-      sensorsHub(SensorsHubConfig{
+      stateControl(SensorsHubConfig{
           { // Line Detection Config
               &hadc1,
               {
@@ -50,7 +50,8 @@ Application::Application()
           }
           /// Initialize other sensor configs here...
       }),
-      communication(USART2),     // communication driver
+	  motor(SABERTOOTH_UART),
+      communication(DATA_UART),     // communication driver
       screen(Hardware_Test)      //initial screen
 {
 }
@@ -59,6 +60,7 @@ void Application::run()
 {
 	userInputs.configAll();
 	communication.config();
+
 	Display_Init();
 
 
@@ -88,7 +90,7 @@ void Application::run()
 
 				if(userInputs.isSelectRequest())
 				{
-					HardwareTestApp hardwareTestApp = HardwareTestApp(userInputs,sensorsHub, communication);
+					HardwareTestApp hardwareTestApp = HardwareTestApp(userInputs,stateControl,motor, communication);
 					hardwareTestApp.run();
 
 				}

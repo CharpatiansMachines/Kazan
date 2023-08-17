@@ -1,0 +1,10 @@
+D:/Proiecte/STMCUBE/Kazan/Software/Peripheral/timer.h:17:17:uint32_t Timer_Get_Now_Time()	8	static
+../Software/Middleware/state_control.cpp:12:1:StateControl::StateControl(const SensorsHubConfig&)	16	static
+../Software/Middleware/state_control.cpp:16:6:void StateControl::configAll()	16	static
+../Software/Middleware/state_control.cpp:23:6:void StateControl::recalculateStates()	24	static
+../Software/Middleware/state_control.cpp:29:15:EnemyPosition StateControl::recalculateEnemyPosition()	48	static
+../Software/Middleware/state_control.cpp:34:6:void StateControl::setEnemyPosition(EnemyPosition)	16	static
+../Software/Middleware/state_control.cpp:41:6:void StateControl::setLinePosition(LinePosition)	16	static
+../Software/Middleware/state_control.cpp:52:7:State StateControl::getState() const	16	static
+../Software/Middleware/state_control.cpp:54:1:void __static_initialization_and_destruction_0(int, int)	16	static
+../Software/Middleware/state_control.cpp:54:1:cpp)	8	static

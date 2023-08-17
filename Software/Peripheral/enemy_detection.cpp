@@ -16,7 +16,7 @@ EnemyDetection::EnemyDetection(const EnemyDetectionConfig config[NUMBER_OF_SENSO
 }
 
 // Initialize the sensors
-void EnemyDetection::init() {
+void EnemyDetection::config() {
 	// Here, you can initialize your GPIOs or any startup configuration for the sensors.
 	for (uint8_t i = 0; i < NUMBER_OF_SENSORS; i++) {
 		// Example: Initialize each sensor using GPIO and pin information
@@ -37,9 +37,9 @@ uint32_t EnemyDetection::readSensors() {
 }
 
 // Evaluate the votes of each sensor
-uint8_t EnemyDetection::readAndTakeSensorsVotes(int8_t sensors_votes[EnemyPosition::POSITIONED_NO]) {
+uint8_t EnemyDetection::readAndTakeSensorsVotes(int8_t sensors_votes[EnemyPosition::KNOWN_POSITIONS_NO]) {
 
-	for(uint8_t i = 0; i <= EnemyPosition::POSITIONED_NO;i++){
+	for(uint8_t i = 0; i <= EnemyPosition::KNOWN_POSITIONS_NO;i++){
 		sensors_votes[i] = 0;
 	}
 	uint32_t sensorsOutput = readSensors();
@@ -185,7 +185,7 @@ uint8_t EnemyDetection::readAndTakeSensorsVotes(int8_t sensors_votes[EnemyPositi
 
 // Get the position with the most votes
 EnemyPosition EnemyDetection::getMostVotedPosition() {
-	int8_t sensors_votes[EnemyPosition::POSITIONED_NO];
+	int8_t sensors_votes[EnemyPosition::KNOWN_POSITIONS_NO];
 
 	uint8_t votingSensorsNo = readAndTakeSensorsVotes(sensors_votes);
 	if(votingSensorsNo == 0){
@@ -196,7 +196,7 @@ EnemyPosition EnemyDetection::getMostVotedPosition() {
     uint8_t maxPosition = 0;            // Assume the first position has the most votes
 
     // Iterate through the array to find the position with the most votes
-    for(uint8_t i = 1; i < EnemyPosition::POSITIONED_NO; i++) {
+    for(uint8_t i = 1; i < EnemyPosition::KNOWN_POSITIONS_NO; i++) {
         if(sensors_votes[i] > maxVotes) {
             maxVotes = sensors_votes[i];
             maxPosition = i;

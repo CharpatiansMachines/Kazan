@@ -35,6 +35,11 @@ void UserInputs::readInputs(){
 	trimpot1.read();
 }
 
+bool UserInputs::isAnyKey(){
+	return backButton.getLastValue() != NO_CLICK ||
+			nextButton.getLastValue() != NO_CLICK ||
+			startButton.getLastValue() != NO_CLICK;
+}
 bool UserInputs::isReturnBackRequest(){
 	ButtonOutput backOutput = backButton.getLastValue();
 	return backOutput == HOLD_CLICK;

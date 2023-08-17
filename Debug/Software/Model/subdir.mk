@@ -6,15 +6,18 @@
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
 ../Software/Model/enemy_position.cpp \
-../Software/Model/line_position.cpp 
+../Software/Model/line_position.cpp \
+../Software/Model/state.cpp 
 
 OBJS += \
 ./Software/Model/enemy_position.o \
-./Software/Model/line_position.o 
+./Software/Model/line_position.o \
+./Software/Model/state.o 
 
 CPP_DEPS += \
 ./Software/Model/enemy_position.d \
-./Software/Model/line_position.d 
+./Software/Model/line_position.d \
+./Software/Model/state.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
@@ -24,7 +27,7 @@ Software/Model/%.o Software/Model/%.su Software/Model/%.cyclo: ../Software/Model
 clean: clean-Software-2f-Model
 
 clean-Software-2f-Model:
-	-$(RM) ./Software/Model/enemy_position.cyclo ./Software/Model/enemy_position.d ./Software/Model/enemy_position.o ./Software/Model/enemy_position.su ./Software/Model/line_position.cyclo ./Software/Model/line_position.d ./Software/Model/line_position.o ./Software/Model/line_position.su
+	-$(RM) ./Software/Model/enemy_position.cyclo ./Software/Model/enemy_position.d ./Software/Model/enemy_position.o ./Software/Model/enemy_position.su ./Software/Model/line_position.cyclo ./Software/Model/line_position.d ./Software/Model/line_position.o ./Software/Model/line_position.su ./Software/Model/state.cyclo ./Software/Model/state.d ./Software/Model/state.o ./Software/Model/state.su
 
 .PHONY: clean-Software-2f-Model
 

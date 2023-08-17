@@ -7,19 +7,19 @@
 CPP_SRCS += \
 ../Software/Middleware/communication_driver.cpp \
 ../Software/Middleware/display.cpp \
-../Software/Middleware/sensors_hub.cpp \
+../Software/Middleware/state_control.cpp \
 ../Software/Middleware/user_inputs.cpp 
 
 OBJS += \
 ./Software/Middleware/communication_driver.o \
 ./Software/Middleware/display.o \
-./Software/Middleware/sensors_hub.o \
+./Software/Middleware/state_control.o \
 ./Software/Middleware/user_inputs.o 
 
 CPP_DEPS += \
 ./Software/Middleware/communication_driver.d \
 ./Software/Middleware/display.d \
-./Software/Middleware/sensors_hub.d \
+./Software/Middleware/state_control.d \
 ./Software/Middleware/user_inputs.d 
 
 
@@ -30,7 +30,7 @@ Software/Middleware/%.o Software/Middleware/%.su Software/Middleware/%.cyclo: ..
 clean: clean-Software-2f-Middleware
 
 clean-Software-2f-Middleware:
-	-$(RM) ./Software/Middleware/communication_driver.cyclo ./Software/Middleware/communication_driver.d ./Software/Middleware/communication_driver.o ./Software/Middleware/communication_driver.su ./Software/Middleware/display.cyclo ./Software/Middleware/display.d ./Software/Middleware/display.o ./Software/Middleware/display.su ./Software/Middleware/sensors_hub.cyclo ./Software/Middleware/sensors_hub.d ./Software/Middleware/sensors_hub.o ./Software/Middleware/sensors_hub.su ./Software/Middleware/user_inputs.cyclo ./Software/Middleware/user_inputs.d ./Software/Middleware/user_inputs.o ./Software/Middleware/user_inputs.su
+	-$(RM) ./Software/Middleware/communication_driver.cyclo ./Software/Middleware/communication_driver.d ./Software/Middleware/communication_driver.o ./Software/Middleware/communication_driver.su ./Software/Middleware/display.cyclo ./Software/Middleware/display.d ./Software/Middleware/display.o ./Software/Middleware/display.su ./Software/Middleware/state_control.cyclo ./Software/Middleware/state_control.d ./Software/Middleware/state_control.o ./Software/Middleware/state_control.su ./Software/Middleware/user_inputs.cyclo ./Software/Middleware/user_inputs.d ./Software/Middleware/user_inputs.o ./Software/Middleware/user_inputs.su
 
 .PHONY: clean-Software-2f-Middleware
 

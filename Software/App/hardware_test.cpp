@@ -11,6 +11,7 @@
 #include "stm32f4xx_hal_gpio.h"
 
 #include "display.h"
+#include "timer.h"
 
 void HardwareTestApp::run()
 {
@@ -53,6 +54,9 @@ void HardwareTestApp::run()
 				break;
 			case MOTOR_TEST:
 				Display_Title_Screen((char *)"Motor Test");
+				if(userInputs.isSelectRequest()){
+					runMotorTest();
+				}
 				break;
 			default:
 				Display_Error();
@@ -100,7 +104,7 @@ void HardwareTestApp::runEnemySensorsTest(){
 
 				case ENEMY_POSITION_VOTING_SCREEN:
 				{
-					int8_t votes[EnemyPosition::POSITIONED_NO];
+					int8_t votes[EnemyPosition::KNOWN_POSITIONS_NO];
 					enemyDetection.readAndTakeSensorsVotes(votes);
 					Display_Enemy_Sensors_Votes(votes);
 
@@ -193,6 +197,65 @@ void HardwareTestApp::runLineDetectionTest()
 	}
 }
 
+void HardwareTestApp::runMotorTest()
+{
+	const uint32_t MIN_TIMER = 500;
+	const uint32_t MAX_TIMER = 10000;
+	uint32_t timer = MIN_TIMER * 2;           ///Set Default Timer
+	uint32_t clock;
+	Motor_Test_Screen_Type motorScreen = MOTOR_SET_POWER_SCREEN;
+	///LOOP
+	while(true)
+	{
+		userInputs.readInputs();
+		///user input management
+		if(userInputs.isReturnBackRequest()){
+			motor.stop();
+			return;
+		}
+		if(userInputs.isBackRequest()){
+			motorScreen--;
+		}
+		if(userInputs.isNextRequest()){
+			motorScreen++;
+		}
+		int8_t leftPower = userInputs.getData0(Motor::MAX_REVERSE_POWER, Motor::MAX_POWER);
+		int8_t rightPower = userInputs.getData1(Motor::MAX_REVERSE_POWER,Motor::MAX_POWER);
+
+	    switch(motorScreen) {
+	        case MOTOR_SET_POWER_SCREEN:
+	        	Display_Motor_Test_Screen((char *)"Start Motor", leftPower, rightPower, timer, (char *)"Hstart to start");
+	        	if(userInputs.isSetValueRequest()){
+	        		motorScreen = MOTOR_RUN_SCREEN;
+	        		clock = Timer_Set_Clock(timer);
+	        	}
+	            break;
+	        case MOTOR_RUN_SCREEN:
+	        {
+	        	int64_t remainTime = Timer_Get_Remain_Time(clock);
+	        	if(!userInputs.isAnyKey() && remainTime > 0){
+	        		Display_Motor_Test_Screen((char *)"Motor On", leftPower, rightPower, remainTime,(char *) "Any key to stop");
+	        		motor.changePower(leftPower, rightPower);
+	        	}else{
+	        		motor.stop();
+	        		motorScreen = MOTOR_SET_POWER_SCREEN;
+	        	}
+	        	break;
+	        }
+	        case MOTOR_SET_TIMER_SCREEN:
+	        {
+	        	uint32_t setTime = userInputs.getData0(MIN_TIMER,MAX_TIMER);
+	        	Display_Motor_Test_Screen((char *)"Set Timer", leftPower, rightPower, setTime, (char *)"Hstart to set");
+	        	if(userInputs.isSetValueRequest()){
+	        		timer = setTime;
+	        		motorScreen = MOTOR_SET_POWER_SCREEN;
+	        	}
+	        	break;
+	        }
+	    }
+	}
+}
+
 ///                       Implementation of Types Operations
 ///
 ///
@@ -269,6 +332,40 @@ Enemy_Detection_Screen_Type operator--(Enemy_Detection_Screen_Type& screen, int)
     }
 
     return current; // Return old value for postfix decrement
+}
+
+// Increment (++) operator
+Motor_Test_Screen_Type operator++(Motor_Test_Screen_Type& screen, int) {
+    Motor_Test_Screen_Type current = screen;
+    switch(screen) {
+        case MOTOR_SET_POWER_SCREEN:
+            screen = MOTOR_SET_TIMER_SCREEN;
+            break;
+        case MOTOR_RUN_SCREEN:
+            screen = MOTOR_SET_POWER_SCREEN;
+            break;
+        case MOTOR_SET_TIMER_SCREEN:
+            screen = MOTOR_SET_POWER_SCREEN;  // loop back to the start
+            break;
+    }
+    return current; // Return old value for postfix increment
+}
+
+// Decrement (--) operator
+Motor_Test_Screen_Type operator--(Motor_Test_Screen_Type& screen, int) {
+    Motor_Test_Screen_Type current = screen;
+    switch(screen) {
+        case MOTOR_SET_POWER_SCREEN:
+            screen = MOTOR_SET_TIMER_SCREEN;
+            break;
+        case MOTOR_RUN_SCREEN:
+            screen = MOTOR_SET_POWER_SCREEN;
+            break;
+        case MOTOR_SET_TIMER_SCREEN:
+            screen = MOTOR_SET_POWER_SCREEN;  // loop back to the start
+            break;
+    }
+    return current; //
 }
 
 

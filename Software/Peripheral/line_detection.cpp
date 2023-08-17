@@ -12,7 +12,7 @@ LineDetection::LineDetection(const LineDetectionConfig &config)
     : configData(config) {
 }
 
-void LineDetection::init() {
+void LineDetection::config() {
     // Initialization code as in Line_Sensors_Init(void)
 }
 void LineDetection::resetFiltersToDefault(){

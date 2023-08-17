@@ -1,6 +1,6 @@
 ../Software/Peripheral/motor_driver.cpp:12:1:Motor::Motor(USART_TypeDef*)	1
 ../Software/Peripheral/motor_driver.cpp:19:6:void Motor::init()	1
 ../Software/Peripheral/motor_driver.cpp:31:6:void Motor::stop()	1
-../Software/Peripheral/motor_driver.cpp:34:6:void Motor::changePower(int8_t, int8_t)	6
-../Software/Peripheral/motor_driver.cpp:56:9:uint8_t Motor::power_to_motor_input(int8_t, bool)	3
-../Software/Peripheral/motor_driver.cpp:73:9:uint8_t Motor::boundedPowerValue(int8_t)	2
+../Software/Peripheral/motor_driver.cpp:34:6:void Motor::changePower(int8_t, int8_t)	3
+../Software/Peripheral/motor_driver.cpp:54:9:uint8_t Motor::power_to_motor_input(int8_t, bool)	3
+../Software/Peripheral/motor_driver.cpp:71:9:uint8_t Motor::boundedPowerValue(int8_t)	3

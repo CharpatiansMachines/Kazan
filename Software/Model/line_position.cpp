@@ -17,6 +17,14 @@ LinePosition::LinePositionType LinePosition::getLinePosition() const {
     return linePosition;
 }
 
+bool LinePosition::operator==(const LinePosition& other) const {
+    return this->linePosition == other.linePosition;
+}
+
+bool LinePosition::operator!=(const LinePosition& other) const {
+    return !(*this == other);
+}
+
 bool LinePosition::isFrontLeft() const {
     return linePosition == LinePositionType::FrontLeft;
 }

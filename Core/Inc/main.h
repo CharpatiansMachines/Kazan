@@ -112,6 +112,9 @@ void Error_Handler(void);
 
 /* USER CODE BEGIN Private defines */
 
+#define SABERTOOTH_UART USART1
+#define DATA_UART UART4
+
 ///ADC 1
 
 #define LINE_SENSOR_2_1_CHANNEL ADC_CHANNEL_1

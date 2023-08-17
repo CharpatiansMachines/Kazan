@@ -191,7 +191,7 @@ void Draw_Circular_Arc_Text( char *text, FontDef* font, uint16_t height)
 //	strcpy(s,"");
 //}
 
-void Display_Enemy_Sensors_Votes(int8_t votes[EnemyPosition::POSITIONED_NO]){
+void Display_Enemy_Sensors_Votes(int8_t votes[EnemyPosition::KNOWN_POSITIONS_NO]){
 	FontDef font = Font_6x8;
 	Display_Clear();
 	float hDistance = SSD1306_HEIGHT;
@@ -202,7 +202,7 @@ void Display_Enemy_Sensors_Votes(int8_t votes[EnemyPosition::POSITIONED_NO]){
 
 
 
-	for(uint8_t id = 0; id <EnemyPosition::POSITIONED_NO; id++)
+	for(uint8_t id = 0; id <EnemyPosition::KNOWN_POSITIONS_NO; id++)
 	{
 		EnemyPosition pos(id);
 		uint8_t x = pos.direction * wDistance;
@@ -260,6 +260,24 @@ void Display_Line_Position_Screen(LinePosition lineOutput,uint8_t whiteFilter, u
 	Draw_3_Points_Line(values3, X, O, Display_Get_Bottom_YPosition(&Font_7x10));
 
 
+	ssd1306_UpdateScreen();
+}
+void Display_Motor_Test_Screen(char * titleScreen, int8_t leftPower, int8_t rightPower,int64_t time,char * actionDescriptionText){
+	char s[50];
+	FontDef font = Font_7x10;
+	Display_Clear();
+	Draw_Center_Text(titleScreen, &Font_11x18, 0);
+
+	sprintf(s,"%d  %d",leftPower,rightPower);
+	Draw_Center_Text(s, &font, SSD1306.CurrentY + Font_7x10.FontHeight /2);
+
+//	sprintf(s,"Right Power = %d",rightPower);
+//	Draw_Center_Text(s, &font, SSD1306.CurrentY);
+
+	sprintf(s,"Timer = %d",time);
+	Draw_Center_Text(s, &font, SSD1306.CurrentY + Font_7x10.FontHeight / 2);
+
+	Draw_Center_Text(actionDescriptionText, &font, Display_Get_Bottom_YPosition(&font));
 	ssd1306_UpdateScreen();
 }
 

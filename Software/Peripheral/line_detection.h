@@ -29,7 +29,7 @@ public:
 
 	LineDetection(const LineDetectionConfig &config);
 
-    void init();
+    void config();
     void readAll(uint8_t values[LINE_SENSORS_NUMBER]);
     void resetFiltersToDefault();
     LinePosition readAndConvertToLinePosition();

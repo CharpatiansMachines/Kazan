@@ -13,6 +13,7 @@
 
 #include "enemy_detection.h"
 #include "line_detection.h"
+#include "state.h"
 
 struct SensorsHubConfig {
     LineDetection::LineDetectionConfig lineDetectionConfig;
@@ -20,14 +21,23 @@ struct SensorsHubConfig {
     // Add other sensor configs here...
 };
 
-class SensorsHub{
+class StateControl{
 public:
 	LineDetection lineDetection;
 	EnemyDetection enemyDetection;
 
-	SensorsHub(const SensorsHubConfig& config);
-private:
+	StateControl(const SensorsHubConfig& config);
+	void configAll();
+	void recalculateStates();
 
+
+	State getState()const;
+
+private:
+	State state;
+	EnemyPosition readAndGetMostVotedEnemyPosition();
+	void setEnemyPosition(EnemyPosition enemyPosition);
+	void setLinePosition(LinePosition linePosition);
 
 };
 

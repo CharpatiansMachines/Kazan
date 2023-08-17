@@ -8,12 +8,13 @@
 #ifndef APPLICATION_H_
 #define APPLICATION_H_
 
+#include <state_control.h>
 #include "stm32f4xx.h"
 #include "stm32f4xx_hal_gpio.h"
 
 #include "communication_driver.h"
-#include "sensors_hub.h"
 #include "user_inputs.h"
+#include "motor_driver.h"
 
 enum Application_Screen{
 	Information_Screen = 0x00,
@@ -32,7 +33,8 @@ class Application {
 	void run();
 private:
 	UserInputs userInputs;
-	SensorsHub sensorsHub;
+	StateControl stateControl;
+	Motor motor;
 	Communication_Driver communication;
 	Application_Screen screen;
 

@@ -1,5 +1,5 @@
-../Software/Peripheral/trimpot_driver.cpp:14:1:Trimpot::Trimpot(ADC_HandleTypeDef*, uint32_t)	24	static
-../Software/Peripheral/trimpot_driver.cpp:22:6:void Trimpot::config()	16	static
-../Software/Peripheral/trimpot_driver.cpp:25:10:uint16_t Trimpot::read()	32	static
-../Software/Peripheral/trimpot_driver.cpp:49:10:uint16_t Trimpot::getData() const	16	static
-../Software/Peripheral/trimpot_driver.cpp:53:7:float Trimpot::getData(float, float) const	32	static
+../Software/Peripheral/trimpot_driver.cpp:10:1:Trimpot::Trimpot(ADC_HandleTypeDef*, uint32_t)	24	static
+../Software/Peripheral/trimpot_driver.cpp:18:6:void Trimpot::config()	16	static
+../Software/Peripheral/trimpot_driver.cpp:21:10:uint16_t Trimpot::read()	32	static
+../Software/Peripheral/trimpot_driver.cpp:45:10:uint16_t Trimpot::getData() const	16	static
+../Software/Peripheral/trimpot_driver.cpp:49:7:float Trimpot::getData(float, float) const	32	static
