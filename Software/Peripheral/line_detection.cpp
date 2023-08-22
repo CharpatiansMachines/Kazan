@@ -58,23 +58,23 @@ LinePosition LineDetection::readAndConvertToLinePosition() {
 
     // Determine robot's position based on the sensors' reading
     if (isWhite[0] && isWhite[1]) {
-        output.setLinePosition(LinePosition::LinePositionType::Front);
+        output.setLinePosition(LinePositionType::Front);
     } else if (isWhite[2] && isWhite[3]) {
-        output.setLinePosition(LinePosition::LinePositionType::Back);
+        output.setLinePosition(LinePositionType::Back);
     } else if (isWhite[1] && isWhite[2]) {
-        output.setLinePosition(LinePosition::LinePositionType::Left);
+        output.setLinePosition(LinePositionType::Left);
     } else if (isWhite[0] && isWhite[3]) {
-        output.setLinePosition(LinePosition::LinePositionType::Right);
+        output.setLinePosition(LinePositionType::Right);
     } else if (isWhite[0]) {
-        output.setLinePosition(LinePosition::LinePositionType::FrontLeft);
+        output.setLinePosition(LinePositionType::FrontLeft);
     } else if (isWhite[1]) {
-        output.setLinePosition(LinePosition::LinePositionType::FrontRight);
+        output.setLinePosition(LinePositionType::FrontRight);
     } else if (isWhite[2]) {
-        output.setLinePosition(LinePosition::LinePositionType::BackLeft);
+        output.setLinePosition(LinePositionType::BackLeft);
     } else if (isWhite[3]) {
-        output.setLinePosition(LinePosition::LinePositionType::BackRight);
+        output.setLinePosition(LinePositionType::BackRight);
     } else {
-        output.setLinePosition(LinePosition::LinePositionType::None);
+        output.setLinePosition(LinePositionType::None);
     }
 
     return output;

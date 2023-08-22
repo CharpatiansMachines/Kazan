@@ -1,6 +1,6 @@
 ../Software/Model/line_position.cpp:10:1:LinePosition::LinePosition()	16	static
-../Software/Model/line_position.cpp:12:6:void LinePosition::setLinePosition(LinePosition::LinePositionType)	16	static
-../Software/Model/line_position.cpp:16:32:LinePosition::LinePositionType LinePosition::getLinePosition() const	16	static
+../Software/Model/line_position.cpp:12:6:void LinePosition::setLinePosition(LinePositionType)	16	static
+../Software/Model/line_position.cpp:16:18:LinePositionType LinePosition::getLinePosition() const	16	static
 ../Software/Model/line_position.cpp:20:6:bool LinePosition::operator==(const LinePosition&) const	16	static
 ../Software/Model/line_position.cpp:24:6:bool LinePosition::operator!=(const LinePosition&) const	16	static
 ../Software/Model/line_position.cpp:28:6:bool LinePosition::isFrontLeft() const	16	static

@@ -27,6 +27,11 @@ inline int64_t Timer_Get_Remain_Time(uint32_t clock) {
 	time = time - Timer_Get_Now_Time();
 	return time;
 }
+inline int64_t Timer_Get_Time_Passed_From(uint32_t clock) {
+	int64_t time = clock;
+	time = Timer_Get_Now_Time() - time;
+	return time;
+}
 
 inline bool Timer_Has_Passed(uint32_t clock){
 	return Timer_Get_Remain_Time(clock) <= 0;

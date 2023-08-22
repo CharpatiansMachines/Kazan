@@ -13,7 +13,7 @@ void LinePosition::setLinePosition(LinePositionType position) {
     linePosition = position;
 }
 
-LinePosition::LinePositionType LinePosition::getLinePosition() const {
+LinePositionType LinePosition::getLinePosition() const {
     return linePosition;
 }
 

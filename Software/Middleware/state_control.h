@@ -28,9 +28,7 @@ public:
 
 	StateControl(const SensorsHubConfig& config);
 	void configAll();
-	void recalculateStates();
-
-
+	State recalculateStates();
 	State getState()const;
 
 private:
@@ -38,6 +36,8 @@ private:
 	EnemyPosition readAndGetMostVotedEnemyPosition();
 	void setEnemyPosition(EnemyPosition enemyPosition);
 	void setLinePosition(LinePosition linePosition);
+	// Time duration after which, if no enemy is detected, the enemy position is considered unknown or expired.
+	static const uint32_t ENEMY_POSITION_EXPIRY_TIME = 1500;
 
 };
 

@@ -33,7 +33,12 @@ public:
     uint8_t getCenterDirection();
     uint8_t getDistanceFromCenterDirection();
     bool isNotKnown();
-    bool isntNotKnown();
+    bool isKnown();
+
+    static EnemyPosition notKnownEnemyPosition();
+    static EnemyPosition frontEnemyPosition();
+    static EnemyPosition frontNearLeftEnemyPosition();
+    static EnemyPosition frontNearRightEnemyPosition();
 
 private:
     // Member variables

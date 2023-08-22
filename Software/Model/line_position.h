@@ -8,21 +8,21 @@
 #ifndef MODEL_LINE_POSITION_H_
 #define MODEL_LINE_POSITION_H_
 
-
+// Enum defining each possible line position
+enum class LinePositionType {
+	FrontLeft,
+	Front,
+	FrontRight,
+	BackLeft,
+	Back,
+	BackRight,
+	Left,
+	Right,
+	None
+};
 class LinePosition {
 public:
-    // Enum defining each possible line position
-	enum class LinePositionType {
-	    FrontLeft,
-	    Front,
-	    FrontRight,
-	    BackLeft,
-	    Back,
-	    BackRight,
-	    Left,
-	    Right,
-	    None
-	};
+
 
     LinePosition();
 

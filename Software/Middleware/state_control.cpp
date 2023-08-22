@@ -11,33 +11,44 @@
 
 StateControl:: StateControl(const SensorsHubConfig& config)
 		: lineDetection(config.lineDetectionConfig),
-		  enemyDetection(config.enemyDetectionConfig){}
+		  enemyDetection(config.enemyDetectionConfig){
+
+}
 
 void StateControl::configAll()
 {
 	lineDetection.config();
 	enemyDetection.config();
-
+	setEnemyPosition(EnemyPosition::frontEnemyPosition());
+	setLinePosition(LinePosition());
 }
 
-void StateControl::recalculateStates()
+State StateControl::recalculateStates()
 {
+	///Manage Line Position
 	LinePosition linePosition = lineDetection.readAndConvertToLinePosition();
 	setLinePosition(linePosition);
-	EnemyPosition enemyPosition = readAndGetMostVotedEnemyPosition()ș
-	if(enemyPosition.isntNotKnown()){
+
+	///Manage Enemy Position
+	EnemyPosition enemyPosition = readAndGetMostVotedEnemyPosition();
+
+	if(enemyPosition.isKnown()){
 		setEnemyPosition(enemyPosition);
 	}
 	else{
-		///TODO
-		if()
+		uint32_t lastModificationClock = state.enemyPositionClock;
+		uint32_t timePassed = Timer_Get_Time_Passed_From(lastModificationClock);
+		if(timePassed > ENEMY_POSITION_EXPIRY_TIME){
+			setEnemyPosition(enemyPosition);
+		}
 	}
+	return state;
 }
 
 EnemyPosition StateControl::readAndGetMostVotedEnemyPosition(){
 	///Reading sensor Votes
 	int8_t sensors_votes[EnemyPosition::KNOWN_POSITIONS_NO];
-	uint8_t votingSensorsNo = readAndTakeSensorsVotes(sensors_votes);
+	uint8_t votingSensorsNo = enemyDetection.readAndTakeSensorsVotes(sensors_votes);
 
 	///If no one vote return
 	if(votingSensorsNo == 0){

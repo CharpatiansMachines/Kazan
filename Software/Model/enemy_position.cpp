@@ -62,8 +62,22 @@ uint8_t EnemyPosition::getDistanceFromCenterDirection() {
 bool EnemyPosition::isNotKnown(){
 	return proximity >= PROXIMITY_NO;
 }
-bool EnemyPosition::isntNotKnown(){
+bool EnemyPosition::isKnown(){
 	return !isNotKnown();
+}
+
+
+EnemyPosition EnemyPosition::notKnownEnemyPosition(){
+	return EnemyPosition();
+}
+EnemyPosition EnemyPosition::frontEnemyPosition(){
+	return EnemyPosition(19);
+}
+EnemyPosition EnemyPosition::frontNearLeftEnemyPosition(){
+	return EnemyPosition(28);
+}
+EnemyPosition EnemyPosition::frontNearRightEnemyPosition(){
+	return EnemyPosition(29);
 }
 
 

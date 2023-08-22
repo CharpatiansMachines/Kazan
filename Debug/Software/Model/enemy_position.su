@@ -6,3 +6,9 @@
 ../Software/Model/enemy_position.cpp:39:9:uint8_t EnemyPosition::toID() const	24	static
 ../Software/Model/enemy_position.cpp:53:9:uint8_t EnemyPosition::getCenterDirection()	16	static
 ../Software/Model/enemy_position.cpp:58:9:uint8_t EnemyPosition::getDistanceFromCenterDirection()	24	static
+../Software/Model/enemy_position.cpp:62:6:bool EnemyPosition::isNotKnown()	16	static
+../Software/Model/enemy_position.cpp:65:6:bool EnemyPosition::isKnown()	16	static
+../Software/Model/enemy_position.cpp:70:15:static EnemyPosition EnemyPosition::notKnownEnemyPosition()	16	static
+../Software/Model/enemy_position.cpp:73:15:static EnemyPosition EnemyPosition::frontEnemyPosition()	16	static
+../Software/Model/enemy_position.cpp:76:15:static EnemyPosition EnemyPosition::frontNearLeftEnemyPosition()	16	static
+../Software/Model/enemy_position.cpp:79:15:static EnemyPosition EnemyPosition::frontNearRightEnemyPosition()	16	static
