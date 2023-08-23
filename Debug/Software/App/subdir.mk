@@ -6,15 +6,18 @@
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
 ../Software/App/application.cpp \
-../Software/App/hardware_test.cpp 
+../Software/App/hardware_test.cpp \
+../Software/App/initialize_parameters.cpp 
 
 OBJS += \
 ./Software/App/application.o \
-./Software/App/hardware_test.o 
+./Software/App/hardware_test.o \
+./Software/App/initialize_parameters.o 
 
 CPP_DEPS += \
 ./Software/App/application.d \
-./Software/App/hardware_test.d 
+./Software/App/hardware_test.d \
+./Software/App/initialize_parameters.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
@@ -24,7 +27,7 @@ Software/App/%.o Software/App/%.su Software/App/%.cyclo: ../Software/App/%.cpp S
 clean: clean-Software-2f-App
 
 clean-Software-2f-App:
-	-$(RM) ./Software/App/application.cyclo ./Software/App/application.d ./Software/App/application.o ./Software/App/application.su ./Software/App/hardware_test.cyclo ./Software/App/hardware_test.d ./Software/App/hardware_test.o ./Software/App/hardware_test.su
+	-$(RM) ./Software/App/application.cyclo ./Software/App/application.d ./Software/App/application.o ./Software/App/application.su ./Software/App/hardware_test.cyclo ./Software/App/hardware_test.d ./Software/App/hardware_test.o ./Software/App/hardware_test.su ./Software/App/initialize_parameters.cyclo ./Software/App/initialize_parameters.d ./Software/App/initialize_parameters.o ./Software/App/initialize_parameters.su
 
 .PHONY: clean-Software-2f-App
 

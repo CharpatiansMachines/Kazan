@@ -14,7 +14,7 @@
 
 Communication_Driver::Communication_Driver(const CommunicationDriverConfig& config)
     : GPIOx_Start_Module(config.GPIOx_Start_Module),
-      PIIN_Start_Module(config.PIIN_Start_Module)
+      PIN_Start_Module(config.PIIN_Start_Module)
 {
 	huart.Instance = config.uartx;
 	huart.Init.BaudRate = 115200;
@@ -27,6 +27,11 @@ Communication_Driver::Communication_Driver(const CommunicationDriverConfig& conf
 }
 
 HAL_StatusTypeDef Communication_Driver::config(){
+	GPIO_InitTypeDef GPIO_InitStruct = {0};
+	GPIO_InitStruct.Pin = PIN_Start_Module;
+	GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+	GPIO_InitStruct.Pull = GPIO_NOPULL;
+	HAL_GPIO_Init(GPIOx_Start_Module, &GPIO_InitStruct);
 	return HAL_HalfDuplex_Init(&huart);
 }
 
@@ -45,7 +50,7 @@ HAL_StatusTypeDef Communication_Driver::log(const char *format,...)
 
 bool Communication_Driver::readStartModule()
 {
-	return HAL_GPIO_ReadPin(GPIOx_Start_Module, PIIN_Start_Module) == GPIO_PIN_SET;
+	return HAL_GPIO_ReadPin(GPIOx_Start_Module, PIN_Start_Module) == GPIO_PIN_SET;
 }
 
 

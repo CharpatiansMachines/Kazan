@@ -11,6 +11,7 @@
 #include "main.h"
 #include "display.h"
 #include "hardware_test.h"
+#include "initialize_parameters.h"
 
 
 Application::Application()
@@ -99,10 +100,11 @@ void Application::run()
 
 				}
 				break;
-			case SoftwareTest:
-				Display_Title_Screen((char *)"Software Test");
+			case Initialize_Parameters_Screen:
+				Display_Title_Screen((char *)"Initialize Parameters");
 				if(userInputs.isSelectRequest()){
-
+					InitializeParameters initializeParameters = InitializeParameters(userInputs,stateControl,motor, communication);
+					initializeParameters.run();
 				}
 				break;
 			case Battle_Application:

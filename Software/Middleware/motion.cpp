@@ -21,9 +21,9 @@
 
 #define CIRCLE_50_RIGHT_POWER 30
 #define CIRCLE_50_LEFT_POWER 30
-
-#define CIRCLE_100_RIGHT_POWER 50
-#define CIRCLE_100_LEFT_POWER 50
+//
+//#define CIRCLE_100_RIGHT_POWER 50
+//#define CIRCLE_100_LEFT_POWER 50
 
 void Motion_Forward_High(Motor& motor) {
     motor.changePower(HIGH_LEFT_POWER, HIGH_RIGHT_POWER);
@@ -68,14 +68,14 @@ void Motion_Circle_Right_50(Motor& motor) {
 void Motion_Circle_Left_50(Motor& motor) {
     motor.changePower(CIRCLE_50_LEFT_POWER, HIGH_RIGHT_POWER);
 }
-
-void Motion_Circle_Right_100(Motor& motor) {
-    motor.changePower(HIGH_LEFT_POWER, CIRCLE_100_RIGHT_POWER);
-}
-
-void Motion_Circle_Left_100(Motor& motor) {
-    motor.changePower(CIRCLE_100_LEFT_POWER, HIGH_RIGHT_POWER);
-}
+//
+//void Motion_Circle_Right_100(Motor& motor) {
+//    motor.changePower(HIGH_LEFT_POWER, CIRCLE_100_RIGHT_POWER);
+//}
+//
+//void Motion_Circle_Left_100(Motor& motor) {
+//    motor.changePower(CIRCLE_100_LEFT_POWER, HIGH_RIGHT_POWER);
+//}
 
 
 

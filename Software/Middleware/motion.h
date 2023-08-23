@@ -48,10 +48,10 @@ void Motion_Rotate_Left_High(Motor& motor);
 void Motion_Circle_Right_50(Motor& motor);
 
 void Motion_Circle_Left_50(Motor& motor);
-
-void Motion_Circle_Right_100(Motor& motor);
-
-void Motion_Circle_Left_100(Motor& motor);
+//
+//void Motion_Circle_Right_100(Motor& motor);
+//
+//void Motion_Circle_Left_100(Motor& motor);
 
 
 

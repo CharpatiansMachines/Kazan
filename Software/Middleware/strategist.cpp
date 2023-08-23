@@ -9,9 +9,11 @@
 #include "motor_driver.h"
 
 
-Strategist::Strategist(StateControl& stateCtrl, Motor& motor)
-	:stateControl(stateCtrl),
-     tactician(motor)  // Assuming StateControl provides a getMotor() method
+Strategist::Strategist(StateControl& stateCtrl, Motor& motor, Communication_Driver& communication)
+	:communication(communication),
+	 stateControl(stateCtrl),
+     tactician(motor)
+
 {
    currentStrategy = nullptr;
 }
@@ -21,8 +23,12 @@ void Strategist::setStrategy(void (Strategist::*newStrategy)(void)) {
 }
 
 void Strategist::runCurrentSrategy() {
-    if (currentStrategy != nullptr) {
-        (this->*currentStrategy)();
-    }
+	bool start = communication.readStartModule();
+	while(start && currentStrategy != nullptr)
+	{
+		(this->*currentStrategy)();
+		start = communication.readStartModule();
+	}
+
 }
 

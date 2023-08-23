@@ -9,19 +9,20 @@
 #define MIDDLEWARE_STRATEGIST_H_
 #include "tactician.h"
 #include "state_control.h"
+#include "communication_driver.h"
 
 
 class Strategist{
 public:
-	Strategist(StateControl& stateCtrl, Motor& motor);
+	Strategist(StateControl& stateCtrl, Motor& motor, Communication_Driver& communication);
 	void setStrategy(void (Strategist::*currentStrategy)(void));
 	void runCurrentSrategy();
 
 private:
+	Communication_Driver& communication;
 	StateControl &stateControl;
 	Tactician tactician;
 	void (Strategist::*currentStrategy)(void) = nullptr;
-
 };
 
 

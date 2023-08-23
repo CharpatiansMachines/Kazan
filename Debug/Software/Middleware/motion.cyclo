@@ -9,7 +9,5 @@
 ../Software/Middleware/motion.cpp:60:6:void Motion_Rotate_Left_High(Motor&)	1
 ../Software/Middleware/motion.cpp:64:6:void Motion_Circle_Right_50(Motor&)	1
 ../Software/Middleware/motion.cpp:68:6:void Motion_Circle_Left_50(Motor&)	1
-../Software/Middleware/motion.cpp:72:6:void Motion_Circle_Right_100(Motor&)	1
-../Software/Middleware/motion.cpp:76:6:void Motion_Circle_Left_100(Motor&)	1
-../Software/Middleware/motion.cpp:78:1:void __static_initialization_and_destruction_0(int, int)	3
-../Software/Middleware/motion.cpp:78:1:cpp)	1
+../Software/Middleware/motion.cpp:70:1:void __static_initialization_and_destruction_0(int, int)	3
+../Software/Middleware/motion.cpp:70:1:cpp)	1

@@ -1,0 +1,7 @@
+../Software/App/initialize_parameters.cpp:12:6:void InitializeParameters::run()	16	static
+../Software/App/initialize_parameters.cpp:51:6:void InitializeParameters::runPowerSetApplication()	24	static
+../Software/App/initialize_parameters.cpp:62:6:void InitializeParameters::runTimeSetApplication()	24	static
+../Software/App/initialize_parameters.cpp:72:35:Initialize_Parameters_Screen_Type operator++(Initialize_Parameters_Screen_Type&, int)	24	static
+../Software/App/initialize_parameters.cpp:84:35:Initialize_Parameters_Screen_Type operator--(Initialize_Parameters_Screen_Type&, int)	24	static
+../Software/App/initialize_parameters.cpp:94:1:void __static_initialization_and_destruction_0(int, int)	16	static
+../Software/App/initialize_parameters.cpp:94:1:cpp)	8	static

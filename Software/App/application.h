@@ -19,7 +19,7 @@
 enum Application_Screen{
 	Information_Screen = 0x00,
 	Hardware_Test,
-	SoftwareTest,
+	Initialize_Parameters_Screen,
 	Battle_Application,
 };
 

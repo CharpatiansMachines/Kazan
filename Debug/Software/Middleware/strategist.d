@@ -42,7 +42,9 @@ Software/Middleware/strategist.o: ../Software/Middleware/strategist.cpp \
  D:/Proiecte/STMCUBE/Kazan/Software/Peripheral/enemy_detection.h \
  D:/Proiecte/STMCUBE/Kazan/Software/Model/enemy_position.h \
  D:/Proiecte/STMCUBE/Kazan/Software/Peripheral/line_detection.h \
- D:/Proiecte/STMCUBE/Kazan/Software/Model/line_position.h
+ D:/Proiecte/STMCUBE/Kazan/Software/Model/line_position.h \
+ D:/Proiecte/STMCUBE/Kazan/Software/Peripheral/communication_driver.h \
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h
 ../Software/Middleware/strategist.h:
 ../Software/Middleware/tactician.h:
 ../Software/Middleware/motion.h:
@@ -88,3 +90,5 @@ D:/Proiecte/STMCUBE/Kazan/Software/Peripheral/enemy_detection.h:
 D:/Proiecte/STMCUBE/Kazan/Software/Model/enemy_position.h:
 D:/Proiecte/STMCUBE/Kazan/Software/Peripheral/line_detection.h:
 D:/Proiecte/STMCUBE/Kazan/Software/Model/line_position.h:
+D:/Proiecte/STMCUBE/Kazan/Software/Peripheral/communication_driver.h:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:

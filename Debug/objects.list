@@ -29,6 +29,7 @@
 "./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.o"
 "./Software/App/application.o"
 "./Software/App/hardware_test.o"
+"./Software/App/initialize_parameters.o"
 "./Software/Middleware/display.o"
 "./Software/Middleware/motion.o"
 "./Software/Middleware/state_control.o"
