@@ -9,13 +9,13 @@ D:/Proiecte/STMCUBE/Kazan/Software/Peripheral/timer.h:36:13:bool Timer_Has_Passe
 ../Software/Middleware/tactician.cpp:52:1:Tactician::Tactician(Motor&)	2
 ../Software/Middleware/tactician.cpp:54:6:void Tactician::config()	1
 ../Software/Middleware/tactician.cpp:58:6:void Tactician::setTactic(void (Tactician::*)(State))	2
-../Software/Middleware/tactician.cpp:66:6:void Tactician::run(State)	3
+../Software/Middleware/tactician.cpp:66:6:void Tactician::runCurrentStrategy(State)	3
 ../Software/Middleware/tactician.cpp:72:6:bool Tactician::hasTactic()	3
 ../Software/Middleware/tactician.cpp:76:6:void Tactician::STOP_CURRENT_TACTIC()	1
 ../Software/Middleware/tactician.cpp:85:6:bool Tactician::executesMotions()	3
 ../Software/Middleware/tactician.cpp:100:6:void Tactician::addMotion(void (*)(Motor&), uint32_t)	2
 ../Software/Middleware/tactician.cpp:106:6:void Tactician::changeTacticStep(uint8_t)	1
 ../Software/Middleware/tactician.cpp:111:6:void Tactician::Tactic_Front_Atack(State)	9
-../Software/Middleware/tactician.cpp:138:6:void Tactician::Tactic_Escape_Line_Whatever_Enemy_Do(State)	10
-../Software/Middleware/tactician.cpp:196:1:void __static_initialization_and_destruction_0(int, int)	3
-../Software/Middleware/tactician.cpp:196:1:cpp)	1
+../Software/Middleware/tactician.cpp:138:6:void Tactician::Tactic_Escape_Line_Whatever_Enemy_Do(State)	13
+../Software/Middleware/tactician.cpp:203:1:void __static_initialization_and_destruction_0(int, int)	3
+../Software/Middleware/tactician.cpp:203:1:cpp)	1

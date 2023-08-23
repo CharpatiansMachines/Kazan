@@ -1,0 +1,4 @@
+../Software/Peripheral/communication_driver.cpp:15:1:Communication_Driver::Communication_Driver(const CommunicationDriverConfig&)	16	static
+../Software/Peripheral/communication_driver.cpp:29:19:HAL_StatusTypeDef Communication_Driver::config()	16	static
+../Software/Peripheral/communication_driver.cpp:33:19:)	1052	static
+../Software/Peripheral/communication_driver.cpp:46:6:bool Communication_Driver::readStartModule()	16	static

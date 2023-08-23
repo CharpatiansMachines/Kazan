@@ -1,5 +1,5 @@
 ../Software/App/hardware_test.h:57:2:HardwareTestApp::HardwareTestApp(UserInputs&, StateControl&, Motor&, Communication_Driver&)	24	static
-../Software/App/application.cpp:16:1:Application::Application()	176	static
-../Software/App/application.cpp:59:6:void Application::run()	56	static
-../Software/App/application.cpp:118:27:Application_Screen operator++(Application_Screen&, int)	24	static
-../Software/App/application.cpp:130:27:Application_Screen operator--(Application_Screen&, int)	24	static
+../Software/App/application.cpp:16:1:Application::Application()	192	static
+../Software/App/application.cpp:63:6:void Application::run()	56	static
+../Software/App/application.cpp:122:27:Application_Screen operator++(Application_Screen&, int)	24	static
+../Software/App/application.cpp:134:27:Application_Screen operator--(Application_Screen&, int)	24	static

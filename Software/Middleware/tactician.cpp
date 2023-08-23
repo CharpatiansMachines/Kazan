@@ -63,7 +63,7 @@ void Tactician::setTactic(void (Tactician::*newTactic)(State state)) {
     changeTacticStep(0);
 }
 
-void Tactician::run(State state) {
+void Tactician::runCurrentStrategy(State state) {
     if (!hasTactic()) {
         (this->*currentTactic)(state);
     }

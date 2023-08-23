@@ -12,9 +12,11 @@
 #include "stm32f4xx_hal_uart.h"
 #include "stm32f4xx_hal_def.h"
 
-Communication_Driver::Communication_Driver(USART_TypeDef * uartx)
+Communication_Driver::Communication_Driver(const CommunicationDriverConfig& config)
+    : GPIOx_Start_Module(config.GPIOx_Start_Module),
+      PIIN_Start_Module(config.PIIN_Start_Module)
 {
-	huart.Instance = uartx;
+	huart.Instance = config.uartx;
 	huart.Init.BaudRate = 115200;
 	huart.Init.WordLength = UART_WORDLENGTH_8B;
 	huart.Init.StopBits = UART_STOPBITS_1;
@@ -39,9 +41,11 @@ HAL_StatusTypeDef Communication_Driver::log(const char *format,...)
 
     return HAL_UART_Transmit(&huart, (uint8_t *)buffer, rc , 100);
 
+}
 
-
-
+bool Communication_Driver::readStartModule()
+{
+	return HAL_GPIO_ReadPin(GPIOx_Start_Module, PIIN_Start_Module) == GPIO_PIN_SET;
 }
 
 

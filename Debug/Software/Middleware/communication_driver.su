@@ -1,3 +1,0 @@
-../Software/Middleware/communication_driver.cpp:15:1:Communication_Driver::Communication_Driver(USART_TypeDef*)	16	static
-../Software/Middleware/communication_driver.cpp:27:19:HAL_StatusTypeDef Communication_Driver::config()	16	static
-../Software/Middleware/communication_driver.cpp:31:19:)	1052	static

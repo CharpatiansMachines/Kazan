@@ -6,6 +6,7 @@
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
 ../Software/Peripheral/button_driver.cpp \
+../Software/Peripheral/communication_driver.cpp \
 ../Software/Peripheral/enemy_detection.cpp \
 ../Software/Peripheral/line_detection.cpp \
 ../Software/Peripheral/motor_driver.cpp \
@@ -13,6 +14,7 @@ CPP_SRCS += \
 
 OBJS += \
 ./Software/Peripheral/button_driver.o \
+./Software/Peripheral/communication_driver.o \
 ./Software/Peripheral/enemy_detection.o \
 ./Software/Peripheral/line_detection.o \
 ./Software/Peripheral/motor_driver.o \
@@ -20,6 +22,7 @@ OBJS += \
 
 CPP_DEPS += \
 ./Software/Peripheral/button_driver.d \
+./Software/Peripheral/communication_driver.d \
 ./Software/Peripheral/enemy_detection.d \
 ./Software/Peripheral/line_detection.d \
 ./Software/Peripheral/motor_driver.d \
@@ -33,7 +36,7 @@ Software/Peripheral/%.o Software/Peripheral/%.su Software/Peripheral/%.cyclo: ..
 clean: clean-Software-2f-Peripheral
 
 clean-Software-2f-Peripheral:
-	-$(RM) ./Software/Peripheral/button_driver.cyclo ./Software/Peripheral/button_driver.d ./Software/Peripheral/button_driver.o ./Software/Peripheral/button_driver.su ./Software/Peripheral/enemy_detection.cyclo ./Software/Peripheral/enemy_detection.d ./Software/Peripheral/enemy_detection.o ./Software/Peripheral/enemy_detection.su ./Software/Peripheral/line_detection.cyclo ./Software/Peripheral/line_detection.d ./Software/Peripheral/line_detection.o ./Software/Peripheral/line_detection.su ./Software/Peripheral/motor_driver.cyclo ./Software/Peripheral/motor_driver.d ./Software/Peripheral/motor_driver.o ./Software/Peripheral/motor_driver.su ./Software/Peripheral/trimpot_driver.cyclo ./Software/Peripheral/trimpot_driver.d ./Software/Peripheral/trimpot_driver.o ./Software/Peripheral/trimpot_driver.su
+	-$(RM) ./Software/Peripheral/button_driver.cyclo ./Software/Peripheral/button_driver.d ./Software/Peripheral/button_driver.o ./Software/Peripheral/button_driver.su ./Software/Peripheral/communication_driver.cyclo ./Software/Peripheral/communication_driver.d ./Software/Peripheral/communication_driver.o ./Software/Peripheral/communication_driver.su ./Software/Peripheral/enemy_detection.cyclo ./Software/Peripheral/enemy_detection.d ./Software/Peripheral/enemy_detection.o ./Software/Peripheral/enemy_detection.su ./Software/Peripheral/line_detection.cyclo ./Software/Peripheral/line_detection.d ./Software/Peripheral/line_detection.o ./Software/Peripheral/line_detection.su ./Software/Peripheral/motor_driver.cyclo ./Software/Peripheral/motor_driver.d ./Software/Peripheral/motor_driver.o ./Software/Peripheral/motor_driver.su ./Software/Peripheral/trimpot_driver.cyclo ./Software/Peripheral/trimpot_driver.d ./Software/Peripheral/trimpot_driver.o ./Software/Peripheral/trimpot_driver.su
 
 .PHONY: clean-Software-2f-Peripheral
 

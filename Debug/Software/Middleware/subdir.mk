@@ -5,26 +5,26 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
-../Software/Middleware/communication_driver.cpp \
 ../Software/Middleware/display.cpp \
 ../Software/Middleware/motion.cpp \
 ../Software/Middleware/state_control.cpp \
+../Software/Middleware/strategist.cpp \
 ../Software/Middleware/tactician.cpp \
 ../Software/Middleware/user_inputs.cpp 
 
 OBJS += \
-./Software/Middleware/communication_driver.o \
 ./Software/Middleware/display.o \
 ./Software/Middleware/motion.o \
 ./Software/Middleware/state_control.o \
+./Software/Middleware/strategist.o \
 ./Software/Middleware/tactician.o \
 ./Software/Middleware/user_inputs.o 
 
 CPP_DEPS += \
-./Software/Middleware/communication_driver.d \
 ./Software/Middleware/display.d \
 ./Software/Middleware/motion.d \
 ./Software/Middleware/state_control.d \
+./Software/Middleware/strategist.d \
 ./Software/Middleware/tactician.d \
 ./Software/Middleware/user_inputs.d 
 
@@ -36,7 +36,7 @@ Software/Middleware/%.o Software/Middleware/%.su Software/Middleware/%.cyclo: ..
 clean: clean-Software-2f-Middleware
 
 clean-Software-2f-Middleware:
-	-$(RM) ./Software/Middleware/communication_driver.cyclo ./Software/Middleware/communication_driver.d ./Software/Middleware/communication_driver.o ./Software/Middleware/communication_driver.su ./Software/Middleware/display.cyclo ./Software/Middleware/display.d ./Software/Middleware/display.o ./Software/Middleware/display.su ./Software/Middleware/motion.cyclo ./Software/Middleware/motion.d ./Software/Middleware/motion.o ./Software/Middleware/motion.su ./Software/Middleware/state_control.cyclo ./Software/Middleware/state_control.d ./Software/Middleware/state_control.o ./Software/Middleware/state_control.su ./Software/Middleware/tactician.cyclo ./Software/Middleware/tactician.d ./Software/Middleware/tactician.o ./Software/Middleware/tactician.su ./Software/Middleware/user_inputs.cyclo ./Software/Middleware/user_inputs.d ./Software/Middleware/user_inputs.o ./Software/Middleware/user_inputs.su
+	-$(RM) ./Software/Middleware/display.cyclo ./Software/Middleware/display.d ./Software/Middleware/display.o ./Software/Middleware/display.su ./Software/Middleware/motion.cyclo ./Software/Middleware/motion.d ./Software/Middleware/motion.o ./Software/Middleware/motion.su ./Software/Middleware/state_control.cyclo ./Software/Middleware/state_control.d ./Software/Middleware/state_control.o ./Software/Middleware/state_control.su ./Software/Middleware/strategist.cyclo ./Software/Middleware/strategist.d ./Software/Middleware/strategist.o ./Software/Middleware/strategist.su ./Software/Middleware/tactician.cyclo ./Software/Middleware/tactician.d ./Software/Middleware/tactician.o ./Software/Middleware/tactician.su ./Software/Middleware/user_inputs.cyclo ./Software/Middleware/user_inputs.d ./Software/Middleware/user_inputs.o ./Software/Middleware/user_inputs.su
 
 .PHONY: clean-Software-2f-Middleware
 

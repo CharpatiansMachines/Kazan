@@ -43,7 +43,7 @@ Core/Src/main.o: ../Core/Src/main.cpp ../Core/Inc/main.h \
  D:/Proiecte/STMCUBE/Kazan/Software/Model/state.h \
  D:/Proiecte/STMCUBE/Kazan/Software/Model/line_position.h \
  D:/Proiecte/STMCUBE/Kazan/Software/Model/enemy_position.h \
- D:/Proiecte/STMCUBE/Kazan/Software/Middleware/communication_driver.h \
+ D:/Proiecte/STMCUBE/Kazan/Software/Peripheral/communication_driver.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h \
  D:/Proiecte/STMCUBE/Kazan/Software/Middleware/user_inputs.h \
  D:/Proiecte/STMCUBE/Kazan/Software/Peripheral/button_driver.h \
@@ -94,7 +94,7 @@ D:/Proiecte/STMCUBE/Kazan/Software/Model/line_position.h:
 D:/Proiecte/STMCUBE/Kazan/Software/Model/state.h:
 D:/Proiecte/STMCUBE/Kazan/Software/Model/line_position.h:
 D:/Proiecte/STMCUBE/Kazan/Software/Model/enemy_position.h:
-D:/Proiecte/STMCUBE/Kazan/Software/Middleware/communication_driver.h:
+D:/Proiecte/STMCUBE/Kazan/Software/Peripheral/communication_driver.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:
 D:/Proiecte/STMCUBE/Kazan/Software/Middleware/user_inputs.h:
 D:/Proiecte/STMCUBE/Kazan/Software/Peripheral/button_driver.h:

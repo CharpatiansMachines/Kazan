@@ -51,7 +51,11 @@ Application::Application()
           /// Initialize other sensor configs here...
       }),
 	  motor(SABERTOOTH_UART),
-      communication(DATA_UART),     // communication driver
+      communication(CommunicationDriverConfig{
+		DATA_UART,
+		START_MODULE_GPIO_Port,
+		START_MODULE_Pin,
+	  }),     // communication driver
       screen(Hardware_Test)      //initial screen
 {
 }
