@@ -1,13 +1,14 @@
-../Software/Middleware/motion.cpp:28:6:void Motion_Forward_High(Motor&)	16	static
-../Software/Middleware/motion.cpp:32:6:void Motion_Forward_Medium(Motor&)	16	static
-../Software/Middleware/motion.cpp:36:6:void Motion_Forward_Low(Motor&)	16	static
-../Software/Middleware/motion.cpp:40:6:void Motion_Backward_Full(Motor&)	16	static
-../Software/Middleware/motion.cpp:44:6:void Motion_Backward_High(Motor&)	16	static
-../Software/Middleware/motion.cpp:48:6:void Motion_Backward_Medium(Motor&)	16	static
-../Software/Middleware/motion.cpp:52:6:void Motion_Backward_Low(Motor&)	16	static
-../Software/Middleware/motion.cpp:56:6:void Motion_Rotate_Right_High(Motor&)	16	static
-../Software/Middleware/motion.cpp:60:6:void Motion_Rotate_Left_High(Motor&)	16	static
-../Software/Middleware/motion.cpp:64:6:void Motion_Circle_Right_50(Motor&)	16	static
-../Software/Middleware/motion.cpp:68:6:void Motion_Circle_Left_50(Motor&)	16	static
-../Software/Middleware/motion.cpp:70:1:void __static_initialization_and_destruction_0(int, int)	16	static
-../Software/Middleware/motion.cpp:70:1:cpp)	8	static
+../Software/Middleware/motion.cpp:27:6:void Motion_Stop(Motor&)	16	static
+../Software/Middleware/motion.cpp:32:6:void Motion_Forward_High(Motor&)	16	static
+../Software/Middleware/motion.cpp:36:6:void Motion_Forward_Medium(Motor&)	16	static
+../Software/Middleware/motion.cpp:40:6:void Motion_Forward_Low(Motor&)	16	static
+../Software/Middleware/motion.cpp:44:6:void Motion_Backward_Full(Motor&)	16	static
+../Software/Middleware/motion.cpp:48:6:void Motion_Backward_High(Motor&)	16	static
+../Software/Middleware/motion.cpp:52:6:void Motion_Backward_Medium(Motor&)	16	static
+../Software/Middleware/motion.cpp:56:6:void Motion_Backward_Low(Motor&)	16	static
+../Software/Middleware/motion.cpp:60:6:void Motion_Rotate_Right_High(Motor&)	16	static
+../Software/Middleware/motion.cpp:64:6:void Motion_Rotate_Left_High(Motor&)	16	static
+../Software/Middleware/motion.cpp:68:6:void Motion_Circle_Right_50(Motor&)	16	static
+../Software/Middleware/motion.cpp:72:6:void Motion_Circle_Left_50(Motor&)	16	static
+../Software/Middleware/motion.cpp:74:1:void __static_initialization_and_destruction_0(int, int)	16	static
+../Software/Middleware/motion.cpp:74:1:cpp)	8	static

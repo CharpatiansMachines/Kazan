@@ -10,9 +10,10 @@
 
 
 Strategist::Strategist(StateControl& stateCtrl, Motor& motor, Communication_Driver& communication)
-	:communication(communication),
-	 stateControl(stateCtrl),
-     tactician(motor)
+	:motor(motor),
+	communication(communication),
+	stateControl(stateCtrl),
+	tactician(motor)
 
 {
    currentStrategy = nullptr;
@@ -29,6 +30,20 @@ void Strategist::runCurrentSrategy() {
 		(this->*currentStrategy)();
 		start = communication.readStartModule();
 	}
-
+}
+void Strategist::testMotion(void (*motionFunction)(Motor& motor))
+{
+	bool start = communication.readStartModule();
+	if(start){
+		motionFunction(motor);
+	}
+	while(start)
+	{
+		State state = stateControl.recalculateStates();
+		if(state.linePosition.isNotNone()){
+			Motion_Stop(motor);
+		}
+		start = communication.readStartModule();
+	}
 }
 

@@ -15,7 +15,7 @@ public:
 	Tactician(Motor& motor);
 	void config();
     void setTactic(void (Tactician::*newTactic)(State));
-    void runCurrentStrategy(State state);
+    void runCurrentTactic(State state);
     bool hasTactic();
 
 

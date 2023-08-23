@@ -224,7 +224,7 @@ void HardwareTestApp::runMotorTest()
 
 	    switch(motorScreen) {
 	        case MOTOR_SET_POWER_SCREEN:
-	        	Display_Motor_Test_Screen((char *)"Start Motor", leftPower, rightPower, timer, (char *)"Hstart to start");
+	        	Display_2_Power_And_Time_Screen((char *)"Start Motor", leftPower, rightPower, timer, (char *)"Hstart to start");
 	        	if(userInputs.isSetValueRequest()){
 	        		motorScreen = MOTOR_RUN_SCREEN;
 	        		clock = Timer_Set_Clock(timer);
@@ -234,7 +234,7 @@ void HardwareTestApp::runMotorTest()
 	        {
 	        	int64_t remainTime = Timer_Get_Remain_Time(clock);
 	        	if(!userInputs.isAnyKey() && remainTime > 0){
-	        		Display_Motor_Test_Screen((char *)"Motor On", leftPower, rightPower, remainTime,(char *) "Any key to stop");
+	        		Display_2_Power_And_Time_Screen((char *)"Motor On", leftPower, rightPower, remainTime,(char *) "Any key to stop");
 	        		motor.changePower(leftPower, rightPower);
 	        	}else{
 	        		motor.stop();
@@ -245,7 +245,7 @@ void HardwareTestApp::runMotorTest()
 	        case MOTOR_SET_TIMER_SCREEN:
 	        {
 	        	uint32_t setTime = userInputs.getData0(MIN_TIMER,MAX_TIMER);
-	        	Display_Motor_Test_Screen((char *)"Set Timer", leftPower, rightPower, setTime, (char *)"Hstart to set");
+	        	Display_2_Power_And_Time_Screen((char *)"Set Timer", leftPower, rightPower, setTime, (char *)"Hstart to set");
 	        	if(userInputs.isSetValueRequest()){
 	        		timer = setTime;
 	        		motorScreen = MOTOR_SET_POWER_SCREEN;

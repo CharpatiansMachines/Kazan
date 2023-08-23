@@ -30,7 +30,7 @@ HAL_StatusTypeDef Communication_Driver::config(){
 	GPIO_InitTypeDef GPIO_InitStruct = {0};
 	GPIO_InitStruct.Pin = PIN_Start_Module;
 	GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
-	GPIO_InitStruct.Pull = GPIO_NOPULL;
+	GPIO_InitStruct.Pull = GPIO_PULLDOWN;
 	HAL_GPIO_Init(GPIOx_Start_Module, &GPIO_InitStruct);
 	return HAL_HalfDuplex_Init(&huart);
 }

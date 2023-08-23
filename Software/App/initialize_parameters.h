@@ -19,11 +19,32 @@
 
 enum Initialize_Parameters_Screen_Type{
 	SET_POWER_SCREEN = 0x00,
-	TIME_SET_SCREEN
+	SET_TIME_SCREEN
 };
 Initialize_Parameters_Screen_Type operator++(Initialize_Parameters_Screen_Type& screen, int);
 
 Initialize_Parameters_Screen_Type operator--(Initialize_Parameters_Screen_Type& screen, int);
+
+enum Power_Set_Screen_Type{
+	High_Power_Show_Screen,
+	High_Power_Set_Screen,
+	High_Power_Start_Screen,
+	Medium_Power_Show_Screen,
+	Medium_Power_Set_Screen,
+	Medium_Power_Start_Screen,
+	Low_Power_Show_Screen,
+	Low_Power_Set_Screen,
+	Low_Power_Start_Screen,
+	Circle_50_Right_Power_Show_Screen,
+	Circle_50_Right_Power_Set_Screen,
+	Circle_50_Right_Power_Start_Screen,
+	Circle_50_Left_Power_Show_Screen,
+	Circle_50_Left_Power_Set_Screen,
+	Circle_50_Left_Power_Start_Screen,
+};
+Power_Set_Screen_Type operator++(Power_Set_Screen_Type& screen, int);
+
+Power_Set_Screen_Type operator--(Power_Set_Screen_Type& screen, int);
 
 class InitializeParameters {
 public:

@@ -9,7 +9,7 @@ D:/Proiecte/STMCUBE/Kazan/Software/Peripheral/timer.h:36:13:bool Timer_Has_Passe
 ../Software/Middleware/tactician.cpp:52:1:Tactician::Tactician(Motor&)	2
 ../Software/Middleware/tactician.cpp:54:6:void Tactician::config()	1
 ../Software/Middleware/tactician.cpp:58:6:void Tactician::setTactic(void (Tactician::*)(State))	2
-../Software/Middleware/tactician.cpp:66:6:void Tactician::runCurrentStrategy(State)	3
+../Software/Middleware/tactician.cpp:66:6:void Tactician::runCurrentTactic(State)	3
 ../Software/Middleware/tactician.cpp:72:6:bool Tactician::hasTactic()	3
 ../Software/Middleware/tactician.cpp:76:6:void Tactician::STOP_CURRENT_TACTIC()	1
 ../Software/Middleware/tactician.cpp:85:6:bool Tactician::executesMotions()	3

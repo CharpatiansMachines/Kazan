@@ -1,17 +1,19 @@
-../Software/Middleware/display.cpp:17:6:void Display_Clear()	8	static
-../Software/Middleware/display.cpp:21:6:void Display_Init()	8	static
-../Software/Middleware/display.cpp:25:6:void Draw_Center_Text(char*, FontDef*, uint16_t)	88	static
-../Software/Middleware/display.cpp:52:6:void Draw_Left_Text(char*, FontDef*, uint16_t)	24	static
-../Software/Middleware/display.cpp:58:6:void Draw_Right_Text(char*, FontDef*, uint16_t)	32	static
-../Software/Middleware/display.cpp:72:6:void Display_Title_Screen(char*)	24	static
-../Software/Middleware/display.cpp:88:6:void Display_Small_Title_Screen(char*)	24	static
-../Software/Middleware/display.cpp:104:6:void Display_2_Numbers(char*, double, double)	72	static
-../Software/Middleware/display.cpp:122:6:void Draw_3_Points_Line(bool*, char*, char*, uint16_t)	24	static
-../Software/Middleware/display.cpp:141:6:void Display_Enemy_Sensors_Output(uint32_t)	136	static
-../Software/Middleware/display.cpp:160:6:void Draw_Circular_Arc_Text(char*, FontDef*, uint16_t)	40	static
-../Software/Middleware/display.cpp:194:6:void Display_Enemy_Sensors_Votes(int8_t*)	56	static
-../Software/Middleware/display.cpp:221:6:void Display_N_Values_Screen(uint8_t*, uint8_t)	120	static
-../Software/Middleware/display.cpp:234:6:void Display_Line_Position_Screen(LinePosition, uint8_t, uint8_t, char*)	88	static
-../Software/Middleware/display.cpp:265:6:void Display_Motor_Test_Screen(char*, int8_t, int8_t, int64_t, char*)	80	static
-../Software/Middleware/display.cpp:285:6:void Display_Error()	8	static
-../Software/Middleware/display.cpp:290:10:uint16_t Display_Get_Bottom_YPosition(FontDef*)	16	static
+../Software/Middleware/display.cpp:17:6:void Draw_Full_Black()	8	static
+../Software/Middleware/display.cpp:20:6:void Display_Clear()	8	static
+../Software/Middleware/display.cpp:25:6:void Display_Init()	8	static
+../Software/Middleware/display.cpp:29:6:void Draw_Center_Text(char*, FontDef*, uint16_t)	96	static
+../Software/Middleware/display.cpp:66:6:void Draw_Left_Text(char*, FontDef*, uint16_t)	24	static
+../Software/Middleware/display.cpp:72:6:void Draw_Right_Text(char*, FontDef*, uint16_t)	32	static
+../Software/Middleware/display.cpp:86:6:void Display_Title_Screen(char*)	24	static
+../Software/Middleware/display.cpp:102:6:void Display_Small_Title_Screen(char*)	24	static
+../Software/Middleware/display.cpp:118:6:void Display_2_Numbers(char*, double, double)	72	static
+../Software/Middleware/display.cpp:136:6:void Draw_3_Points_Line(bool*, char*, char*, uint16_t)	24	static
+../Software/Middleware/display.cpp:155:6:void Display_Enemy_Sensors_Output(uint32_t)	136	static
+../Software/Middleware/display.cpp:174:6:void Draw_Circular_Arc_Text(char*, FontDef*, uint16_t)	40	static
+../Software/Middleware/display.cpp:208:6:void Display_Enemy_Sensors_Votes(int8_t*)	56	static
+../Software/Middleware/display.cpp:235:6:void Display_N_Values_Screen(uint8_t*, uint8_t)	120	static
+../Software/Middleware/display.cpp:248:6:void Display_Line_Position_Screen(LinePosition, uint8_t, uint8_t, char*)	88	static
+../Software/Middleware/display.cpp:279:6:void Display_2_Power_And_Time_Screen(char*, int8_t, int8_t, int64_t, char*)	80	static
+../Software/Middleware/display.cpp:295:6:void Display_2_Power_Screen(char*, int8_t, int8_t, char*)	88	static
+../Software/Middleware/display.cpp:310:6:void Display_Error()	8	static
+../Software/Middleware/display.cpp:315:10:uint16_t Display_Get_Bottom_YPosition(FontDef*)	16	static

@@ -13,6 +13,7 @@
 #include "line_detection.h"
 
 void Display_Init();
+void Draw_Full_Black();
 void Display_Clear();
 
 uint16_t Display_Get_Bottom_YPosition(FontDef* font);
@@ -27,7 +28,9 @@ void Display_N_Values_Screen(uint8_t *values, uint8_t valuesNo);
 void Display_Enemy_Sensors_Output(uint32_t value);
 void Display_Enemy_Sensors_Votes(int8_t votes[EnemyPosition::KNOWN_POSITIONS_NO]);
 void Display_Line_Position_Screen(LinePosition lineOutput,uint8_t whiteFilter, uint8_t darkFilter,char *descrition);
-void Display_Motor_Test_Screen(char * titleScreen, int8_t leftPower, int8_t rightPower,int64_t time,char * actionDescriptionText);
+void Display_2_Power_And_Time_Screen(char * titleScreen, int8_t leftPower, int8_t rightPower,int64_t time,char * actionDescriptionText);
+
+void Display_2_Power_Screen(char *title, int8_t leftPower, int8_t rightPower,char * description);
 void Display_Error();
 
 

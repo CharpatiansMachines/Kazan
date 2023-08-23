@@ -31,6 +31,24 @@ public:
     }
 };
 
+struct PowerLevels {
+    int highLeftPower;
+    int highRightPower;
+
+    int mediumLeftPower;
+    int mediumRightPower;
+
+    int lowLeftPower;
+    int lowRightPower;
+
+    int circle50RightPower;
+    int circle50LeftPower;
+};
+
+extern PowerLevels powerLevels;
+
+void Motion_Stop(Motor& motor);
+
 void Motion_Forward_High(Motor& motor);
 void Motion_Forward_Medium(Motor& motor);
 void Motion_Forward_Low(Motor& motor);

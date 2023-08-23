@@ -17,8 +17,11 @@ public:
 	Strategist(StateControl& stateCtrl, Motor& motor, Communication_Driver& communication);
 	void setStrategy(void (Strategist::*currentStrategy)(void));
 	void runCurrentSrategy();
+	void testMotion(void (*motionFunction)(Motor& motor));
+
 
 private:
+	Motor& motor;
 	Communication_Driver& communication;
 	StateControl &stateControl;
 	Tactician tactician;

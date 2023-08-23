@@ -1,5 +1,6 @@
 ../Software/Middleware/strategist.cpp:12:1:Strategist::Strategist(StateControl&, Motor&, Communication_Driver&)	1
-../Software/Middleware/strategist.cpp:21:6:void Strategist::setStrategy(void (Strategist::*)())	1
-../Software/Middleware/strategist.cpp:25:6:void Strategist::runCurrentSrategy()	6
-../Software/Middleware/strategist.cpp:33:1:void __static_initialization_and_destruction_0(int, int)	3
-../Software/Middleware/strategist.cpp:33:1:cpp)	1
+../Software/Middleware/strategist.cpp:22:6:void Strategist::setStrategy(void (Strategist::*)())	1
+../Software/Middleware/strategist.cpp:26:6:void Strategist::runCurrentSrategy()	6
+../Software/Middleware/strategist.cpp:34:6:void Strategist::testMotion(void (*)(Motor&))	4
+../Software/Middleware/strategist.cpp:48:1:void __static_initialization_and_destruction_0(int, int)	3
+../Software/Middleware/strategist.cpp:48:1:cpp)	1
