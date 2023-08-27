@@ -11,7 +11,6 @@
 #include "motion.h"
 
 const ActionTimes actionTimes = {
-    .symbolicTime = 0,
     .brakingTime = 50,
 
     .mediumPower10cm = 20,

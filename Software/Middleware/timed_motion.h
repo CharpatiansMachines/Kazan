@@ -10,9 +10,9 @@
 #include "motor_driver.h"
 #include <cstdint> // for uint32_t, uint16_t
 
-typedef struct {
+struct ActionTimes {
     // SPECIAL ACTIONS TIMES
-    uint16_t symbolicTime;
+	static const uint16_t symbolicTime = 0;
     uint16_t brakingTime;
 
     // FORWARD BACKWARD TIMES
@@ -26,7 +26,7 @@ typedef struct {
     uint16_t rotation60degree;
     uint16_t rotation90degree;
     uint16_t rotation120degree;
-} ActionTimes;
+};
 
 extern const ActionTimes actionTimes; // Declaring the extern variable for linkage
 
