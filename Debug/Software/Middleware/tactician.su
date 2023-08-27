@@ -1,21 +1,14 @@
-D:/Proiecte/STMCUBE/Kazan/Software/Peripheral/timer.h:17:17:uint32_t Timer_Get_Now_Time()	8	static
-D:/Proiecte/STMCUBE/Kazan/Software/Peripheral/timer.h:21:17:uint32_t Timer_Set_Clock(uint32_t)	16	static
-D:/Proiecte/STMCUBE/Kazan/Software/Peripheral/timer.h:25:16:int64_t Timer_Get_Remain_Time(uint32_t)	40	static
-D:/Proiecte/STMCUBE/Kazan/Software/Peripheral/timer.h:36:13:bool Timer_Has_Passed(uint32_t)	16	static
-../Software/Middleware/motion.h:20:5:TimedMotion::TimedMotion()	16	static
-../Software/Middleware/motion.h:21:5:TimedMotion::TimedMotion(void (*)(Motor&), uint32_t)	24	static
-../Software/Middleware/motion.h:24:10:void TimedMotion::startMotion(Motor&)	16	static
-../Software/Middleware/motion.h:29:10:bool TimedMotion::hasPassed() const	16	static
-../Software/Middleware/tactician.cpp:52:1:Tactician::Tactician(Motor&)	24	static
-../Software/Middleware/tactician.cpp:54:6:void Tactician::config()	16	static
-../Software/Middleware/tactician.cpp:58:6:void Tactician::setTactic(void (Tactician::*)(State))	24	static
-../Software/Middleware/tactician.cpp:66:6:void Tactician::runCurrentTactic(State)	32	static
-../Software/Middleware/tactician.cpp:72:6:bool Tactician::hasTactic()	16	static
-../Software/Middleware/tactician.cpp:76:6:void Tactician::STOP_CURRENT_TACTIC()	16	static
-../Software/Middleware/tactician.cpp:85:6:bool Tactician::executesMotions()	16	static
-../Software/Middleware/tactician.cpp:100:6:void Tactician::addMotion(void (*)(Motor&), uint32_t)	32	static
-../Software/Middleware/tactician.cpp:106:6:void Tactician::changeTacticStep(uint8_t)	16	static
-../Software/Middleware/tactician.cpp:111:6:void Tactician::Tactic_Front_Atack(State)	24	static
-../Software/Middleware/tactician.cpp:138:6:void Tactician::Tactic_Escape_Line_Whatever_Enemy_Do(State)	16	static
-../Software/Middleware/tactician.cpp:203:1:void __static_initialization_and_destruction_0(int, int)	16	static
-../Software/Middleware/tactician.cpp:203:1:cpp)	8	static
+D:/Proiecte/STMCUBE/Kazan/Software/Peripheral/Timer.h:17:17:uint32_t Timer_Get_Now_Time()	8	static
+../Software/Middleware/tactician.cpp:12:1:Tactician::Tactician(Motor&)	24	static
+../Software/Middleware/tactician.cpp:14:6:void Tactician::config()	16	static
+../Software/Middleware/tactician.cpp:18:6:void Tactician::setTactic(void (Tactician::*)(State))	24	static
+../Software/Middleware/tactician.cpp:26:6:void Tactician::runCurrentTactic(State)	32	static
+../Software/Middleware/tactician.cpp:32:6:bool Tactician::hasTactic()	16	static
+../Software/Middleware/tactician.cpp:36:6:void Tactician::STOP_CURRENT_TACTIC()	16	static
+../Software/Middleware/tactician.cpp:45:6:bool Tactician::executesMotions()	16	static
+../Software/Middleware/tactician.cpp:60:6:void Tactician::addMotion(const TimedMotion&)	16	static
+../Software/Middleware/tactician.cpp:66:6:void Tactician::changeTacticStep(uint8_t)	16	static
+../Software/Middleware/tactician.cpp:71:6:void Tactician::Tactic_Front_Atack(State)	24	static
+../Software/Middleware/tactician.cpp:98:6:void Tactician::Tactic_Escape_Line_Whatever_Enemy_Do(State)	136	static
+../Software/Middleware/tactician.cpp:157:1:void __static_initialization_and_destruction_0(int, int)	16	static
+../Software/Middleware/tactician.cpp:157:1:cpp)	8	static

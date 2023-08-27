@@ -8,28 +8,6 @@
 #ifndef MIDDLEWARE_MOTION_H_
 #define MIDDLEWARE_MOTION_H_
 #include "motor_driver.h"
-#include "timer.h"
-
-
-class TimedMotion {
-private:
-    void (*motionFunction)(Motor& motor);
-    uint32_t duration; // or appropriate time type
-
-public:
-    TimedMotion() : motionFunction(nullptr), duration(0) {}
-    TimedMotion(void (*motionFunc)(Motor& motor), uint32_t time)
-        : motionFunction(motionFunc), duration(time) {}
-
-    void startMotion(Motor& motor) {
-    	if(motionFunction != nullptr)
-    		motionFunction(motor);
-        duration = Timer_Set_Clock(duration);
-    }
-    bool hasPassed()const{
-    	return Timer_Has_Passed(duration);
-    }
-};
 
 struct PowerLevels {
     int highLeftPower;

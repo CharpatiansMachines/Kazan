@@ -4,5 +4,3 @@
 ../Software/App/application.cpp:64:6:void Application::run()	9
 ../Software/App/application.cpp:124:27:Application_Screen operator++(Application_Screen&, int)	2
 ../Software/App/application.cpp:136:27:Application_Screen operator--(Application_Screen&, int)	2
-../Software/App/application.cpp:144:1:void __static_initialization_and_destruction_0(int, int)	3
-../Software/App/application.cpp:144:1:cpp)	1

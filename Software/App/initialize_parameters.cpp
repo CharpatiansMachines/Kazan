@@ -72,217 +72,217 @@ void InitializeParameters::runPowerSetApplication()
         }
         int8_t leftPower = userInputs.getData0(-100, 100);
         int8_t rightPower = userInputs.getData1(-100, 100);
-        switch (powerScreen) {
-            case High_Power_Show_Screen:
-            	Display_2_Power_Screen(
-            			(char *)"High Power Show",
-						powerLevels.highLeftPower,
-						powerLevels.highRightPower,
-						showDescription
-					);
-            	if(userInputs.isSelectRequest()){
-            		powerScreen = High_Power_Set_Screen;
-            	}else if(userInputs.isSetValueRequest()){
-            		powerScreen = High_Power_Start_Screen;
-            	}
-                break;
-            case High_Power_Set_Screen:
-            	Display_2_Power_Screen(
-					(char *)"High Power Set",
-					rightPower,
-					leftPower,
-					setDescription
-				);
-            	if(userInputs.isSelectRequest()){
-					powerScreen = High_Power_Show_Screen;
-				}else if(userInputs.isSetValueRequest()){
-					powerLevels.highLeftPower = leftPower;
-					powerLevels.highRightPower = rightPower;
-					powerScreen = High_Power_Show_Screen;
-				}
-                break;
-            case High_Power_Start_Screen:
-            	if(userInputs.isAnyKey()){
-            		powerScreen = High_Power_Show_Screen;
-            	}
-            	Display_Clear();
-            	strategist.testMotion(Motion_Forward_High);
-            	Display_2_Power_Screen(
-					(char *)"!High Power Start!",
-					powerLevels.highLeftPower,
-					powerLevels.highRightPower,
-					startDescription
-				);
-                break;
-            case Medium_Power_Show_Screen:
-                 Display_2_Power_Screen(
-                     (char *)"Medium Power Show",
-                     powerLevels.mediumLeftPower,
-                     powerLevels.mediumRightPower,
-                     showDescription
-                 );
-                 if(userInputs.isSelectRequest()){
-                     powerScreen = Medium_Power_Set_Screen;
-                 }else if(userInputs.isSetValueRequest()){
-                     powerScreen = Medium_Power_Start_Screen;
-                 }
-                 break;
-             case Medium_Power_Set_Screen:
-                 Display_2_Power_Screen(
-                     (char *)"Medium Power Set",
-                     rightPower,
-                     leftPower,
-                     setDescription
-                 );
-                 if(userInputs.isSelectRequest()){
-                     powerScreen = Medium_Power_Show_Screen;
-                 }else if(userInputs.isSetValueRequest()){
-                     powerLevels.mediumLeftPower = leftPower;
-                     powerLevels.mediumRightPower = rightPower;
-                     powerScreen = Medium_Power_Show_Screen;
-                 }
-                 break;
-             case Medium_Power_Start_Screen:
-
-                 if(userInputs.isAnyKey()){
-                     powerScreen = Medium_Power_Show_Screen;
-                 }
-                 Display_Clear();
-                 strategist.testMotion(Motion_Forward_Medium);
-                 Display_2_Power_Screen(
-                     (char *)"!Medium Power Start!",
-                     powerLevels.mediumLeftPower,
-                     powerLevels.mediumRightPower,
-                     startDescription
-                 );
-                 break;
-
-             case Low_Power_Show_Screen:
-                 Display_2_Power_Screen(
-                     (char *)"Low Power Show",
-                     powerLevels.lowLeftPower,
-                     powerLevels.lowRightPower,
-                     showDescription
-                 );
-                 if(userInputs.isSelectRequest()){
-                     powerScreen = Low_Power_Set_Screen;
-                 }else if(userInputs.isSetValueRequest()){
-                     powerScreen = Low_Power_Start_Screen;
-                 }
-                 break;
-             case Low_Power_Set_Screen:
-                 Display_2_Power_Screen(
-                     (char *)"Low Power Set",
-                     rightPower,
-                     leftPower,
-                     setDescription
-                 );
-                 if(userInputs.isSelectRequest()){
-                     powerScreen = Low_Power_Show_Screen;
-                 }else if(userInputs.isSetValueRequest()){
-                     powerLevels.lowLeftPower = leftPower;
-                     powerLevels.lowRightPower = rightPower;
-                     powerScreen = Low_Power_Show_Screen;
-                 }
-                 break;
-             case Low_Power_Start_Screen:
-
-                 if(userInputs.isAnyKey()){
-                     powerScreen = Low_Power_Show_Screen;
-                 }
-                 Display_Clear();
-                 strategist.testMotion(Motion_Forward_Low);
-                 Display_2_Power_Screen(
-                     (char *)"!Low Power Start!",
-                     powerLevels.lowLeftPower,
-                     powerLevels.lowRightPower,
-                     startDescription
-                 );
-                 break;
-
-             case Circle_50_Right_Power_Show_Screen:
-                 Display_2_Power_Screen(
-                     (char *)"Circle 50 Right Power Show",
-                     powerLevels.highLeftPower,
-                     powerLevels.circle50RightPower,
-                     showDescription
-                 );
-                 if(userInputs.isSelectRequest()){
-                     powerScreen = Circle_50_Right_Power_Set_Screen;
-                 }else if(userInputs.isSetValueRequest()){
-                     powerScreen = Circle_50_Right_Power_Start_Screen;
-                 }
-                 break;
-             case Circle_50_Right_Power_Set_Screen:
-                 Display_2_Power_Screen(
-                     (char *)"Circle 50 Right Power Set",
-                     powerLevels.highLeftPower,
-                     rightPower,
-                     setDescription
-                 );
-                 if(userInputs.isSelectRequest()){
-                     powerScreen = Circle_50_Right_Power_Show_Screen;
-                 }else if(userInputs.isSetValueRequest()){
-                     powerLevels.circle50RightPower = rightPower;
-                     powerScreen = Circle_50_Right_Power_Show_Screen;
-                 }
-                 break;
-             case Circle_50_Right_Power_Start_Screen:
-
-                 if(userInputs.isAnyKey()){
-                     powerScreen = Circle_50_Right_Power_Show_Screen;
-                 }
-                 Display_Clear();
-                 strategist.testMotion(Motion_Circle_Right_50);
-                 Display_2_Power_Screen(
-                     (char *)"!Circle 50 Right Power Start!",
-                     powerLevels.highLeftPower,
-                     powerLevels.circle50RightPower, // Assuming there's no left value for this
-                     startDescription
-                 );
-                 break;
-
-             case Circle_50_Left_Power_Show_Screen:
-                 Display_2_Power_Screen(
-                     (char *)"Circle 50 Left Power Show",
-                     powerLevels.circle50LeftPower,
-                     powerLevels.highRightPower,  // Assuming there's no right value for this
-                     showDescription
-                 );
-                 if(userInputs.isSelectRequest()){
-                     powerScreen = Circle_50_Left_Power_Set_Screen;
-                 }else if(userInputs.isSetValueRequest()){
-                     powerScreen = Circle_50_Left_Power_Start_Screen;
-                 }
-                 break;
-             case Circle_50_Left_Power_Set_Screen:
-                 Display_2_Power_Screen(
-                     (char *)"Circle 50 Left Power Set",
-                     leftPower,
-                     powerLevels.highRightPower,  // Assuming there's no right value for this
-                     setDescription
-                 );
-                 if(userInputs.isSelectRequest()){
-                     powerScreen = Circle_50_Left_Power_Show_Screen;
-                 }else if(userInputs.isSetValueRequest()){
-                     powerLevels.circle50LeftPower = leftPower;
-                     powerScreen = Circle_50_Left_Power_Show_Screen;
-                 }
-                 break;
-             case Circle_50_Left_Power_Start_Screen:
-                 if(userInputs.isAnyKey()){
-                     powerScreen = Circle_50_Left_Power_Show_Screen;
-                 }
-                 Display_Clear();
-                 strategist.testMotion(Motion_Circle_Left_50);
-                 Display_2_Power_Screen(
-                     (char *)"!Circle 50 Left Power Start!",
-                     powerLevels.circle50LeftPower,
-                     powerLevels.highRightPower,  // Assuming there's no right value for this
-                     startDescription
-                 );
-                 break;
-        }
+//        switch (powerScreen) {
+//            case High_Power_Show_Screen:
+//            	Display_2_Power_Screen(
+//            			(char *)"High Power Show",
+//						powerLevels.highLeftPower,
+//						powerLevels.highRightPower,
+//						showDescription
+//					);
+//            	if(userInputs.isSelectRequest()){
+//            		powerScreen = High_Power_Set_Screen;
+//            	}else if(userInputs.isSetValueRequest()){
+//            		powerScreen = High_Power_Start_Screen;
+//            	}
+//                break;
+//            case High_Power_Set_Screen:
+//            	Display_2_Power_Screen(
+//					(char *)"High Power Set",
+//					rightPower,
+//					leftPower,
+//					setDescription
+//				);
+//            	if(userInputs.isSelectRequest()){
+//					powerScreen = High_Power_Show_Screen;
+//				}else if(userInputs.isSetValueRequest()){
+//					powerLevels.highLeftPower = leftPower;
+//					powerLevels.highRightPower = rightPower;
+//					powerScreen = High_Power_Show_Screen;
+//				}
+//                break;
+//            case High_Power_Start_Screen:
+//            	if(userInputs.isAnyKey()){
+//            		powerScreen = High_Power_Show_Screen;
+//            	}
+//            	Display_Clear();
+//            	strategist.testMotion(Motion_Forward_High);
+//            	Display_2_Power_Screen(
+//					(char *)"!High Power Start!",
+//					powerLevels.highLeftPower,
+//					powerLevels.highRightPower,
+//					startDescription
+//				);
+//                break;
+//            case Medium_Power_Show_Screen:
+//                 Display_2_Power_Screen(
+//                     (char *)"Medium Power Show",
+//                     powerLevels.mediumLeftPower,
+//                     powerLevels.mediumRightPower,
+//                     showDescription
+//                 );
+//                 if(userInputs.isSelectRequest()){
+//                     powerScreen = Medium_Power_Set_Screen;
+//                 }else if(userInputs.isSetValueRequest()){
+//                     powerScreen = Medium_Power_Start_Screen;
+//                 }
+//                 break;
+//             case Medium_Power_Set_Screen:
+//                 Display_2_Power_Screen(
+//                     (char *)"Medium Power Set",
+//                     rightPower,
+//                     leftPower,
+//                     setDescription
+//                 );
+//                 if(userInputs.isSelectRequest()){
+//                     powerScreen = Medium_Power_Show_Screen;
+//                 }else if(userInputs.isSetValueRequest()){
+//                     powerLevels.mediumLeftPower = leftPower;
+//                     powerLevels.mediumRightPower = rightPower;
+//                     powerScreen = Medium_Power_Show_Screen;
+//                 }
+//                 break;
+//             case Medium_Power_Start_Screen:
+//
+//                 if(userInputs.isAnyKey()){
+//                     powerScreen = Medium_Power_Show_Screen;
+//                 }
+//                 Display_Clear();
+//                 strategist.testMotion(Motion_Forward_Medium);
+//                 Display_2_Power_Screen(
+//                     (char *)"!Medium Power Start!",
+//                     powerLevels.mediumLeftPower,
+//                     powerLevels.mediumRightPower,
+//                     startDescription
+//                 );
+//                 break;
+//
+//             case Low_Power_Show_Screen:
+//                 Display_2_Power_Screen(
+//                     (char *)"Low Power Show",
+//                     powerLevels.lowLeftPower,
+//                     powerLevels.lowRightPower,
+//                     showDescription
+//                 );
+//                 if(userInputs.isSelectRequest()){
+//                     powerScreen = Low_Power_Set_Screen;
+//                 }else if(userInputs.isSetValueRequest()){
+//                     powerScreen = Low_Power_Start_Screen;
+//                 }
+//                 break;
+//             case Low_Power_Set_Screen:
+//                 Display_2_Power_Screen(
+//                     (char *)"Low Power Set",
+//                     rightPower,
+//                     leftPower,
+//                     setDescription
+//                 );
+//                 if(userInputs.isSelectRequest()){
+//                     powerScreen = Low_Power_Show_Screen;
+//                 }else if(userInputs.isSetValueRequest()){
+//                     powerLevels.lowLeftPower = leftPower;
+//                     powerLevels.lowRightPower = rightPower;
+//                     powerScreen = Low_Power_Show_Screen;
+//                 }
+//                 break;
+//             case Low_Power_Start_Screen:
+//
+//                 if(userInputs.isAnyKey()){
+//                     powerScreen = Low_Power_Show_Screen;
+//                 }
+//                 Display_Clear();
+//                 strategist.testMotion(Motion_Forward_Low);
+//                 Display_2_Power_Screen(
+//                     (char *)"!Low Power Start!",
+//                     powerLevels.lowLeftPower,
+//                     powerLevels.lowRightPower,
+//                     startDescription
+//                 );
+//                 break;
+//
+//             case Circle_50_Right_Power_Show_Screen:
+//                 Display_2_Power_Screen(
+//                     (char *)"Circle 50 Right Power Show",
+//                     powerLevels.highLeftPower,
+//                     powerLevels.circle50RightPower,
+//                     showDescription
+//                 );
+//                 if(userInputs.isSelectRequest()){
+//                     powerScreen = Circle_50_Right_Power_Set_Screen;
+//                 }else if(userInputs.isSetValueRequest()){
+//                     powerScreen = Circle_50_Right_Power_Start_Screen;
+//                 }
+//                 break;
+//             case Circle_50_Right_Power_Set_Screen:
+//                 Display_2_Power_Screen(
+//                     (char *)"Circle 50 Right Power Set",
+//                     powerLevels.highLeftPower,
+//                     rightPower,
+//                     setDescription
+//                 );
+//                 if(userInputs.isSelectRequest()){
+//                     powerScreen = Circle_50_Right_Power_Show_Screen;
+//                 }else if(userInputs.isSetValueRequest()){
+//                     powerLevels.circle50RightPower = rightPower;
+//                     powerScreen = Circle_50_Right_Power_Show_Screen;
+//                 }
+//                 break;
+//             case Circle_50_Right_Power_Start_Screen:
+//
+//                 if(userInputs.isAnyKey()){
+//                     powerScreen = Circle_50_Right_Power_Show_Screen;
+//                 }
+//                 Display_Clear();
+//                 strategist.testMotion(Motion_Circle_Right_50);
+//                 Display_2_Power_Screen(
+//                     (char *)"!Circle 50 Right Power Start!",
+//                     powerLevels.highLeftPower,
+//                     powerLevels.circle50RightPower, // Assuming there's no left value for this
+//                     startDescription
+//                 );
+//                 break;
+//
+//             case Circle_50_Left_Power_Show_Screen:
+//                 Display_2_Power_Screen(
+//                     (char *)"Circle 50 Left Power Show",
+//                     powerLevels.circle50LeftPower,
+//                     powerLevels.highRightPower,  // Assuming there's no right value for this
+//                     showDescription
+//                 );
+//                 if(userInputs.isSelectRequest()){
+//                     powerScreen = Circle_50_Left_Power_Set_Screen;
+//                 }else if(userInputs.isSetValueRequest()){
+//                     powerScreen = Circle_50_Left_Power_Start_Screen;
+//                 }
+//                 break;
+//             case Circle_50_Left_Power_Set_Screen:
+//                 Display_2_Power_Screen(
+//                     (char *)"Circle 50 Left Power Set",
+//                     leftPower,
+//                     powerLevels.highRightPower,  // Assuming there's no right value for this
+//                     setDescription
+//                 );
+//                 if(userInputs.isSelectRequest()){
+//                     powerScreen = Circle_50_Left_Power_Show_Screen;
+//                 }else if(userInputs.isSetValueRequest()){
+//                     powerLevels.circle50LeftPower = leftPower;
+//                     powerScreen = Circle_50_Left_Power_Show_Screen;
+//                 }
+//                 break;
+//             case Circle_50_Left_Power_Start_Screen:
+//                 if(userInputs.isAnyKey()){
+//                     powerScreen = Circle_50_Left_Power_Show_Screen;
+//                 }
+//                 Display_Clear();
+//                 strategist.testMotion(Motion_Circle_Left_50);
+//                 Display_2_Power_Screen(
+//                     (char *)"!Circle 50 Left Power Start!",
+//                     powerLevels.circle50LeftPower,
+//                     powerLevels.highRightPower,  // Assuming there's no right value for this
+//                     startDescription
+//                 );
+//                 break;
+//        }
 	}
 
 }

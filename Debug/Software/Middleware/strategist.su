@@ -2,5 +2,3 @@
 ../Software/Middleware/strategist.cpp:22:6:void Strategist::setStrategy(void (Strategist::*)())	24	static
 ../Software/Middleware/strategist.cpp:26:6:void Strategist::runCurrentSrategy()	24	static
 ../Software/Middleware/strategist.cpp:34:6:void Strategist::testMotion(void (*)(Motor&))	40	static
-../Software/Middleware/strategist.cpp:48:1:void __static_initialization_and_destruction_0(int, int)	16	static
-../Software/Middleware/strategist.cpp:48:1:cpp)	8	static

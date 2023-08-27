@@ -7,8 +7,8 @@
 
 #ifndef MIDDLEWARE_TACTICIAN_H_
 #define MIDDLEWARE_TACTICIAN_H_
-#include "motion.h"
 #include "state.h"
+#include "timed_motion.h"
 
 class Tactician {
 public:
@@ -35,7 +35,7 @@ private:
 
     void STOP_CURRENT_TACTIC();
     bool executesMotions();
-    void addMotion(void (*motion)(Motor&), uint32_t time);
+    void addMotion(const TimedMotion& motion);
     void changeTacticStep(uint8_t step);
 };
 

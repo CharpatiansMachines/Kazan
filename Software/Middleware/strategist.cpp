@@ -6,7 +6,7 @@
  */
 
 #include "strategist.h"
-#include "motor_driver.h"
+#include "motion.h"
 
 
 Strategist::Strategist(StateControl& stateCtrl, Motor& motor, Communication_Driver& communication)

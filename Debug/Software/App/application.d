@@ -53,8 +53,7 @@ Software/App/application.o: ../Software/App/application.cpp \
  ../Software/App/hardware_test.h ../Software/App/initialize_parameters.h \
  D:/Proiecte/STMCUBE/Kazan/Software/Middleware/strategist.h \
  D:/Proiecte/STMCUBE/Kazan/Software/Middleware/tactician.h \
- D:/Proiecte/STMCUBE/Kazan/Software/Middleware/motion.h \
- D:/Proiecte/STMCUBE/Kazan/Software/Peripheral/timer.h \
+ D:/Proiecte/STMCUBE/Kazan/Software/Middleware/timed_motion.h \
  D:/Proiecte/STMCUBE/Kazan/Software/Middleware/state_control.h
 ../Software/App/application.h:
 D:/Proiecte/STMCUBE/Kazan/Software/Middleware/state_control.h:
@@ -111,6 +110,5 @@ D:/Proiecte/STMCUBE/Kazan/Software/Peripheral/SSD1306/ssd1306_conf.h:
 ../Software/App/initialize_parameters.h:
 D:/Proiecte/STMCUBE/Kazan/Software/Middleware/strategist.h:
 D:/Proiecte/STMCUBE/Kazan/Software/Middleware/tactician.h:
-D:/Proiecte/STMCUBE/Kazan/Software/Middleware/motion.h:
-D:/Proiecte/STMCUBE/Kazan/Software/Peripheral/timer.h:
+D:/Proiecte/STMCUBE/Kazan/Software/Middleware/timed_motion.h:
 D:/Proiecte/STMCUBE/Kazan/Software/Middleware/state_control.h:

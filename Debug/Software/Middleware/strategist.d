@@ -1,6 +1,9 @@
 Software/Middleware/strategist.o: ../Software/Middleware/strategist.cpp \
  ../Software/Middleware/strategist.h ../Software/Middleware/tactician.h \
- ../Software/Middleware/motion.h \
+ D:/Proiecte/STMCUBE/Kazan/Software/Model/state.h \
+ D:/Proiecte/STMCUBE/Kazan/Software/Model/line_position.h \
+ D:/Proiecte/STMCUBE/Kazan/Software/Model/enemy_position.h \
+ ../Software/Middleware/timed_motion.h \
  D:/Proiecte/STMCUBE/Kazan/Software/Peripheral/motor_driver.h \
  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h \
@@ -34,20 +37,20 @@ Software/Middleware/strategist.o: ../Software/Middleware/strategist.cpp \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
- D:/Proiecte/STMCUBE/Kazan/Software/Peripheral/timer.h \
- D:/Proiecte/STMCUBE/Kazan/Software/Model/state.h \
- D:/Proiecte/STMCUBE/Kazan/Software/Model/line_position.h \
- D:/Proiecte/STMCUBE/Kazan/Software/Model/enemy_position.h \
  ../Software/Middleware/state_control.h \
  D:/Proiecte/STMCUBE/Kazan/Software/Peripheral/enemy_detection.h \
  D:/Proiecte/STMCUBE/Kazan/Software/Model/enemy_position.h \
  D:/Proiecte/STMCUBE/Kazan/Software/Peripheral/line_detection.h \
  D:/Proiecte/STMCUBE/Kazan/Software/Model/line_position.h \
  D:/Proiecte/STMCUBE/Kazan/Software/Peripheral/communication_driver.h \
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h \
+ ../Software/Middleware/motion.h
 ../Software/Middleware/strategist.h:
 ../Software/Middleware/tactician.h:
-../Software/Middleware/motion.h:
+D:/Proiecte/STMCUBE/Kazan/Software/Model/state.h:
+D:/Proiecte/STMCUBE/Kazan/Software/Model/line_position.h:
+D:/Proiecte/STMCUBE/Kazan/Software/Model/enemy_position.h:
+../Software/Middleware/timed_motion.h:
 D:/Proiecte/STMCUBE/Kazan/Software/Peripheral/motor_driver.h:
 ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:
 ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:
@@ -81,10 +84,6 @@ D:/Proiecte/STMCUBE/Kazan/Software/Peripheral/motor_driver.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:
-D:/Proiecte/STMCUBE/Kazan/Software/Peripheral/timer.h:
-D:/Proiecte/STMCUBE/Kazan/Software/Model/state.h:
-D:/Proiecte/STMCUBE/Kazan/Software/Model/line_position.h:
-D:/Proiecte/STMCUBE/Kazan/Software/Model/enemy_position.h:
 ../Software/Middleware/state_control.h:
 D:/Proiecte/STMCUBE/Kazan/Software/Peripheral/enemy_detection.h:
 D:/Proiecte/STMCUBE/Kazan/Software/Model/enemy_position.h:
@@ -92,3 +91,4 @@ D:/Proiecte/STMCUBE/Kazan/Software/Peripheral/line_detection.h:
 D:/Proiecte/STMCUBE/Kazan/Software/Model/line_position.h:
 D:/Proiecte/STMCUBE/Kazan/Software/Peripheral/communication_driver.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:
+../Software/Middleware/motion.h:

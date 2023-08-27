@@ -13,6 +13,7 @@ RM := rm -rf
 -include Software/Peripheral/subdir.mk
 -include Software/Model/subdir.mk
 -include Software/Middleware/subdir.mk
+-include Software/Helpers/subdir.mk
 -include Software/App/subdir.mk
 -include Drivers/STM32F4xx_HAL_Driver/Src/subdir.mk
 -include Core/Startup/subdir.mk

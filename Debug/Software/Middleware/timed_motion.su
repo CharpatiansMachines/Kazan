@@ -1,0 +1,14 @@
+D:/Proiecte/STMCUBE/Kazan/Software/Peripheral/timer.h:17:17:uint32_t Timer_Get_Now_Time()	8	static
+D:/Proiecte/STMCUBE/Kazan/Software/Peripheral/timer.h:21:17:uint32_t Timer_Set_Clock(uint32_t)	16	static
+D:/Proiecte/STMCUBE/Kazan/Software/Peripheral/timer.h:25:16:int64_t Timer_Get_Remain_Time(uint32_t)	40	static
+D:/Proiecte/STMCUBE/Kazan/Software/Peripheral/timer.h:36:13:bool Timer_Has_Passed(uint32_t)	16	static
+../Software/Middleware/timed_motion.cpp:30:1:TimedMotion::TimedMotion()	16	static
+../Software/Middleware/timed_motion.cpp:32:1:TimedMotion::TimedMotion(void (*)(Motor&), uint32_t)	24	static
+../Software/Middleware/timed_motion.cpp:36:13:static TimedMotion TimedMotion::FORWARD_BRAKE()	16	static
+../Software/Middleware/timed_motion.cpp:40:13:static TimedMotion TimedMotion::BACKWARD_BRAKE()	16	static
+../Software/Middleware/timed_motion.cpp:44:13:static TimedMotion TimedMotion::fromDistance(void (*)(Motor&), uint16_t)	32	static
+../Software/Middleware/timed_motion.cpp:58:13:static TimedMotion TimedMotion::fromDegree(void (*)(Motor&), uint16_t)	32	static
+../Software/Middleware/timed_motion.cpp:73:6:void TimedMotion::startMotion(Motor&)	16	static
+../Software/Middleware/timed_motion.cpp:80:6:bool TimedMotion::hasPassed() const	16	static
+../Software/Middleware/timed_motion.cpp:82:1:void __static_initialization_and_destruction_0(int, int)	16	static
+../Software/Middleware/timed_motion.cpp:82:1:cpp)	8	static
