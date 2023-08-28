@@ -10,13 +10,13 @@
 #include "timer.h"
 #include "motion.h"
 
-const ActionTimes actionTimes = {
+ActionTimes actionTimes = {
     .brakingTime = 50,
 
     .mediumPower10cm = 20,
     .mediumPower20cm = 35,
     .mediumPower50cm = 80,
-    .mediumPower1m = 150,
+    .mediumPower100cm = 150,
 
     .rotation30degree = 25,
     .rotation60degree = 45,
@@ -49,7 +49,7 @@ TimedMotion TimedMotion::fromDistance(void (*motionFunc)(Motor& motor), uint16_t
     } else if (cm <= 50) {
         time = (int)(Math::linearInterpolation(20, actionTimes.mediumPower20cm, 50, actionTimes.mediumPower50cm, cm));
     } else if (cm <= 100) {
-        time = (int)(Math::linearInterpolation(50, actionTimes.mediumPower50cm, 100, actionTimes.mediumPower1m, cm));
+        time = (int)(Math::linearInterpolation(50, actionTimes.mediumPower50cm, 100, actionTimes.mediumPower100cm, cm));
     }
     return TimedMotion(motionFunc, time);
 }

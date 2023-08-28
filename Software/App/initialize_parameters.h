@@ -26,25 +26,39 @@ Initialize_Parameters_Screen_Type operator++(Initialize_Parameters_Screen_Type& 
 Initialize_Parameters_Screen_Type operator--(Initialize_Parameters_Screen_Type& screen, int);
 
 enum Power_Set_Screen_Type{
-	High_Power_Show_Screen,
-	High_Power_Set_Screen,
-	High_Power_Start_Screen,
-	Medium_Power_Show_Screen,
-	Medium_Power_Set_Screen,
-	Medium_Power_Start_Screen,
-	Low_Power_Show_Screen,
-	Low_Power_Set_Screen,
-	Low_Power_Start_Screen,
-	Circle_50_Right_Power_Show_Screen,
-	Circle_50_Right_Power_Set_Screen,
-	Circle_50_Right_Power_Start_Screen,
-	Circle_50_Left_Power_Show_Screen,
-	Circle_50_Left_Power_Set_Screen,
-	Circle_50_Left_Power_Start_Screen,
+	High_Power_Screen,
+	Medium_Power_Screen,
+	Low_Power_Screen,
+	Circle_50_Left_Power_Screen,
+	Circle_50_Right_Power_Screen,
 };
 Power_Set_Screen_Type operator++(Power_Set_Screen_Type& screen, int);
 
 Power_Set_Screen_Type operator--(Power_Set_Screen_Type& screen, int);
+
+enum Secondary_Screen_Type{
+	Show_Screen,
+	Set_Screen,
+	Start_Screen,
+};
+Secondary_Screen_Type operator++(Secondary_Screen_Type& screen, int);
+
+Secondary_Screen_Type operator--(Secondary_Screen_Type& screen, int);
+
+enum Time_Set_Screen_Type{
+	Braking_Time_Screen,
+	Power_10_Time_Screen,
+	Power_20_Time_Screen,
+	Power_50_Time_Screen,
+	Power_100_Time_Screen,
+	Rotation_30_Time_Screen,
+	Rotation_60_Time_Screen,
+	Rotation_90_Time_Screen,
+	Rotation_120_Time_Screen,
+};
+Time_Set_Screen_Type operator++(Time_Set_Screen_Type& screen, int);
+
+Time_Set_Screen_Type operator--(Time_Set_Screen_Type& screen, int);
 
 class InitializeParameters {
 public:

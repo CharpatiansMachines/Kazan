@@ -20,8 +20,9 @@ PowerLevels powerLevels = {
     .lowLeftPower = 20,
     .lowRightPower = 20,
 
-    .circle50RightPower = 30,
-    .circle50LeftPower = 30
+	.circleLeft50LeftPower = 30,
+    .circleRight50RightPower = 30
+
 };
 
 void Motion_Stop(Motor& motor)
@@ -66,11 +67,11 @@ void Motion_Rotate_Left_High(Motor& motor) {
 }
 
 void Motion_Circle_Right_50(Motor& motor) {
-    motor.changePower(powerLevels.highLeftPower, powerLevels.circle50RightPower);
+    motor.changePower(powerLevels.highLeftPower, powerLevels.circleRight50RightPower);
 }
 
 void Motion_Circle_Left_50(Motor& motor) {
-    motor.changePower(powerLevels.circle50LeftPower, powerLevels.highRightPower);
+    motor.changePower(powerLevels.circleLeft50LeftPower, powerLevels.highRightPower);
 }
 
 

@@ -1,9 +1,13 @@
 ../Software/App/initialize_parameters.cpp:13:6:void InitializeParameters::run()	8
-../Software/App/initialize_parameters.cpp:52:6:void InitializeParameters::runPowerSetApplication()	44
-../Software/App/initialize_parameters.cpp:291:6:void InitializeParameters::runTimeSetApplication()	1
-../Software/App/initialize_parameters.cpp:296:35:Initialize_Parameters_Screen_Type operator++(Initialize_Parameters_Screen_Type&, int)	2
-../Software/App/initialize_parameters.cpp:308:35:Initialize_Parameters_Screen_Type operator--(Initialize_Parameters_Screen_Type&, int)	2
-../Software/App/initialize_parameters.cpp:319:23:Power_Set_Screen_Type operator++(Power_Set_Screen_Type&, int)	16
-../Software/App/initialize_parameters.cpp:381:23:Power_Set_Screen_Type operator--(Power_Set_Screen_Type&, int)	16
-../Software/App/initialize_parameters.cpp:441:1:void __static_initialization_and_destruction_0(int, int)	3
-../Software/App/initialize_parameters.cpp:441:1:cpp)	1
+../Software/App/initialize_parameters.cpp:70:6:void InitializeParameters::runPowerSetApplication()	13
+../Software/App/initialize_parameters.cpp:161:6:void InitializeParameters::runTimeSetApplication()	13
+../Software/App/initialize_parameters.cpp:233:35:Initialize_Parameters_Screen_Type operator++(Initialize_Parameters_Screen_Type&, int)	2
+../Software/App/initialize_parameters.cpp:245:35:Initialize_Parameters_Screen_Type operator--(Initialize_Parameters_Screen_Type&, int)	2
+../Software/App/initialize_parameters.cpp:257:23:Power_Set_Screen_Type operator++(Power_Set_Screen_Type&, int)	2
+../Software/App/initialize_parameters.cpp:269:23:Power_Set_Screen_Type operator--(Power_Set_Screen_Type&, int)	2
+../Software/App/initialize_parameters.cpp:281:23:Secondary_Screen_Type operator++(Secondary_Screen_Type&, int)	2
+../Software/App/initialize_parameters.cpp:293:23:Secondary_Screen_Type operator--(Secondary_Screen_Type&, int)	2
+../Software/App/initialize_parameters.cpp:305:22:Time_Set_Screen_Type operator++(Time_Set_Screen_Type&, int)	2
+../Software/App/initialize_parameters.cpp:317:22:Time_Set_Screen_Type operator--(Time_Set_Screen_Type&, int)	2
+../Software/App/initialize_parameters.cpp:327:1:void __static_initialization_and_destruction_0(int, int)	3
+../Software/App/initialize_parameters.cpp:327:1:cpp)	1

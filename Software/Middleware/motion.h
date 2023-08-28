@@ -10,17 +10,17 @@
 #include "motor_driver.h"
 
 struct PowerLevels {
-    int highLeftPower;
-    int highRightPower;
+	int8_t highLeftPower;
+	int8_t highRightPower;
 
-    int mediumLeftPower;
-    int mediumRightPower;
+	int8_t mediumLeftPower;
+	int8_t mediumRightPower;
 
-    int lowLeftPower;
-    int lowRightPower;
+	int8_t lowLeftPower;
+	int8_t lowRightPower;
 
-    int circle50RightPower;
-    int circle50LeftPower;
+	int8_t circleLeft50LeftPower;
+	int8_t circleRight50RightPower;
 };
 
 extern PowerLevels powerLevels;

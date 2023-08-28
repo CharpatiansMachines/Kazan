@@ -19,7 +19,7 @@ struct ActionTimes {
     uint16_t mediumPower10cm;
     uint16_t mediumPower20cm;
     uint16_t mediumPower50cm;
-    uint16_t mediumPower1m;
+    uint16_t mediumPower100cm;
 
     // ROTATION TIMES
     uint16_t rotation30degree;
@@ -28,7 +28,7 @@ struct ActionTimes {
     uint16_t rotation120degree;
 };
 
-extern const ActionTimes actionTimes; // Declaring the extern variable for linkage
+extern ActionTimes actionTimes; // Declaring the extern variable for linkage
 
 class TimedMotion {
 private:

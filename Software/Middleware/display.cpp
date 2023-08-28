@@ -26,7 +26,7 @@ void Display_Init(){
 	ssd1306_Init();
 }
 
-void Draw_Center_Text( char *text, FontDef* font, uint16_t height){
+void Draw_Center_Text(const char *text, FontDef* font, uint16_t height){
 	uint16_t length = strlen(text);
 	uint16_t textWidth = length * font->FontWidth;
 
@@ -38,8 +38,8 @@ void Draw_Center_Text( char *text, FontDef* font, uint16_t height){
     } else {
         // Handle the scenario where the text is too wide for the display. Perhaps truncate or wrap the text.
     	//Find the most closest space to center
-    	char* secondText = NULL;
-    	char *p = text + length/2;
+    	const char* secondText = NULL;
+    	const char *p = text + length/2;
     	for(uint8_t i = 0; i < length /2 - length % 2 ;i++){
     		if(*(p + i) == ' '){
     			secondText = p + i;
@@ -64,13 +64,13 @@ void Draw_Center_Text( char *text, FontDef* font, uint16_t height){
     }
 }
 
-void Draw_Left_Text(char *text, FontDef* font, uint16_t height){
+void Draw_Left_Text(const char *text, FontDef* font, uint16_t height){
 	ssd1306_SetCursor (0, height);
 	ssd1306_WriteString(text, *font, White);
 	ssd1306_SetCursor (0, height + font->FontHeight + 1);
 }
 
-void Draw_Right_Text(char *text, FontDef* font, uint16_t height){
+void Draw_Right_Text(const char *text, FontDef* font, uint16_t height){
 	uint16_t length = strlen(text);
 	uint16_t textWidth = length * font->FontWidth;
 	if(textWidth <= SSD1306_WIDTH){
@@ -84,7 +84,7 @@ void Draw_Right_Text(char *text, FontDef* font, uint16_t height){
 	}
 }
 
-void Display_Title_Screen(char * title){
+void Display_Title_Screen(const char * title){
 	Draw_Full_Black();
 
 	Draw_Center_Text((char *)"Start", &Font_7x10, 0);
@@ -100,7 +100,7 @@ void Display_Title_Screen(char * title){
 	ssd1306_UpdateScreen();
 }
 
-void Display_Small_Title_Screen(char*  title){
+void Display_Small_Title_Screen(const char*  title){
 	Draw_Full_Black();
 
 	Draw_Center_Text((char *)"Start", &Font_7x10, 0);
@@ -116,7 +116,7 @@ void Display_Small_Title_Screen(char*  title){
 	ssd1306_UpdateScreen();
 }
 
-void Display_2_Numbers(char * title, double number1, double number2){
+void Display_2_Numbers(const char * title, double number1, double number2){
 	char s[40];
 
 	Draw_Full_Black();
@@ -134,7 +134,7 @@ void Display_2_Numbers(char * title, double number1, double number2){
 }
 
 
-void Draw_3_Points_Line(bool t[3], char* trueString, char*falseString,uint16_t height){
+void Draw_3_Points_Line(bool t[3],const char* trueString,const  char*falseString,uint16_t height){
 	if(t[0]){
 		Draw_Left_Text(trueString,&Font_7x10, height);
 	}else{
@@ -172,7 +172,7 @@ void Display_Enemy_Sensors_Output(uint32_t value){
 
 }
 
-void Draw_Circular_Arc_Text( char *text, FontDef* font, uint16_t height)
+void Draw_Circular_Arc_Text(const char *text, FontDef* font, uint16_t height)
 {
 	uint16_t length = strlen(text);
 	float wDistance = SSD1306_WIDTH;
@@ -246,7 +246,7 @@ void Display_N_Values_Screen(uint8_t *values, uint8_t valuesNo){
 	ssd1306_UpdateScreen();
 }
 
-void Display_Line_Position_Screen(LinePosition lineOutput,uint8_t whiteFilter, uint8_t darkFilter, char *descrition){
+void Display_Line_Position_Screen(LinePosition lineOutput,uint8_t whiteFilter, uint8_t darkFilter,const  char *descrition){
 	char X[] = "X";
 	char O[] = "O";
 	char s[40];
@@ -277,11 +277,11 @@ void Display_Line_Position_Screen(LinePosition lineOutput,uint8_t whiteFilter, u
 
 	ssd1306_UpdateScreen();
 }
-void Display_2_Power_And_Time_Screen(char * title, int8_t leftPower, int8_t rightPower,int64_t time,char * description){
+void Display_2_Power_And_Time_Screen(const char * title, int8_t leftPower, int8_t rightPower,int64_t time,const char * description){
 	char s[50];
 	FontDef font = Font_7x10;
 	Draw_Full_Black();
-	Draw_Center_Text(title, &Font_11x18, 0);
+	Draw_Center_Text(title, &font, 0);
 
 	sprintf(s,"%d  %d",leftPower,rightPower);
 	Draw_Center_Text(s, &font, SSD1306.CurrentY + Font_7x10.FontHeight /2);
@@ -293,7 +293,7 @@ void Display_2_Power_And_Time_Screen(char * title, int8_t leftPower, int8_t righ
 	ssd1306_UpdateScreen();
 }
 
-void Display_2_Power_Screen(char *title, int8_t leftPower, int8_t rightPower,char * description)
+void Display_2_Power_Screen(const char *title, int8_t leftPower, int8_t rightPower,const char * description)
 {
 	char s[50];
 	FontDef font = Font_7x10;
