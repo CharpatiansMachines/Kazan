@@ -17,7 +17,8 @@ public:
 	Strategist(StateControl& stateCtrl, Motor& motor, Communication_Driver& communication);
 	void setStrategy(void (Strategist::*currentStrategy)(void));
 	void runCurrentSrategy();
-	void testMotion(void (*motionFunction)(Motor& motor));
+	void runTestMotion(void (*motionFunction)(Motor& motor));
+	void runTestTimedMotion(TimedMotion timeMotion);
 
 
 private:

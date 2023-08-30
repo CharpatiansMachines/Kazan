@@ -30,20 +30,73 @@ void Strategist::runCurrentSrategy() {
 		(this->*currentStrategy)();
 		start = communication.readStartModule();
 	}
+	Motion_Stop(motor);
 }
-void Strategist::testMotion(void (*motionFunction)(Motor& motor))
+
+void Strategist::runTestMotion(void (*motionFunction)(Motor& motor))
 {
 	bool start = communication.readStartModule();
-	if(start){
-		motionFunction(motor);
-	}
+	bool lineWasDetected = false;
+
 	while(start)
 	{
 		State state = stateControl.recalculateStates();
-		if(state.linePosition.isNotNone()){
-			Motion_Stop(motor);
+		if(lineWasDetected)
+		{
+			if(tactician.hasTactic()){
+				tactician.runCurrentTactic(state);
+			}else{
+				lineWasDetected = false;
+			}
+		}else{
+			if(state.linePosition.isNotNone())
+			{
+				lineWasDetected = true;
+				tactician.setTactic(&Tactician::Tactic_Escape_Line_Whatever_Enemy_Do);
+				tactician.runCurrentTactic(state);
+			}else{
+				motionFunction(motor);
+			}
 		}
 		start = communication.readStartModule();
 	}
+	Motion_Stop(motor);
+}
+
+
+
+
+void Strategist::runTestTimedMotion(TimedMotion timeMotion){
+	bool start = communication.readStartModule();
+	bool lineWasDetected = false;
+	if(start){
+		timeMotion.startMotion(motor);
+	}
+
+	while(start)
+	{
+		State state = stateControl.recalculateStates();
+		if(lineWasDetected)
+		{
+			if(tactician.hasTactic()){
+				tactician.runCurrentTactic(state);
+			}else{
+				lineWasDetected = false;
+			}
+		}else{
+			if(state.linePosition.isNotNone())
+			{
+				lineWasDetected = true;
+				tactician.setTactic(&Tactician::Tactic_Escape_Line_Whatever_Enemy_Do);
+				tactician.runCurrentTactic(state);
+			}else{
+				if(timeMotion.hasPassed()){
+					break;
+				}
+			}
+		}
+		start = communication.readStartModule();
+	}
+	Motion_Stop(motor);
 }
 

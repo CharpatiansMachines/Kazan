@@ -1,13 +1,13 @@
 ../Software/App/initialize_parameters.cpp:13:6:void InitializeParameters::run()	16	static
 ../Software/App/initialize_parameters.cpp:70:6:void InitializeParameters::runPowerSetApplication()	48	static
-../Software/App/initialize_parameters.cpp:161:6:void InitializeParameters::runTimeSetApplication()	96	static
-../Software/App/initialize_parameters.cpp:233:35:Initialize_Parameters_Screen_Type operator++(Initialize_Parameters_Screen_Type&, int)	24	static
-../Software/App/initialize_parameters.cpp:245:35:Initialize_Parameters_Screen_Type operator--(Initialize_Parameters_Screen_Type&, int)	24	static
-../Software/App/initialize_parameters.cpp:257:23:Power_Set_Screen_Type operator++(Power_Set_Screen_Type&, int)	24	static
-../Software/App/initialize_parameters.cpp:269:23:Power_Set_Screen_Type operator--(Power_Set_Screen_Type&, int)	24	static
-../Software/App/initialize_parameters.cpp:281:23:Secondary_Screen_Type operator++(Secondary_Screen_Type&, int)	24	static
-../Software/App/initialize_parameters.cpp:293:23:Secondary_Screen_Type operator--(Secondary_Screen_Type&, int)	24	static
-../Software/App/initialize_parameters.cpp:305:22:Time_Set_Screen_Type operator++(Time_Set_Screen_Type&, int)	24	static
-../Software/App/initialize_parameters.cpp:317:22:Time_Set_Screen_Type operator--(Time_Set_Screen_Type&, int)	24	static
-../Software/App/initialize_parameters.cpp:327:1:void __static_initialization_and_destruction_0(int, int)	16	static
-../Software/App/initialize_parameters.cpp:327:1:cpp)	8	static
+../Software/App/initialize_parameters.cpp:161:6:void InitializeParameters::runTimeSetApplication()	104	static
+../Software/App/initialize_parameters.cpp:238:35:Initialize_Parameters_Screen_Type operator++(Initialize_Parameters_Screen_Type&, int)	24	static
+../Software/App/initialize_parameters.cpp:250:35:Initialize_Parameters_Screen_Type operator--(Initialize_Parameters_Screen_Type&, int)	24	static
+../Software/App/initialize_parameters.cpp:262:23:Power_Set_Screen_Type operator++(Power_Set_Screen_Type&, int)	24	static
+../Software/App/initialize_parameters.cpp:274:23:Power_Set_Screen_Type operator--(Power_Set_Screen_Type&, int)	24	static
+../Software/App/initialize_parameters.cpp:286:23:Secondary_Screen_Type operator++(Secondary_Screen_Type&, int)	24	static
+../Software/App/initialize_parameters.cpp:298:23:Secondary_Screen_Type operator--(Secondary_Screen_Type&, int)	24	static
+../Software/App/initialize_parameters.cpp:310:22:Time_Set_Screen_Type operator++(Time_Set_Screen_Type&, int)	24	static
+../Software/App/initialize_parameters.cpp:322:22:Time_Set_Screen_Type operator--(Time_Set_Screen_Type&, int)	24	static
+../Software/App/initialize_parameters.cpp:332:1:void __static_initialization_and_destruction_0(int, int)	16	static
+../Software/App/initialize_parameters.cpp:332:1:cpp)	8	static

@@ -1,4 +1,5 @@
 ../Software/Middleware/strategist.cpp:12:1:Strategist::Strategist(StateControl&, Motor&, Communication_Driver&)	24	static
 ../Software/Middleware/strategist.cpp:22:6:void Strategist::setStrategy(void (Strategist::*)())	24	static
 ../Software/Middleware/strategist.cpp:26:6:void Strategist::runCurrentSrategy()	24	static
-../Software/Middleware/strategist.cpp:34:6:void Strategist::testMotion(void (*)(Motor&))	40	static
+../Software/Middleware/strategist.cpp:36:6:void Strategist::runTestMotion(void (*)(Motor&))	56	static
+../Software/Middleware/strategist.cpp:69:6:void Strategist::runTestTimedMotion(TimedMotion)	64	static

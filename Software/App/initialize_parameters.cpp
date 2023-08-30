@@ -123,7 +123,7 @@ void InitializeParameters::runPowerSetApplication()
 					secondScreen = Show_Screen;
 				 }
 				Display_Clear();
-				strategist.testMotion(Motion_Forward_Medium);
+				strategist.runTestMotion(Motion_Forward_Medium);
 				 Display_2_Power_Screen(
 					 powerSet.title,
 					 *powerSet.leftPower,
@@ -214,7 +214,12 @@ void InitializeParameters::runTimeSetApplication()
 					secondScreen = Show_Screen;
 				 }
 				Display_Clear();
-				strategist.testMotion(timeSet.motion);
+				if(timeSetScreen == Braking_Time_Screen){
+					strategist.runTestMotion(timeSet.motion);
+				}else{
+					strategist.runTestTimedMotion(TimedMotion(timeSet.motion,(uint32_t) timeSet.time));
+				}
+
 				Display_2_Power_And_Time_Screen(
 					 timeSet.title,
 					 *timeSet.leftPower,
