@@ -3863,6 +3863,133 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x10 ./Software/App/initialize_parameters.o
  .debug_macro   0x0000000000000000      0x3ed ./Software/App/initialize_parameters.o
  .debug_macro   0x0000000000000000       0x40 ./Software/App/initialize_parameters.o
+ .group         0x0000000000000000        0x8 ./Software/App/strategy_selector.o
+ .group         0x0000000000000000        0x8 ./Software/App/strategy_selector.o
+ .group         0x0000000000000000        0xc ./Software/App/strategy_selector.o
+ .group         0x0000000000000000        0xc ./Software/App/strategy_selector.o
+ .group         0x0000000000000000        0xc ./Software/App/strategy_selector.o
+ .group         0x0000000000000000        0xc ./Software/App/strategy_selector.o
+ .group         0x0000000000000000        0xc ./Software/App/strategy_selector.o
+ .group         0x0000000000000000        0xc ./Software/App/strategy_selector.o
+ .group         0x0000000000000000        0xc ./Software/App/strategy_selector.o
+ .group         0x0000000000000000        0xc ./Software/App/strategy_selector.o
+ .group         0x0000000000000000        0xc ./Software/App/strategy_selector.o
+ .group         0x0000000000000000        0xc ./Software/App/strategy_selector.o
+ .group         0x0000000000000000        0xc ./Software/App/strategy_selector.o
+ .group         0x0000000000000000        0xc ./Software/App/strategy_selector.o
+ .group         0x0000000000000000        0xc ./Software/App/strategy_selector.o
+ .group         0x0000000000000000        0xc ./Software/App/strategy_selector.o
+ .group         0x0000000000000000        0xc ./Software/App/strategy_selector.o
+ .group         0x0000000000000000        0xc ./Software/App/strategy_selector.o
+ .group         0x0000000000000000        0xc ./Software/App/strategy_selector.o
+ .group         0x0000000000000000        0xc ./Software/App/strategy_selector.o
+ .group         0x0000000000000000        0xc ./Software/App/strategy_selector.o
+ .group         0x0000000000000000        0xc ./Software/App/strategy_selector.o
+ .group         0x0000000000000000        0xc ./Software/App/strategy_selector.o
+ .group         0x0000000000000000        0xc ./Software/App/strategy_selector.o
+ .group         0x0000000000000000        0xc ./Software/App/strategy_selector.o
+ .group         0x0000000000000000        0xc ./Software/App/strategy_selector.o
+ .group         0x0000000000000000        0xc ./Software/App/strategy_selector.o
+ .group         0x0000000000000000        0xc ./Software/App/strategy_selector.o
+ .group         0x0000000000000000        0xc ./Software/App/strategy_selector.o
+ .group         0x0000000000000000        0xc ./Software/App/strategy_selector.o
+ .group         0x0000000000000000        0xc ./Software/App/strategy_selector.o
+ .group         0x0000000000000000        0xc ./Software/App/strategy_selector.o
+ .group         0x0000000000000000        0xc ./Software/App/strategy_selector.o
+ .group         0x0000000000000000        0xc ./Software/App/strategy_selector.o
+ .group         0x0000000000000000        0xc ./Software/App/strategy_selector.o
+ .group         0x0000000000000000        0xc ./Software/App/strategy_selector.o
+ .group         0x0000000000000000        0xc ./Software/App/strategy_selector.o
+ .group         0x0000000000000000        0xc ./Software/App/strategy_selector.o
+ .group         0x0000000000000000        0xc ./Software/App/strategy_selector.o
+ .group         0x0000000000000000        0xc ./Software/App/strategy_selector.o
+ .group         0x0000000000000000        0xc ./Software/App/strategy_selector.o
+ .group         0x0000000000000000        0xc ./Software/App/strategy_selector.o
+ .group         0x0000000000000000        0xc ./Software/App/strategy_selector.o
+ .group         0x0000000000000000        0xc ./Software/App/strategy_selector.o
+ .group         0x0000000000000000        0xc ./Software/App/strategy_selector.o
+ .group         0x0000000000000000        0xc ./Software/App/strategy_selector.o
+ .group         0x0000000000000000        0xc ./Software/App/strategy_selector.o
+ .group         0x0000000000000000        0xc ./Software/App/strategy_selector.o
+ .group         0x0000000000000000        0xc ./Software/App/strategy_selector.o
+ .group         0x0000000000000000        0xc ./Software/App/strategy_selector.o
+ .group         0x0000000000000000        0xc ./Software/App/strategy_selector.o
+ .group         0x0000000000000000        0xc ./Software/App/strategy_selector.o
+ .text          0x0000000000000000        0x0 ./Software/App/strategy_selector.o
+ .data          0x0000000000000000        0x0 ./Software/App/strategy_selector.o
+ .bss           0x0000000000000000        0x0 ./Software/App/strategy_selector.o
+ .rodata        0x0000000000000000       0x12 ./Software/App/strategy_selector.o
+ .rodata._ZL18selectorScreenData
+                0x0000000000000000        0xc ./Software/App/strategy_selector.o
+ .text._ZN16StrategySelector3runEv
+                0x0000000000000000       0xd0 ./Software/App/strategy_selector.o
+ .text._ZppR29Strategy_Selector_Screen_Typei
+                0x0000000000000000       0x3a ./Software/App/strategy_selector.o
+ .text._ZmmR29Strategy_Selector_Screen_Typei
+                0x0000000000000000       0x3a ./Software/App/strategy_selector.o
+ .debug_info    0x0000000000000000     0x234b ./Software/App/strategy_selector.o
+ .debug_abbrev  0x0000000000000000      0x42d ./Software/App/strategy_selector.o
+ .debug_aranges
+                0x0000000000000000       0x30 ./Software/App/strategy_selector.o
+ .debug_rnglists
+                0x0000000000000000       0x20 ./Software/App/strategy_selector.o
+ .debug_macro   0x0000000000000000      0x2f6 ./Software/App/strategy_selector.o
+ .debug_macro   0x0000000000000000      0xb80 ./Software/App/strategy_selector.o
+ .debug_macro   0x0000000000000000      0x1b2 ./Software/App/strategy_selector.o
+ .debug_macro   0x0000000000000000       0x10 ./Software/App/strategy_selector.o
+ .debug_macro   0x0000000000000000      0x3ed ./Software/App/strategy_selector.o
+ .debug_macro   0x0000000000000000       0x1c ./Software/App/strategy_selector.o
+ .debug_macro   0x0000000000000000       0x22 ./Software/App/strategy_selector.o
+ .debug_macro   0x0000000000000000       0x8e ./Software/App/strategy_selector.o
+ .debug_macro   0x0000000000000000       0x51 ./Software/App/strategy_selector.o
+ .debug_macro   0x0000000000000000      0x103 ./Software/App/strategy_selector.o
+ .debug_macro   0x0000000000000000       0x6a ./Software/App/strategy_selector.o
+ .debug_macro   0x0000000000000000      0x1df ./Software/App/strategy_selector.o
+ .debug_macro   0x0000000000000000       0x2e ./Software/App/strategy_selector.o
+ .debug_macro   0x0000000000000000       0x28 ./Software/App/strategy_selector.o
+ .debug_macro   0x0000000000000000       0x1c ./Software/App/strategy_selector.o
+ .debug_macro   0x0000000000000000       0x22 ./Software/App/strategy_selector.o
+ .debug_macro   0x0000000000000000       0xd9 ./Software/App/strategy_selector.o
+ .debug_macro   0x0000000000000000     0x102d ./Software/App/strategy_selector.o
+ .debug_macro   0x0000000000000000      0x11f ./Software/App/strategy_selector.o
+ .debug_macro   0x0000000000000000    0x16749 ./Software/App/strategy_selector.o
+ .debug_macro   0x0000000000000000       0x6d ./Software/App/strategy_selector.o
+ .debug_macro   0x0000000000000000      0x2a7 ./Software/App/strategy_selector.o
+ .debug_macro   0x0000000000000000     0x367e ./Software/App/strategy_selector.o
+ .debug_macro   0x0000000000000000      0x17b ./Software/App/strategy_selector.o
+ .debug_macro   0x0000000000000000       0x5c ./Software/App/strategy_selector.o
+ .debug_macro   0x0000000000000000      0xc90 ./Software/App/strategy_selector.o
+ .debug_macro   0x0000000000000000      0x9fe ./Software/App/strategy_selector.o
+ .debug_macro   0x0000000000000000      0x115 ./Software/App/strategy_selector.o
+ .debug_macro   0x0000000000000000      0x1a0 ./Software/App/strategy_selector.o
+ .debug_macro   0x0000000000000000       0xa5 ./Software/App/strategy_selector.o
+ .debug_macro   0x0000000000000000      0x16d ./Software/App/strategy_selector.o
+ .debug_macro   0x0000000000000000      0x287 ./Software/App/strategy_selector.o
+ .debug_macro   0x0000000000000000       0x5f ./Software/App/strategy_selector.o
+ .debug_macro   0x0000000000000000      0x236 ./Software/App/strategy_selector.o
+ .debug_macro   0x0000000000000000      0xb5b ./Software/App/strategy_selector.o
+ .debug_macro   0x0000000000000000      0x38b ./Software/App/strategy_selector.o
+ .debug_macro   0x0000000000000000      0x17d ./Software/App/strategy_selector.o
+ .debug_macro   0x0000000000000000       0xf9 ./Software/App/strategy_selector.o
+ .debug_macro   0x0000000000000000      0x132 ./Software/App/strategy_selector.o
+ .debug_macro   0x0000000000000000      0x29c ./Software/App/strategy_selector.o
+ .debug_macro   0x0000000000000000       0x2e ./Software/App/strategy_selector.o
+ .debug_macro   0x0000000000000000      0x1b5 ./Software/App/strategy_selector.o
+ .debug_macro   0x0000000000000000       0x22 ./Software/App/strategy_selector.o
+ .debug_macro   0x0000000000000000       0xd6 ./Software/App/strategy_selector.o
+ .debug_macro   0x0000000000000000      0x11a ./Software/App/strategy_selector.o
+ .debug_macro   0x0000000000000000       0xe8 ./Software/App/strategy_selector.o
+ .debug_macro   0x0000000000000000       0x89 ./Software/App/strategy_selector.o
+ .debug_macro   0x0000000000000000      0x225 ./Software/App/strategy_selector.o
+ .debug_macro   0x0000000000000000      0x295 ./Software/App/strategy_selector.o
+ .debug_macro   0x0000000000000000      0x126 ./Software/App/strategy_selector.o
+ .debug_macro   0x0000000000000000       0x40 ./Software/App/strategy_selector.o
+ .debug_line    0x0000000000000000      0xc52 ./Software/App/strategy_selector.o
+ .debug_str     0x0000000000000000    0xd5d0e ./Software/App/strategy_selector.o
+ .comment       0x0000000000000000       0x44 ./Software/App/strategy_selector.o
+ .debug_frame   0x0000000000000000       0x84 ./Software/App/strategy_selector.o
+ .ARM.attributes
+                0x0000000000000000       0x34 ./Software/App/strategy_selector.o
  .group         0x0000000000000000        0xc ./Software/Helpers/math.o
  .text          0x0000000000000000        0x0 ./Software/Helpers/math.o
  .data          0x0000000000000000        0x0 ./Software/Helpers/math.o
@@ -4188,8 +4315,6 @@ Discarded input sections
  .bss           0x0000000000000000        0x0 ./Software/Middleware/state_control.o
  .text._Z18Timer_Get_Now_Timev
                 0x0000000000000000       0x18 ./Software/Middleware/state_control.o
- .text._ZN12StateControl9configAllEv
-                0x0000000000000000       0x44 ./Software/Middleware/state_control.o
  .text._ZNK12StateControl8getStateEv
                 0x0000000000000000       0x22 ./Software/Middleware/state_control.o
  .debug_macro   0x0000000000000000      0xb80 ./Software/Middleware/state_control.o
@@ -4407,7 +4532,7 @@ Discarded input sections
                 0x0000000000000000       0x16 ./Software/Middleware/tactician.o
  .text._ZN9Tactician19Tactic_Front_AttackE5State
                 0x0000000000000000       0xa0 ./Software/Middleware/tactician.o
- .text._ZN9Tactician22Tactic_Rotate_To_EnemyE5State
+ .text._ZN9Tactician27Tactic_Rotate_Towards_EnemyE5State
                 0x0000000000000000       0x84 ./Software/Middleware/tactician.o
  .text._ZN9Tactician31Tactic_Search_Enemy_By_RotationE5State
                 0x0000000000000000       0xd0 ./Software/Middleware/tactician.o
@@ -4722,8 +4847,6 @@ Discarded input sections
                 0x0000000000000000       0x24 ./Software/Model/enemy_position.o
  .text._ZN13EnemyPosition21notKnownEnemyPositionEv
                 0x0000000000000000       0x28 ./Software/Model/enemy_position.o
- .text._ZN13EnemyPosition18frontEnemyPositionEv
-                0x0000000000000000       0x2a ./Software/Model/enemy_position.o
  .text._ZN13EnemyPosition26frontNearLeftEnemyPositionEv
                 0x0000000000000000       0x2a ./Software/Model/enemy_position.o
  .text._ZN13EnemyPosition27frontNearRightEnemyPositionEv
@@ -5451,8 +5574,6 @@ Discarded input sections
  .text          0x0000000000000000        0x0 ./Software/Peripheral/enemy_detection.o
  .data          0x0000000000000000        0x0 ./Software/Peripheral/enemy_detection.o
  .bss           0x0000000000000000        0x0 ./Software/Peripheral/enemy_detection.o
- .text._ZN14EnemyDetection6configEv
-                0x0000000000000000       0x28 ./Software/Peripheral/enemy_detection.o
  .text._ZN14EnemyDetection20getMostVotedPositionEv
                 0x0000000000000000       0xb4 ./Software/Peripheral/enemy_detection.o
  .debug_macro   0x0000000000000000      0xb80 ./Software/Peripheral/enemy_detection.o
@@ -5553,8 +5674,6 @@ Discarded input sections
  .text          0x0000000000000000        0x0 ./Software/Peripheral/line_detection.o
  .data          0x0000000000000000        0x0 ./Software/Peripheral/line_detection.o
  .bss           0x0000000000000000        0x0 ./Software/Peripheral/line_detection.o
- .text._ZN13LineDetection6configEv
-                0x0000000000000000       0x14 ./Software/Peripheral/line_detection.o
  .debug_macro   0x0000000000000000      0xb80 ./Software/Peripheral/line_detection.o
  .debug_macro   0x0000000000000000       0x1c ./Software/Peripheral/line_detection.o
  .debug_macro   0x0000000000000000       0x22 ./Software/Peripheral/line_detection.o
@@ -5650,8 +5769,6 @@ Discarded input sections
  .text          0x0000000000000000        0x0 ./Software/Peripheral/motor_driver.o
  .data          0x0000000000000000        0x0 ./Software/Peripheral/motor_driver.o
  .bss           0x0000000000000000        0x0 ./Software/Peripheral/motor_driver.o
- .text._ZN5Motor4initEv
-                0x0000000000000000       0x4a ./Software/Peripheral/motor_driver.o
  .debug_macro   0x0000000000000000      0xb80 ./Software/Peripheral/motor_driver.o
  .debug_macro   0x0000000000000000       0x2e ./Software/Peripheral/motor_driver.o
  .debug_macro   0x0000000000000000       0x28 ./Software/Peripheral/motor_driver.o
@@ -6230,6 +6347,7 @@ LOAD ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.o
 LOAD ./Software/App/application.o
 LOAD ./Software/App/hardware_test.o
 LOAD ./Software/App/initialize_parameters.o
+LOAD ./Software/App/strategy_selector.o
 LOAD ./Software/Helpers/math.o
 LOAD ./Software/Middleware/display.o
 LOAD ./Software/Middleware/motion.o
@@ -6284,7 +6402,7 @@ LOAD C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
                 0x0000000008000000                g_pfnVectors
                 0x00000000080001c4                . = ALIGN (0x4)
 
-.text           0x00000000080001d0     0xb5e0
+.text           0x00000000080001d0     0xb6e0
                 0x00000000080001d0                . = ALIGN (0x4)
  *(.text)
  .text          0x00000000080001d0       0x40 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/hard/crtbegin.o
@@ -6656,859 +6774,873 @@ LOAD C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
                 0x000000000800477a                InitializeParameters::InitializeParameters(UserInputs&, StateControl&, Motor&, Communication_Driver&)
  *fill*         0x00000000080047c2        0x2 
  .text._ZN11ApplicationC2Ev
-                0x00000000080047c4       0x9c ./Software/App/application.o
+                0x00000000080047c4       0x94 ./Software/App/application.o
                 0x00000000080047c4                Application::Application()
                 0x00000000080047c4                Application::Application()
  .text._ZN11Application3runEv
-                0x0000000008004860      0x140 ./Software/App/application.o
-                0x0000000008004860                Application::run()
+                0x0000000008004858      0x154 ./Software/App/application.o
+                0x0000000008004858                Application::run()
  .text._ZppR18Application_Screeni
-                0x00000000080049a0       0x3a ./Software/App/application.o
-                0x00000000080049a0                operator++(Application_Screen&, int)
+                0x00000000080049ac       0x3a ./Software/App/application.o
+                0x00000000080049ac                operator++(Application_Screen&, int)
  .text._ZmmR18Application_Screeni
-                0x00000000080049da       0x3a ./Software/App/application.o
-                0x00000000080049da                operator--(Application_Screen&, int)
+                0x00000000080049e6       0x3a ./Software/App/application.o
+                0x00000000080049e6                operator--(Application_Screen&, int)
  .text._Z18Timer_Get_Now_Timev
-                0x0000000008004a14       0x18 ./Software/App/hardware_test.o
-                0x0000000008004a14                Timer_Get_Now_Time()
+                0x0000000008004a20       0x18 ./Software/App/hardware_test.o
+                0x0000000008004a20                Timer_Get_Now_Time()
  .text._Z15Timer_Set_Clockm
-                0x0000000008004a2c       0x1a ./Software/App/hardware_test.o
-                0x0000000008004a2c                Timer_Set_Clock(unsigned long)
+                0x0000000008004a38       0x1a ./Software/App/hardware_test.o
+                0x0000000008004a38                Timer_Set_Clock(unsigned long)
  .text._Z21Timer_Get_Remain_Timem
-                0x0000000008004a46       0x42 ./Software/App/hardware_test.o
-                0x0000000008004a46                Timer_Get_Remain_Time(unsigned long)
+                0x0000000008004a52       0x42 ./Software/App/hardware_test.o
+                0x0000000008004a52                Timer_Get_Remain_Time(unsigned long)
  .text._ZN15HardwareTestApp3runEv
-                0x0000000008004a88      0x138 ./Software/App/hardware_test.o
-                0x0000000008004a88                HardwareTestApp::run()
+                0x0000000008004a94      0x138 ./Software/App/hardware_test.o
+                0x0000000008004a94                HardwareTestApp::run()
  .text._ZN15HardwareTestApp19runEnemySensorsTestEv
-                0x0000000008004bc0      0x110 ./Software/App/hardware_test.o
-                0x0000000008004bc0                HardwareTestApp::runEnemySensorsTest()
+                0x0000000008004bcc      0x110 ./Software/App/hardware_test.o
+                0x0000000008004bcc                HardwareTestApp::runEnemySensorsTest()
  .text._ZN15HardwareTestApp20runLineDetectionTestEv
-                0x0000000008004cd0      0x188 ./Software/App/hardware_test.o
-                0x0000000008004cd0                HardwareTestApp::runLineDetectionTest()
+                0x0000000008004cdc      0x188 ./Software/App/hardware_test.o
+                0x0000000008004cdc                HardwareTestApp::runLineDetectionTest()
  .text._ZN15HardwareTestApp12runMotorTestEv
-                0x0000000008004e58      0x21c ./Software/App/hardware_test.o
-                0x0000000008004e58                HardwareTestApp::runMotorTest()
+                0x0000000008004e64      0x21c ./Software/App/hardware_test.o
+                0x0000000008004e64                HardwareTestApp::runMotorTest()
  .text._ZppR25Hardware_Test_Screen_Typei
-                0x0000000008005074       0x3a ./Software/App/hardware_test.o
-                0x0000000008005074                operator++(Hardware_Test_Screen_Type&, int)
+                0x0000000008005080       0x3a ./Software/App/hardware_test.o
+                0x0000000008005080                operator++(Hardware_Test_Screen_Type&, int)
  .text._ZmmR25Hardware_Test_Screen_Typei
-                0x00000000080050ae       0x3a ./Software/App/hardware_test.o
-                0x00000000080050ae                operator--(Hardware_Test_Screen_Type&, int)
+                0x00000000080050ba       0x3a ./Software/App/hardware_test.o
+                0x00000000080050ba                operator--(Hardware_Test_Screen_Type&, int)
  .text._ZppR26Line_Detection_Screen_Typei
-                0x00000000080050e8       0x3a ./Software/App/hardware_test.o
-                0x00000000080050e8                operator++(Line_Detection_Screen_Type&, int)
+                0x00000000080050f4       0x3a ./Software/App/hardware_test.o
+                0x00000000080050f4                operator++(Line_Detection_Screen_Type&, int)
  .text._ZmmR26Line_Detection_Screen_Typei
-                0x0000000008005122       0x3a ./Software/App/hardware_test.o
-                0x0000000008005122                operator--(Line_Detection_Screen_Type&, int)
+                0x000000000800512e       0x3a ./Software/App/hardware_test.o
+                0x000000000800512e                operator--(Line_Detection_Screen_Type&, int)
  .text._ZppR27Enemy_Detection_Screen_Typei
-                0x000000000800515c       0x3a ./Software/App/hardware_test.o
-                0x000000000800515c                operator++(Enemy_Detection_Screen_Type&, int)
+                0x0000000008005168       0x3a ./Software/App/hardware_test.o
+                0x0000000008005168                operator++(Enemy_Detection_Screen_Type&, int)
  .text._ZmmR27Enemy_Detection_Screen_Typei
-                0x0000000008005196       0x3a ./Software/App/hardware_test.o
-                0x0000000008005196                operator--(Enemy_Detection_Screen_Type&, int)
+                0x00000000080051a2       0x3a ./Software/App/hardware_test.o
+                0x00000000080051a2                operator--(Enemy_Detection_Screen_Type&, int)
  .text._ZppR22Motor_Test_Screen_Typei
-                0x00000000080051d0       0x4c ./Software/App/hardware_test.o
-                0x00000000080051d0                operator++(Motor_Test_Screen_Type&, int)
+                0x00000000080051dc       0x4c ./Software/App/hardware_test.o
+                0x00000000080051dc                operator++(Motor_Test_Screen_Type&, int)
  .text._ZmmR22Motor_Test_Screen_Typei
-                0x000000000800521c       0x4c ./Software/App/hardware_test.o
-                0x000000000800521c                operator--(Motor_Test_Screen_Type&, int)
+                0x0000000008005228       0x4c ./Software/App/hardware_test.o
+                0x0000000008005228                operator--(Motor_Test_Screen_Type&, int)
  .text._Z41__static_initialization_and_destruction_0ii
-                0x0000000008005268       0x30 ./Software/App/hardware_test.o
+                0x0000000008005274       0x30 ./Software/App/hardware_test.o
  .text._GLOBAL__sub_I__ZN15HardwareTestApp3runEv
-                0x0000000008005298       0x10 ./Software/App/hardware_test.o
+                0x00000000080052a4       0x10 ./Software/App/hardware_test.o
  .text._ZN20InitializeParameters3runEv
-                0x00000000080052a8       0xc4 ./Software/App/initialize_parameters.o
-                0x00000000080052a8                InitializeParameters::run()
+                0x00000000080052b4       0xc4 ./Software/App/initialize_parameters.o
+                0x00000000080052b4                InitializeParameters::run()
  .text._ZN20InitializeParameters22runPowerSetApplicationEv
-                0x000000000800536c      0x1cc ./Software/App/initialize_parameters.o
-                0x000000000800536c                InitializeParameters::runPowerSetApplication()
+                0x0000000008005378      0x1cc ./Software/App/initialize_parameters.o
+                0x0000000008005378                InitializeParameters::runPowerSetApplication()
  .text._ZN20InitializeParameters21runTimeSetApplicationEv
-                0x0000000008005538      0x230 ./Software/App/initialize_parameters.o
-                0x0000000008005538                InitializeParameters::runTimeSetApplication()
+                0x0000000008005544      0x230 ./Software/App/initialize_parameters.o
+                0x0000000008005544                InitializeParameters::runTimeSetApplication()
  .text._ZppR33Initialize_Parameters_Screen_Typei
-                0x0000000008005768       0x3a ./Software/App/initialize_parameters.o
-                0x0000000008005768                operator++(Initialize_Parameters_Screen_Type&, int)
+                0x0000000008005774       0x3a ./Software/App/initialize_parameters.o
+                0x0000000008005774                operator++(Initialize_Parameters_Screen_Type&, int)
  .text._ZmmR33Initialize_Parameters_Screen_Typei
-                0x00000000080057a2       0x3a ./Software/App/initialize_parameters.o
-                0x00000000080057a2                operator--(Initialize_Parameters_Screen_Type&, int)
+                0x00000000080057ae       0x3a ./Software/App/initialize_parameters.o
+                0x00000000080057ae                operator--(Initialize_Parameters_Screen_Type&, int)
  .text._ZppR21Power_Set_Screen_Typei
-                0x00000000080057dc       0x3a ./Software/App/initialize_parameters.o
-                0x00000000080057dc                operator++(Power_Set_Screen_Type&, int)
+                0x00000000080057e8       0x3a ./Software/App/initialize_parameters.o
+                0x00000000080057e8                operator++(Power_Set_Screen_Type&, int)
  .text._ZmmR21Power_Set_Screen_Typei
-                0x0000000008005816       0x3a ./Software/App/initialize_parameters.o
-                0x0000000008005816                operator--(Power_Set_Screen_Type&, int)
+                0x0000000008005822       0x3a ./Software/App/initialize_parameters.o
+                0x0000000008005822                operator--(Power_Set_Screen_Type&, int)
  .text._ZppR20Time_Set_Screen_Typei
-                0x0000000008005850       0x3a ./Software/App/initialize_parameters.o
-                0x0000000008005850                operator++(Time_Set_Screen_Type&, int)
+                0x000000000800585c       0x3a ./Software/App/initialize_parameters.o
+                0x000000000800585c                operator++(Time_Set_Screen_Type&, int)
  .text._ZmmR20Time_Set_Screen_Typei
-                0x000000000800588a       0x3a ./Software/App/initialize_parameters.o
-                0x000000000800588a                operator--(Time_Set_Screen_Type&, int)
+                0x0000000008005896       0x3a ./Software/App/initialize_parameters.o
+                0x0000000008005896                operator--(Time_Set_Screen_Type&, int)
  .text._Z41__static_initialization_and_destruction_0ii
-                0x00000000080058c4       0x30 ./Software/App/initialize_parameters.o
+                0x00000000080058d0       0x30 ./Software/App/initialize_parameters.o
  .text._GLOBAL__sub_I__ZN20InitializeParameters3runEv
-                0x00000000080058f4       0x10 ./Software/App/initialize_parameters.o
+                0x0000000008005900       0x10 ./Software/App/initialize_parameters.o
  .text._ZN4Math19linearInterpolationEfffff
-                0x0000000008005904       0x84 ./Software/Helpers/math.o
-                0x0000000008005904                Math::linearInterpolation(float, float, float, float, float)
+                0x0000000008005910       0x84 ./Software/Helpers/math.o
+                0x0000000008005910                Math::linearInterpolation(float, float, float, float, float)
  .text._Z15Draw_Full_Blackv
-                0x0000000008005988        0xe ./Software/Middleware/display.o
-                0x0000000008005988                Draw_Full_Black()
+                0x0000000008005994        0xe ./Software/Middleware/display.o
+                0x0000000008005994                Draw_Full_Black()
  .text._Z13Display_Clearv
-                0x0000000008005996       0x12 ./Software/Middleware/display.o
-                0x0000000008005996                Display_Clear()
+                0x00000000080059a2       0x12 ./Software/Middleware/display.o
+                0x00000000080059a2                Display_Clear()
  .text._Z12Display_Initv
-                0x00000000080059a8        0xc ./Software/Middleware/display.o
-                0x00000000080059a8                Display_Init()
+                0x00000000080059b4        0xc ./Software/Middleware/display.o
+                0x00000000080059b4                Display_Init()
  .text._Z16Draw_Center_TextPKcP7FontDeft
-                0x00000000080059b4      0x150 ./Software/Middleware/display.o
-                0x00000000080059b4                Draw_Center_Text(char const*, FontDef*, unsigned short)
+                0x00000000080059c0      0x150 ./Software/Middleware/display.o
+                0x00000000080059c0                Draw_Center_Text(char const*, FontDef*, unsigned short)
  .text._Z14Draw_Left_TextPKcP7FontDeft
-                0x0000000008005b04       0x46 ./Software/Middleware/display.o
-                0x0000000008005b04                Draw_Left_Text(char const*, FontDef*, unsigned short)
+                0x0000000008005b10       0x46 ./Software/Middleware/display.o
+                0x0000000008005b10                Draw_Left_Text(char const*, FontDef*, unsigned short)
  .text._Z15Draw_Right_TextPKcP7FontDeft
-                0x0000000008005b4a       0x7e ./Software/Middleware/display.o
-                0x0000000008005b4a                Draw_Right_Text(char const*, FontDef*, unsigned short)
+                0x0000000008005b56       0x7e ./Software/Middleware/display.o
+                0x0000000008005b56                Draw_Right_Text(char const*, FontDef*, unsigned short)
  .text._Z20Display_Title_ScreenPKc
-                0x0000000008005bc8       0x6c ./Software/Middleware/display.o
-                0x0000000008005bc8                Display_Title_Screen(char const*)
+                0x0000000008005bd4       0x6c ./Software/Middleware/display.o
+                0x0000000008005bd4                Display_Title_Screen(char const*)
  .text._Z26Display_Small_Title_ScreenPKc
-                0x0000000008005c34       0x68 ./Software/Middleware/display.o
-                0x0000000008005c34                Display_Small_Title_Screen(char const*)
+                0x0000000008005c40       0x68 ./Software/Middleware/display.o
+                0x0000000008005c40                Display_Small_Title_Screen(char const*)
  .text._Z17Display_2_NumbersPKcdd
-                0x0000000008005c9c       0x74 ./Software/Middleware/display.o
-                0x0000000008005c9c                Display_2_Numbers(char const*, double, double)
+                0x0000000008005ca8       0x74 ./Software/Middleware/display.o
+                0x0000000008005ca8                Display_2_Numbers(char const*, double, double)
  .text._Z18Draw_3_Points_LinePbPKcS1_t
-                0x0000000008005d10       0x84 ./Software/Middleware/display.o
-                0x0000000008005d10                Draw_3_Points_Line(bool*, char const*, char const*, unsigned short)
+                0x0000000008005d1c       0x84 ./Software/Middleware/display.o
+                0x0000000008005d1c                Draw_3_Points_Line(bool*, char const*, char const*, unsigned short)
  .text._Z27Display_Enemy_Sensors_VotesPa
-                0x0000000008005d94      0x114 ./Software/Middleware/display.o
-                0x0000000008005d94                Display_Enemy_Sensors_Votes(signed char*)
+                0x0000000008005da0      0x114 ./Software/Middleware/display.o
+                0x0000000008005da0                Display_Enemy_Sensors_Votes(signed char*)
  .text._Z23Display_N_Values_ScreenPhh
-                0x0000000008005ea8       0x90 ./Software/Middleware/display.o
-                0x0000000008005ea8                Display_N_Values_Screen(unsigned char*, unsigned char)
+                0x0000000008005eb4       0x90 ./Software/Middleware/display.o
+                0x0000000008005eb4                Display_N_Values_Screen(unsigned char*, unsigned char)
  .text._Z28Display_Line_Position_Screen12LinePositionhhPKc
-                0x0000000008005f38      0x14c ./Software/Middleware/display.o
-                0x0000000008005f38                Display_Line_Position_Screen(LinePosition, unsigned char, unsigned char, char const*)
+                0x0000000008005f44      0x14c ./Software/Middleware/display.o
+                0x0000000008005f44                Display_Line_Position_Screen(LinePosition, unsigned char, unsigned char, char const*)
  .text._Z31Display_2_Power_And_Time_ScreenPKcaaxS0_
-                0x0000000008006084       0xc8 ./Software/Middleware/display.o
-                0x0000000008006084                Display_2_Power_And_Time_Screen(char const*, signed char, signed char, long long, char const*)
+                0x0000000008006090       0xc8 ./Software/Middleware/display.o
+                0x0000000008006090                Display_2_Power_And_Time_Screen(char const*, signed char, signed char, long long, char const*)
  .text._Z22Display_2_Power_ScreenPKcaaS0_
-                0x000000000800614c       0x98 ./Software/Middleware/display.o
-                0x000000000800614c                Display_2_Power_Screen(char const*, signed char, signed char, char const*)
+                0x0000000008006158       0x98 ./Software/Middleware/display.o
+                0x0000000008006158                Display_2_Power_Screen(char const*, signed char, signed char, char const*)
  .text._Z13Display_Errorv
-                0x00000000080061e4       0x14 ./Software/Middleware/display.o
-                0x00000000080061e4                Display_Error()
+                0x00000000080061f0       0x14 ./Software/Middleware/display.o
+                0x00000000080061f0                Display_Error()
  .text._Z28Display_Get_Bottom_YPositionP7FontDef
-                0x00000000080061f8       0x20 ./Software/Middleware/display.o
-                0x00000000080061f8                Display_Get_Bottom_YPosition(FontDef*)
+                0x0000000008006204       0x20 ./Software/Middleware/display.o
+                0x0000000008006204                Display_Get_Bottom_YPosition(FontDef*)
  .text._Z11Motion_StopR5Motor
-                0x0000000008006218       0x1a ./Software/Middleware/motion.o
-                0x0000000008006218                Motion_Stop(Motor&)
- *fill*         0x0000000008006232        0x2 
+                0x0000000008006224       0x1a ./Software/Middleware/motion.o
+                0x0000000008006224                Motion_Stop(Motor&)
+ *fill*         0x000000000800623e        0x2 
  .text._Z19Motion_Forward_HighR5Motor
-                0x0000000008006234       0x28 ./Software/Middleware/motion.o
-                0x0000000008006234                Motion_Forward_High(Motor&)
+                0x0000000008006240       0x28 ./Software/Middleware/motion.o
+                0x0000000008006240                Motion_Forward_High(Motor&)
  .text._Z21Motion_Forward_MediumR5Motor
-                0x000000000800625c       0x28 ./Software/Middleware/motion.o
-                0x000000000800625c                Motion_Forward_Medium(Motor&)
+                0x0000000008006268       0x28 ./Software/Middleware/motion.o
+                0x0000000008006268                Motion_Forward_Medium(Motor&)
  .text._Z18Motion_Forward_LowR5Motor
-                0x0000000008006284       0x28 ./Software/Middleware/motion.o
-                0x0000000008006284                Motion_Forward_Low(Motor&)
+                0x0000000008006290       0x28 ./Software/Middleware/motion.o
+                0x0000000008006290                Motion_Forward_Low(Motor&)
  .text._Z20Motion_Backward_HighR5Motor
-                0x00000000080062ac       0x38 ./Software/Middleware/motion.o
-                0x00000000080062ac                Motion_Backward_High(Motor&)
+                0x00000000080062b8       0x38 ./Software/Middleware/motion.o
+                0x00000000080062b8                Motion_Backward_High(Motor&)
  .text._Z24Motion_Rotate_Right_HighR5Motor
-                0x00000000080062e4       0x30 ./Software/Middleware/motion.o
-                0x00000000080062e4                Motion_Rotate_Right_High(Motor&)
+                0x00000000080062f0       0x30 ./Software/Middleware/motion.o
+                0x00000000080062f0                Motion_Rotate_Right_High(Motor&)
  .text._Z23Motion_Rotate_Left_HighR5Motor
-                0x0000000008006314       0x30 ./Software/Middleware/motion.o
-                0x0000000008006314                Motion_Rotate_Left_High(Motor&)
+                0x0000000008006320       0x30 ./Software/Middleware/motion.o
+                0x0000000008006320                Motion_Rotate_Left_High(Motor&)
  .text._Z22Motion_Circle_Right_50R5Motor
-                0x0000000008006344       0x28 ./Software/Middleware/motion.o
-                0x0000000008006344                Motion_Circle_Right_50(Motor&)
+                0x0000000008006350       0x28 ./Software/Middleware/motion.o
+                0x0000000008006350                Motion_Circle_Right_50(Motor&)
  .text._Z21Motion_Circle_Left_50R5Motor
-                0x000000000800636c       0x28 ./Software/Middleware/motion.o
-                0x000000000800636c                Motion_Circle_Left_50(Motor&)
+                0x0000000008006378       0x28 ./Software/Middleware/motion.o
+                0x0000000008006378                Motion_Circle_Left_50(Motor&)
  .text._Z26Timer_Get_Time_Passed_Fromm
-                0x0000000008006394       0x42 ./Software/Middleware/state_control.o
-                0x0000000008006394                Timer_Get_Time_Passed_From(unsigned long)
+                0x00000000080063a0       0x42 ./Software/Middleware/state_control.o
+                0x00000000080063a0                Timer_Get_Time_Passed_From(unsigned long)
  .text._ZN12StateControlC2ERK16SensorsHubConfig
-                0x00000000080063d6       0x3c ./Software/Middleware/state_control.o
-                0x00000000080063d6                StateControl::StateControl(SensorsHubConfig const&)
-                0x00000000080063d6                StateControl::StateControl(SensorsHubConfig const&)
+                0x00000000080063e2       0x3c ./Software/Middleware/state_control.o
+                0x00000000080063e2                StateControl::StateControl(SensorsHubConfig const&)
+                0x00000000080063e2                StateControl::StateControl(SensorsHubConfig const&)
+ .text._ZN12StateControl9configAllEv
+                0x000000000800641e       0x44 ./Software/Middleware/state_control.o
+                0x000000000800641e                StateControl::configAll()
  .text._ZN12StateControl17recalculateStatesEv
-                0x0000000008006412       0x7e ./Software/Middleware/state_control.o
-                0x0000000008006412                StateControl::recalculateStates()
+                0x0000000008006462       0x7e ./Software/Middleware/state_control.o
+                0x0000000008006462                StateControl::recalculateStates()
  .text._ZN12StateControl32readAndGetMostVotedEnemyPositionEv
-                0x0000000008006490       0xb6 ./Software/Middleware/state_control.o
-                0x0000000008006490                StateControl::readAndGetMostVotedEnemyPosition()
+                0x00000000080064e0       0xb6 ./Software/Middleware/state_control.o
+                0x00000000080064e0                StateControl::readAndGetMostVotedEnemyPosition()
  .text._ZN12StateControl16setEnemyPositionE13EnemyPosition
-                0x0000000008006546       0x38 ./Software/Middleware/state_control.o
-                0x0000000008006546                StateControl::setEnemyPosition(EnemyPosition)
+                0x0000000008006596       0x38 ./Software/Middleware/state_control.o
+                0x0000000008006596                StateControl::setEnemyPosition(EnemyPosition)
  .text._ZN12StateControl15setLinePositionE12LinePosition
-                0x000000000800657e       0x36 ./Software/Middleware/state_control.o
-                0x000000000800657e                StateControl::setLinePosition(LinePosition)
+                0x00000000080065ce       0x36 ./Software/Middleware/state_control.o
+                0x00000000080065ce                StateControl::setLinePosition(LinePosition)
  .text._Z41__static_initialization_and_destruction_0ii
-                0x00000000080065b4       0x30 ./Software/Middleware/state_control.o
+                0x0000000008006604       0x30 ./Software/Middleware/state_control.o
  .text._GLOBAL__sub_I__ZN12StateControlC2ERK16SensorsHubConfig
-                0x00000000080065e4       0x10 ./Software/Middleware/state_control.o
+                0x0000000008006634       0x10 ./Software/Middleware/state_control.o
  .text._ZN10StrategistC2ER12StateControlR5MotorR20Communication_Driver
-                0x00000000080065f4       0x56 ./Software/Middleware/strategist.o
-                0x00000000080065f4                Strategist::Strategist(StateControl&, Motor&, Communication_Driver&)
-                0x00000000080065f4                Strategist::Strategist(StateControl&, Motor&, Communication_Driver&)
- *fill*         0x000000000800664a        0x2 
+                0x0000000008006644       0x56 ./Software/Middleware/strategist.o
+                0x0000000008006644                Strategist::Strategist(StateControl&, Motor&, Communication_Driver&)
+                0x0000000008006644                Strategist::Strategist(StateControl&, Motor&, Communication_Driver&)
+ *fill*         0x000000000800669a        0x2 
  .text._ZN10Strategist13runTestMotionEPFvR5MotorE
-                0x000000000800664c       0xe8 ./Software/Middleware/strategist.o
-                0x000000000800664c                Strategist::runTestMotion(void (*)(Motor&))
+                0x000000000800669c       0xe8 ./Software/Middleware/strategist.o
+                0x000000000800669c                Strategist::runTestMotion(void (*)(Motor&))
  .text._ZN10Strategist18runTestTimedMotionE11TimedMotion
-                0x0000000008006734      0x10c ./Software/Middleware/strategist.o
-                0x0000000008006734                Strategist::runTestTimedMotion(TimedMotion)
+                0x0000000008006784      0x10c ./Software/Middleware/strategist.o
+                0x0000000008006784                Strategist::runTestTimedMotion(TimedMotion)
  .text._ZN9TacticianC2ER5Motor
-                0x0000000008006840       0x5e ./Software/Middleware/tactician.o
-                0x0000000008006840                Tactician::Tactician(Motor&)
-                0x0000000008006840                Tactician::Tactician(Motor&)
+                0x0000000008006890       0x5e ./Software/Middleware/tactician.o
+                0x0000000008006890                Tactician::Tactician(Motor&)
+                0x0000000008006890                Tactician::Tactician(Motor&)
  .text._ZN9Tactician9setTacticEMS_Fv5StateE
-                0x000000000800689e       0x44 ./Software/Middleware/tactician.o
-                0x000000000800689e                Tactician::setTactic(void (Tactician::*)(State))
+                0x00000000080068ee       0x44 ./Software/Middleware/tactician.o
+                0x00000000080068ee                Tactician::setTactic(void (Tactician::*)(State))
  .text._ZN9Tactician16runCurrentTacticE5State
-                0x00000000080068e2       0x72 ./Software/Middleware/tactician.o
-                0x00000000080068e2                Tactician::runCurrentTactic(State)
+                0x0000000008006932       0x72 ./Software/Middleware/tactician.o
+                0x0000000008006932                Tactician::runCurrentTactic(State)
  .text._ZN9Tactician9hasTacticEv
-                0x0000000008006954       0x34 ./Software/Middleware/tactician.o
-                0x0000000008006954                Tactician::hasTactic()
+                0x00000000080069a4       0x34 ./Software/Middleware/tactician.o
+                0x00000000080069a4                Tactician::hasTactic()
  .text._ZN9Tactician19STOP_CURRENT_TACTICEv
-                0x0000000008006988       0x40 ./Software/Middleware/tactician.o
-                0x0000000008006988                Tactician::STOP_CURRENT_TACTIC()
+                0x00000000080069d8       0x40 ./Software/Middleware/tactician.o
+                0x00000000080069d8                Tactician::STOP_CURRENT_TACTIC()
  .text._ZN9Tactician15executesMotionsEv
-                0x00000000080069c8       0x72 ./Software/Middleware/tactician.o
-                0x00000000080069c8                Tactician::executesMotions()
+                0x0000000008006a18       0x72 ./Software/Middleware/tactician.o
+                0x0000000008006a18                Tactician::executesMotions()
  .text._ZN9Tactician9addMotionERK11TimedMotion
-                0x0000000008006a3a       0x44 ./Software/Middleware/tactician.o
-                0x0000000008006a3a                Tactician::addMotion(TimedMotion const&)
+                0x0000000008006a8a       0x44 ./Software/Middleware/tactician.o
+                0x0000000008006a8a                Tactician::addMotion(TimedMotion const&)
  .text._ZN9Tactician16changeTacticStepEh
-                0x0000000008006a7e       0x28 ./Software/Middleware/tactician.o
-                0x0000000008006a7e                Tactician::changeTacticStep(unsigned char)
- *fill*         0x0000000008006aa6        0x2 
+                0x0000000008006ace       0x28 ./Software/Middleware/tactician.o
+                0x0000000008006ace                Tactician::changeTacticStep(unsigned char)
+ *fill*         0x0000000008006af6        0x2 
  .text._ZN9Tactician36Tactic_Escape_Line_Whatever_Enemy_DoE5State
-                0x0000000008006aa8      0x21c ./Software/Middleware/tactician.o
-                0x0000000008006aa8                Tactician::Tactic_Escape_Line_Whatever_Enemy_Do(State)
+                0x0000000008006af8      0x21c ./Software/Middleware/tactician.o
+                0x0000000008006af8                Tactician::Tactic_Escape_Line_Whatever_Enemy_Do(State)
  .text._Z41__static_initialization_and_destruction_0ii
-                0x0000000008006cc4       0x30 ./Software/Middleware/tactician.o
+                0x0000000008006d14       0x30 ./Software/Middleware/tactician.o
  .text._GLOBAL__sub_I__ZN9TacticianC2ER5Motor
-                0x0000000008006cf4       0x10 ./Software/Middleware/tactician.o
+                0x0000000008006d44       0x10 ./Software/Middleware/tactician.o
  .text._Z16Timer_Has_Passedm
-                0x0000000008006d04       0x28 ./Software/Middleware/timed_motion.o
-                0x0000000008006d04                Timer_Has_Passed(unsigned long)
+                0x0000000008006d54       0x28 ./Software/Middleware/timed_motion.o
+                0x0000000008006d54                Timer_Has_Passed(unsigned long)
  .text._ZN11TimedMotionC2Ev
-                0x0000000008006d2c       0x22 ./Software/Middleware/timed_motion.o
-                0x0000000008006d2c                TimedMotion::TimedMotion()
-                0x0000000008006d2c                TimedMotion::TimedMotion()
+                0x0000000008006d7c       0x22 ./Software/Middleware/timed_motion.o
+                0x0000000008006d7c                TimedMotion::TimedMotion()
+                0x0000000008006d7c                TimedMotion::TimedMotion()
  .text._ZN11TimedMotionC2EPFvR5MotorEm
-                0x0000000008006d4e       0x26 ./Software/Middleware/timed_motion.o
-                0x0000000008006d4e                TimedMotion::TimedMotion(void (*)(Motor&), unsigned long)
-                0x0000000008006d4e                TimedMotion::TimedMotion(void (*)(Motor&), unsigned long)
+                0x0000000008006d9e       0x26 ./Software/Middleware/timed_motion.o
+                0x0000000008006d9e                TimedMotion::TimedMotion(void (*)(Motor&), unsigned long)
+                0x0000000008006d9e                TimedMotion::TimedMotion(void (*)(Motor&), unsigned long)
  .text._ZN11TimedMotion13FORWARD_BRAKEEv
-                0x0000000008006d74       0x28 ./Software/Middleware/timed_motion.o
-                0x0000000008006d74                TimedMotion::FORWARD_BRAKE()
+                0x0000000008006dc4       0x28 ./Software/Middleware/timed_motion.o
+                0x0000000008006dc4                TimedMotion::FORWARD_BRAKE()
  .text._ZN11TimedMotion14BACKWARD_BRAKEEv
-                0x0000000008006d9c       0x28 ./Software/Middleware/timed_motion.o
-                0x0000000008006d9c                TimedMotion::BACKWARD_BRAKE()
+                0x0000000008006dec       0x28 ./Software/Middleware/timed_motion.o
+                0x0000000008006dec                TimedMotion::BACKWARD_BRAKE()
  .text._ZN11TimedMotion10fromDegreeEPFvR5MotorEt
-                0x0000000008006dc4      0x16c ./Software/Middleware/timed_motion.o
-                0x0000000008006dc4                TimedMotion::fromDegree(void (*)(Motor&), unsigned short)
+                0x0000000008006e14      0x16c ./Software/Middleware/timed_motion.o
+                0x0000000008006e14                TimedMotion::fromDegree(void (*)(Motor&), unsigned short)
  .text._ZN11TimedMotion11startMotionER5Motor
-                0x0000000008006f30       0x32 ./Software/Middleware/timed_motion.o
-                0x0000000008006f30                TimedMotion::startMotion(Motor&)
+                0x0000000008006f80       0x32 ./Software/Middleware/timed_motion.o
+                0x0000000008006f80                TimedMotion::startMotion(Motor&)
  .text._ZNK11TimedMotion9hasPassedEv
-                0x0000000008006f62       0x1c ./Software/Middleware/timed_motion.o
-                0x0000000008006f62                TimedMotion::hasPassed() const
- *fill*         0x0000000008006f7e        0x2 
+                0x0000000008006fb2       0x1c ./Software/Middleware/timed_motion.o
+                0x0000000008006fb2                TimedMotion::hasPassed() const
+ *fill*         0x0000000008006fce        0x2 
  .text._Z41__static_initialization_and_destruction_0ii
-                0x0000000008006f80       0x30 ./Software/Middleware/timed_motion.o
+                0x0000000008006fd0       0x30 ./Software/Middleware/timed_motion.o
  .text._GLOBAL__sub_I_actionTimes
-                0x0000000008006fb0       0x10 ./Software/Middleware/timed_motion.o
+                0x0000000008007000       0x10 ./Software/Middleware/timed_motion.o
  .text._ZN10UserInputsC2ERK16UserInputsConfig
-                0x0000000008006fc0       0x74 ./Software/Middleware/user_inputs.o
-                0x0000000008006fc0                UserInputs::UserInputs(UserInputsConfig const&)
-                0x0000000008006fc0                UserInputs::UserInputs(UserInputsConfig const&)
+                0x0000000008007010       0x74 ./Software/Middleware/user_inputs.o
+                0x0000000008007010                UserInputs::UserInputs(UserInputsConfig const&)
+                0x0000000008007010                UserInputs::UserInputs(UserInputsConfig const&)
  .text._ZN10UserInputs9configAllEv
-                0x0000000008007034       0x40 ./Software/Middleware/user_inputs.o
-                0x0000000008007034                UserInputs::configAll()
+                0x0000000008007084       0x40 ./Software/Middleware/user_inputs.o
+                0x0000000008007084                UserInputs::configAll()
  .text._ZN10UserInputs10readInputsEv
-                0x0000000008007074       0x40 ./Software/Middleware/user_inputs.o
-                0x0000000008007074                UserInputs::readInputs()
+                0x00000000080070c4       0x40 ./Software/Middleware/user_inputs.o
+                0x00000000080070c4                UserInputs::readInputs()
  .text._ZN10UserInputs8isAnyKeyEv
-                0x00000000080070b4       0x44 ./Software/Middleware/user_inputs.o
-                0x00000000080070b4                UserInputs::isAnyKey()
+                0x0000000008007104       0x44 ./Software/Middleware/user_inputs.o
+                0x0000000008007104                UserInputs::isAnyKey()
  .text._ZN10UserInputs19isReturnBackRequestEv
-                0x00000000080070f8       0x2a ./Software/Middleware/user_inputs.o
-                0x00000000080070f8                UserInputs::isReturnBackRequest()
+                0x0000000008007148       0x2a ./Software/Middleware/user_inputs.o
+                0x0000000008007148                UserInputs::isReturnBackRequest()
  .text._ZN10UserInputs13isBackRequestEv
-                0x0000000008007122       0x30 ./Software/Middleware/user_inputs.o
-                0x0000000008007122                UserInputs::isBackRequest()
+                0x0000000008007172       0x30 ./Software/Middleware/user_inputs.o
+                0x0000000008007172                UserInputs::isBackRequest()
  .text._ZN10UserInputs13isNextRequestEv
-                0x0000000008007152       0x30 ./Software/Middleware/user_inputs.o
-                0x0000000008007152                UserInputs::isNextRequest()
+                0x00000000080071a2       0x30 ./Software/Middleware/user_inputs.o
+                0x00000000080071a2                UserInputs::isNextRequest()
  .text._ZN10UserInputs15isSelectRequestEv
-                0x0000000008007182       0x2e ./Software/Middleware/user_inputs.o
-                0x0000000008007182                UserInputs::isSelectRequest()
+                0x00000000080071d2       0x2e ./Software/Middleware/user_inputs.o
+                0x00000000080071d2                UserInputs::isSelectRequest()
  .text._ZN10UserInputs17isSetValueRequestEv
-                0x00000000080071b0       0x28 ./Software/Middleware/user_inputs.o
-                0x00000000080071b0                UserInputs::isSetValueRequest()
+                0x0000000008007200       0x28 ./Software/Middleware/user_inputs.o
+                0x0000000008007200                UserInputs::isSetValueRequest()
  .text._ZNK10UserInputs8getData0Ev
-                0x00000000080071d8       0x1c ./Software/Middleware/user_inputs.o
-                0x00000000080071d8                UserInputs::getData0() const
+                0x0000000008007228       0x1c ./Software/Middleware/user_inputs.o
+                0x0000000008007228                UserInputs::getData0() const
  .text._ZNK10UserInputs8getData1Ev
-                0x00000000080071f4       0x1c ./Software/Middleware/user_inputs.o
-                0x00000000080071f4                UserInputs::getData1() const
+                0x0000000008007244       0x1c ./Software/Middleware/user_inputs.o
+                0x0000000008007244                UserInputs::getData1() const
  .text._ZNK10UserInputs8getData0Eff
-                0x0000000008007210       0x30 ./Software/Middleware/user_inputs.o
-                0x0000000008007210                UserInputs::getData0(float, float) const
+                0x0000000008007260       0x30 ./Software/Middleware/user_inputs.o
+                0x0000000008007260                UserInputs::getData0(float, float) const
  .text._ZNK10UserInputs8getData1Eff
-                0x0000000008007240       0x30 ./Software/Middleware/user_inputs.o
-                0x0000000008007240                UserInputs::getData1(float, float) const
+                0x0000000008007290       0x30 ./Software/Middleware/user_inputs.o
+                0x0000000008007290                UserInputs::getData1(float, float) const
  .text._ZN13EnemyPositionC2Ev
-                0x0000000008007270       0x22 ./Software/Model/enemy_position.o
-                0x0000000008007270                EnemyPosition::EnemyPosition()
-                0x0000000008007270                EnemyPosition::EnemyPosition()
- *fill*         0x0000000008007292        0x2 
+                0x00000000080072c0       0x22 ./Software/Model/enemy_position.o
+                0x00000000080072c0                EnemyPosition::EnemyPosition()
+                0x00000000080072c0                EnemyPosition::EnemyPosition()
+ *fill*         0x00000000080072e2        0x2 
  .text._ZN13EnemyPositionC2Eh
-                0x0000000008007294       0x90 ./Software/Model/enemy_position.o
-                0x0000000008007294                EnemyPosition::EnemyPosition(unsigned char)
-                0x0000000008007294                EnemyPosition::EnemyPosition(unsigned char)
+                0x00000000080072e4       0x90 ./Software/Model/enemy_position.o
+                0x00000000080072e4                EnemyPosition::EnemyPosition(unsigned char)
+                0x00000000080072e4                EnemyPosition::EnemyPosition(unsigned char)
  .text._ZNK13EnemyPositioneqERKS_
-                0x0000000008007324       0x2e ./Software/Model/enemy_position.o
-                0x0000000008007324                EnemyPosition::operator==(EnemyPosition const&) const
+                0x0000000008007374       0x2e ./Software/Model/enemy_position.o
+                0x0000000008007374                EnemyPosition::operator==(EnemyPosition const&) const
  .text._ZNK13EnemyPositionneERKS_
-                0x0000000008007352       0x22 ./Software/Model/enemy_position.o
-                0x0000000008007352                EnemyPosition::operator!=(EnemyPosition const&) const
+                0x00000000080073a2       0x22 ./Software/Model/enemy_position.o
+                0x00000000080073a2                EnemyPosition::operator!=(EnemyPosition const&) const
  .text._ZNK13EnemyPosition4toIDEv
-                0x0000000008007374       0x64 ./Software/Model/enemy_position.o
-                0x0000000008007374                EnemyPosition::toID() const
+                0x00000000080073c4       0x64 ./Software/Model/enemy_position.o
+                0x00000000080073c4                EnemyPosition::toID() const
  .text._ZN13EnemyPosition18getCenterDirectionEv
-                0x00000000080073d8       0x16 ./Software/Model/enemy_position.o
-                0x00000000080073d8                EnemyPosition::getCenterDirection()
+                0x0000000008007428       0x16 ./Software/Model/enemy_position.o
+                0x0000000008007428                EnemyPosition::getCenterDirection()
  .text._ZN13EnemyPosition30getDistanceFromCenterDirectionEv
-                0x00000000080073ee       0x30 ./Software/Model/enemy_position.o
-                0x00000000080073ee                EnemyPosition::getDistanceFromCenterDirection()
+                0x000000000800743e       0x30 ./Software/Model/enemy_position.o
+                0x000000000800743e                EnemyPosition::getDistanceFromCenterDirection()
  .text._ZNK13EnemyPosition10isNotKnownEv
-                0x000000000800741e       0x24 ./Software/Model/enemy_position.o
-                0x000000000800741e                EnemyPosition::isNotKnown() const
+                0x000000000800746e       0x24 ./Software/Model/enemy_position.o
+                0x000000000800746e                EnemyPosition::isNotKnown() const
  .text._ZN13EnemyPosition7isKnownEv
-                0x0000000008007442       0x1e ./Software/Model/enemy_position.o
-                0x0000000008007442                EnemyPosition::isKnown()
+                0x0000000008007492       0x1e ./Software/Model/enemy_position.o
+                0x0000000008007492                EnemyPosition::isKnown()
+ .text._ZN13EnemyPosition18frontEnemyPositionEv
+                0x00000000080074b0       0x2a ./Software/Model/enemy_position.o
+                0x00000000080074b0                EnemyPosition::frontEnemyPosition()
  .text._ZN12LinePositionC2Ev
-                0x0000000008007460       0x1c ./Software/Model/line_position.o
-                0x0000000008007460                LinePosition::LinePosition()
-                0x0000000008007460                LinePosition::LinePosition()
+                0x00000000080074da       0x1c ./Software/Model/line_position.o
+                0x00000000080074da                LinePosition::LinePosition()
+                0x00000000080074da                LinePosition::LinePosition()
  .text._ZN12LinePosition15setLinePositionE16LinePositionType
-                0x000000000800747c       0x1c ./Software/Model/line_position.o
-                0x000000000800747c                LinePosition::setLinePosition(LinePositionType)
+                0x00000000080074f6       0x1c ./Software/Model/line_position.o
+                0x00000000080074f6                LinePosition::setLinePosition(LinePositionType)
  .text._ZNK12LinePosition15getLinePositionEv
-                0x0000000008007498       0x18 ./Software/Model/line_position.o
-                0x0000000008007498                LinePosition::getLinePosition() const
+                0x0000000008007512       0x18 ./Software/Model/line_position.o
+                0x0000000008007512                LinePosition::getLinePosition() const
  .text._ZNK12LinePositioneqERKS_
-                0x00000000080074b0       0x28 ./Software/Model/line_position.o
-                0x00000000080074b0                LinePosition::operator==(LinePosition const&) const
+                0x000000000800752a       0x28 ./Software/Model/line_position.o
+                0x000000000800752a                LinePosition::operator==(LinePosition const&) const
  .text._ZNK12LinePositionneERKS_
-                0x00000000080074d8       0x22 ./Software/Model/line_position.o
-                0x00000000080074d8                LinePosition::operator!=(LinePosition const&) const
+                0x0000000008007552       0x22 ./Software/Model/line_position.o
+                0x0000000008007552                LinePosition::operator!=(LinePosition const&) const
  .text._ZNK12LinePosition11isFrontLeftEv
-                0x00000000080074fa       0x22 ./Software/Model/line_position.o
-                0x00000000080074fa                LinePosition::isFrontLeft() const
+                0x0000000008007574       0x22 ./Software/Model/line_position.o
+                0x0000000008007574                LinePosition::isFrontLeft() const
  .text._ZNK12LinePosition7isFrontEv
-                0x000000000800751c       0x22 ./Software/Model/line_position.o
-                0x000000000800751c                LinePosition::isFront() const
+                0x0000000008007596       0x22 ./Software/Model/line_position.o
+                0x0000000008007596                LinePosition::isFront() const
  .text._ZNK12LinePosition12isFrontRightEv
-                0x000000000800753e       0x22 ./Software/Model/line_position.o
-                0x000000000800753e                LinePosition::isFrontRight() const
+                0x00000000080075b8       0x22 ./Software/Model/line_position.o
+                0x00000000080075b8                LinePosition::isFrontRight() const
  .text._ZNK12LinePosition10isBackLeftEv
-                0x0000000008007560       0x22 ./Software/Model/line_position.o
-                0x0000000008007560                LinePosition::isBackLeft() const
+                0x00000000080075da       0x22 ./Software/Model/line_position.o
+                0x00000000080075da                LinePosition::isBackLeft() const
  .text._ZNK12LinePosition6isBackEv
-                0x0000000008007582       0x22 ./Software/Model/line_position.o
-                0x0000000008007582                LinePosition::isBack() const
+                0x00000000080075fc       0x22 ./Software/Model/line_position.o
+                0x00000000080075fc                LinePosition::isBack() const
  .text._ZNK12LinePosition11isBackRightEv
-                0x00000000080075a4       0x22 ./Software/Model/line_position.o
-                0x00000000080075a4                LinePosition::isBackRight() const
+                0x000000000800761e       0x22 ./Software/Model/line_position.o
+                0x000000000800761e                LinePosition::isBackRight() const
  .text._ZNK12LinePosition6isLeftEv
-                0x00000000080075c6       0x22 ./Software/Model/line_position.o
-                0x00000000080075c6                LinePosition::isLeft() const
+                0x0000000008007640       0x22 ./Software/Model/line_position.o
+                0x0000000008007640                LinePosition::isLeft() const
  .text._ZNK12LinePosition7isRightEv
-                0x00000000080075e8       0x22 ./Software/Model/line_position.o
-                0x00000000080075e8                LinePosition::isRight() const
+                0x0000000008007662       0x22 ./Software/Model/line_position.o
+                0x0000000008007662                LinePosition::isRight() const
  .text._ZNK12LinePosition6isNoneEv
-                0x000000000800760a       0x22 ./Software/Model/line_position.o
-                0x000000000800760a                LinePosition::isNone() const
- .text._ZNK12LinePosition9isNotNoneEv
-                0x000000000800762c       0x22 ./Software/Model/line_position.o
-                0x000000000800762c                LinePosition::isNotNone() const
+                0x0000000008007684       0x22 ./Software/Model/line_position.o
+                0x0000000008007684                LinePosition::isNone() const
+ .text._ZNK12LinePosition10isDetectedEv
+                0x00000000080076a6       0x22 ./Software/Model/line_position.o
+                0x00000000080076a6                LinePosition::isDetected() const
  .text._ZN5StateC2Ev
-                0x000000000800764e       0x26 ./Software/Model/state.o
-                0x000000000800764e                State::State()
-                0x000000000800764e                State::State()
+                0x00000000080076c8       0x26 ./Software/Model/state.o
+                0x00000000080076c8                State::State()
+                0x00000000080076c8                State::State()
  .text.ssd1306_Reset
-                0x0000000008007674        0xe ./Software/Peripheral/SSD1306/ssd1306.o
-                0x0000000008007674                ssd1306_Reset
- *fill*         0x0000000008007682        0x2 
+                0x00000000080076ee        0xe ./Software/Peripheral/SSD1306/ssd1306.o
+                0x00000000080076ee                ssd1306_Reset
  .text.ssd1306_WriteCommand
-                0x0000000008007684       0x30 ./Software/Peripheral/SSD1306/ssd1306.o
-                0x0000000008007684                ssd1306_WriteCommand
+                0x00000000080076fc       0x30 ./Software/Peripheral/SSD1306/ssd1306.o
+                0x00000000080076fc                ssd1306_WriteCommand
  .text.ssd1306_WriteData
-                0x00000000080076b4       0x34 ./Software/Peripheral/SSD1306/ssd1306.o
-                0x00000000080076b4                ssd1306_WriteData
+                0x000000000800772c       0x34 ./Software/Peripheral/SSD1306/ssd1306.o
+                0x000000000800772c                ssd1306_WriteData
  .text.ssd1306_Init
-                0x00000000080076e8       0xd4 ./Software/Peripheral/SSD1306/ssd1306.o
-                0x00000000080076e8                ssd1306_Init
+                0x0000000008007760       0xd4 ./Software/Peripheral/SSD1306/ssd1306.o
+                0x0000000008007760                ssd1306_Init
  .text.ssd1306_Fill
-                0x00000000080077bc       0x48 ./Software/Peripheral/SSD1306/ssd1306.o
-                0x00000000080077bc                ssd1306_Fill
+                0x0000000008007834       0x48 ./Software/Peripheral/SSD1306/ssd1306.o
+                0x0000000008007834                ssd1306_Fill
  .text.ssd1306_UpdateScreen
-                0x0000000008007804       0x50 ./Software/Peripheral/SSD1306/ssd1306.o
-                0x0000000008007804                ssd1306_UpdateScreen
+                0x000000000800787c       0x50 ./Software/Peripheral/SSD1306/ssd1306.o
+                0x000000000800787c                ssd1306_UpdateScreen
  .text.ssd1306_DrawPixel
-                0x0000000008007854       0xa8 ./Software/Peripheral/SSD1306/ssd1306.o
-                0x0000000008007854                ssd1306_DrawPixel
+                0x00000000080078cc       0xa8 ./Software/Peripheral/SSD1306/ssd1306.o
+                0x00000000080078cc                ssd1306_DrawPixel
  .text.ssd1306_WriteChar
-                0x00000000080078fc      0x110 ./Software/Peripheral/SSD1306/ssd1306.o
-                0x00000000080078fc                ssd1306_WriteChar
+                0x0000000008007974      0x110 ./Software/Peripheral/SSD1306/ssd1306.o
+                0x0000000008007974                ssd1306_WriteChar
  .text.ssd1306_WriteString
-                0x0000000008007a0c       0x4c ./Software/Peripheral/SSD1306/ssd1306.o
-                0x0000000008007a0c                ssd1306_WriteString
+                0x0000000008007a84       0x4c ./Software/Peripheral/SSD1306/ssd1306.o
+                0x0000000008007a84                ssd1306_WriteString
  .text.ssd1306_SetCursor
-                0x0000000008007a58       0x30 ./Software/Peripheral/SSD1306/ssd1306.o
-                0x0000000008007a58                ssd1306_SetCursor
+                0x0000000008007ad0       0x30 ./Software/Peripheral/SSD1306/ssd1306.o
+                0x0000000008007ad0                ssd1306_SetCursor
  .text.ssd1306_SetContrast
-                0x0000000008007a88       0x26 ./Software/Peripheral/SSD1306/ssd1306.o
-                0x0000000008007a88                ssd1306_SetContrast
- *fill*         0x0000000008007aae        0x2 
+                0x0000000008007b00       0x26 ./Software/Peripheral/SSD1306/ssd1306.o
+                0x0000000008007b00                ssd1306_SetContrast
+ *fill*         0x0000000008007b26        0x2 
  .text.ssd1306_SetDisplayOn
-                0x0000000008007ab0       0x3c ./Software/Peripheral/SSD1306/ssd1306.o
-                0x0000000008007ab0                ssd1306_SetDisplayOn
+                0x0000000008007b28       0x3c ./Software/Peripheral/SSD1306/ssd1306.o
+                0x0000000008007b28                ssd1306_SetDisplayOn
  .text._ZN13ComplexButtonC2EP12GPIO_TypeDeft
-                0x0000000008007aec       0x44 ./Software/Peripheral/button_driver.o
-                0x0000000008007aec                ComplexButton::ComplexButton(GPIO_TypeDef*, unsigned short)
-                0x0000000008007aec                ComplexButton::ComplexButton(GPIO_TypeDef*, unsigned short)
+                0x0000000008007b64       0x44 ./Software/Peripheral/button_driver.o
+                0x0000000008007b64                ComplexButton::ComplexButton(GPIO_TypeDef*, unsigned short)
+                0x0000000008007b64                ComplexButton::ComplexButton(GPIO_TypeDef*, unsigned short)
  .text._ZN13ComplexButton6configEv
-                0x0000000008007b30       0x40 ./Software/Peripheral/button_driver.o
-                0x0000000008007b30                ComplexButton::config()
+                0x0000000008007ba8       0x40 ./Software/Peripheral/button_driver.o
+                0x0000000008007ba8                ComplexButton::config()
  .text._ZNK13ComplexButton12getLastValueEv
-                0x0000000008007b70       0x18 ./Software/Peripheral/button_driver.o
-                0x0000000008007b70                ComplexButton::getLastValue() const
+                0x0000000008007be8       0x18 ./Software/Peripheral/button_driver.o
+                0x0000000008007be8                ComplexButton::getLastValue() const
  .text._ZN13ComplexButton4readEv
-                0x0000000008007b88      0x108 ./Software/Peripheral/button_driver.o
-                0x0000000008007b88                ComplexButton::read()
+                0x0000000008007c00      0x108 ./Software/Peripheral/button_driver.o
+                0x0000000008007c00                ComplexButton::read()
  .text._ZN20Communication_DriverC2ERK25CommunicationDriverConfig
-                0x0000000008007c90       0x5c ./Software/Peripheral/communication_driver.o
-                0x0000000008007c90                Communication_Driver::Communication_Driver(CommunicationDriverConfig const&)
-                0x0000000008007c90                Communication_Driver::Communication_Driver(CommunicationDriverConfig const&)
+                0x0000000008007d08       0x5c ./Software/Peripheral/communication_driver.o
+                0x0000000008007d08                Communication_Driver::Communication_Driver(CommunicationDriverConfig const&)
+                0x0000000008007d08                Communication_Driver::Communication_Driver(CommunicationDriverConfig const&)
  .text._ZN20Communication_Driver6configEv
-                0x0000000008007cec       0x4a ./Software/Peripheral/communication_driver.o
-                0x0000000008007cec                Communication_Driver::config()
+                0x0000000008007d64       0x4a ./Software/Peripheral/communication_driver.o
+                0x0000000008007d64                Communication_Driver::config()
  .text._ZN20Communication_Driver15readStartModuleEv
-                0x0000000008007d36       0x2c ./Software/Peripheral/communication_driver.o
-                0x0000000008007d36                Communication_Driver::readStartModule()
+                0x0000000008007dae       0x2c ./Software/Peripheral/communication_driver.o
+                0x0000000008007dae                Communication_Driver::readStartModule()
  .text._ZN14EnemyDetectionC2EPK20EnemyDetectionConfig
-                0x0000000008007d62       0x50 ./Software/Peripheral/enemy_detection.o
-                0x0000000008007d62                EnemyDetection::EnemyDetection(EnemyDetectionConfig const*)
-                0x0000000008007d62                EnemyDetection::EnemyDetection(EnemyDetectionConfig const*)
+                0x0000000008007dda       0x50 ./Software/Peripheral/enemy_detection.o
+                0x0000000008007dda                EnemyDetection::EnemyDetection(EnemyDetectionConfig const*)
+                0x0000000008007dda                EnemyDetection::EnemyDetection(EnemyDetectionConfig const*)
+ .text._ZN14EnemyDetection6configEv
+                0x0000000008007e2a       0x28 ./Software/Peripheral/enemy_detection.o
+                0x0000000008007e2a                EnemyDetection::config()
  .text._ZN14EnemyDetection11readSensorsEv
-                0x0000000008007db2       0x60 ./Software/Peripheral/enemy_detection.o
-                0x0000000008007db2                EnemyDetection::readSensors()
+                0x0000000008007e52       0x60 ./Software/Peripheral/enemy_detection.o
+                0x0000000008007e52                EnemyDetection::readSensors()
  .text._ZN14EnemyDetection23readAndTakeSensorsVotesEPa
-                0x0000000008007e12      0x664 ./Software/Peripheral/enemy_detection.o
-                0x0000000008007e12                EnemyDetection::readAndTakeSensorsVotes(signed char*)
+                0x0000000008007eb2      0x664 ./Software/Peripheral/enemy_detection.o
+                0x0000000008007eb2                EnemyDetection::readAndTakeSensorsVotes(signed char*)
  .text._ZN13LineDetectionC2ERKNS_19LineDetectionConfigE
-                0x0000000008008476       0x3a ./Software/Peripheral/line_detection.o
-                0x0000000008008476                LineDetection::LineDetection(LineDetection::LineDetectionConfig const&)
-                0x0000000008008476                LineDetection::LineDetection(LineDetection::LineDetectionConfig const&)
+                0x0000000008008516       0x3a ./Software/Peripheral/line_detection.o
+                0x0000000008008516                LineDetection::LineDetection(LineDetection::LineDetectionConfig const&)
+                0x0000000008008516                LineDetection::LineDetection(LineDetection::LineDetectionConfig const&)
+ .text._ZN13LineDetection6configEv
+                0x0000000008008550       0x14 ./Software/Peripheral/line_detection.o
+                0x0000000008008550                LineDetection::config()
  .text._ZN13LineDetection21resetFiltersToDefaultEv
-                0x00000000080084b0       0x20 ./Software/Peripheral/line_detection.o
-                0x00000000080084b0                LineDetection::resetFiltersToDefault()
+                0x0000000008008564       0x20 ./Software/Peripheral/line_detection.o
+                0x0000000008008564                LineDetection::resetFiltersToDefault()
  .text._ZN13LineDetection7readAllEPh
-                0x00000000080084d0       0x7e ./Software/Peripheral/line_detection.o
-                0x00000000080084d0                LineDetection::readAll(unsigned char*)
+                0x0000000008008584       0x7e ./Software/Peripheral/line_detection.o
+                0x0000000008008584                LineDetection::readAll(unsigned char*)
  .text._ZN13LineDetection28readAndConvertToLinePositionEv
-                0x000000000800854e      0x178 ./Software/Peripheral/line_detection.o
-                0x000000000800854e                LineDetection::readAndConvertToLinePosition()
+                0x0000000008008602      0x178 ./Software/Peripheral/line_detection.o
+                0x0000000008008602                LineDetection::readAndConvertToLinePosition()
  .text._ZN13LineDetection13selectAndReadEP17ADC_HandleTypeDefm
-                0x00000000080086c6       0x60 ./Software/Peripheral/line_detection.o
-                0x00000000080086c6                LineDetection::selectAndRead(ADC_HandleTypeDef*, unsigned long)
+                0x000000000800877a       0x60 ./Software/Peripheral/line_detection.o
+                0x000000000800877a                LineDetection::selectAndRead(ADC_HandleTypeDef*, unsigned long)
  .text._ZN13LineDetection18sensorOutputToBoolEm
-                0x0000000008008726       0x28 ./Software/Peripheral/line_detection.o
-                0x0000000008008726                LineDetection::sensorOutputToBool(unsigned long)
+                0x00000000080087da       0x28 ./Software/Peripheral/line_detection.o
+                0x00000000080087da                LineDetection::sensorOutputToBool(unsigned long)
  .text._ZN5MotorC2EP13USART_TypeDef
-                0x000000000800874e       0x2e ./Software/Peripheral/motor_driver.o
-                0x000000000800874e                Motor::Motor(USART_TypeDef*)
-                0x000000000800874e                Motor::Motor(USART_TypeDef*)
+                0x0000000008008802       0x2e ./Software/Peripheral/motor_driver.o
+                0x0000000008008802                Motor::Motor(USART_TypeDef*)
+                0x0000000008008802                Motor::Motor(USART_TypeDef*)
+ .text._ZN5Motor4initEv
+                0x0000000008008830       0x4a ./Software/Peripheral/motor_driver.o
+                0x0000000008008830                Motor::init()
  .text._ZN5Motor4stopEv
-                0x000000000800877c       0x1a ./Software/Peripheral/motor_driver.o
-                0x000000000800877c                Motor::stop()
+                0x000000000800887a       0x1a ./Software/Peripheral/motor_driver.o
+                0x000000000800887a                Motor::stop()
  .text._ZN5Motor11changePowerEaa
-                0x0000000008008796       0x98 ./Software/Peripheral/motor_driver.o
-                0x0000000008008796                Motor::changePower(signed char, signed char)
- *fill*         0x000000000800882e        0x2 
+                0x0000000008008894       0x98 ./Software/Peripheral/motor_driver.o
+                0x0000000008008894                Motor::changePower(signed char, signed char)
  .text._ZN5Motor20power_to_motor_inputEab
-                0x0000000008008830       0xf0 ./Software/Peripheral/motor_driver.o
-                0x0000000008008830                Motor::power_to_motor_input(signed char, bool)
+                0x000000000800892c       0xf0 ./Software/Peripheral/motor_driver.o
+                0x000000000800892c                Motor::power_to_motor_input(signed char, bool)
  .text._ZN5Motor17boundedPowerValueEa
-                0x0000000008008920       0x34 ./Software/Peripheral/motor_driver.o
-                0x0000000008008920                Motor::boundedPowerValue(signed char)
+                0x0000000008008a1c       0x34 ./Software/Peripheral/motor_driver.o
+                0x0000000008008a1c                Motor::boundedPowerValue(signed char)
  .text._ZN7TrimpotC2EP17ADC_HandleTypeDefm
-                0x0000000008008954       0x2c ./Software/Peripheral/trimpot_driver.o
-                0x0000000008008954                Trimpot::Trimpot(ADC_HandleTypeDef*, unsigned long)
-                0x0000000008008954                Trimpot::Trimpot(ADC_HandleTypeDef*, unsigned long)
+                0x0000000008008a50       0x2c ./Software/Peripheral/trimpot_driver.o
+                0x0000000008008a50                Trimpot::Trimpot(ADC_HandleTypeDef*, unsigned long)
+                0x0000000008008a50                Trimpot::Trimpot(ADC_HandleTypeDef*, unsigned long)
  .text._ZN7Trimpot6configEv
-                0x0000000008008980       0x14 ./Software/Peripheral/trimpot_driver.o
-                0x0000000008008980                Trimpot::config()
+                0x0000000008008a7c       0x14 ./Software/Peripheral/trimpot_driver.o
+                0x0000000008008a7c                Trimpot::config()
  .text._ZN7Trimpot4readEv
-                0x0000000008008994       0xaa ./Software/Peripheral/trimpot_driver.o
-                0x0000000008008994                Trimpot::read()
+                0x0000000008008a90       0xaa ./Software/Peripheral/trimpot_driver.o
+                0x0000000008008a90                Trimpot::read()
  .text._ZNK7Trimpot7getDataEv
-                0x0000000008008a3e       0x18 ./Software/Peripheral/trimpot_driver.o
-                0x0000000008008a3e                Trimpot::getData() const
- *fill*         0x0000000008008a56        0x2 
+                0x0000000008008b3a       0x18 ./Software/Peripheral/trimpot_driver.o
+                0x0000000008008b3a                Trimpot::getData() const
+ *fill*         0x0000000008008b52        0x2 
  .text._ZNK7Trimpot7getDataEff
-                0x0000000008008a58       0x60 ./Software/Peripheral/trimpot_driver.o
-                0x0000000008008a58                Trimpot::getData(float, float) const
- .text.__cvt    0x0000000008008ab8       0xc4 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-vfprintf_float.o)
-                0x0000000008008ab8                __cvt
+                0x0000000008008b54       0x60 ./Software/Peripheral/trimpot_driver.o
+                0x0000000008008b54                Trimpot::getData(float, float) const
+ .text.__cvt    0x0000000008008bb4       0xc4 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-vfprintf_float.o)
+                0x0000000008008bb4                __cvt
  .text.__exponent
-                0x0000000008008b7c       0x7c C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-vfprintf_float.o)
-                0x0000000008008b7c                __exponent
+                0x0000000008008c78       0x7c C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-vfprintf_float.o)
+                0x0000000008008c78                __exponent
  .text._printf_float
-                0x0000000008008bf8      0x46c C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-vfprintf_float.o)
-                0x0000000008008bf8                _printf_float
+                0x0000000008008cf4      0x46c C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-vfprintf_float.o)
+                0x0000000008008cf4                _printf_float
  .text._printf_common
-                0x0000000008009064       0xda C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-vfprintf_i.o)
-                0x0000000008009064                _printf_common
- *fill*         0x000000000800913e        0x2 
+                0x0000000008009160       0xda C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-vfprintf_i.o)
+                0x0000000008009160                _printf_common
+ *fill*         0x000000000800923a        0x2 
  .text._printf_i
-                0x0000000008009140      0x244 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-vfprintf_i.o)
-                0x0000000008009140                _printf_i
- .text.std      0x0000000008009384       0x48 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
+                0x000000000800923c      0x244 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-vfprintf_i.o)
+                0x000000000800923c                _printf_i
+ .text.std      0x0000000008009480       0x48 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
  .text.stdio_exit_handler
-                0x00000000080093cc       0x18 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
+                0x00000000080094c8       0x18 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
  .text.cleanup_stdio
-                0x00000000080093e4       0x40 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
+                0x00000000080094e0       0x40 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
  .text.global_stdio_init.part.0
-                0x0000000008009424       0x3c C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
+                0x0000000008009520       0x3c C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
  .text.__sfp_lock_acquire
-                0x0000000008009460        0xc C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
-                0x0000000008009460                __sfp_lock_acquire
+                0x000000000800955c        0xc C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
+                0x000000000800955c                __sfp_lock_acquire
  .text.__sfp_lock_release
-                0x000000000800946c        0xc C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
-                0x000000000800946c                __sfp_lock_release
- .text.__sinit  0x0000000008009478       0x30 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
-                0x0000000008009478                __sinit
+                0x0000000008009568        0xc C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
+                0x0000000008009568                __sfp_lock_release
+ .text.__sinit  0x0000000008009574       0x30 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o)
+                0x0000000008009574                __sinit
  .text._fwalk_sglue
-                0x00000000080094a8       0x3c C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fwalk.o)
-                0x00000000080094a8                _fwalk_sglue
- .text.sprintf  0x00000000080094e4       0x40 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-sprintf.o)
-                0x00000000080094e4                siprintf
-                0x00000000080094e4                sprintf
- .text.__sread  0x0000000008009524       0x22 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-stdio.o)
-                0x0000000008009524                __sread
+                0x00000000080095a4       0x3c C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fwalk.o)
+                0x00000000080095a4                _fwalk_sglue
+ .text.sprintf  0x00000000080095e0       0x40 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-sprintf.o)
+                0x00000000080095e0                siprintf
+                0x00000000080095e0                sprintf
+ .text.__sread  0x0000000008009620       0x22 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-stdio.o)
+                0x0000000008009620                __sread
  .text.__swrite
-                0x0000000008009546       0x38 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-stdio.o)
-                0x0000000008009546                __swrite
- .text.__sseek  0x000000000800957e       0x24 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-stdio.o)
-                0x000000000800957e                __sseek
+                0x0000000008009642       0x38 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-stdio.o)
+                0x0000000008009642                __swrite
+ .text.__sseek  0x000000000800967a       0x24 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-stdio.o)
+                0x000000000800967a                __sseek
  .text.__sclose
-                0x00000000080095a2        0x8 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-stdio.o)
-                0x00000000080095a2                __sclose
- .text.memmove  0x00000000080095aa       0x34 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memmove.o)
-                0x00000000080095aa                memmove
- .text.memset   0x00000000080095de       0x10 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memset.o)
-                0x00000000080095de                memset
- *fill*         0x00000000080095ee        0x2 
+                0x000000000800969e        0x8 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-stdio.o)
+                0x000000000800969e                __sclose
+ .text.memmove  0x00000000080096a6       0x34 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memmove.o)
+                0x00000000080096a6                memmove
+ .text.memset   0x00000000080096da       0x10 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memset.o)
+                0x00000000080096da                memset
+ *fill*         0x00000000080096ea        0x2 
  .text._localeconv_r
-                0x00000000080095f0        0x8 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-localeconv.o)
-                0x00000000080095f0                _localeconv_r
+                0x00000000080096ec        0x8 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-localeconv.o)
+                0x00000000080096ec                _localeconv_r
  .text._close_r
-                0x00000000080095f8       0x20 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-closer.o)
-                0x00000000080095f8                _close_r
+                0x00000000080096f4       0x20 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-closer.o)
+                0x00000000080096f4                _close_r
  .text._lseek_r
-                0x0000000008009618       0x24 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lseekr.o)
-                0x0000000008009618                _lseek_r
- .text._read_r  0x000000000800963c       0x24 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-readr.o)
-                0x000000000800963c                _read_r
+                0x0000000008009714       0x24 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lseekr.o)
+                0x0000000008009714                _lseek_r
+ .text._read_r  0x0000000008009738       0x24 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-readr.o)
+                0x0000000008009738                _read_r
  .text._write_r
-                0x0000000008009660       0x24 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-writer.o)
-                0x0000000008009660                _write_r
- .text.__errno  0x0000000008009684        0xc C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-errno.o)
-                0x0000000008009684                __errno
+                0x000000000800975c       0x24 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-writer.o)
+                0x000000000800975c                _write_r
+ .text.__errno  0x0000000008009780        0xc C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-errno.o)
+                0x0000000008009780                __errno
  .text.__libc_init_array
-                0x0000000008009690       0x48 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-init.o)
-                0x0000000008009690                __libc_init_array
+                0x000000000800978c       0x48 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-init.o)
+                0x000000000800978c                __libc_init_array
  .text.__retarget_lock_acquire_recursive
-                0x00000000080096d8        0x2 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lock.o)
-                0x00000000080096d8                __retarget_lock_acquire_recursive
+                0x00000000080097d4        0x2 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lock.o)
+                0x00000000080097d4                __retarget_lock_acquire_recursive
  .text.__retarget_lock_release_recursive
-                0x00000000080096da        0x2 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lock.o)
-                0x00000000080096da                __retarget_lock_release_recursive
- .text.memcpy   0x00000000080096dc       0x1c C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memcpy-stub.o)
-                0x00000000080096dc                memcpy
- .text.quorem   0x00000000080096f8      0x110 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-dtoa.o)
- .text._dtoa_r  0x0000000008009808      0xbe4 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-dtoa.o)
-                0x0000000008009808                _dtoa_r
- .text._free_r  0x000000000800a3ec       0x98 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-freer.o)
-                0x000000000800a3ec                _free_r
- .text.malloc   0x000000000800a484       0x10 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-malloc.o)
-                0x000000000800a484                malloc
+                0x00000000080097d6        0x2 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lock.o)
+                0x00000000080097d6                __retarget_lock_release_recursive
+ .text.memcpy   0x00000000080097d8       0x1c C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memcpy-stub.o)
+                0x00000000080097d8                memcpy
+ .text.quorem   0x00000000080097f4      0x110 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-dtoa.o)
+ *fill*         0x0000000008009904        0x4 
+ .text._dtoa_r  0x0000000008009908      0xbe4 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-dtoa.o)
+                0x0000000008009908                _dtoa_r
+ .text._free_r  0x000000000800a4ec       0x98 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-freer.o)
+                0x000000000800a4ec                _free_r
+ .text.malloc   0x000000000800a584       0x10 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-malloc.o)
+                0x000000000800a584                malloc
  .text.sbrk_aligned
-                0x000000000800a494       0x40 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mallocr.o)
+                0x000000000800a594       0x40 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mallocr.o)
  .text._malloc_r
-                0x000000000800a4d4      0x100 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mallocr.o)
-                0x000000000800a4d4                _malloc_r
+                0x000000000800a5d4      0x100 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mallocr.o)
+                0x000000000800a5d4                _malloc_r
  .text.__malloc_lock
-                0x000000000800a5d4        0xc C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mlock.o)
-                0x000000000800a5d4                __malloc_lock
+                0x000000000800a6d4        0xc C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mlock.o)
+                0x000000000800a6d4                __malloc_lock
  .text.__malloc_unlock
-                0x000000000800a5e0        0xc C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mlock.o)
-                0x000000000800a5e0                __malloc_unlock
- .text._Balloc  0x000000000800a5ec       0x80 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mprec.o)
-                0x000000000800a5ec                _Balloc
- .text._Bfree   0x000000000800a66c       0x44 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mprec.o)
-                0x000000000800a66c                _Bfree
+                0x000000000800a6e0        0xc C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mlock.o)
+                0x000000000800a6e0                __malloc_unlock
+ .text._Balloc  0x000000000800a6ec       0x80 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mprec.o)
+                0x000000000800a6ec                _Balloc
+ .text._Bfree   0x000000000800a76c       0x44 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mprec.o)
+                0x000000000800a76c                _Bfree
  .text.__multadd
-                0x000000000800a6b0       0x8c C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mprec.o)
-                0x000000000800a6b0                __multadd
+                0x000000000800a7b0       0x8c C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mprec.o)
+                0x000000000800a7b0                __multadd
  .text.__hi0bits
-                0x000000000800a73c       0x40 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mprec.o)
-                0x000000000800a73c                __hi0bits
+                0x000000000800a83c       0x40 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mprec.o)
+                0x000000000800a83c                __hi0bits
  .text.__lo0bits
-                0x000000000800a77c       0x5a C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mprec.o)
-                0x000000000800a77c                __lo0bits
- *fill*         0x000000000800a7d6        0x2 
- .text.__i2b    0x000000000800a7d8       0x2c C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mprec.o)
-                0x000000000800a7d8                __i2b
+                0x000000000800a87c       0x5a C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mprec.o)
+                0x000000000800a87c                __lo0bits
+ *fill*         0x000000000800a8d6        0x2 
+ .text.__i2b    0x000000000800a8d8       0x2c C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mprec.o)
+                0x000000000800a8d8                __i2b
  .text.__multiply
-                0x000000000800a804      0x154 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mprec.o)
-                0x000000000800a804                __multiply
+                0x000000000800a904      0x154 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mprec.o)
+                0x000000000800a904                __multiply
  .text.__pow5mult
-                0x000000000800a958       0xb4 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mprec.o)
-                0x000000000800a958                __pow5mult
+                0x000000000800aa58       0xb4 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mprec.o)
+                0x000000000800aa58                __pow5mult
  .text.__lshift
-                0x000000000800aa0c       0xd8 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mprec.o)
-                0x000000000800aa0c                __lshift
- .text.__mcmp   0x000000000800aae4       0x38 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mprec.o)
-                0x000000000800aae4                __mcmp
- .text.__mdiff  0x000000000800ab1c      0x114 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mprec.o)
-                0x000000000800ab1c                __mdiff
- .text.__d2b    0x000000000800ac30       0xb4 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mprec.o)
-                0x000000000800ac30                __d2b
+                0x000000000800ab0c       0xd8 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mprec.o)
+                0x000000000800ab0c                __lshift
+ .text.__mcmp   0x000000000800abe4       0x38 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mprec.o)
+                0x000000000800abe4                __mcmp
+ .text.__mdiff  0x000000000800ac1c      0x114 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mprec.o)
+                0x000000000800ac1c                __mdiff
+ .text.__d2b    0x000000000800ad30       0xb4 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mprec.o)
+                0x000000000800ad30                __d2b
  .text.__ssputs_r
-                0x000000000800ace4       0xb4 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-svfprintf.o)
-                0x000000000800ace4                __ssputs_r
+                0x000000000800ade4       0xb4 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-svfprintf.o)
+                0x000000000800ade4                __ssputs_r
  .text._svfprintf_r
-                0x000000000800ad98      0x1fc C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-svfprintf.o)
-                0x000000000800ad98                _svfiprintf_r
-                0x000000000800ad98                _svfprintf_r
+                0x000000000800ae98      0x1fc C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-svfprintf.o)
+                0x000000000800ae98                _svfiprintf_r
+                0x000000000800ae98                _svfprintf_r
  .text.__sflush_r
-                0x000000000800af94      0x10c C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fflush.o)
-                0x000000000800af94                __sflush_r
+                0x000000000800b094      0x10c C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fflush.o)
+                0x000000000800b094                __sflush_r
  .text._fflush_r
-                0x000000000800b0a0       0x50 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fflush.o)
-                0x000000000800b0a0                _fflush_r
- .text._sbrk_r  0x000000000800b0f0       0x20 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-sbrkr.o)
-                0x000000000800b0f0                _sbrk_r
+                0x000000000800b1a0       0x50 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fflush.o)
+                0x000000000800b1a0                _fflush_r
+ .text._sbrk_r  0x000000000800b1f0       0x20 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-sbrkr.o)
+                0x000000000800b1f0                _sbrk_r
  .text.__assert_func
-                0x000000000800b110       0x3c C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-assert.o)
-                0x000000000800b110                __assert_func
+                0x000000000800b210       0x3c C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-assert.o)
+                0x000000000800b210                __assert_func
  .text._calloc_r
-                0x000000000800b14c       0x2c C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-callocr.o)
-                0x000000000800b14c                _calloc_r
+                0x000000000800b24c       0x2c C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-callocr.o)
+                0x000000000800b24c                _calloc_r
  .text.__ascii_mbtowc
-                0x000000000800b178       0x24 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mbtowc_r.o)
-                0x000000000800b178                __ascii_mbtowc
+                0x000000000800b278       0x24 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mbtowc_r.o)
+                0x000000000800b278                __ascii_mbtowc
  .text._realloc_r
-                0x000000000800b19c       0x5e C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-reallocr.o)
-                0x000000000800b19c                _realloc_r
+                0x000000000800b29c       0x5e C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-reallocr.o)
+                0x000000000800b29c                _realloc_r
  .text.__ascii_wctomb
-                0x000000000800b1fa       0x1a C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-wctomb_r.o)
-                0x000000000800b1fa                __ascii_wctomb
- .text.fprintf  0x000000000800b214       0x24 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fprintf.o)
-                0x000000000800b214                fiprintf
-                0x000000000800b214                fprintf
- .text.abort    0x000000000800b238        0xe C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-abort.o)
-                0x000000000800b238                abort
+                0x000000000800b2fa       0x1a C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-wctomb_r.o)
+                0x000000000800b2fa                __ascii_wctomb
+ .text.fprintf  0x000000000800b314       0x24 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fprintf.o)
+                0x000000000800b314                fiprintf
+                0x000000000800b314                fprintf
+ .text.abort    0x000000000800b338        0xe C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-abort.o)
+                0x000000000800b338                abort
  .text._malloc_usable_size_r
-                0x000000000800b246       0x10 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-msizer.o)
-                0x000000000800b246                _malloc_usable_size_r
+                0x000000000800b346       0x10 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-msizer.o)
+                0x000000000800b346                _malloc_usable_size_r
  .text.__sfputc_r
-                0x000000000800b256       0x2e C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-vfprintf.o)
+                0x000000000800b356       0x2e C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-vfprintf.o)
  .text.__sfputs_r
-                0x000000000800b284       0x24 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-vfprintf.o)
-                0x000000000800b284                __sfputs_r
+                0x000000000800b384       0x24 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-vfprintf.o)
+                0x000000000800b384                __sfputs_r
  .text._vfprintf_r
-                0x000000000800b2a8      0x234 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-vfprintf.o)
-                0x000000000800b2a8                _vfprintf_r
-                0x000000000800b2a8                _vfiprintf_r
+                0x000000000800b3a8      0x234 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-vfprintf.o)
+                0x000000000800b3a8                _vfprintf_r
+                0x000000000800b3a8                _vfiprintf_r
  .text.__swbuf_r
-                0x000000000800b4dc       0x7a C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-wbuf.o)
-                0x000000000800b4dc                __swbuf_r
- *fill*         0x000000000800b556        0x2 
+                0x000000000800b5dc       0x7a C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-wbuf.o)
+                0x000000000800b5dc                __swbuf_r
+ *fill*         0x000000000800b656        0x2 
  .text.__swsetup_r
-                0x000000000800b558       0xb0 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-wsetup.o)
-                0x000000000800b558                __swsetup_r
+                0x000000000800b658       0xb0 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-wsetup.o)
+                0x000000000800b658                __swsetup_r
  .text._raise_r
-                0x000000000800b608       0x50 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-signal.o)
-                0x000000000800b608                _raise_r
- .text.raise    0x000000000800b658       0x10 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-signal.o)
-                0x000000000800b658                raise
- .text._kill_r  0x000000000800b668       0x24 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-signalr.o)
-                0x000000000800b668                _kill_r
+                0x000000000800b708       0x50 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-signal.o)
+                0x000000000800b708                _raise_r
+ .text.raise    0x000000000800b758       0x10 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-signal.o)
+                0x000000000800b758                raise
+ .text._kill_r  0x000000000800b768       0x24 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-signalr.o)
+                0x000000000800b768                _kill_r
  .text._getpid_r
-                0x000000000800b68c        0x4 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-signalr.o)
-                0x000000000800b68c                _getpid_r
+                0x000000000800b78c        0x4 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-signalr.o)
+                0x000000000800b78c                _getpid_r
  .text.__swhatbuf_r
-                0x000000000800b690       0x4c C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-makebuf.o)
-                0x000000000800b690                __swhatbuf_r
+                0x000000000800b790       0x4c C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-makebuf.o)
+                0x000000000800b790                __swhatbuf_r
  .text.__smakebuf_r
-                0x000000000800b6dc       0x78 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-makebuf.o)
-                0x000000000800b6dc                __smakebuf_r
+                0x000000000800b7dc       0x78 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-makebuf.o)
+                0x000000000800b7dc                __smakebuf_r
  .text._fstat_r
-                0x000000000800b754       0x24 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fstatr.o)
-                0x000000000800b754                _fstat_r
+                0x000000000800b854       0x24 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-fstatr.o)
+                0x000000000800b854                _fstat_r
  .text._isatty_r
-                0x000000000800b778       0x20 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-isattyr.o)
-                0x000000000800b778                _isatty_r
+                0x000000000800b878       0x20 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-isattyr.o)
+                0x000000000800b878                _isatty_r
  *(.glue_7)
- .glue_7        0x000000000800b798        0x0 linker stubs
+ .glue_7        0x000000000800b898        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x000000000800b798        0x0 linker stubs
+ .glue_7t       0x000000000800b898        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x000000000800b798        0x0 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .eh_frame      0x000000000800b898        0x0 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/hard/crtbegin.o
  *(.init)
- .init          0x000000000800b798        0x4 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/hard/crti.o
-                0x000000000800b798                _init
- .init          0x000000000800b79c        0x8 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/hard/crtn.o
+ .init          0x000000000800b898        0x4 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/hard/crti.o
+                0x000000000800b898                _init
+ .init          0x000000000800b89c        0x8 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/hard/crtn.o
  *(.fini)
- .fini          0x000000000800b7a4        0x4 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/hard/crti.o
-                0x000000000800b7a4                _fini
- .fini          0x000000000800b7a8        0x8 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/hard/crtn.o
-                0x000000000800b7b0                . = ALIGN (0x4)
-                0x000000000800b7b0                _etext = .
+ .fini          0x000000000800b8a4        0x4 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/hard/crti.o
+                0x000000000800b8a4                _fini
+ .fini          0x000000000800b8a8        0x8 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/hard/crtn.o
+                0x000000000800b8b0                . = ALIGN (0x4)
+                0x000000000800b8b0                _etext = .
 
-.vfp11_veneer   0x000000000800b7b0        0x0
- .vfp11_veneer  0x000000000800b7b0        0x0 linker stubs
+.vfp11_veneer   0x000000000800b8b0        0x0
+ .vfp11_veneer  0x000000000800b8b0        0x0 linker stubs
 
-.v4_bx          0x000000000800b7b0        0x0
- .v4_bx         0x000000000800b7b0        0x0 linker stubs
+.v4_bx          0x000000000800b8b0        0x0
+ .v4_bx         0x000000000800b8b0        0x0 linker stubs
 
-.iplt           0x000000000800b7b0        0x0
- .iplt          0x000000000800b7b0        0x0 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+.iplt           0x000000000800b8b0        0x0
+ .iplt          0x000000000800b8b0        0x0 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/hard/crtbegin.o
 
-.rodata         0x000000000800b7b0     0x2314
-                0x000000000800b7b0                . = ALIGN (0x4)
+.rodata         0x000000000800b8b0     0x2314
+                0x000000000800b8b0                . = ALIGN (0x4)
  *(.rodata)
- .rodata        0x000000000800b7b0       0xdf ./Software/App/application.o
- *fill*         0x000000000800b88f        0x1 
- .rodata        0x000000000800b890       0xc6 ./Software/App/hardware_test.o
- *fill*         0x000000000800b956        0x2 
- .rodata        0x000000000800b958      0x264 ./Software/App/initialize_parameters.o
- .rodata        0x000000000800bbbc       0xc6 ./Software/Middleware/display.o
+ .rodata        0x000000000800b8b0       0xdf ./Software/App/application.o
+ *fill*         0x000000000800b98f        0x1 
+ .rodata        0x000000000800b990       0xc6 ./Software/App/hardware_test.o
+ *fill*         0x000000000800ba56        0x2 
+ .rodata        0x000000000800ba58      0x264 ./Software/App/initialize_parameters.o
+ .rodata        0x000000000800bcbc       0xc6 ./Software/Middleware/display.o
  *(.rodata*)
- *fill*         0x000000000800bc82        0x2 
+ *fill*         0x000000000800bd82        0x2 
  .rodata.AHBPrescTable
-                0x000000000800bc84       0x10 ./Core/Src/system_stm32f4xx.o
-                0x000000000800bc84                AHBPrescTable
+                0x000000000800bd84       0x10 ./Core/Src/system_stm32f4xx.o
+                0x000000000800bd84                AHBPrescTable
  .rodata.APBPrescTable
-                0x000000000800bc94        0x8 ./Core/Src/system_stm32f4xx.o
-                0x000000000800bc94                APBPrescTable
+                0x000000000800bd94        0x8 ./Core/Src/system_stm32f4xx.o
+                0x000000000800bd94                APBPrescTable
  .rodata.Font7x10
-                0x000000000800bc9c      0x76c ./Software/Peripheral/SSD1306/ssd1306_fonts.o
+                0x000000000800bd9c      0x76c ./Software/Peripheral/SSD1306/ssd1306_fonts.o
  .rodata.Font11x18
-                0x000000000800c408      0xd5c ./Software/Peripheral/SSD1306/ssd1306_fonts.o
+                0x000000000800c508      0xd5c ./Software/Peripheral/SSD1306/ssd1306_fonts.o
  .rodata.Font6x8
-                0x000000000800d164      0x5f0 ./Software/Peripheral/SSD1306/ssd1306_fonts.o
+                0x000000000800d264      0x5f0 ./Software/Peripheral/SSD1306/ssd1306_fonts.o
  .rodata._printf_float.str1.1
-                0x000000000800d754       0x12 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-vfprintf_float.o)
+                0x000000000800d854       0x12 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-vfprintf_float.o)
  .rodata._printf_i.str1.1
-                0x000000000800d766       0x22 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-vfprintf_i.o)
+                0x000000000800d866       0x22 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-vfprintf_i.o)
  .rodata._dtoa_r.str1.1
-                0x000000000800d788       0x8d C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-dtoa.o)
+                0x000000000800d888       0x8d C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-dtoa.o)
                                          0x8f (size before relaxing)
  .rodata._Balloc.str1.1
-                0x000000000800d815       0x59 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mprec.o)
+                0x000000000800d915       0x59 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mprec.o)
                                          0x70 (size before relaxing)
  .rodata.__multadd.str1.1
-                0x000000000800d86e       0x11 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mprec.o)
- *fill*         0x000000000800d86e        0x2 
+                0x000000000800d96e       0x11 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mprec.o)
+ *fill*         0x000000000800d96e        0x2 
  .rodata.__mprec_bigtens
-                0x000000000800d870       0x28 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mprec.o)
-                0x000000000800d870                __mprec_bigtens
+                0x000000000800d970       0x28 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mprec.o)
+                0x000000000800d970                __mprec_bigtens
  .rodata.__mprec_tens
-                0x000000000800d898       0xc8 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mprec.o)
-                0x000000000800d898                __mprec_tens
- .rodata.p05.0  0x000000000800d960        0xc C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mprec.o)
+                0x000000000800d998       0xc8 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mprec.o)
+                0x000000000800d998                __mprec_tens
+ .rodata.p05.0  0x000000000800da60        0xc C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mprec.o)
  .rodata._svfprintf_r.str1.1
-                0x000000000800d96c       0x11 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-svfprintf.o)
+                0x000000000800da6c       0x11 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-svfprintf.o)
  .rodata._setlocale_r.str1.1
-                0x000000000800d97d        0x8 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-locale.o)
+                0x000000000800da7d        0x8 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-locale.o)
                                           0x9 (size before relaxing)
  .rodata.str1.1
-                0x000000000800d985        0x2 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-locale.o)
+                0x000000000800da85        0x2 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-locale.o)
  .rodata.__assert_func.str1.1
-                0x000000000800d987       0x3c C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-assert.o)
+                0x000000000800da87       0x3c C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-assert.o)
                                          0x3d (size before relaxing)
  .rodata._ctype_
-                0x000000000800d9c3      0x101 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-ctype_.o)
-                0x000000000800d9c3                _ctype_
+                0x000000000800dac3      0x101 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-ctype_.o)
+                0x000000000800dac3                _ctype_
  .rodata._vfprintf_r.str1.1
-                0x000000000800dac4       0x11 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-vfprintf.o)
-                0x000000000800dad8                . = ALIGN (0x4)
+                0x000000000800dbc4       0x11 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-nano-vfprintf.o)
+                0x000000000800dbd8                . = ALIGN (0x4)
 
-.ARM.extab      0x000000000800dac4        0x0
-                0x000000000800dac4                . = ALIGN (0x4)
+.ARM.extab      0x000000000800dbc4        0x0
+                0x000000000800dbc4                . = ALIGN (0x4)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x000000000800dac4                . = ALIGN (0x4)
+                0x000000000800dbc4                . = ALIGN (0x4)
 
-.ARM            0x000000000800dac4        0x8
-                0x000000000800dac4                . = ALIGN (0x4)
-                0x000000000800dac4                __exidx_start = .
+.ARM            0x000000000800dbc4        0x8
+                0x000000000800dbc4                . = ALIGN (0x4)
+                0x000000000800dbc4                __exidx_start = .
  *(.ARM.exidx*)
- .ARM.exidx     0x000000000800dac4        0x8 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
-                0x000000000800dacc                __exidx_end = .
-                0x000000000800dacc                . = ALIGN (0x4)
+ .ARM.exidx     0x000000000800dbc4        0x8 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
+                0x000000000800dbcc                __exidx_end = .
+                0x000000000800dbcc                . = ALIGN (0x4)
 
-.rel.dyn        0x000000000800dacc        0x0
- .rel.iplt      0x000000000800dacc        0x0 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+.rel.dyn        0x000000000800dbcc        0x0
+ .rel.iplt      0x000000000800dbcc        0x0 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/hard/crtbegin.o
 
-.preinit_array  0x000000000800dacc        0x0
-                0x000000000800dacc                . = ALIGN (0x4)
-                0x000000000800dacc                PROVIDE (__preinit_array_start = .)
+.preinit_array  0x000000000800dbcc        0x0
+                0x000000000800dbcc                . = ALIGN (0x4)
+                0x000000000800dbcc                PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x000000000800dacc                PROVIDE (__preinit_array_end = .)
-                0x000000000800dacc                . = ALIGN (0x4)
+                0x000000000800dbcc                PROVIDE (__preinit_array_end = .)
+                0x000000000800dbcc                . = ALIGN (0x4)
 
-.init_array     0x000000000800dacc       0x18
-                0x000000000800dacc                . = ALIGN (0x4)
-                0x000000000800dacc                PROVIDE (__init_array_start = .)
+.init_array     0x000000000800dbcc       0x18
+                0x000000000800dbcc                . = ALIGN (0x4)
+                0x000000000800dbcc                PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  *(.init_array*)
- .init_array    0x000000000800dacc        0x4 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/hard/crtbegin.o
- .init_array    0x000000000800dad0        0x4 ./Software/App/hardware_test.o
- .init_array    0x000000000800dad4        0x4 ./Software/App/initialize_parameters.o
- .init_array    0x000000000800dad8        0x4 ./Software/Middleware/state_control.o
- .init_array    0x000000000800dadc        0x4 ./Software/Middleware/tactician.o
- .init_array    0x000000000800dae0        0x4 ./Software/Middleware/timed_motion.o
-                0x000000000800dae4                PROVIDE (__init_array_end = .)
-                0x000000000800dae4                . = ALIGN (0x4)
+ .init_array    0x000000000800dbcc        0x4 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .init_array    0x000000000800dbd0        0x4 ./Software/App/hardware_test.o
+ .init_array    0x000000000800dbd4        0x4 ./Software/App/initialize_parameters.o
+ .init_array    0x000000000800dbd8        0x4 ./Software/Middleware/state_control.o
+ .init_array    0x000000000800dbdc        0x4 ./Software/Middleware/tactician.o
+ .init_array    0x000000000800dbe0        0x4 ./Software/Middleware/timed_motion.o
+                0x000000000800dbe4                PROVIDE (__init_array_end = .)
+                0x000000000800dbe4                . = ALIGN (0x4)
 
-.fini_array     0x000000000800dae4        0x4
-                0x000000000800dae4                . = ALIGN (0x4)
+.fini_array     0x000000000800dbe4        0x4
+                0x000000000800dbe4                . = ALIGN (0x4)
                 [!provide]                        PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x000000000800dae4        0x4 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .fini_array    0x000000000800dbe4        0x4 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/hard/crtbegin.o
                 [!provide]                        PROVIDE (__fini_array_end = .)
-                0x000000000800dae8                . = ALIGN (0x4)
-                0x000000000800dae8                _sidata = LOADADDR (.data)
+                0x000000000800dbe8                . = ALIGN (0x4)
+                0x000000000800dbe8                _sidata = LOADADDR (.data)
 
-.data           0x0000000020000000      0x208 load address 0x000000000800dae8
+.data           0x0000000020000000      0x208 load address 0x000000000800dbe8
                 0x0000000020000000                . = ALIGN (0x4)
                 0x0000000020000000                _sdata = .
  *(.data)
@@ -7555,11 +7687,11 @@ LOAD C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
                 0x0000000020000208                . = ALIGN (0x4)
                 0x0000000020000208                _edata = .
 
-.igot.plt       0x0000000020000208        0x0 load address 0x000000000800dcf0
+.igot.plt       0x0000000020000208        0x0 load address 0x000000000800ddf0
  .igot.plt      0x0000000020000208        0x0 C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/hard/crtbegin.o
                 0x0000000020000208                . = ALIGN (0x4)
 
-.bss            0x0000000020000208      0x750 load address 0x000000000800dcf0
+.bss            0x0000000020000208      0x750 load address 0x000000000800ddf0
                 0x0000000020000208                _sbss = .
                 0x0000000020000208                __bss_start__ = _sbss
  *(.bss)
@@ -7624,7 +7756,7 @@ LOAD C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
                 0x0000000020000958                __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x0000000020000958      0x600 load address 0x000000000800dcf0
+                0x0000000020000958      0x600 load address 0x000000000800ddf0
                 0x0000000020000958                . = ALIGN (0x8)
                 [!provide]                        PROVIDE (end = .)
                 0x0000000020000958                PROVIDE (_end = .)
@@ -7886,48 +8018,48 @@ LOAD C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
  .comment       0x0000000000000043       0x44 ./Software/Peripheral/motor_driver.o
  .comment       0x0000000000000043       0x44 ./Software/Peripheral/trimpot_driver.o
 
-.debug_info     0x0000000000000000    0x263d0
- .debug_info    0x0000000000000000     0x2ae7 ./Core/Src/main.o
- .debug_info    0x0000000000002ae7     0x12d1 ./Core/Src/stm32f4xx_hal_msp.o
- .debug_info    0x0000000000003db8      0x112 ./Core/Src/stm32f4xx_it.o
- .debug_info    0x0000000000003eca      0x6a3 ./Core/Src/syscalls.o
- .debug_info    0x000000000000456d      0x168 ./Core/Src/sysmem.o
- .debug_info    0x00000000000046d5      0x54a ./Core/Src/system_stm32f4xx.o
- .debug_info    0x0000000000004c1f       0x23 ./Core/Startup/startup_stm32f446retx.o
- .debug_info    0x0000000000004c42      0x99e ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o
- .debug_info    0x00000000000055e0      0xcd4 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.o
- .debug_info    0x00000000000062b4      0xd64 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o
- .debug_info    0x0000000000007018      0x70b ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o
- .debug_info    0x0000000000007723     0x23ed ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.o
- .debug_info    0x0000000000009b10      0x6da ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o
- .debug_info    0x000000000000a1ea      0x8ed ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o
- .debug_info    0x000000000000aad7      0x956 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o
- .debug_info    0x000000000000b42d     0x15fb ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.o
- .debug_info    0x000000000000ca28     0x2fb8 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o
- .debug_info    0x000000000000f9e0     0x276d ./Software/App/application.o
- .debug_info    0x000000000001214d     0x246a ./Software/App/hardware_test.o
- .debug_info    0x00000000000145b7     0x29f5 ./Software/App/initialize_parameters.o
- .debug_info    0x0000000000016fac       0xb9 ./Software/Helpers/math.o
- .debug_info    0x0000000000017065     0x119f ./Software/Middleware/display.o
- .debug_info    0x0000000000018204      0x926 ./Software/Middleware/motion.o
- .debug_info    0x0000000000018b2a     0x1685 ./Software/Middleware/state_control.o
- .debug_info    0x000000000001a1af     0x1e78 ./Software/Middleware/strategist.o
- .debug_info    0x000000000001c027     0x15c5 ./Software/Middleware/tactician.o
- .debug_info    0x000000000001d5ec      0xe45 ./Software/Middleware/timed_motion.o
- .debug_info    0x000000000001e431      0xe3e ./Software/Middleware/user_inputs.o
- .debug_info    0x000000000001f26f     0x17f8 ./Software/Model/enemy_position.o
- .debug_info    0x0000000000020a67      0x4f6 ./Software/Model/line_position.o
- .debug_info    0x0000000000020f5d      0x92a ./Software/Model/state.o
- .debug_info    0x0000000000021887     0x11c5 ./Software/Peripheral/SSD1306/ssd1306.o
- .debug_info    0x0000000000022a4c      0x216 ./Software/Peripheral/SSD1306/ssd1306_fonts.o
- .debug_info    0x0000000000022c62      0x463 ./Software/Peripheral/button_driver.o
- .debug_info    0x00000000000230c5      0x9da ./Software/Peripheral/communication_driver.o
- .debug_info    0x0000000000023a9f      0xa99 ./Software/Peripheral/enemy_detection.o
- .debug_info    0x0000000000024538      0xcfc ./Software/Peripheral/line_detection.o
- .debug_info    0x0000000000025234      0x8be ./Software/Peripheral/motor_driver.o
- .debug_info    0x0000000000025af2      0x8de ./Software/Peripheral/trimpot_driver.o
+.debug_info     0x0000000000000000    0x2639f
+ .debug_info    0x0000000000000000     0x2ab0 ./Core/Src/main.o
+ .debug_info    0x0000000000002ab0     0x12d1 ./Core/Src/stm32f4xx_hal_msp.o
+ .debug_info    0x0000000000003d81      0x112 ./Core/Src/stm32f4xx_it.o
+ .debug_info    0x0000000000003e93      0x6a3 ./Core/Src/syscalls.o
+ .debug_info    0x0000000000004536      0x168 ./Core/Src/sysmem.o
+ .debug_info    0x000000000000469e      0x54a ./Core/Src/system_stm32f4xx.o
+ .debug_info    0x0000000000004be8       0x23 ./Core/Startup/startup_stm32f446retx.o
+ .debug_info    0x0000000000004c0b      0x99e ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o
+ .debug_info    0x00000000000055a9      0xcd4 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.o
+ .debug_info    0x000000000000627d      0xd64 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o
+ .debug_info    0x0000000000006fe1      0x70b ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o
+ .debug_info    0x00000000000076ec     0x23ed ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.o
+ .debug_info    0x0000000000009ad9      0x6da ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o
+ .debug_info    0x000000000000a1b3      0x8ed ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o
+ .debug_info    0x000000000000aaa0      0x956 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o
+ .debug_info    0x000000000000b3f6     0x15fb ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.o
+ .debug_info    0x000000000000c9f1     0x2fb8 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o
+ .debug_info    0x000000000000f9a9     0x276f ./Software/App/application.o
+ .debug_info    0x0000000000012118     0x246a ./Software/App/hardware_test.o
+ .debug_info    0x0000000000014582     0x29f5 ./Software/App/initialize_parameters.o
+ .debug_info    0x0000000000016f77       0xb9 ./Software/Helpers/math.o
+ .debug_info    0x0000000000017030     0x119f ./Software/Middleware/display.o
+ .debug_info    0x00000000000181cf      0x926 ./Software/Middleware/motion.o
+ .debug_info    0x0000000000018af5     0x1685 ./Software/Middleware/state_control.o
+ .debug_info    0x000000000001a17a     0x1e78 ./Software/Middleware/strategist.o
+ .debug_info    0x000000000001bff2     0x15c9 ./Software/Middleware/tactician.o
+ .debug_info    0x000000000001d5bb      0xe45 ./Software/Middleware/timed_motion.o
+ .debug_info    0x000000000001e400      0xe3e ./Software/Middleware/user_inputs.o
+ .debug_info    0x000000000001f23e     0x17f8 ./Software/Model/enemy_position.o
+ .debug_info    0x0000000000020a36      0x4f6 ./Software/Model/line_position.o
+ .debug_info    0x0000000000020f2c      0x92a ./Software/Model/state.o
+ .debug_info    0x0000000000021856     0x11c5 ./Software/Peripheral/SSD1306/ssd1306.o
+ .debug_info    0x0000000000022a1b      0x216 ./Software/Peripheral/SSD1306/ssd1306_fonts.o
+ .debug_info    0x0000000000022c31      0x463 ./Software/Peripheral/button_driver.o
+ .debug_info    0x0000000000023094      0x9da ./Software/Peripheral/communication_driver.o
+ .debug_info    0x0000000000023a6e      0xa99 ./Software/Peripheral/enemy_detection.o
+ .debug_info    0x0000000000024507      0xcfc ./Software/Peripheral/line_detection.o
+ .debug_info    0x0000000000025203      0x8be ./Software/Peripheral/motor_driver.o
+ .debug_info    0x0000000000025ac1      0x8de ./Software/Peripheral/trimpot_driver.o
 
-.debug_abbrev   0x0000000000000000     0x673c
+.debug_abbrev   0x0000000000000000     0x673a
  .debug_abbrev  0x0000000000000000      0x537 ./Core/Src/main.o
  .debug_abbrev  0x0000000000000537      0x1ee ./Core/Src/stm32f4xx_hal_msp.o
  .debug_abbrev  0x0000000000000725       0x73 ./Core/Src/stm32f4xx_it.o
@@ -7945,28 +8077,28 @@ LOAD C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
  .debug_abbrev  0x0000000000001bc8      0x20a ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o
  .debug_abbrev  0x0000000000001dd2      0x284 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.o
  .debug_abbrev  0x0000000000002056      0x30e ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o
- .debug_abbrev  0x0000000000002364      0x510 ./Software/App/application.o
- .debug_abbrev  0x0000000000002874      0x4ad ./Software/App/hardware_test.o
- .debug_abbrev  0x0000000000002d21      0x51b ./Software/App/initialize_parameters.o
- .debug_abbrev  0x000000000000323c       0x78 ./Software/Helpers/math.o
- .debug_abbrev  0x00000000000032b4      0x379 ./Software/Middleware/display.o
- .debug_abbrev  0x000000000000362d      0x237 ./Software/Middleware/motion.o
- .debug_abbrev  0x0000000000003864      0x42e ./Software/Middleware/state_control.o
- .debug_abbrev  0x0000000000003c92      0x459 ./Software/Middleware/strategist.o
- .debug_abbrev  0x00000000000040eb      0x413 ./Software/Middleware/tactician.o
- .debug_abbrev  0x00000000000044fe      0x3ec ./Software/Middleware/timed_motion.o
- .debug_abbrev  0x00000000000048ea      0x2a3 ./Software/Middleware/user_inputs.o
- .debug_abbrev  0x0000000000004b8d      0x378 ./Software/Model/enemy_position.o
- .debug_abbrev  0x0000000000004f05      0x171 ./Software/Model/line_position.o
- .debug_abbrev  0x0000000000005076      0x1c4 ./Software/Model/state.o
- .debug_abbrev  0x000000000000523a      0x371 ./Software/Peripheral/SSD1306/ssd1306.o
- .debug_abbrev  0x00000000000055ab       0xc6 ./Software/Peripheral/SSD1306/ssd1306_fonts.o
- .debug_abbrev  0x0000000000005671      0x26d ./Software/Peripheral/button_driver.o
- .debug_abbrev  0x00000000000058de      0x297 ./Software/Peripheral/communication_driver.o
- .debug_abbrev  0x0000000000005b75      0x35e ./Software/Peripheral/enemy_detection.o
- .debug_abbrev  0x0000000000005ed3      0x34a ./Software/Peripheral/line_detection.o
- .debug_abbrev  0x000000000000621d      0x2a7 ./Software/Peripheral/motor_driver.o
- .debug_abbrev  0x00000000000064c4      0x278 ./Software/Peripheral/trimpot_driver.o
+ .debug_abbrev  0x0000000000002364      0x50f ./Software/App/application.o
+ .debug_abbrev  0x0000000000002873      0x4ad ./Software/App/hardware_test.o
+ .debug_abbrev  0x0000000000002d20      0x51b ./Software/App/initialize_parameters.o
+ .debug_abbrev  0x000000000000323b       0x78 ./Software/Helpers/math.o
+ .debug_abbrev  0x00000000000032b3      0x379 ./Software/Middleware/display.o
+ .debug_abbrev  0x000000000000362c      0x237 ./Software/Middleware/motion.o
+ .debug_abbrev  0x0000000000003863      0x42e ./Software/Middleware/state_control.o
+ .debug_abbrev  0x0000000000003c91      0x459 ./Software/Middleware/strategist.o
+ .debug_abbrev  0x00000000000040ea      0x412 ./Software/Middleware/tactician.o
+ .debug_abbrev  0x00000000000044fc      0x3ec ./Software/Middleware/timed_motion.o
+ .debug_abbrev  0x00000000000048e8      0x2a3 ./Software/Middleware/user_inputs.o
+ .debug_abbrev  0x0000000000004b8b      0x378 ./Software/Model/enemy_position.o
+ .debug_abbrev  0x0000000000004f03      0x171 ./Software/Model/line_position.o
+ .debug_abbrev  0x0000000000005074      0x1c4 ./Software/Model/state.o
+ .debug_abbrev  0x0000000000005238      0x371 ./Software/Peripheral/SSD1306/ssd1306.o
+ .debug_abbrev  0x00000000000055a9       0xc6 ./Software/Peripheral/SSD1306/ssd1306_fonts.o
+ .debug_abbrev  0x000000000000566f      0x26d ./Software/Peripheral/button_driver.o
+ .debug_abbrev  0x00000000000058dc      0x297 ./Software/Peripheral/communication_driver.o
+ .debug_abbrev  0x0000000000005b73      0x35e ./Software/Peripheral/enemy_detection.o
+ .debug_abbrev  0x0000000000005ed1      0x34a ./Software/Peripheral/line_detection.o
+ .debug_abbrev  0x000000000000621b      0x2a7 ./Software/Peripheral/motor_driver.o
+ .debug_abbrev  0x00000000000064c2      0x278 ./Software/Peripheral/trimpot_driver.o
 
 .debug_aranges  0x0000000000000000     0x1640
  .debug_aranges
@@ -8294,7 +8426,7 @@ LOAD C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
  .debug_macro   0x000000000002a19a      0x214 ./Software/Peripheral/motor_driver.o
  .debug_macro   0x000000000002a3ae      0x214 ./Software/Peripheral/trimpot_driver.o
 
-.debug_line     0x0000000000000000    0x209fb
+.debug_line     0x0000000000000000    0x209fd
  .debug_line    0x0000000000000000     0x10bf ./Core/Src/main.o
  .debug_line    0x00000000000010bf      0x95d ./Core/Src/stm32f4xx_hal_msp.o
  .debug_line    0x0000000000001a1c      0x867 ./Core/Src/stm32f4xx_it.o
@@ -8312,107 +8444,107 @@ LOAD C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
  .debug_line    0x000000000000c205     0x14a7 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o
  .debug_line    0x000000000000d6ac     0x1d1d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.o
  .debug_line    0x000000000000f3c9     0x2b2e ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o
- .debug_line    0x0000000000011ef7      0xd29 ./Software/App/application.o
- .debug_line    0x0000000000012c20     0x107a ./Software/App/hardware_test.o
- .debug_line    0x0000000000013c9a     0x102b ./Software/App/initialize_parameters.o
- .debug_line    0x0000000000014cc5       0xa3 ./Software/Helpers/math.o
- .debug_line    0x0000000000014d68     0x147e ./Software/Middleware/display.o
- .debug_line    0x00000000000161e6      0x90b ./Software/Middleware/motion.o
- .debug_line    0x0000000000016af1      0xc47 ./Software/Middleware/state_control.o
- .debug_line    0x0000000000017738      0xc74 ./Software/Middleware/strategist.o
- .debug_line    0x00000000000183ac      0xe58 ./Software/Middleware/tactician.o
- .debug_line    0x0000000000019204      0xc6b ./Software/Middleware/timed_motion.o
- .debug_line    0x0000000000019e6f      0x9d6 ./Software/Middleware/user_inputs.o
- .debug_line    0x000000000001a845      0xad7 ./Software/Model/enemy_position.o
- .debug_line    0x000000000001b31c      0x1d4 ./Software/Model/line_position.o
- .debug_line    0x000000000001b4f0      0x63c ./Software/Model/state.o
- .debug_line    0x000000000001bb2c     0x10cd ./Software/Peripheral/SSD1306/ssd1306.o
- .debug_line    0x000000000001cbf9      0x433 ./Software/Peripheral/SSD1306/ssd1306_fonts.o
- .debug_line    0x000000000001d02c      0x8a4 ./Software/Peripheral/button_driver.o
- .debug_line    0x000000000001d8d0      0x9a4 ./Software/Peripheral/communication_driver.o
- .debug_line    0x000000000001e274      0xc39 ./Software/Peripheral/enemy_detection.o
- .debug_line    0x000000000001eead      0xa49 ./Software/Peripheral/line_detection.o
- .debug_line    0x000000000001f8f6      0x8b3 ./Software/Peripheral/motor_driver.o
- .debug_line    0x00000000000201a9      0x852 ./Software/Peripheral/trimpot_driver.o
+ .debug_line    0x0000000000011ef7      0xd2d ./Software/App/application.o
+ .debug_line    0x0000000000012c24     0x107a ./Software/App/hardware_test.o
+ .debug_line    0x0000000000013c9e     0x102b ./Software/App/initialize_parameters.o
+ .debug_line    0x0000000000014cc9       0xa3 ./Software/Helpers/math.o
+ .debug_line    0x0000000000014d6c     0x147e ./Software/Middleware/display.o
+ .debug_line    0x00000000000161ea      0x90b ./Software/Middleware/motion.o
+ .debug_line    0x0000000000016af5      0xc47 ./Software/Middleware/state_control.o
+ .debug_line    0x000000000001773c      0xc74 ./Software/Middleware/strategist.o
+ .debug_line    0x00000000000183b0      0xe56 ./Software/Middleware/tactician.o
+ .debug_line    0x0000000000019206      0xc6b ./Software/Middleware/timed_motion.o
+ .debug_line    0x0000000000019e71      0x9d6 ./Software/Middleware/user_inputs.o
+ .debug_line    0x000000000001a847      0xad7 ./Software/Model/enemy_position.o
+ .debug_line    0x000000000001b31e      0x1d4 ./Software/Model/line_position.o
+ .debug_line    0x000000000001b4f2      0x63c ./Software/Model/state.o
+ .debug_line    0x000000000001bb2e     0x10cd ./Software/Peripheral/SSD1306/ssd1306.o
+ .debug_line    0x000000000001cbfb      0x433 ./Software/Peripheral/SSD1306/ssd1306_fonts.o
+ .debug_line    0x000000000001d02e      0x8a4 ./Software/Peripheral/button_driver.o
+ .debug_line    0x000000000001d8d2      0x9a4 ./Software/Peripheral/communication_driver.o
+ .debug_line    0x000000000001e276      0xc39 ./Software/Peripheral/enemy_detection.o
+ .debug_line    0x000000000001eeaf      0xa49 ./Software/Peripheral/line_detection.o
+ .debug_line    0x000000000001f8f8      0x8b3 ./Software/Peripheral/motor_driver.o
+ .debug_line    0x00000000000201ab      0x852 ./Software/Peripheral/trimpot_driver.o
 
-.debug_str      0x0000000000000000    0xe2ae2
- .debug_str     0x0000000000000000    0xd995e ./Core/Src/main.o
-                                      0xda137 (size before relaxing)
- .debug_str     0x00000000000d995e      0x2ca ./Core/Src/stm32f4xx_hal_msp.o
+.debug_str      0x0000000000000000    0xe2aef
+ .debug_str     0x0000000000000000    0xd98f6 ./Core/Src/main.o
+                                      0xda0cf (size before relaxing)
+ .debug_str     0x00000000000d98f6      0x2ca ./Core/Src/stm32f4xx_hal_msp.o
                                       0xd2911 (size before relaxing)
- .debug_str     0x00000000000d9c28       0xc9 ./Core/Src/stm32f4xx_it.o
+ .debug_str     0x00000000000d9bc0       0xc9 ./Core/Src/stm32f4xx_it.o
                                       0xd1d80 (size before relaxing)
- .debug_str     0x00000000000d9cf1     0x2203 ./Core/Src/syscalls.o
+ .debug_str     0x00000000000d9c89     0x2203 ./Core/Src/syscalls.o
                                        0x988b (size before relaxing)
- .debug_str     0x00000000000dbef4       0x6b ./Core/Src/sysmem.o
+ .debug_str     0x00000000000dbe8c       0x6b ./Core/Src/sysmem.o
                                        0x6042 (size before relaxing)
- .debug_str     0x00000000000dbf5f       0xdb ./Core/Src/system_stm32f4xx.o
+ .debug_str     0x00000000000dbef7       0xdb ./Core/Src/system_stm32f4xx.o
                                       0xd15fd (size before relaxing)
- .debug_str     0x00000000000dc03a       0x34 ./Core/Startup/startup_stm32f446retx.o
+ .debug_str     0x00000000000dbfd2       0x34 ./Core/Startup/startup_stm32f446retx.o
                                          0x54 (size before relaxing)
- .debug_str     0x00000000000dc06e      0xb29 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o
+ .debug_str     0x00000000000dc006      0xb29 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o
                                       0xd21c2 (size before relaxing)
- .debug_str     0x00000000000dcb97      0x28a ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.o
+ .debug_str     0x00000000000dcb2f      0x28a ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.o
                                       0xd1bc5 (size before relaxing)
- .debug_str     0x00000000000dce21      0x33a ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o
+ .debug_str     0x00000000000dcdb9      0x33a ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o
                                       0xd1ed0 (size before relaxing)
- .debug_str     0x00000000000dd15b      0x121 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o
+ .debug_str     0x00000000000dd0f3      0x121 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o
                                       0xd1778 (size before relaxing)
- .debug_str     0x00000000000dd27c      0xae3 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.o
+ .debug_str     0x00000000000dd214      0xae3 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.o
                                       0xd25a8 (size before relaxing)
- .debug_str     0x00000000000ddd5f      0x135 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o
+ .debug_str     0x00000000000ddcf7      0x135 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o
                                       0xd17d5 (size before relaxing)
- .debug_str     0x00000000000dde94      0x208 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o
+ .debug_str     0x00000000000dde2c      0x208 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o
                                       0xd1a36 (size before relaxing)
- .debug_str     0x00000000000de09c      0x31c ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o
+ .debug_str     0x00000000000de034      0x31c ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o
                                       0xd1a69 (size before relaxing)
- .debug_str     0x00000000000de3b8      0x552 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.o
+ .debug_str     0x00000000000de350      0x552 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.o
                                       0xd1e9c (size before relaxing)
- .debug_str     0x00000000000de90a      0x5e7 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o
+ .debug_str     0x00000000000de8a2      0x5e7 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o
                                       0xd1fab (size before relaxing)
- .debug_str     0x00000000000deef1      0xc62 ./Software/App/application.o
-                                      0xd6a9e (size before relaxing)
- .debug_str     0x00000000000dfb53      0x53a ./Software/App/hardware_test.o
-                                      0xd5b9d (size before relaxing)
- .debug_str     0x00000000000e008d      0x6c9 ./Software/App/initialize_parameters.o
-                                      0xd647a (size before relaxing)
- .debug_str     0x00000000000e0756       0x6d ./Software/Helpers/math.o
+ .debug_str     0x00000000000dee89      0xcd7 ./Software/App/application.o
+                                      0xd6aab (size before relaxing)
+ .debug_str     0x00000000000dfb60      0x53a ./Software/App/hardware_test.o
+                                      0xd5ba0 (size before relaxing)
+ .debug_str     0x00000000000e009a      0x6c9 ./Software/App/initialize_parameters.o
+                                      0xd6487 (size before relaxing)
+ .debug_str     0x00000000000e0763       0x6d ./Software/Helpers/math.o
                                        0x3226 (size before relaxing)
- .debug_str     0x00000000000e07c3     0x1096 ./Software/Middleware/display.o
-                                      0xd8aa4 (size before relaxing)
- .debug_str     0x00000000000e1859      0x181 ./Software/Middleware/motion.o
+ .debug_str     0x00000000000e07d0     0x1096 ./Software/Middleware/display.o
+                                      0xd8aa7 (size before relaxing)
+ .debug_str     0x00000000000e1866      0x181 ./Software/Middleware/motion.o
                                       0xd2271 (size before relaxing)
- .debug_str     0x00000000000e19da      0x18d ./Software/Middleware/state_control.o
-                                      0xd4ad7 (size before relaxing)
- .debug_str     0x00000000000e1b67       0xbb ./Software/Middleware/strategist.o
-                                      0xd556a (size before relaxing)
- .debug_str     0x00000000000e1c22       0x70 ./Software/Middleware/tactician.o
-                                      0xd4973 (size before relaxing)
- .debug_str     0x00000000000e1c92       0x9f ./Software/Middleware/timed_motion.o
+ .debug_str     0x00000000000e19e7      0x18d ./Software/Middleware/state_control.o
+                                      0xd4ada (size before relaxing)
+ .debug_str     0x00000000000e1b74       0xbb ./Software/Middleware/strategist.o
+                                      0xd5577 (size before relaxing)
+ .debug_str     0x00000000000e1c2f       0x70 ./Software/Middleware/tactician.o
+                                      0xd4989 (size before relaxing)
+ .debug_str     0x00000000000e1c9f       0x9f ./Software/Middleware/timed_motion.o
                                       0xd3edd (size before relaxing)
- .debug_str     0x00000000000e1d31       0xba ./Software/Middleware/user_inputs.o
+ .debug_str     0x00000000000e1d3e       0xba ./Software/Middleware/user_inputs.o
                                       0xd2c52 (size before relaxing)
- .debug_str     0x00000000000e1deb      0x562 ./Software/Model/enemy_position.o
+ .debug_str     0x00000000000e1df8      0x562 ./Software/Model/enemy_position.o
                                        0xa3bd (size before relaxing)
- .debug_str     0x00000000000e234d       0x3a ./Software/Model/line_position.o
-                                       0x34fc (size before relaxing)
- .debug_str     0x00000000000e2387       0x2a ./Software/Model/state.o
-                                       0x64dd (size before relaxing)
- .debug_str     0x00000000000e23b1      0x33f ./Software/Peripheral/SSD1306/ssd1306.o
+ .debug_str     0x00000000000e235a       0x3a ./Software/Model/line_position.o
+                                       0x34ff (size before relaxing)
+ .debug_str     0x00000000000e2394       0x2a ./Software/Model/state.o
+                                       0x64e0 (size before relaxing)
+ .debug_str     0x00000000000e23be      0x33f ./Software/Peripheral/SSD1306/ssd1306.o
                                       0xd5a2b (size before relaxing)
- .debug_str     0x00000000000e26f0       0x74 ./Software/Peripheral/SSD1306/ssd1306_fonts.o
+ .debug_str     0x00000000000e26fd       0x74 ./Software/Peripheral/SSD1306/ssd1306_fonts.o
                                        0x3e81 (size before relaxing)
- .debug_str     0x00000000000e2764       0x58 ./Software/Peripheral/button_driver.o
+ .debug_str     0x00000000000e2771       0x58 ./Software/Peripheral/button_driver.o
                                       0xd1b79 (size before relaxing)
- .debug_str     0x00000000000e27bc      0x144 ./Software/Peripheral/communication_driver.o
+ .debug_str     0x00000000000e27c9      0x144 ./Software/Peripheral/communication_driver.o
                                       0xd5908 (size before relaxing)
- .debug_str     0x00000000000e2900       0xa5 ./Software/Peripheral/enemy_detection.o
+ .debug_str     0x00000000000e290d       0xa5 ./Software/Peripheral/enemy_detection.o
                                       0xd3c39 (size before relaxing)
- .debug_str     0x00000000000e29a5       0x71 ./Software/Peripheral/line_detection.o
-                                      0xd2532 (size before relaxing)
- .debug_str     0x00000000000e2a16       0x79 ./Software/Peripheral/motor_driver.o
+ .debug_str     0x00000000000e29b2       0x71 ./Software/Peripheral/line_detection.o
+                                      0xd2535 (size before relaxing)
+ .debug_str     0x00000000000e2a23       0x79 ./Software/Peripheral/motor_driver.o
                                       0xd1feb (size before relaxing)
- .debug_str     0x00000000000e2a8f       0x53 ./Software/Peripheral/trimpot_driver.o
+ .debug_str     0x00000000000e2a9c       0x53 ./Software/Peripheral/trimpot_driver.o
                                       0xd1f77 (size before relaxing)
 
 .debug_frame    0x0000000000000000     0x6aec

@@ -56,19 +56,21 @@ Application::Application()
 		DATA_UART,
 		START_MODULE_GPIO_Port,
 		START_MODULE_Pin,
-	  }),     // communication driver
-      screen(Hardware_Test)      //initial screen
+	  })  // communication driver
+
 {
 }
 
 void Application::run()
 {
+
+
 	userInputs.configAll();
+	stateControl.configAll();
 	communication.config();
-
+	motor.init();
 	Display_Init();
-
-
+	Application_Screen screen = Hardware_Test;
 	while(1)
 	{
 		userInputs.readInputs();

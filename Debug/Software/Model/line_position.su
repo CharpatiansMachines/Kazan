@@ -12,4 +12,4 @@
 ../Software/Model/line_position.cpp:52:6:bool LinePosition::isLeft() const	16	static
 ../Software/Model/line_position.cpp:56:6:bool LinePosition::isRight() const	16	static
 ../Software/Model/line_position.cpp:60:6:bool LinePosition::isNone() const	16	static
-../Software/Model/line_position.cpp:64:6:bool LinePosition::isNotNone() const	16	static
+../Software/Model/line_position.cpp:64:6:bool LinePosition::isDetected() const	16	static

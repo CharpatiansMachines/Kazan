@@ -8,9 +8,9 @@ D:/Proiecte/STMCUBE/Kazan/Software/Peripheral/Timer.h:17:17:uint32_t Timer_Get_N
 ../Software/Middleware/tactician.cpp:45:6:bool Tactician::executesMotions()	16	static
 ../Software/Middleware/tactician.cpp:60:6:void Tactician::addMotion(const TimedMotion&)	16	static
 ../Software/Middleware/tactician.cpp:66:6:void Tactician::changeTacticStep(uint8_t)	16	static
-../Software/Middleware/tactician.cpp:71:6:void Tactician::Tactic_Front_Attack(State)	24	static
-../Software/Middleware/tactician.cpp:101:6:void Tactician::Tactic_Rotate_To_Enemy(State)	24	static
-../Software/Middleware/tactician.cpp:119:6:void Tactician::Tactic_Search_Enemy_By_Rotation(State)	40	static
-../Software/Middleware/tactician.cpp:136:6:void Tactician::Tactic_Escape_Line_Whatever_Enemy_Do(State)	136	static
-../Software/Middleware/tactician.cpp:195:1:void __static_initialization_and_destruction_0(int, int)	16	static
-../Software/Middleware/tactician.cpp:195:1:cpp)	8	static
+../Software/Middleware/tactician.cpp:86:6:void Tactician::Tactic_Front_Attack(State)	24	static
+../Software/Middleware/tactician.cpp:125:6:void Tactician::Tactic_Rotate_Towards_Enemy(State)	24	static
+../Software/Middleware/tactician.cpp:160:6:void Tactician::Tactic_Search_Enemy_By_Rotation(State)	40	static
+../Software/Middleware/tactician.cpp:194:6:void Tactician::Tactic_Escape_Line_Whatever_Enemy_Do(State)	136	static
+../Software/Middleware/tactician.cpp:253:1:void __static_initialization_and_destruction_0(int, int)	16	static
+../Software/Middleware/tactician.cpp:253:1:cpp)	8	static

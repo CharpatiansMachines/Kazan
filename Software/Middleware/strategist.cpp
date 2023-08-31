@@ -49,7 +49,7 @@ void Strategist::runTestMotion(void (*motionFunction)(Motor& motor))
 				lineWasDetected = false;
 			}
 		}else{
-			if(state.linePosition.isNotDetected())
+			if(state.linePosition.isDetected())
 			{
 				lineWasDetected = true;
 				tactician.setTactic(&Tactician::Tactic_Escape_Line_Whatever_Enemy_Do);
@@ -84,7 +84,7 @@ void Strategist::runTestTimedMotion(TimedMotion timeMotion){
 				lineWasDetected = false;
 			}
 		}else{
-			if(state.linePosition.isNotDetected())
+			if(state.linePosition.isDetected())
 			{
 				lineWasDetected = true;
 				tactician.setTactic(&Tactician::Tactic_Escape_Line_Whatever_Enemy_Do);
@@ -123,7 +123,7 @@ void Strategist::Strategy_Search_And_Attack()
     }
 
     // Escape tactic when a line is detected
-    if (currentState.linePosition.isNotDetected())
+    if (currentState.linePosition.isDetected())
     {
         tactician.setTactic(&Tactician::Tactic_Escape_Line_Whatever_Enemy_Do);
         return;
@@ -144,7 +144,7 @@ void Strategist::Strategy_Search_And_Attack()
         tactician.setTactic(&Tactician::Tactic_Front_Attack);
     }else
     {
-        tactician.setTactic(&Tactician::Tactic_Rotate_To_Enemy);
+        tactician.setTactic(&Tactician::Tactic_Rotate_Towards_Enemy);
     }
 }
 

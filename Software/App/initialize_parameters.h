@@ -82,7 +82,6 @@ private:
 	Initialize_Parameters_Screen_Type screen;
 	void runPowerSetApplication();
 	void runTimeSetApplication();
-
 };
 
 

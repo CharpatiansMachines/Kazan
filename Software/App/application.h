@@ -36,7 +36,6 @@ private:
 	StateControl stateControl;
 	Motor motor;
 	Communication_Driver communication;
-	Application_Screen screen;
 
 
 	void hardwareTest();

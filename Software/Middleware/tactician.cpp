@@ -129,15 +129,15 @@ void Tactician::Tactic_Rotate_Towards_Enemy(State state) {
     if (state.linePosition.isDetected() ||
         enemyPos.isNotKnown() ||
         enemyPos.isApproximatelyInFront()) {
-        StopCurrentTactic();
+    	STOP_CURRENT_TACTIC();
         return;
     }
 
     // If the enemy is to the left, rotate left; otherwise, rotate right.
     if (enemyPos.isInLeft()) {
-        RotateLeftHighSpeed(motor);
+        Motion_Rotate_Left_High(motor);
     } else {
-        RotateRightHighSpeed(motor);
+        Motion_Rotate_Right_High(motor);
     }
 }
 
