@@ -49,7 +49,7 @@ void Strategist::runTestMotion(void (*motionFunction)(Motor& motor))
 				lineWasDetected = false;
 			}
 		}else{
-			if(state.linePosition.isNotNone())
+			if(state.linePosition.isNotDetected())
 			{
 				lineWasDetected = true;
 				tactician.setTactic(&Tactician::Tactic_Escape_Line_Whatever_Enemy_Do);
@@ -84,7 +84,7 @@ void Strategist::runTestTimedMotion(TimedMotion timeMotion){
 				lineWasDetected = false;
 			}
 		}else{
-			if(state.linePosition.isNotNone())
+			if(state.linePosition.isNotDetected())
 			{
 				lineWasDetected = true;
 				tactician.setTactic(&Tactician::Tactic_Escape_Line_Whatever_Enemy_Do);
@@ -98,5 +98,53 @@ void Strategist::runTestTimedMotion(TimedMotion timeMotion){
 		start = communication.readStartModule();
 	}
 	Motion_Stop(motor);
+}
+
+
+
+/**
+ * Strategy Logic:
+ * 1. If a tactics is already active, continue its execution.
+ * 2. Escape if a line is detected.
+ * 3. If the enemy's position is unknown, search for the enemy by rotation.
+ * 4. If the enemy is approximately in front, attack.
+ * 5. Otherwise, rotate to face the enemy.
+ */
+void Strategist::Strategy_Search_And_Attack()
+{
+    // Obtain the latest state information
+    State currentState = stateControl.recalculateStates();
+
+    // Continue executing a tactic if one is active
+    if (tactician.hasTactic())
+    {
+        tactician.runCurrentTactic(currentState);
+        return;
+    }
+
+    // Escape tactic when a line is detected
+    if (currentState.linePosition.isNotDetected())
+    {
+        tactician.setTactic(&Tactician::Tactic_Escape_Line_Whatever_Enemy_Do);
+        return;
+    }
+
+    EnemyPosition enemyPos = currentState.enemyPosition;
+
+    // Search for the enemy by rotation if its position is unknown
+    if (enemyPos.isNotKnown())
+    {
+        tactician.setTactic(&Tactician::Tactic_Search_Enemy_By_Rotation);
+        return;  // Added to ensure subsequent checks aren't executed
+    }
+
+    // Attack if the enemy is approximately in front otherwise rotate to it
+    if (enemyPos.isApproximatelyInFront())
+    {
+        tactician.setTactic(&Tactician::Tactic_Front_Attack);
+    }else
+    {
+        tactician.setTactic(&Tactician::Tactic_Rotate_To_Enemy);
+    }
 }
 

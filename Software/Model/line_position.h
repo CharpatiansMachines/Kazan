@@ -43,7 +43,7 @@ public:
     bool isLeft() const;
     bool isRight() const;
     bool isNone() const;
-    bool isNotNone() const;
+    bool isDetected() const;
 
 
 private:

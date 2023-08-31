@@ -59,11 +59,21 @@ uint8_t EnemyPosition::getDistanceFromCenterDirection() {
     int8_t center = getCenterDirection();
     return std::abs(direction - center);
 }
-bool EnemyPosition::isNotKnown(){
+bool EnemyPosition::isNotKnown() const{
 	return proximity >= PROXIMITY_NO;
 }
 bool EnemyPosition::isKnown(){
 	return !isNotKnown();
+}
+bool EnemyPosition::isApproximatelyInFront() const{
+	return direction >= FRONT_DIRECTION - 1 &&
+			direction <= FRONT_DIRECTION + 1;
+}
+bool EnemyPosition::isInLeft( )const {
+	return direction <= FRONT_DIRECTION;
+}
+bool EnemyPosition::isInRight() const{
+	return direction >= FRONT_DIRECTION;
 }
 
 

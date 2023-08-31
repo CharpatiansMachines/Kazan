@@ -7,45 +7,45 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, ALLOC, LOAD, READONLY, DATA
   1 .text         0000b5e0  080001d0  080001d0  000101d0  2**4
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
-  2 .rodata       0000230c  0800b7b0  0800b7b0  0001b7b0  2**3
+  2 .rodata       00002314  0800b7b0  0800b7b0  0001b7b0  2**3
                   CONTENTS, ALLOC, LOAD, READONLY, DATA
-  3 .ARM.extab    00000000  0800dabc  0800dabc  00020208  2**0
+  3 .ARM.extab    00000000  0800dac4  0800dac4  00020208  2**0
                   CONTENTS
-  4 .ARM          00000008  0800dabc  0800dabc  0001dabc  2**2
+  4 .ARM          00000008  0800dac4  0800dac4  0001dac4  2**2
                   CONTENTS, ALLOC, LOAD, READONLY, DATA
-  5 .preinit_array 00000000  0800dac4  0800dac4  00020208  2**0
+  5 .preinit_array 00000000  0800dacc  0800dacc  00020208  2**0
                   CONTENTS, ALLOC, LOAD, DATA
-  6 .init_array   00000018  0800dac4  0800dac4  0001dac4  2**2
+  6 .init_array   00000018  0800dacc  0800dacc  0001dacc  2**2
                   CONTENTS, ALLOC, LOAD, DATA
-  7 .fini_array   00000004  0800dadc  0800dadc  0001dadc  2**2
+  7 .fini_array   00000004  0800dae4  0800dae4  0001dae4  2**2
                   CONTENTS, ALLOC, LOAD, DATA
-  8 .data         00000208  20000000  0800dae0  00020000  2**2
+  8 .data         00000208  20000000  0800dae8  00020000  2**2
                   CONTENTS, ALLOC, LOAD, DATA
-  9 .bss          00000750  20000208  0800dce8  00020208  2**2
+  9 .bss          00000750  20000208  0800dcf0  00020208  2**2
                   ALLOC
- 10 ._user_heap_stack 00000600  20000958  0800dce8  00020958  2**0
+ 10 ._user_heap_stack 00000600  20000958  0800dcf0  00020958  2**0
                   ALLOC
  11 .ARM.attributes 00000030  00000000  00000000  00020208  2**0
                   CONTENTS, READONLY
  12 .comment      00000043  00000000  00000000  00020238  2**0
                   CONTENTS, READONLY
- 13 .debug_info   00025b8c  00000000  00000000  0002027b  2**0
+ 13 .debug_info   000263d0  00000000  00000000  0002027b  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 14 .debug_abbrev 00006749  00000000  00000000  00045e07  2**0
+ 14 .debug_abbrev 0000673c  00000000  00000000  0004664b  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 15 .debug_aranges 00001610  00000000  00000000  0004c550  2**3
+ 15 .debug_aranges 00001640  00000000  00000000  0004cd88  2**3
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 16 .debug_rnglists 0000112b  00000000  00000000  0004db60  2**0
+ 16 .debug_rnglists 00001152  00000000  00000000  0004e3c8  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 17 .debug_macro  0002a5c2  00000000  00000000  0004ec8b  2**0
+ 17 .debug_macro  0002a5c2  00000000  00000000  0004f51a  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_line   00020860  00000000  00000000  0007924d  2**0
+ 18 .debug_line   000209fb  00000000  00000000  00079adc  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .debug_str    000e28fc  00000000  00000000  00099aad  2**0
+ 19 .debug_str    000e2ae2  00000000  00000000  0009a4d7  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 20 .debug_frame  000069ec  00000000  00000000  0017c3ac  2**2
+ 20 .debug_frame  00006aec  00000000  00000000  0017cfbc  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 21 .debug_line_str 00000048  00000000  00000000  00182d98  2**0
+ 21 .debug_line_str 00000048  00000000  00000000  00183aa8  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
@@ -3614,7 +3614,7 @@ LoopFillZerobss:
   ldr r1, =_edata
  8001bc8:	20000208 	.word	0x20000208
   ldr r2, =_sidata
- 8001bcc:	0800dae0 	.word	0x0800dae0
+ 8001bcc:	0800dae8 	.word	0x0800dae8
   ldr r2, =_sbss
  8001bd0:	20000208 	.word	0x20000208
   ldr r4, =_ebss
@@ -8074,7 +8074,7 @@ HAL_StatusTypeDef HAL_RCC_ClockConfig(RCC_ClkInitTypeDef  *RCC_ClkInitStruct, ui
  800358e:	bf00      	nop
  8003590:	40023c00 	.word	0x40023c00
  8003594:	40023800 	.word	0x40023800
- 8003598:	0800bc78 	.word	0x0800bc78
+ 8003598:	0800bc84 	.word	0x0800bc84
  800359c:	20000000 	.word	0x20000000
  80035a0:	20000004 	.word	0x20000004
 
@@ -8122,7 +8122,7 @@ uint32_t HAL_RCC_GetPCLK1Freq(void)
  80035d8:	4618      	mov	r0, r3
  80035da:	bd80      	pop	{r7, pc}
  80035dc:	40023800 	.word	0x40023800
- 80035e0:	0800bc88 	.word	0x0800bc88
+ 80035e0:	0800bc94 	.word	0x0800bc94
 
 080035e4 <HAL_RCC_GetPCLK2Freq>:
   * @note   Each time PCLK2 changes, this function must be called to update the
@@ -8148,7 +8148,7 @@ uint32_t HAL_RCC_GetPCLK2Freq(void)
  8003600:	4618      	mov	r0, r3
  8003602:	bd80      	pop	{r7, pc}
  8003604:	40023800 	.word	0x40023800
- 8003608:	0800bc88 	.word	0x0800bc88
+ 8003608:	0800bc94 	.word	0x0800bc94
 
 0800360c <HAL_RCC_GetSysClockFreq>:
   *
@@ -14275,7 +14275,7 @@ void Display_N_Values_Screen(uint8_t *values, uint8_t valuesNo){
  8005f26:	3760      	adds	r7, #96	; 0x60
  8005f28:	46bd      	mov	sp, r7
  8005f2a:	bdb0      	pop	{r4, r5, r7, pc}
- 8005f2c:	0800bc28 	.word	0x0800bc28
+ 8005f2c:	0800bc30 	.word	0x0800bc30
  8005f30:	20000804 	.word	0x20000804
  8005f34:	20000030 	.word	0x20000030
 
@@ -14426,10 +14426,10 @@ void Display_Line_Position_Screen(LinePosition lineOutput,uint8_t whiteFilter, u
  800606e:	46bd      	mov	sp, r7
  8006070:	bd80      	pop	{r7, pc}
  8006072:	bf00      	nop
- 8006074:	0800bc3c 	.word	0x0800bc3c
+ 8006074:	0800bc44 	.word	0x0800bc44
  8006078:	20000804 	.word	0x20000804
  800607c:	20000030 	.word	0x20000030
- 8006080:	0800bc48 	.word	0x0800bc48
+ 8006080:	0800bc50 	.word	0x0800bc50
 
 08006084 <_Z31Display_2_Power_And_Time_ScreenPKcaaxS0_>:
 void Display_2_Power_And_Time_Screen(const char * title, int8_t leftPower, int8_t rightPower,int64_t time,const char * description){
@@ -14477,7 +14477,7 @@ void Display_2_Power_And_Time_Screen(const char * title, int8_t leftPower, int8_
  80060e0:	4618      	mov	r0, r3
  80060e2:	f7ff fc67 	bl	80059b4 <_Z16Draw_Center_TextPKcP7FontDeft>
 
-	sprintf(s,"Timer = %d",time);
+	sprintf(s,"Timer = %lld",time);
  80060e6:	f107 0014 	add.w	r0, r7, #20
  80060ea:	e9d7 2314 	ldrd	r2, r3, [r7, #80]	; 0x50
  80060ee:	4916      	ldr	r1, [pc, #88]	; (8006148 <_Z31Display_2_Power_And_Time_ScreenPKcaaxS0_+0xc4>)
@@ -14516,9 +14516,9 @@ void Display_2_Power_And_Time_Screen(const char * title, int8_t leftPower, int8_
  8006138:	bd80      	pop	{r7, pc}
  800613a:	bf00      	nop
  800613c:	20000030 	.word	0x20000030
- 8006140:	0800bc54 	.word	0x0800bc54
+ 8006140:	0800bc5c 	.word	0x0800bc5c
  8006144:	20000804 	.word	0x20000804
- 8006148:	0800bc5c 	.word	0x0800bc5c
+ 8006148:	0800bc64 	.word	0x0800bc64
 
 0800614c <_Z22Display_2_Power_ScreenPKcaaS0_>:
 
@@ -14588,7 +14588,7 @@ void Display_2_Power_Screen(const char *title, int8_t leftPower, int8_t rightPow
  80061d4:	bd80      	pop	{r7, pc}
  80061d6:	bf00      	nop
  80061d8:	20000030 	.word	0x20000030
- 80061dc:	0800bc54 	.word	0x0800bc54
+ 80061dc:	0800bc5c 	.word	0x0800bc5c
  80061e0:	20000804 	.word	0x20000804
 
 080061e4 <_Z13Display_Errorv>:
@@ -14604,7 +14604,7 @@ void Display_Error(){
  80061ee:	bf00      	nop
  80061f0:	bd80      	pop	{r7, pc}
  80061f2:	bf00      	nop
- 80061f4:	0800bc68 	.word	0x0800bc68
+ 80061f4:	0800bc74 	.word	0x0800bc74
 
 080061f8 <_Z28Display_Get_Bottom_YPositionP7FontDef>:
 
@@ -15863,7 +15863,7 @@ void Tactician::changeTacticStep(uint8_t step) {
 	...
 
 08006aa8 <_ZN9Tactician36Tactic_Escape_Line_Whatever_Enemy_DoE5State>:
-			break;
+		changeTacticStep(0);
 	}
 }
 
@@ -17152,8 +17152,8 @@ uint8_t EnemyPosition::getDistanceFromCenterDirection() {
  800741a:	46bd      	mov	sp, r7
  800741c:	bd80      	pop	{r7, pc}
 
-0800741e <_ZN13EnemyPosition10isNotKnownEv>:
-bool EnemyPosition::isNotKnown(){
+0800741e <_ZNK13EnemyPosition10isNotKnownEv>:
+bool EnemyPosition::isNotKnown() const{
  800741e:	b480      	push	{r7}
  8007420:	b083      	sub	sp, #12
  8007422:	af00      	add	r7, sp, #0
@@ -17181,7 +17181,7 @@ bool EnemyPosition::isKnown(){
  8007448:	6078      	str	r0, [r7, #4]
 	return !isNotKnown();
  800744a:	6878      	ldr	r0, [r7, #4]
- 800744c:	f7ff ffe7 	bl	800741e <_ZN13EnemyPosition10isNotKnownEv>
+ 800744c:	f7ff ffe7 	bl	800741e <_ZNK13EnemyPosition10isNotKnownEv>
  8007450:	4603      	mov	r3, r0
  8007452:	f083 0301 	eor.w	r3, r3, #1
  8007456:	b2db      	uxtb	r3, r3
@@ -21076,11 +21076,11 @@ float Trimpot::getData(float min, float max) const
  8008ecc:	e7ee      	b.n	8008eac <_printf_float+0x2b4>
  8008ece:	bf00      	nop
  8008ed0:	7fefffff 	.word	0x7fefffff
- 8008ed4:	0800d748 	.word	0x0800d748
- 8008ed8:	0800d74c 	.word	0x0800d74c
- 8008edc:	0800d750 	.word	0x0800d750
- 8008ee0:	0800d754 	.word	0x0800d754
- 8008ee4:	0800d758 	.word	0x0800d758
+ 8008ed4:	0800d754 	.word	0x0800d754
+ 8008ed8:	0800d758 	.word	0x0800d758
+ 8008edc:	0800d75c 	.word	0x0800d75c
+ 8008ee0:	0800d760 	.word	0x0800d760
+ 8008ee4:	0800d764 	.word	0x0800d764
  8008ee8:	9a0a      	ldr	r2, [sp, #40]	; 0x28
  8008eea:	6da3      	ldr	r3, [r4, #88]	; 0x58
  8008eec:	429a      	cmp	r2, r3
@@ -21567,8 +21567,8 @@ float Trimpot::getData(float min, float max) const
  8009374:	f104 0619 	add.w	r6, r4, #25
  8009378:	e7f5      	b.n	8009366 <_printf_i+0x226>
  800937a:	bf00      	nop
- 800937c:	0800d75a 	.word	0x0800d75a
- 8009380:	0800d76b 	.word	0x0800d76b
+ 800937c:	0800d766 	.word	0x0800d766
+ 8009380:	0800d777 	.word	0x0800d777
 
 08009384 <std>:
  8009384:	2300      	movs	r3, #0
@@ -21948,10 +21948,10 @@ float Trimpot::getData(float min, float max) const
  80096c2:	4798      	blx	r3
  80096c4:	3601      	adds	r6, #1
  80096c6:	e7f2      	b.n	80096ae <__libc_init_array+0x1e>
- 80096c8:	0800dac4 	.word	0x0800dac4
- 80096cc:	0800dac4 	.word	0x0800dac4
- 80096d0:	0800dac4 	.word	0x0800dac4
- 80096d4:	0800dadc 	.word	0x0800dadc
+ 80096c8:	0800dacc 	.word	0x0800dacc
+ 80096cc:	0800dacc 	.word	0x0800dacc
+ 80096d0:	0800dacc 	.word	0x0800dacc
+ 80096d4:	0800dae4 	.word	0x0800dae4
 
 080096d8 <__retarget_lock_acquire_recursive>:
  80096d8:	4770      	bx	lr
@@ -22361,15 +22361,15 @@ float Trimpot::getData(float min, float max) const
  8009ae4:	3fc68a28 	.word	0x3fc68a28
  8009ae8:	509f79fb 	.word	0x509f79fb
  8009aec:	3fd34413 	.word	0x3fd34413
- 8009af0:	0800d789 	.word	0x0800d789
- 8009af4:	0800d7a0 	.word	0x0800d7a0
+ 8009af0:	0800d795 	.word	0x0800d795
+ 8009af4:	0800d7ac 	.word	0x0800d7ac
  8009af8:	7ff00000 	.word	0x7ff00000
- 8009afc:	0800d785 	.word	0x0800d785
- 8009b00:	0800d77c 	.word	0x0800d77c
- 8009b04:	0800d759 	.word	0x0800d759
+ 8009afc:	0800d791 	.word	0x0800d791
+ 8009b00:	0800d788 	.word	0x0800d788
+ 8009b04:	0800d765 	.word	0x0800d765
  8009b08:	3ff80000 	.word	0x3ff80000
- 8009b0c:	0800d890 	.word	0x0800d890
- 8009b10:	0800d7f8 	.word	0x0800d7f8
+ 8009b0c:	0800d898 	.word	0x0800d898
+ 8009b10:	0800d804 	.word	0x0800d804
  8009b14:	2301      	movs	r3, #1
  8009b16:	9309      	str	r3, [sp, #36]	; 0x24
  8009b18:	e7d7      	b.n	8009aca <_dtoa_r+0x2c2>
@@ -22669,8 +22669,8 @@ float Trimpot::getData(float min, float max) const
  8009e3e:	4689      	mov	r9, r1
  8009e40:	e7bd      	b.n	8009dbe <_dtoa_r+0x5b6>
  8009e42:	bf00      	nop
- 8009e44:	0800d890 	.word	0x0800d890
- 8009e48:	0800d868 	.word	0x0800d868
+ 8009e44:	0800d898 	.word	0x0800d898
+ 8009e48:	0800d870 	.word	0x0800d870
  8009e4c:	3ff00000 	.word	0x3ff00000
  8009e50:	40240000 	.word	0x40240000
  8009e54:	401c0000 	.word	0x401c0000
@@ -23266,9 +23266,9 @@ float Trimpot::getData(float min, float max) const
  800a3d8:	f73f aeb1 	bgt.w	800a13e <_dtoa_r+0x936>
  800a3dc:	e7b0      	b.n	800a340 <_dtoa_r+0xb38>
  800a3de:	bf00      	nop
- 800a3e0:	0800d7f8 	.word	0x0800d7f8
- 800a3e4:	0800d758 	.word	0x0800d758
- 800a3e8:	0800d77c 	.word	0x0800d77c
+ 800a3e0:	0800d804 	.word	0x0800d804
+ 800a3e4:	0800d764 	.word	0x0800d764
+ 800a3e8:	0800d788 	.word	0x0800d788
 
 0800a3ec <_free_r>:
  800a3ec:	b537      	push	{r0, r1, r2, r4, r5, lr}
@@ -23552,8 +23552,8 @@ float Trimpot::getData(float min, float max) const
  800a65c:	e9c0 3303 	strd	r3, r3, [r0, #12]
  800a660:	e7f7      	b.n	800a652 <_Balloc+0x66>
  800a662:	bf00      	nop
- 800a664:	0800d789 	.word	0x0800d789
- 800a668:	0800d809 	.word	0x0800d809
+ 800a664:	0800d795 	.word	0x0800d795
+ 800a668:	0800d815 	.word	0x0800d815
 
 0800a66c <_Bfree>:
  800a66c:	b570      	push	{r4, r5, r6, lr}
@@ -23581,8 +23581,8 @@ float Trimpot::getData(float min, float max) const
  800a6a0:	6021      	str	r1, [r4, #0]
  800a6a2:	f843 4022 	str.w	r4, [r3, r2, lsl #2]
  800a6a6:	bd70      	pop	{r4, r5, r6, pc}
- 800a6a8:	0800d789 	.word	0x0800d789
- 800a6ac:	0800d809 	.word	0x0800d809
+ 800a6a8:	0800d795 	.word	0x0800d795
+ 800a6ac:	0800d815 	.word	0x0800d815
 
 0800a6b0 <__multadd>:
  800a6b0:	e92d 41f0 	stmdb	sp!, {r4, r5, r6, r7, r8, lr}
@@ -23636,8 +23636,8 @@ float Trimpot::getData(float min, float max) const
  800a72c:	6125      	str	r5, [r4, #16]
  800a72e:	4620      	mov	r0, r4
  800a730:	e8bd 81f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, pc}
- 800a734:	0800d7f8 	.word	0x0800d7f8
- 800a738:	0800d809 	.word	0x0800d809
+ 800a734:	0800d804 	.word	0x0800d804
+ 800a738:	0800d815 	.word	0x0800d815
 
 0800a73c <__hi0bits>:
  800a73c:	0c03      	lsrs	r3, r0, #16
@@ -23730,8 +23730,8 @@ float Trimpot::getData(float min, float max) const
  800a7f6:	6103      	str	r3, [r0, #16]
  800a7f8:	bd10      	pop	{r4, pc}
  800a7fa:	bf00      	nop
- 800a7fc:	0800d7f8 	.word	0x0800d7f8
- 800a800:	0800d809 	.word	0x0800d809
+ 800a7fc:	0800d804 	.word	0x0800d804
+ 800a800:	0800d815 	.word	0x0800d815
 
 0800a804 <__multiply>:
  800a804:	e92d 4ff0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
@@ -23850,8 +23850,8 @@ float Trimpot::getData(float min, float max) const
  800a94a:	e799      	b.n	800a880 <__multiply+0x7c>
  800a94c:	3e01      	subs	r6, #1
  800a94e:	e79b      	b.n	800a888 <__multiply+0x84>
- 800a950:	0800d7f8 	.word	0x0800d7f8
- 800a954:	0800d809 	.word	0x0800d809
+ 800a950:	0800d804 	.word	0x0800d804
+ 800a954:	0800d815 	.word	0x0800d815
 
 0800a958 <__pow5mult>:
  800a958:	e92d 43f8 	stmdb	sp!, {r3, r4, r5, r6, r7, r8, r9, lr}
@@ -23919,9 +23919,9 @@ float Trimpot::getData(float min, float max) const
  800a9f8:	4638      	mov	r0, r7
  800a9fa:	e8bd 83f8 	ldmia.w	sp!, {r3, r4, r5, r6, r7, r8, r9, pc}
  800a9fe:	bf00      	nop
- 800aa00:	0800d958 	.word	0x0800d958
- 800aa04:	0800d789 	.word	0x0800d789
- 800aa08:	0800d809 	.word	0x0800d809
+ 800aa00:	0800d960 	.word	0x0800d960
+ 800aa04:	0800d795 	.word	0x0800d795
+ 800aa08:	0800d815 	.word	0x0800d815
 
 0800aa0c <__lshift>:
  800aa0c:	e92d 47f0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, lr}
@@ -24000,8 +24000,8 @@ float Trimpot::getData(float min, float max) const
  800aad6:	d8f9      	bhi.n	800aacc <__lshift+0xc0>
  800aad8:	e7ea      	b.n	800aab0 <__lshift+0xa4>
  800aada:	bf00      	nop
- 800aadc:	0800d7f8 	.word	0x0800d7f8
- 800aae0:	0800d809 	.word	0x0800d809
+ 800aadc:	0800d804 	.word	0x0800d804
+ 800aae0:	0800d815 	.word	0x0800d815
 
 0800aae4 <__mcmp>:
  800aae4:	b530      	push	{r4, r5, lr}
@@ -24127,8 +24127,8 @@ float Trimpot::getData(float min, float max) const
  800ac22:	3f01      	subs	r7, #1
  800ac24:	e7ea      	b.n	800abfc <__mdiff+0xe0>
  800ac26:	bf00      	nop
- 800ac28:	0800d7f8 	.word	0x0800d7f8
- 800ac2c:	0800d809 	.word	0x0800d809
+ 800ac28:	0800d804 	.word	0x0800d804
+ 800ac2c:	0800d815 	.word	0x0800d815
 
 0800ac30 <__d2b>:
  800ac30:	e92d 43f7 	stmdb	sp!, {r0, r1, r2, r4, r5, r6, r7, r8, r9, lr}
@@ -24196,8 +24196,8 @@ float Trimpot::getData(float min, float max) const
  800acd4:	ebc0 1042 	rsb	r0, r0, r2, lsl #5
  800acd8:	e7e2      	b.n	800aca0 <__d2b+0x70>
  800acda:	bf00      	nop
- 800acdc:	0800d7f8 	.word	0x0800d7f8
- 800ace0:	0800d809 	.word	0x0800d809
+ 800acdc:	0800d804 	.word	0x0800d804
+ 800ace0:	0800d815 	.word	0x0800d815
 
 0800ace4 <__ssputs_r>:
  800ace4:	e92d 47f0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, lr}
@@ -24475,11 +24475,11 @@ float Trimpot::getData(float min, float max) const
  800af78:	4638      	mov	r0, r7
  800af7a:	f7fe f8e1 	bl	8009140 <_printf_i>
  800af7e:	e7eb      	b.n	800af58 <_svfiprintf_r+0x1c0>
- 800af80:	0800d964 	.word	0x0800d964
- 800af84:	0800d96e 	.word	0x0800d96e
+ 800af80:	0800d96c 	.word	0x0800d96c
+ 800af84:	0800d976 	.word	0x0800d976
  800af88:	08008bf9 	.word	0x08008bf9
  800af8c:	0800ace5 	.word	0x0800ace5
- 800af90:	0800d96a 	.word	0x0800d96a
+ 800af90:	0800d972 	.word	0x0800d972
 
 0800af94 <__sflush_r>:
  800af94:	898a      	ldrh	r2, [r1, #12]
@@ -24679,9 +24679,9 @@ float Trimpot::getData(float min, float max) const
  800b138:	e7f3      	b.n	800b122 <__assert_func+0x12>
  800b13a:	bf00      	nop
  800b13c:	20000098 	.word	0x20000098
- 800b140:	0800d97f 	.word	0x0800d97f
- 800b144:	0800d98c 	.word	0x0800d98c
- 800b148:	0800d9ba 	.word	0x0800d9ba
+ 800b140:	0800d987 	.word	0x0800d987
+ 800b144:	0800d994 	.word	0x0800d994
+ 800b148:	0800d9c2 	.word	0x0800d9c2
 
 0800b14c <_calloc_r>:
  800b14c:	b537      	push	{r0, r1, r2, r4, r5, lr}
@@ -25073,11 +25073,11 @@ float Trimpot::getData(float min, float max) const
  800b4c0:	4630      	mov	r0, r6
  800b4c2:	f7fd fe3d 	bl	8009140 <_printf_i>
  800b4c6:	e7e4      	b.n	800b492 <_vfiprintf_r+0x1ea>
- 800b4c8:	0800d964 	.word	0x0800d964
- 800b4cc:	0800d96e 	.word	0x0800d96e
+ 800b4c8:	0800d96c 	.word	0x0800d96c
+ 800b4cc:	0800d976 	.word	0x0800d976
  800b4d0:	08008bf9 	.word	0x08008bf9
  800b4d4:	0800b285 	.word	0x0800b285
- 800b4d8:	0800d96a 	.word	0x0800d96a
+ 800b4d8:	0800d972 	.word	0x0800d972
 
 0800b4dc <__swbuf_r>:
  800b4dc:	b5f8      	push	{r3, r4, r5, r6, r7, lr}

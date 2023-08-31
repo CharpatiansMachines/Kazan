@@ -158,8 +158,8 @@ void Display_Enemy_Sensors_Output(uint32_t value){
 	Draw_Full_Black();
 
 	Draw_Center_Text((char *)"Enemy Sensors", &Font_7x10, 0);
-	sprintf(s, "s0=%d, s1=%d, s2=%d, s3=%d, s4=%d, s5=%d, s6=%d, s7=%d",
-	    value & 0x01 ? 1 : 0,
+	sprintf(s, "s0=%lu, s1=%lu, s2=%lu, s3=%lu, s4=%lu, s5=%lu, s6=%lu, s7=%lu",
+		 value & 0x01,
 	    (value & 0x02) >> 1,
 	    (value & 0x04) >> 2,
 	    (value & 0x08) >> 3,
@@ -286,7 +286,7 @@ void Display_2_Power_And_Time_Screen(const char * title, int8_t leftPower, int8_
 	sprintf(s,"%d  %d",leftPower,rightPower);
 	Draw_Center_Text(s, &font, SSD1306.CurrentY + Font_7x10.FontHeight /2);
 
-	sprintf(s,"Timer = %d",time);
+	sprintf(s,"Timer = %lld",time);
 	Draw_Center_Text(s, &font, SSD1306.CurrentY + Font_7x10.FontHeight / 2);
 
 	Draw_Center_Text(description, &font, Display_Get_Bottom_YPosition(&font));

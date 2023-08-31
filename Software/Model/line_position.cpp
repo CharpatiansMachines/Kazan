@@ -61,6 +61,6 @@ bool LinePosition::isNone() const {
     return linePosition == LinePositionType::None;
 }
 
-bool LinePosition::isNotNone() const {
+bool LinePosition::isDetected() const {
     return linePosition != LinePositionType::None;
 }

@@ -20,7 +20,7 @@ public:
 	void runTestMotion(void (*motionFunction)(Motor& motor));
 	void runTestTimedMotion(TimedMotion timeMotion);
 
-
+	void Strategy_Search_And_Attack(void);
 private:
 	Motor& motor;
 	Communication_Driver& communication;

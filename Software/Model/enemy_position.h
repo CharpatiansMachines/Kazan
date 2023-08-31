@@ -32,7 +32,11 @@ public:
     int8_t proximity;
     uint8_t getCenterDirection();
     uint8_t getDistanceFromCenterDirection();
-    bool isNotKnown();
+    bool isNotKnown() const;
+    bool isKnown() const;
+    bool isApproximatelyInFront() const;
+    bool isInLeft() const;
+    bool isInRight() const;
     bool isKnown();
 
     static EnemyPosition notKnownEnemyPosition();
@@ -45,6 +49,7 @@ private:
 
     // Constants
     static const uint8_t NOT_KNOWN_POSITION_ID = KNOWN_POSITIONS_NO;
+    static const uint8_t FRONT_DIRECTION = (DIRECTIONS_NO - 1) / 2;
 };
 
 

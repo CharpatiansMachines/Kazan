@@ -19,7 +19,9 @@ public:
     bool hasTactic();
 
 
-    void Tactic_Front_Atack(State state);
+    void Tactic_Front_Attack(State state);
+    void Tactic_Rotate_Towards_Enemy(State state);
+    void Tactic_Search_Enemy_By_Rotation(State state);
     void Tactic_Escape_Line_Whatever_Enemy_Do(State state);
 private:
     static const uint8_t MAX_MOTIONS_NO = 20;
