@@ -12,6 +12,7 @@
 #include "display.h"
 #include "hardware_test.h"
 #include "initialize_parameters.h"
+#include "strategy_selector.h"
 
 
 Application::Application()
@@ -59,6 +60,7 @@ Application::Application()
 	  })  // communication driver
 
 {
+
 }
 
 void Application::run()
@@ -112,7 +114,8 @@ void Application::run()
 			case Battle_Application:
 				Display_Title_Screen((char *)"Battle");
 				if(userInputs.isSelectRequest()){
-
+					StrategySelector strategySelectorApp = StrategySelector(userInputs,stateControl,motor, communication);
+					strategySelectorApp.run();
 				}
 				break;
 			default:

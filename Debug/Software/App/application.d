@@ -54,7 +54,8 @@ Software/App/application.o: ../Software/App/application.cpp \
  D:/Proiecte/STMCUBE/Kazan/Software/Middleware/strategist.h \
  D:/Proiecte/STMCUBE/Kazan/Software/Middleware/tactician.h \
  D:/Proiecte/STMCUBE/Kazan/Software/Middleware/timed_motion.h \
- D:/Proiecte/STMCUBE/Kazan/Software/Middleware/state_control.h
+ D:/Proiecte/STMCUBE/Kazan/Software/Middleware/state_control.h \
+ ../Software/App/strategy_selector.h
 ../Software/App/application.h:
 D:/Proiecte/STMCUBE/Kazan/Software/Middleware/state_control.h:
 ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:
@@ -112,3 +113,4 @@ D:/Proiecte/STMCUBE/Kazan/Software/Middleware/strategist.h:
 D:/Proiecte/STMCUBE/Kazan/Software/Middleware/tactician.h:
 D:/Proiecte/STMCUBE/Kazan/Software/Middleware/timed_motion.h:
 D:/Proiecte/STMCUBE/Kazan/Software/Middleware/state_control.h:
+../Software/App/strategy_selector.h:

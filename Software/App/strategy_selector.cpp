@@ -12,13 +12,13 @@ struct StrategySelectoScreenrData{
 	const char *const title;
 	void (Strategist::*strategy)(void);
 };
-const StrategySelectoScreenrData selectorScreenData[] = {
-		{"Search And Attack", &Strategist::Strategy_Search_And_Attack}
+const StrategySelectoScreenrData selectorScreenData[] __attribute__((section(".rodata"))) = {
+	{"Search And Attack", &Strategist::Strategy_Search_And_Attack},
 };
 
 void StrategySelector::run()
 {
-	Strategy_Selector_Screen_Type screen;
+	Strategy_Selector_Screen_Type screen = Search_And_Attack_Screen;
 	bool start = false;
 	while(true)
 	{
@@ -37,6 +37,9 @@ void StrategySelector::run()
 		strategist.setStrategy(screenData.strategy);
 		Display_Title_Screen(screenData.title);
 
+		if(userInputs.isReturnBackRequest()){
+			return;
+		}
 		if(userInputs.isBackRequest()){
 			screen--;
 		}
