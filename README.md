@@ -1,2 +1,2 @@
 # Kazan - Sumo Robot
-Pinout in datasheet.
+Pinout in documentation.
