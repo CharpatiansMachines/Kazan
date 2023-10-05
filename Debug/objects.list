@@ -31,7 +31,7 @@
 "./Software/App/hardware_test.o"
 "./Software/App/initialize_parameters.o"
 "./Software/App/strategy_selector.o"
-"./Software/Helpers/math.o"
+"./Software/Helpers/math_helper.o"
 "./Software/Middleware/display.o"
 "./Software/Middleware/motion.o"
 "./Software/Middleware/state_control.o"

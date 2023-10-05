@@ -41,6 +41,7 @@ void Strategist::runTestMotion(void (*motionFunction)(Motor& motor))
 	while(start)
 	{
 		State state = stateControl.recalculateStates();
+		//Line was detected
 		if(lineWasDetected)
 		{
 			if(tactician.hasTactic()){
@@ -48,16 +49,18 @@ void Strategist::runTestMotion(void (*motionFunction)(Motor& motor))
 			}else{
 				lineWasDetected = false;
 			}
-		}else{
-			if(state.linePosition.isDetected())
-			{
-				lineWasDetected = true;
-				tactician.setTactic(&Tactician::Tactic_Escape_Line_Whatever_Enemy_Do);
-				tactician.runCurrentTactic(state);
-			}else{
-				motionFunction(motor);
-			}
 		}
+
+		//Line Wasn't detected
+		if(state.linePosition.isDetected())
+		{
+			lineWasDetected = true;
+			tactician.setTactic(&Tactician::Tactic_Escape_Line_Whatever_Enemy_Do);
+			tactician.runCurrentTactic(state);
+		}else{
+			motionFunction(motor);
+		}
+
 		start = communication.readStartModule();
 	}
 	Motion_Stop(motor);
@@ -76,6 +79,7 @@ void Strategist::runTestTimedMotion(TimedMotion timeMotion){
 	while(start)
 	{
 		State state = stateControl.recalculateStates();
+		//Line was detected
 		if(lineWasDetected)
 		{
 			if(tactician.hasTactic()){
@@ -83,17 +87,17 @@ void Strategist::runTestTimedMotion(TimedMotion timeMotion){
 			}else{
 				lineWasDetected = false;
 			}
-		}else{
-			if(state.linePosition.isDetected())
-			{
-				lineWasDetected = true;
-				tactician.setTactic(&Tactician::Tactic_Escape_Line_Whatever_Enemy_Do);
-				tactician.runCurrentTactic(state);
-			}else{
-				if(timeMotion.hasPassed()){
-					break;
-				}
-			}
+			continue;
+		}
+
+		// Line was not detected
+		if(state.linePosition.isDetected())
+		{
+			lineWasDetected = true;
+			tactician.setTactic(&Tactician::Tactic_Escape_Line_Whatever_Enemy_Do);
+			tactician.runCurrentTactic(state);
+		}else if(timeMotion.hasPassed()){
+				break;
 		}
 		start = communication.readStartModule();
 	}

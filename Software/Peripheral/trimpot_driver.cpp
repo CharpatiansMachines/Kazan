@@ -6,6 +6,7 @@
  */
 
 #include "trimpot_driver.h"
+#include "math_helper.hpp"
 
 Trimpot::Trimpot(ADC_HandleTypeDef *hadc,uint32_t ADC_CHANNEL):
 hadc(hadc),
@@ -18,12 +19,13 @@ data(0)
 void Trimpot::config(){
 
 }
-uint16_t Trimpot::read()
+float Trimpot::read()
 {
+	//read data
 	ADC_ChannelConfTypeDef sConfig = {0};
 	sConfig.Channel = ADC_CHANNEL;
 	sConfig.Rank = 1;
-	sConfig.SamplingTime = ADC_SAMPLETIME_15CYCLES;
+	sConfig.SamplingTime = ADC_SAMPLETIME_28CYCLES;
 	if (HAL_ADC_ConfigChannel(hadc, &sConfig) != HAL_OK)
 	{
 
@@ -33,23 +35,14 @@ uint16_t Trimpot::read()
 	this->data = HAL_ADC_GetValue(hadc);
 	HAL_ADC_Stop(hadc);
 
-	if(data <= MIN_DATA_VALUE){
-		data = 0;
-	}else if(data >= MAX_DATA_VALUE + MIN_DATA_VALUE){
-		data = MAX_DATA_VALUE;
-	}else{
-		data -= MIN_DATA_VALUE;
-	}
-	return data;
+	return MathHelper::normalizeData(data, MIN_DATA_VALUE, MAX_DATA_VALUE);
 }
-uint16_t Trimpot::getData()const{
+float Trimpot::getData()const{
 	return data;
 }
 
 float Trimpot::getData(float min, float max) const
 {
-	float diff = max - min;
-	diff = diff / MAX_DATA_VALUE * data;
-	return min + diff;
+	return max * data + min;
 }
 

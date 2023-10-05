@@ -152,11 +152,16 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  Application application;
+//  Application application;
 
   while (1)
   {
-	  application.run();
+//	  application.run();
+	  char s[30] = "";
+	  uint32_t value = readADC2(ADC_CHANNEL_10);
+	  sprintf(s,"value is %d\r\n", (int) value);
+	  HAL_UART_Transmit(&huart4_data, (uint8_t *)s, strlen(s), 1000);
+	  HAL_Delay(100);
   }
   /* USER CODE END 3 */
 }

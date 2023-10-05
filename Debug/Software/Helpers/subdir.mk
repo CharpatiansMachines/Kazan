@@ -5,13 +5,13 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
-../Software/Helpers/math.cpp 
+../Software/Helpers/math_helper.cpp 
 
 OBJS += \
-./Software/Helpers/math.o 
+./Software/Helpers/math_helper.o 
 
 CPP_DEPS += \
-./Software/Helpers/math.d 
+./Software/Helpers/math_helper.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
@@ -21,7 +21,7 @@ Software/Helpers/%.o Software/Helpers/%.su Software/Helpers/%.cyclo: ../Software
 clean: clean-Software-2f-Helpers
 
 clean-Software-2f-Helpers:
-	-$(RM) ./Software/Helpers/math.cyclo ./Software/Helpers/math.d ./Software/Helpers/math.o ./Software/Helpers/math.su
+	-$(RM) ./Software/Helpers/math_helper.cyclo ./Software/Helpers/math_helper.d ./Software/Helpers/math_helper.o ./Software/Helpers/math_helper.su
 
 .PHONY: clean-Software-2f-Helpers
 

@@ -10,7 +10,7 @@
 #include "stm32f4xx_hal.h"
 static uint32_t startTime = HAL_GetTick();
 
-inline void Timer_Reset_Start(){
+inline void Timer_Reset_Time(){
 	startTime = HAL_GetTick();
 }
 
