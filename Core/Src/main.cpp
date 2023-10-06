@@ -91,11 +91,11 @@ uint32_t readADC1(uint32_t ADC_CHANNEL)
   return value;
 }
 
-uint32_t readADC2(uint32_t ADC_CHANNEL,uint32_t rank)
+uint32_t readADC2(uint32_t ADC_CHANNEL)
 {
 	ADC_ChannelConfTypeDef sConfig = {0};
 	sConfig.Channel = ADC_CHANNEL;
-	sConfig.Rank = rank;
+	sConfig.Rank = 1;
 	sConfig.SamplingTime = ADC_SAMPLETIME_28CYCLES;
 	if (HAL_ADC_ConfigChannel(&hadc2, &sConfig) != HAL_OK)
 	{
@@ -158,11 +158,25 @@ int main(void)
   while (1)
   {
 
-	  char s[30] = "";
+	  char s[100] = "";
 
-	  uint32_t value1 = readADC2(TRIMPOT_0_CHANNEL,1);
-	  uint32_t value2 = readADC2(TRIMPOT_1_CHANNEL,1);
+	  uint32_t value1 = readADC2(TRIMPOT_0_CHANNEL);
+	  uint32_t value2 = readADC2(TRIMPOT_1_CHANNEL);
 	  sprintf(s,"value is %d   ---   %d\r\n", (int) value1, (int) value2);
+	  HAL_UART_Transmit(&huart4_data, (uint8_t *)s, strlen(s), 1000);
+	  HAL_Delay(100);
+
+	  uint32_t a0 = readADC2(LINE_SENSOR_0_CHANNEL);
+	  uint32_t a1 = readADC2(LINE_SENSOR_1_CHANNEL);
+	  uint32_t a2_1 = readADC1(LINE_SENSOR_2_1_CHANNEL);
+	  uint32_t a2_2 = readADC1(LINE_SENSOR_2_2_CHANNEL);
+	  uint32_t a2_3 = readADC1(LINE_SENSOR_2_3_CHANNEL);
+	  uint32_t a3_1 = readADC1(LINE_SENSOR_3_1_CHANNEL);
+	  uint32_t a3_2 = readADC1(LINE_SENSOR_3_2_CHANNEL);
+	  uint32_t a3_3 = readADC1(LINE_SENSOR_3_3_CHANNEL);
+	  sprintf(s,"2 sen is %d   ---   %d\r\n", (int) a0, (int) a1);
+	  HAL_UART_Transmit(&huart4_data, (uint8_t *)s, strlen(s), 1000);
+	  sprintf(s,"back sen is %d --- %d --- %d   -------   %d --- %d --- %d\r\n\r\n", (int) a2_1, (int) a2_2, (int) a2_3, (int) a3_1, (int) a3_2, (int) a3_3);
 	  HAL_UART_Transmit(&huart4_data, (uint8_t *)s, strlen(s), 1000);
 	  HAL_Delay(100);
   }
@@ -247,7 +261,7 @@ static void MX_ADC1_Init(void)
   hadc1.Init.ClockPrescaler = ADC_CLOCK_SYNC_PCLK_DIV4;
   hadc1.Init.Resolution = ADC_RESOLUTION_6B;
   hadc1.Init.ScanConvMode = ENABLE;
-  hadc1.Init.ContinuousConvMode = ENABLE;
+  hadc1.Init.ContinuousConvMode = DISABLE;
   hadc1.Init.DiscontinuousConvMode = DISABLE;
   hadc1.Init.ExternalTrigConvEdge = ADC_EXTERNALTRIGCONVEDGE_NONE;
   hadc1.Init.ExternalTrigConv = ADC_SOFTWARE_START;
