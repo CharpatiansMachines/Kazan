@@ -91,12 +91,12 @@ uint32_t readADC1(uint32_t ADC_CHANNEL)
   return value;
 }
 
-uint32_t readADC2(uint32_t ADC_CHANNEL)
+uint32_t readADC2(uint32_t ADC_CHANNEL,uint32_t rank)
 {
 	ADC_ChannelConfTypeDef sConfig = {0};
 	sConfig.Channel = ADC_CHANNEL;
-	sConfig.Rank = 1;
-	sConfig.SamplingTime = ADC_SAMPLETIME_15CYCLES;
+	sConfig.Rank = rank;
+	sConfig.SamplingTime = ADC_SAMPLETIME_28CYCLES;
 	if (HAL_ADC_ConfigChannel(&hadc2, &sConfig) != HAL_OK)
 	{
 		Error_Handler();
@@ -153,13 +153,16 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
 //  Application application;
+//  application.run();
 
   while (1)
   {
-//	  application.run();
+
 	  char s[30] = "";
-	  uint32_t value = readADC2(ADC_CHANNEL_10);
-	  sprintf(s,"value is %d\r\n", (int) value);
+
+	  uint32_t value1 = readADC2(TRIMPOT_0_CHANNEL,1);
+	  uint32_t value2 = readADC2(TRIMPOT_1_CHANNEL,1);
+	  sprintf(s,"value is %d   ---   %d\r\n", (int) value1, (int) value2);
 	  HAL_UART_Transmit(&huart4_data, (uint8_t *)s, strlen(s), 1000);
 	  HAL_Delay(100);
   }
@@ -368,7 +371,6 @@ static void MX_ADC2_Init(void)
   */
   sConfig.Channel = ADC_CHANNEL_8;
   sConfig.Rank = 2;
-  sConfig.SamplingTime = ADC_SAMPLETIME_3CYCLES;
   if (HAL_ADC_ConfigChannel(&hadc2, &sConfig) != HAL_OK)
   {
     Error_Handler();
@@ -387,7 +389,6 @@ static void MX_ADC2_Init(void)
   */
   sConfig.Channel = ADC_CHANNEL_10;
   sConfig.Rank = 4;
-  sConfig.SamplingTime = ADC_SAMPLETIME_28CYCLES;
   if (HAL_ADC_ConfigChannel(&hadc2, &sConfig) != HAL_OK)
   {
     Error_Handler();
@@ -485,18 +486,18 @@ static void MX_UART4_Init(void)
   /* USER CODE BEGIN UART4_Init 1 */
 
   /* USER CODE END UART4_Init 1 */
-	huart4_data.Instance = UART4;
-	huart4_data.Init.BaudRate = 115200;
-	huart4_data.Init.WordLength = UART_WORDLENGTH_8B;
-	huart4_data.Init.StopBits = UART_STOPBITS_1;
-	huart4_data.Init.Parity = UART_PARITY_NONE;
-	huart4_data.Init.Mode = UART_MODE_TX_RX;
-	huart4_data.Init.HwFlowCtl = UART_HWCONTROL_NONE;
-	huart4_data.Init.OverSampling = UART_OVERSAMPLING_16;
-	if (HAL_HalfDuplex_Init(&huart4_data) != HAL_OK)
-	{
-		Error_Handler();
-	}
+  huart4_data.Instance = UART4;
+  huart4_data.Init.BaudRate = 115200;
+  huart4_data.Init.WordLength = UART_WORDLENGTH_8B;
+  huart4_data.Init.StopBits = UART_STOPBITS_1;
+  huart4_data.Init.Parity = UART_PARITY_NONE;
+  huart4_data.Init.Mode = UART_MODE_TX_RX;
+  huart4_data.Init.HwFlowCtl = UART_HWCONTROL_NONE;
+  huart4_data.Init.OverSampling = UART_OVERSAMPLING_16;
+  if (HAL_HalfDuplex_Init(&huart4_data) != HAL_OK)
+  {
+    Error_Handler();
+  }
   /* USER CODE BEGIN UART4_Init 2 */
 
   /* USER CODE END UART4_Init 2 */
@@ -553,15 +554,21 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOA_CLK_ENABLE();
   __HAL_RCC_GPIOB_CLK_ENABLE();
 
-  /*Configure GPIO pin : START_MODULE_Pin */
-
-  HAL_GPIO_WritePin(CEVA_LED_GPIO_Port, CEVA_LED_Pin, GPIO_PIN_SET);
+  /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(CEVA_LED_GPIO_Port, CEVA_LED_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin : START_MODULE_Pin */
   GPIO_InitStruct.Pin = START_MODULE_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(START_MODULE_GPIO_Port, &GPIO_InitStruct);
+
+  /*Configure GPIO pin : CEVA_LED_Pin */
+  GPIO_InitStruct.Pin = CEVA_LED_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(CEVA_LED_GPIO_Port, &GPIO_InitStruct);
 
   /*Configure GPIO pins : ENEMY_SENSOR_0_Pin ENEMY_SENSOR_5_Pin ENEMY_SENSOR_6_Pin ENEMY_SENSOR_7_Pin
                            ENEMY_SENSOR_1_Pin ENEMY_SENSOR_2_Pin ENEMY_SENSOR_3_Pin ENEMY_SENSOR_4_Pin */
