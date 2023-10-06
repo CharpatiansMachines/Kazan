@@ -152,8 +152,8 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-//  Application application;
-//  application.run();
+  Application application;
+  application.run();
 
   while (1)
   {
@@ -169,7 +169,8 @@ int main(void)
 	  uint32_t a0 = readADC2(LINE_SENSOR_0_CHANNEL);
 	  uint32_t a1 = readADC2(LINE_SENSOR_1_CHANNEL);
 	  uint32_t a2_1 = readADC1(LINE_SENSOR_2_1_CHANNEL);
-	  uint32_t a2_2 = readADC1(LINE_SENSOR_2_2_CHANNEL);
+	  uint32_t a2_2 = 99;
+	  a2_2 = readADC1(LINE_SENSOR_2_2_CHANNEL);
 	  uint32_t a2_3 = readADC1(LINE_SENSOR_2_3_CHANNEL);
 	  uint32_t a3_1 = readADC1(LINE_SENSOR_3_1_CHANNEL);
 	  uint32_t a3_2 = readADC1(LINE_SENSOR_3_2_CHANNEL);
@@ -286,12 +287,12 @@ static void MX_ADC1_Init(void)
 
   /** Configure for the selected ADC regular channel its corresponding rank in the sequencer and its sample time.
   */
-  sConfig.Channel = ADC_CHANNEL_2;
-  sConfig.Rank = 2;
-  if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)
-  {
-    Error_Handler();
-  }
+//  sConfig.Channel = ADC_CHANNEL_2;
+//  sConfig.Rank = 2;
+//  if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)
+//  {
+//    Error_Handler();
+//  }
 
   /** Configure for the selected ADC regular channel its corresponding rank in the sequencer and its sample time.
   */
