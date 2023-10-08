@@ -14,7 +14,7 @@ void InitializeParameters::run()
 {
     while(true)
     {
-        userInputs.readInputs();
+        userInputs.readAll();
 
         /// User input management
         if(userInputs.isReturnBackRequest()){
@@ -73,7 +73,7 @@ void InitializeParameters::runPowerSetApplication()
 	Secondary_Screen_Type secondScreen = Show_Screen;
 	while(true)
 	{
-        userInputs.readInputs();
+        userInputs.readAll();
 
         /// User input management
         if(userInputs.isReturnBackRequest()) return;
@@ -164,7 +164,7 @@ void InitializeParameters::runTimeSetApplication()
 	Secondary_Screen_Type secondScreen = Show_Screen;
 	while(true)
 	{
-        userInputs.readInputs();
+        userInputs.readAll();
 
         /// User input management
         if(userInputs.isReturnBackRequest()) return;

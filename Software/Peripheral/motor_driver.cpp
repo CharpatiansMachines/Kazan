@@ -18,7 +18,7 @@ rightPower(0)
 }
 void Motor::init()
 {
-	h_uart.Init.BaudRate = 38400;
+	h_uart.Init.BaudRate = 115200;
 	h_uart.Init.WordLength = UART_WORDLENGTH_8B;
 	h_uart.Init.StopBits = UART_STOPBITS_1;
 	h_uart.Init.Parity = UART_PARITY_NONE;

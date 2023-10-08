@@ -1,13 +1,15 @@
 ../Software/Middleware/user_inputs.cpp:13:1:UserInputs::UserInputs(const UserInputsConfig&)	1
 ../Software/Middleware/user_inputs.cpp:23:6:void UserInputs::configAll()	1
-../Software/Middleware/user_inputs.cpp:30:6:void UserInputs::readInputs()	1
-../Software/Middleware/user_inputs.cpp:38:6:bool UserInputs::isAnyKey()	4
-../Software/Middleware/user_inputs.cpp:43:6:bool UserInputs::isReturnBackRequest()	1
-../Software/Middleware/user_inputs.cpp:47:6:bool UserInputs::isBackRequest()	3
-../Software/Middleware/user_inputs.cpp:52:6:bool UserInputs::isNextRequest()	3
-../Software/Middleware/user_inputs.cpp:57:6:bool UserInputs::isSelectRequest()	3
-../Software/Middleware/user_inputs.cpp:62:6:bool UserInputs::isSetValueRequest()	1
-../Software/Middleware/user_inputs.cpp:69:10:uint16_t UserInputs::getData0() const	1
-../Software/Middleware/user_inputs.cpp:73:10:uint16_t UserInputs::getData1() const	1
-../Software/Middleware/user_inputs.cpp:77:7:float UserInputs::getData0(float, float) const	1
-../Software/Middleware/user_inputs.cpp:81:7:float UserInputs::getData1(float, float) const	1
+../Software/Middleware/user_inputs.cpp:30:6:void UserInputs::readAll()	1
+../Software/Middleware/user_inputs.cpp:34:6:void UserInputs::readButtons()	1
+../Software/Middleware/user_inputs.cpp:39:6:void UserInputs::readTrimpots()	1
+../Software/Middleware/user_inputs.cpp:44:6:bool UserInputs::isAnyKey()	4
+../Software/Middleware/user_inputs.cpp:49:6:bool UserInputs::isReturnBackRequest()	1
+../Software/Middleware/user_inputs.cpp:53:6:bool UserInputs::isBackRequest()	3
+../Software/Middleware/user_inputs.cpp:58:6:bool UserInputs::isNextRequest()	3
+../Software/Middleware/user_inputs.cpp:63:6:bool UserInputs::isSelectRequest()	3
+../Software/Middleware/user_inputs.cpp:68:6:bool UserInputs::isSetValueRequest()	1
+../Software/Middleware/user_inputs.cpp:75:7:float UserInputs::getData0() const	1
+../Software/Middleware/user_inputs.cpp:79:7:float UserInputs::getData1() const	1
+../Software/Middleware/user_inputs.cpp:83:7:float UserInputs::getData0(float, float) const	1
+../Software/Middleware/user_inputs.cpp:87:7:float UserInputs::getData1(float, float) const	1

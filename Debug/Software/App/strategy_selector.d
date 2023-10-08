@@ -1,12 +1,12 @@
 Software/App/strategy_selector.o: ../Software/App/strategy_selector.cpp \
  ../Software/App/strategy_selector.h \
- D:/Proiecte/STMCUBE/Kazan/Software/Middleware/strategist.h \
- D:/Proiecte/STMCUBE/Kazan/Software/Middleware/tactician.h \
- D:/Proiecte/STMCUBE/Kazan/Software/Model/state.h \
- D:/Proiecte/STMCUBE/Kazan/Software/Model/line_position.h \
- D:/Proiecte/STMCUBE/Kazan/Software/Model/enemy_position.h \
- D:/Proiecte/STMCUBE/Kazan/Software/Middleware/timed_motion.h \
- D:/Proiecte/STMCUBE/Kazan/Software/Peripheral/motor_driver.h \
+ D:/Proiecte/stm/Kazan/Software/Middleware/strategist.h \
+ D:/Proiecte/stm/Kazan/Software/Middleware/tactician.h \
+ D:/Proiecte/stm/Kazan/Software/Model/state.h \
+ D:/Proiecte/stm/Kazan/Software/Model/line_position.h \
+ D:/Proiecte/stm/Kazan/Software/Model/enemy_position.h \
+ D:/Proiecte/stm/Kazan/Software/Middleware/timed_motion.h \
+ D:/Proiecte/stm/Kazan/Software/Peripheral/motor_driver.h \
  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h \
  ../Drivers/CMSIS/Include/core_cm4.h \
@@ -39,27 +39,27 @@ Software/App/strategy_selector.o: ../Software/App/strategy_selector.cpp \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
- D:/Proiecte/STMCUBE/Kazan/Software/Middleware/state_control.h \
- D:/Proiecte/STMCUBE/Kazan/Software/Peripheral/enemy_detection.h \
- D:/Proiecte/STMCUBE/Kazan/Software/Model/enemy_position.h \
- D:/Proiecte/STMCUBE/Kazan/Software/Peripheral/line_detection.h \
- D:/Proiecte/STMCUBE/Kazan/Software/Model/line_position.h \
- D:/Proiecte/STMCUBE/Kazan/Software/Peripheral/communication_driver.h \
+ D:/Proiecte/stm/Kazan/Software/Middleware/state_control.h \
+ D:/Proiecte/stm/Kazan/Software/Peripheral/enemy_detection.h \
+ D:/Proiecte/stm/Kazan/Software/Model/enemy_position.h \
+ D:/Proiecte/stm/Kazan/Software/Peripheral/line_detection.h \
+ D:/Proiecte/stm/Kazan/Software/Model/line_position.h \
+ D:/Proiecte/stm/Kazan/Software/Peripheral/communication_driver.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h \
- D:/Proiecte/STMCUBE/Kazan/Software/Middleware/user_inputs.h \
- D:/Proiecte/STMCUBE/Kazan/Software/Peripheral/button_driver.h \
- D:/Proiecte/STMCUBE/Kazan/Software/Peripheral/trimpot_driver.h \
- D:/Proiecte/STMCUBE/Kazan/Software/Middleware/display.h \
- D:/Proiecte/STMCUBE/Kazan/Software/Peripheral/SSD1306/ssd1306_fonts.h \
- D:/Proiecte/STMCUBE/Kazan/Software/Peripheral/SSD1306/ssd1306_conf.h
+ D:/Proiecte/stm/Kazan/Software/Middleware/user_inputs.h \
+ D:/Proiecte/stm/Kazan/Software/Peripheral/button_driver.h \
+ D:/Proiecte/stm/Kazan/Software/Peripheral/trimpot_driver.h \
+ D:/Proiecte/stm/Kazan/Software/Middleware/display.h \
+ D:/Proiecte/stm/Kazan/Software/Peripheral/SSD1306/ssd1306_fonts.h \
+ D:/Proiecte/stm/Kazan/Software/Peripheral/SSD1306/ssd1306_conf.h
 ../Software/App/strategy_selector.h:
-D:/Proiecte/STMCUBE/Kazan/Software/Middleware/strategist.h:
-D:/Proiecte/STMCUBE/Kazan/Software/Middleware/tactician.h:
-D:/Proiecte/STMCUBE/Kazan/Software/Model/state.h:
-D:/Proiecte/STMCUBE/Kazan/Software/Model/line_position.h:
-D:/Proiecte/STMCUBE/Kazan/Software/Model/enemy_position.h:
-D:/Proiecte/STMCUBE/Kazan/Software/Middleware/timed_motion.h:
-D:/Proiecte/STMCUBE/Kazan/Software/Peripheral/motor_driver.h:
+D:/Proiecte/stm/Kazan/Software/Middleware/strategist.h:
+D:/Proiecte/stm/Kazan/Software/Middleware/tactician.h:
+D:/Proiecte/stm/Kazan/Software/Model/state.h:
+D:/Proiecte/stm/Kazan/Software/Model/line_position.h:
+D:/Proiecte/stm/Kazan/Software/Model/enemy_position.h:
+D:/Proiecte/stm/Kazan/Software/Middleware/timed_motion.h:
+D:/Proiecte/stm/Kazan/Software/Peripheral/motor_driver.h:
 ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:
 ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:
 ../Drivers/CMSIS/Include/core_cm4.h:
@@ -92,16 +92,16 @@ D:/Proiecte/STMCUBE/Kazan/Software/Peripheral/motor_driver.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:
-D:/Proiecte/STMCUBE/Kazan/Software/Middleware/state_control.h:
-D:/Proiecte/STMCUBE/Kazan/Software/Peripheral/enemy_detection.h:
-D:/Proiecte/STMCUBE/Kazan/Software/Model/enemy_position.h:
-D:/Proiecte/STMCUBE/Kazan/Software/Peripheral/line_detection.h:
-D:/Proiecte/STMCUBE/Kazan/Software/Model/line_position.h:
-D:/Proiecte/STMCUBE/Kazan/Software/Peripheral/communication_driver.h:
+D:/Proiecte/stm/Kazan/Software/Middleware/state_control.h:
+D:/Proiecte/stm/Kazan/Software/Peripheral/enemy_detection.h:
+D:/Proiecte/stm/Kazan/Software/Model/enemy_position.h:
+D:/Proiecte/stm/Kazan/Software/Peripheral/line_detection.h:
+D:/Proiecte/stm/Kazan/Software/Model/line_position.h:
+D:/Proiecte/stm/Kazan/Software/Peripheral/communication_driver.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:
-D:/Proiecte/STMCUBE/Kazan/Software/Middleware/user_inputs.h:
-D:/Proiecte/STMCUBE/Kazan/Software/Peripheral/button_driver.h:
-D:/Proiecte/STMCUBE/Kazan/Software/Peripheral/trimpot_driver.h:
-D:/Proiecte/STMCUBE/Kazan/Software/Middleware/display.h:
-D:/Proiecte/STMCUBE/Kazan/Software/Peripheral/SSD1306/ssd1306_fonts.h:
-D:/Proiecte/STMCUBE/Kazan/Software/Peripheral/SSD1306/ssd1306_conf.h:
+D:/Proiecte/stm/Kazan/Software/Middleware/user_inputs.h:
+D:/Proiecte/stm/Kazan/Software/Peripheral/button_driver.h:
+D:/Proiecte/stm/Kazan/Software/Peripheral/trimpot_driver.h:
+D:/Proiecte/stm/Kazan/Software/Middleware/display.h:
+D:/Proiecte/stm/Kazan/Software/Peripheral/SSD1306/ssd1306_fonts.h:
+D:/Proiecte/stm/Kazan/Software/Peripheral/SSD1306/ssd1306_conf.h:

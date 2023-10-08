@@ -1,4 +1,4 @@
-D:/Proiecte/STMCUBE/Kazan/Software/Peripheral/Timer.h:17:17:uint32_t Timer_Get_Now_Time()	1
+D:/Proiecte/stm/Kazan/Software/Peripheral/Timer.h:17:17:uint32_t Timer_Get_Now_Time()	1
 ../Software/Middleware/tactician.cpp:12:1:Tactician::Tactician(Motor&)	2
 ../Software/Middleware/tactician.cpp:14:6:void Tactician::config()	1
 ../Software/Middleware/tactician.cpp:18:6:void Tactician::setTactic(void (Tactician::*)(State))	2

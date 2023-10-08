@@ -22,14 +22,16 @@ void StrategySelector::run()
 	bool start = false;
 	while(true)
 	{
-		userInputs.readInputs();
-		if(start){
+		userInputs.readButtons();
+
+		if(start)
+		{
 			if(userInputs.isAnyKey()){
 				start = false;
 			}else{
 				strategist.runCurrentSrategy();
 			}
-			break;
+			continue;
 		}
 		const uint8_t screenIndex = static_cast<int>(screen);
 		const StrategySelectoScreenrData screenData = selectorScreenData[screenIndex];
@@ -49,12 +51,7 @@ void StrategySelector::run()
 		if(userInputs.isSetValueRequest()){
 			start = true;
 			Display_Clear();
-			break;
 		}
-
-
-
-
 	}
 
 

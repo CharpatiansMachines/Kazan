@@ -96,7 +96,7 @@ uint32_t readADC2(uint32_t ADC_CHANNEL)
 	ADC_ChannelConfTypeDef sConfig = {0};
 	sConfig.Channel = ADC_CHANNEL;
 	sConfig.Rank = 1;
-	sConfig.SamplingTime = ADC_SAMPLETIME_28CYCLES;
+	sConfig.SamplingTime = ADC_SAMPLETIME_480CYCLES;
 	if (HAL_ADC_ConfigChannel(&hadc2, &sConfig) != HAL_OK)
 	{
 		Error_Handler();
@@ -158,28 +158,36 @@ int main(void)
   while (1)
   {
 
-	  char s[100] = "";
+//	  char s[100] = "";
+//
+//	  uint32_t value1 = readADC2(TRIMPOT_0_CHANNEL);
+//	  uint32_t value2 = readADC2(TRIMPOT_1_CHANNEL);
+//	  sprintf(s,"value is %d   ---   %d\r\n", (int) value1, (int) value2);
+//	  HAL_UART_Transmit(&huart4_data, (uint8_t *)s, strlen(s), 1000);
+//	  HAL_Delay(100);
+//
+//	  uint32_t a0 = readADC1(LINE_SENSOR_0_CHANNEL);
+//	  uint32_t a1 = readADC1(LINE_SENSOR_1_CHANNEL);
+//	  uint32_t a2_1 = readADC1(LINE_SENSOR_2_1_CHANNEL);
+//	  uint32_t a2_2 = 99;
+//	  a2_2 = readADC1(LINE_SENSOR_2_2_CHANNEL);
+//	  uint32_t a2_3 = readADC1(LINE_SENSOR_2_3_CHANNEL);
+//	  uint32_t a3_1 = readADC1(LINE_SENSOR_3_1_CHANNEL);
+//	  uint32_t a3_2 = readADC1(LINE_SENSOR_3_2_CHANNEL);
+//	  uint32_t a3_3 = readADC1(LINE_SENSOR_3_3_CHANNEL);
+//	  sprintf(s,"2 sen is %d   ---   %d\r\n", (int) a0, (int) a1);
+//	  HAL_UART_Transmit(&huart4_data, (uint8_t *)s, strlen(s), 1000);
+//	  sprintf(s,"back sen is %d --- %d --- %d   -------   %d --- %d --- %d\r\n\r\n", (int) a2_1, (int) a2_2, (int) a2_3, (int) a3_1, (int) a3_2, (int) a3_3);
+//	  HAL_UART_Transmit(&huart4_data, (uint8_t *)s, strlen(s), 1000);
+//	  HAL_Delay(100);
+//
+//	  ///Motor Test
+//	  HAL_UART_Transmit(&huart1_motor, (uint8_t *)s, strlen(s), 1000);
 
-	  uint32_t value1 = readADC2(TRIMPOT_0_CHANNEL);
-	  uint32_t value2 = readADC2(TRIMPOT_1_CHANNEL);
-	  sprintf(s,"value is %d   ---   %d\r\n", (int) value1, (int) value2);
-	  HAL_UART_Transmit(&huart4_data, (uint8_t *)s, strlen(s), 1000);
-	  HAL_Delay(100);
-
-	  uint32_t a0 = readADC2(LINE_SENSOR_0_CHANNEL);
-	  uint32_t a1 = readADC2(LINE_SENSOR_1_CHANNEL);
-	  uint32_t a2_1 = readADC1(LINE_SENSOR_2_1_CHANNEL);
-	  uint32_t a2_2 = 99;
-	  a2_2 = readADC1(LINE_SENSOR_2_2_CHANNEL);
-	  uint32_t a2_3 = readADC1(LINE_SENSOR_2_3_CHANNEL);
-	  uint32_t a3_1 = readADC1(LINE_SENSOR_3_1_CHANNEL);
-	  uint32_t a3_2 = readADC1(LINE_SENSOR_3_2_CHANNEL);
-	  uint32_t a3_3 = readADC1(LINE_SENSOR_3_3_CHANNEL);
-	  sprintf(s,"2 sen is %d   ---   %d\r\n", (int) a0, (int) a1);
-	  HAL_UART_Transmit(&huart4_data, (uint8_t *)s, strlen(s), 1000);
-	  sprintf(s,"back sen is %d --- %d --- %d   -------   %d --- %d --- %d\r\n\r\n", (int) a2_1, (int) a2_2, (int) a2_3, (int) a3_1, (int) a3_2, (int) a3_3);
-	  HAL_UART_Transmit(&huart4_data, (uint8_t *)s, strlen(s), 1000);
-	  HAL_Delay(100);
+//	  char s[] =
+//	  HAL_UART_Transmit(&huart1_motor,motorData , 2, 1000);
+	  uint8_t motorData[] = {2,27};
+	  HAL_UART_Transmit(&huart1_motor,motorData , 2, 1000);
   }
   /* USER CODE END 3 */
 }
@@ -267,72 +275,13 @@ static void MX_ADC1_Init(void)
   hadc1.Init.ExternalTrigConvEdge = ADC_EXTERNALTRIGCONVEDGE_NONE;
   hadc1.Init.ExternalTrigConv = ADC_SOFTWARE_START;
   hadc1.Init.DataAlign = ADC_DATAALIGN_RIGHT;
-  hadc1.Init.NbrOfConversion = 6;
+  hadc1.Init.NbrOfConversion = 1;
   hadc1.Init.DMAContinuousRequests = DISABLE;
   hadc1.Init.EOCSelection = ADC_EOC_SINGLE_CONV;
   if (HAL_ADC_Init(&hadc1) != HAL_OK)
   {
     Error_Handler();
   }
-
-  /** Configure for the selected ADC regular channel its corresponding rank in the sequencer and its sample time.
-  */
-  sConfig.Channel = ADC_CHANNEL_1;
-  sConfig.Rank = 1;
-  sConfig.SamplingTime = ADC_SAMPLETIME_3CYCLES;
-  if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)
-  {
-    Error_Handler();
-  }
-
-  /** Configure for the selected ADC regular channel its corresponding rank in the sequencer and its sample time.
-  */
-//  sConfig.Channel = ADC_CHANNEL_2;
-//  sConfig.Rank = 2;
-//  if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)
-//  {
-//    Error_Handler();
-//  }
-
-  /** Configure for the selected ADC regular channel its corresponding rank in the sequencer and its sample time.
-  */
-  sConfig.Channel = ADC_CHANNEL_3;
-  sConfig.Rank = 3;
-  if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)
-  {
-    Error_Handler();
-  }
-
-  /** Configure for the selected ADC regular channel its corresponding rank in the sequencer and its sample time.
-  */
-  sConfig.Channel = ADC_CHANNEL_5;
-  sConfig.Rank = 4;
-  if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)
-  {
-    Error_Handler();
-  }
-
-  /** Configure for the selected ADC regular channel its corresponding rank in the sequencer and its sample time.
-  */
-  sConfig.Channel = ADC_CHANNEL_6;
-  sConfig.Rank = 5;
-  if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)
-  {
-    Error_Handler();
-  }
-
-  /** Configure for the selected ADC regular channel its corresponding rank in the sequencer and its sample time.
-  */
-  sConfig.Channel = ADC_CHANNEL_7;
-  sConfig.Rank = 6;
-  if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  /* USER CODE BEGIN ADC1_Init 2 */
-
-  /* USER CODE END ADC1_Init 2 */
-
 }
 
 /**
@@ -364,53 +313,13 @@ static void MX_ADC2_Init(void)
   hadc2.Init.ExternalTrigConvEdge = ADC_EXTERNALTRIGCONVEDGE_NONE;
   hadc2.Init.ExternalTrigConv = ADC_SOFTWARE_START;
   hadc2.Init.DataAlign = ADC_DATAALIGN_RIGHT;
-  hadc2.Init.NbrOfConversion = 4;
+  hadc2.Init.NbrOfConversion = 1;
   hadc2.Init.DMAContinuousRequests = DISABLE;
   hadc2.Init.EOCSelection = ADC_EOC_SINGLE_CONV;
   if (HAL_ADC_Init(&hadc2) != HAL_OK)
   {
     Error_Handler();
   }
-
-  /** Configure for the selected ADC regular channel its corresponding rank in the sequencer and its sample time.
-  */
-  sConfig.Channel = ADC_CHANNEL_4;
-  sConfig.Rank = 1;
-  sConfig.SamplingTime = ADC_SAMPLETIME_28CYCLES;
-  if (HAL_ADC_ConfigChannel(&hadc2, &sConfig) != HAL_OK)
-  {
-    Error_Handler();
-  }
-
-  /** Configure for the selected ADC regular channel its corresponding rank in the sequencer and its sample time.
-  */
-  sConfig.Channel = ADC_CHANNEL_8;
-  sConfig.Rank = 2;
-  if (HAL_ADC_ConfigChannel(&hadc2, &sConfig) != HAL_OK)
-  {
-    Error_Handler();
-  }
-
-  /** Configure for the selected ADC regular channel its corresponding rank in the sequencer and its sample time.
-  */
-  sConfig.Channel = ADC_CHANNEL_9;
-  sConfig.Rank = 3;
-  if (HAL_ADC_ConfigChannel(&hadc2, &sConfig) != HAL_OK)
-  {
-    Error_Handler();
-  }
-
-  /** Configure for the selected ADC regular channel its corresponding rank in the sequencer and its sample time.
-  */
-  sConfig.Channel = ADC_CHANNEL_10;
-  sConfig.Rank = 4;
-  if (HAL_ADC_ConfigChannel(&hadc2, &sConfig) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  /* USER CODE BEGIN ADC2_Init 2 */
-
-  /* USER CODE END ADC2_Init 2 */
 
 }
 

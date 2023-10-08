@@ -34,8 +34,9 @@ float Trimpot::read()
 	HAL_ADC_PollForConversion(hadc, 1000);
 	this->data = HAL_ADC_GetValue(hadc);
 	HAL_ADC_Stop(hadc);
+	data = MathHelper::normalizeData(data, MIN_DATA_VALUE, MAX_DATA_VALUE);
 
-	return MathHelper::normalizeData(data, MIN_DATA_VALUE, MAX_DATA_VALUE);
+	return data;
 }
 float Trimpot::getData()const{
 	return data;
@@ -43,6 +44,6 @@ float Trimpot::getData()const{
 
 float Trimpot::getData(float min, float max) const
 {
-	return max * data + min;
+	return (max - min) * data + min;
 }
 

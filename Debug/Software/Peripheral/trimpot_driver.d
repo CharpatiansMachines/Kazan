@@ -33,7 +33,7 @@ Software/Peripheral/trimpot_driver.o: \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
- D:/Proiecte/STMCUBE/Kazan/Software/Helpers/math_helper.hpp
+ D:/Proiecte/stm/Kazan/Software/Helpers/math_helper.hpp
 ../Software/Peripheral/trimpot_driver.h:
 ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:
 ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h:
@@ -67,4 +67,4 @@ Software/Peripheral/trimpot_driver.o: \
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:
-D:/Proiecte/STMCUBE/Kazan/Software/Helpers/math_helper.hpp:
+D:/Proiecte/stm/Kazan/Software/Helpers/math_helper.hpp:

@@ -13,6 +13,7 @@
 #include "stdio.h"
 #include "string.h"
 #include <cmath>
+#include <inttypes.h>
 
 void Draw_Full_Black(){
 	ssd1306_Fill(Black);
@@ -116,7 +117,7 @@ void Display_Small_Title_Screen(const char*  title){
 	ssd1306_UpdateScreen();
 }
 
-void Display_2_Numbers(const char * title, double number1, double number2){
+void Display_2_Numbers(const char * title, float number1, float number2){
 	char s[40];
 
 	Draw_Full_Black();
@@ -286,7 +287,7 @@ void Display_2_Power_And_Time_Screen(const char * title, int8_t leftPower, int8_
 	sprintf(s,"%d  %d",leftPower,rightPower);
 	Draw_Center_Text(s, &font, SSD1306.CurrentY + Font_7x10.FontHeight /2);
 
-	sprintf(s,"Timer = %lld",time);
+	sprintf(s, "Timer = %ld" , (long int)time);
 	Draw_Center_Text(s, &font, SSD1306.CurrentY + Font_7x10.FontHeight / 2);
 
 	Draw_Center_Text(description, &font, Display_Get_Bottom_YPosition(&font));

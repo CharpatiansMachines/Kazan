@@ -21,10 +21,8 @@ public:
 	static constexpr uint8_t LINE_SENSORS_NUMBER = LINE_FRONT_SENSORS_NUMBER + LINE_BACK_SENSORS__NUMBER;
 
 	struct LineDetectionConfig {
-	    ADC_HandleTypeDef *hadcFront;
-	    uint32_t frontChannels[LINE_FRONT_SENSORS_NUMBER];
-	    ADC_HandleTypeDef *hadcBack;
-	    uint32_t backChannels[LINE_BACK_SENSORS__NUMBER];
+	    ADC_HandleTypeDef *hadc;
+	    uint32_t channels[LINE_SENSORS_NUMBER];
 	};
 
 	LineDetection(const LineDetectionConfig &config);

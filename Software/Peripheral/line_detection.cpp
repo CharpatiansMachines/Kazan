@@ -23,14 +23,9 @@ void LineDetection::resetFiltersToDefault(){
 void LineDetection::readAll(uint8_t values[LINE_SENSORS_NUMBER]) {
 
 	///Read Front Values
-	for(uint8_t i = 0 ; i < LINE_FRONT_SENSORS_NUMBER;i++){
-		uint32_t channel = configData.frontChannels[i];
-		values[i] = selectAndRead(configData.hadcFront,channel);
-	}
-	///Read Back Values
-	for(uint8_t i = 0 ; i < LINE_BACK_SENSORS__NUMBER; i++){
-		uint32_t channel = configData.frontChannels[i];
-		values[i + LINE_FRONT_SENSORS_NUMBER] = selectAndRead(configData.hadcBack,channel);
+	for(uint8_t i = 0 ; i < LINE_SENSORS_NUMBER;i++){
+		uint32_t channel = configData.channels[i];
+		values[i] = selectAndRead(configData.hadc,channel);
 	}
 }
 

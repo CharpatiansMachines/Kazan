@@ -31,7 +31,9 @@ class UserInputs{
 public:
 	UserInputs(const UserInputsConfig& config);
 	void configAll();
-	void readInputs();
+	void readAll();
+	void readButtons();
+	void readTrimpots();
 
 	bool isAnyKey();
 	bool isReturnBackRequest();
@@ -40,8 +42,8 @@ public:
 	bool isSelectRequest();
 	bool isSetValueRequest();
 
-	uint16_t getData0() const;
-	uint16_t getData1() const;
+	float getData0() const;
+	float getData1() const;
 	float getData0(float min,float max) const;
 	float getData1(float min, float max) const;
 

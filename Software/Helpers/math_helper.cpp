@@ -36,7 +36,7 @@ float MathHelper::linearInterpolation(float x1, float y1, float x2, float y2, fl
  */
 float MathHelper::normalizeData(float data, float minRange, float maxRange){
 	if(maxRange == minRange)
-		return 1;
+		return 0;
 	data = constraintData(data, minRange, maxRange);
 	data -= minRange;
 	return data / (maxRange - minRange);

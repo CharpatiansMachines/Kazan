@@ -23,7 +23,7 @@ void Draw_Right_Text(const char *text, FontDef* font, uint16_t height);
 
 void Display_Title_Screen(const char*  title);
 void Display_Small_Title_Screen(const char*  title);
-void Display_2_Numbers(const char * title, double number1, double number2);
+void Display_2_Numbers(const char * title, float number1, float number2);
 void Display_N_Values_Screen(uint8_t *values, uint8_t valuesNo);
 void Display_Enemy_Sensors_Output(uint32_t value);
 void Display_Enemy_Sensors_Votes(int8_t votes[EnemyPosition::KNOWN_POSITIONS_NO]);

@@ -18,7 +18,7 @@ void HardwareTestApp::run()
 
 	while(1)
 	{
-		userInputs.readInputs();
+		userInputs.readAll();
 
 		///user input management
 		if(userInputs.isReturnBackRequest()){
@@ -36,8 +36,8 @@ void HardwareTestApp::run()
 			case TRIMPOTS_TEST:
 				Display_2_Numbers(
 						(char *)"Trimpots values",
-						(double) userInputs.getData0() ,
-						(double) userInputs.getData1()
+						userInputs.getData0() ,
+						userInputs.getData1()
 						);
 				break;
 			case LINE_SENSORS_TEST:
@@ -75,7 +75,7 @@ void HardwareTestApp::runEnemySensorsTest(){
 
 	while(true)
 	{
-		userInputs.readInputs();
+		userInputs.readAll();
 
 		///user input management
 		if(userInputs.isReturnBackRequest()){
@@ -128,7 +128,7 @@ void HardwareTestApp::runLineDetectionTest()
 	///LOOP
 	while(true)
 	{
-		userInputs.readInputs();
+		userInputs.readAll();
 
 		///user input management
 		if(userInputs.isReturnBackRequest()){
@@ -207,7 +207,7 @@ void HardwareTestApp::runMotorTest()
 	///LOOP
 	while(true)
 	{
-		userInputs.readInputs();
+		userInputs.readAll();
 		///user input management
 		if(userInputs.isReturnBackRequest()){
 			motor.stop();
@@ -233,18 +233,19 @@ void HardwareTestApp::runMotorTest()
 	        case MOTOR_RUN_SCREEN:
 	        {
 	        	int64_t remainTime = Timer_Get_Remain_Time(clock);
-	        	if(!userInputs.isAnyKey() && remainTime > 0){
-	        		Display_2_Power_And_Time_Screen((char *)"Motor On", leftPower, rightPower, remainTime,(char *) "Any key to stop");
-	        		motor.changePower(leftPower, rightPower);
-	        	}else{
+	        	if(userInputs.isAnyKey() || remainTime <= 0){
+	        		// STOP Conditiion
 	        		motor.stop();
 	        		motorScreen = MOTOR_SET_POWER_SCREEN;
+	        	}else{
+					Display_2_Power_And_Time_Screen((char *)"Motor On", leftPower, rightPower, remainTime,(char *) "Any key to stop");
+	        		motor.changePower(leftPower, rightPower);
 	        	}
 	        	break;
 	        }
 	        case MOTOR_SET_TIMER_SCREEN:
 	        {
-	        	uint32_t setTime = userInputs.getData0(MIN_TIMER,MAX_TIMER);
+	        	uint32_t setTime = (uint32_t) userInputs.getData0(MIN_TIMER,MAX_TIMER);
 	        	Display_2_Power_And_Time_Screen((char *)"Set Timer", leftPower, rightPower, setTime, (char *)"Hstart to set");
 	        	if(userInputs.isSetValueRequest()){
 	        		timer = setTime;
@@ -252,6 +253,8 @@ void HardwareTestApp::runMotorTest()
 	        	}
 	        	break;
 	        }
+			default:
+				Display_Error();
 	    }
 	}
 }

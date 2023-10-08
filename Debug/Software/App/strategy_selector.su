@@ -1,3 +1,3 @@
 ../Software/App/strategy_selector.cpp:19:6:void StrategySelector::run()	32	static
-../Software/App/strategy_selector.cpp:66:38:Strategy_Selector_Screen_Type operator++(Strategy_Selector_Screen_Type&, int)	24	static
-../Software/App/strategy_selector.cpp:78:38:Strategy_Selector_Screen_Type operator--(Strategy_Selector_Screen_Type&, int)	24	static
+../Software/App/strategy_selector.cpp:63:38:Strategy_Selector_Screen_Type operator++(Strategy_Selector_Screen_Type&, int)	24	static
+../Software/App/strategy_selector.cpp:75:38:Strategy_Selector_Screen_Type operator--(Strategy_Selector_Screen_Type&, int)	24	static

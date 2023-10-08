@@ -32,24 +32,11 @@ Application::Application()
                   LINE_SENSOR_FL_3_CHANNEL,
                   LINE_SENSOR_FR_1_CHANNEL,  // Note the comma here
                   LINE_SENSOR_FR_2_CHANNEL,
-                  LINE_SENSOR_FR_3_CHANNEL
-              },
-              &hadc2,
-              {
+                  LINE_SENSOR_FR_3_CHANNEL,
                   LINE_SENSOR_BL_CHANNEL,
                   LINE_SENSOR_BR_CHANNEL
-              }
+              },
           },
-          { // Enemy Detection Config
-              { ENEMY_SENSOR_0_GPIO_Port, ENEMY_SENSOR_0_Pin },
-              { ENEMY_SENSOR_1_GPIO_Port, ENEMY_SENSOR_1_Pin },
-              { ENEMY_SENSOR_2_GPIO_Port, ENEMY_SENSOR_2_Pin },
-              { ENEMY_SENSOR_3_GPIO_Port, ENEMY_SENSOR_3_Pin },
-              { ENEMY_SENSOR_4_GPIO_Port, ENEMY_SENSOR_4_Pin },
-              { ENEMY_SENSOR_5_GPIO_Port, ENEMY_SENSOR_5_Pin },
-              { ENEMY_SENSOR_6_GPIO_Port, ENEMY_SENSOR_6_Pin },
-              { ENEMY_SENSOR_7_GPIO_Port, ENEMY_SENSOR_7_Pin }
-          }
           /// Initialize other sensor configs here...
       }),
 	  motor(SABERTOOTH_UART),
@@ -75,7 +62,7 @@ void Application::run()
 	Application_Screen screen = Hardware_Test;
 	while(1)
 	{
-		userInputs.readInputs();
+		userInputs.readAll();
 
 		///user input management
 		if(userInputs.isBackRequest()){

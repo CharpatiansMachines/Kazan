@@ -27,10 +27,16 @@ void UserInputs::configAll(){
 	trimpot0.config();
 	trimpot1.config();
 }
-void UserInputs::readInputs(){
+void UserInputs::readAll(){
+	readButtons();
+	readTrimpots();
+}
+void UserInputs::readButtons(){
 	startButton.read();
 	backButton.read();
 	nextButton.read();
+}
+void UserInputs::readTrimpots(){
 	trimpot0.read();
 	trimpot1.read();
 }
@@ -66,11 +72,11 @@ bool UserInputs::isSetValueRequest(){
 
 
 
-uint16_t UserInputs::getData0() const {
+float UserInputs::getData0() const {
     return trimpot0.getData();
 }
 
-uint16_t UserInputs::getData1() const {
+float UserInputs::getData1() const {
     return trimpot1.getData();
 }
 
