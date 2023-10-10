@@ -80,7 +80,7 @@ uint8_t LineDetection:: selectAndRead(ADC_HandleTypeDef *hadc, uint32_t ADC_CHAN
 	  ADC_ChannelConfTypeDef sConfig = {0};
 	  sConfig.Channel = ADC_CHANNEL;
 	  sConfig.Rank = 1;
-	  sConfig.SamplingTime = ADC_SAMPLETIME_3CYCLES;
+	  sConfig.SamplingTime = ADC_SAMPLETIME_28CYCLES;
 	  if (HAL_ADC_ConfigChannel(hadc, &sConfig) != HAL_OK)
 	  {
 //		Error_Handler();
