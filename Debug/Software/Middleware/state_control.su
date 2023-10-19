@@ -1,5 +1,5 @@
-D:/Proiecte/stm/Kazan/Software/Peripheral/timer.h:17:17:uint32_t Timer_Get_Now_Time()	8	static
-D:/Proiecte/stm/Kazan/Software/Peripheral/timer.h:30:16:int64_t Timer_Get_Time_Passed_From(uint32_t)	40	static
+D:/Proiecte/stm/Kazan/Software/Peripheral/timer.h:21:14:Clock Timer_Get_Now_Clock()	8	static
+D:/Proiecte/stm/Kazan/Software/Peripheral/timer.h:34:13:Time Timer_Get_Time_Passed_From(Clock)	40	static
 ../Software/Middleware/state_control.cpp:12:1:StateControl::StateControl(const SensorsHubConfig&)	16	static
 ../Software/Middleware/state_control.cpp:18:6:void StateControl::configAll()	24	static
 ../Software/Middleware/state_control.cpp:26:7:State StateControl::recalculateStates()	40	static

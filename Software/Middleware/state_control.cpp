@@ -72,14 +72,14 @@ void StateControl::setEnemyPosition(EnemyPosition enemyPosition)
 {
 	if(state.enemyPosition != enemyPosition){
 		state.enemyPosition = enemyPosition;
-		state.enemyPositionClock = Timer_Get_Now_Time();
+		state.enemyPositionClock = Timer_Get_Now_Clock();
 	}
 }
 void StateControl::setLinePosition(LinePosition linePosition)
 {
 	if(state.linePosition != linePosition){
 		state.linePosition = linePosition;
-		state.linePositionClock = Timer_Get_Now_Time();
+		state.linePositionClock = Timer_Get_Now_Clock();
 	}
 }
 State StateControl::getState()const{

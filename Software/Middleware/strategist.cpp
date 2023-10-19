@@ -19,7 +19,7 @@ Strategist::Strategist(StateControl& stateCtrl, Motor& motor, Communication_Driv
    currentStrategy = nullptr;
 }
 
-void Strategist::setStrategy(void (Strategist::*newStrategy)(void)) {
+void Strategist::setStrategy(Strategy newStrategy) {
     currentStrategy = newStrategy;
 }
 

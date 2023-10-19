@@ -1,7 +1,7 @@
-D:/Proiecte/stm/Kazan/Software/Peripheral/timer.h:17:17:uint32_t Timer_Get_Now_Time()	8	static
-D:/Proiecte/stm/Kazan/Software/Peripheral/timer.h:21:17:uint32_t Timer_Set_Clock(uint32_t)	16	static
-D:/Proiecte/stm/Kazan/Software/Peripheral/timer.h:25:16:int64_t Timer_Get_Remain_Time(uint32_t)	40	static
-D:/Proiecte/stm/Kazan/Software/Peripheral/timer.h:36:13:bool Timer_Has_Passed(uint32_t)	16	static
+D:/Proiecte/stm/Kazan/Software/Peripheral/timer.h:21:14:Clock Timer_Get_Now_Clock()	8	static
+D:/Proiecte/stm/Kazan/Software/Peripheral/timer.h:25:14:Clock Timer_Set_Clock(uint32_t)	16	static
+D:/Proiecte/stm/Kazan/Software/Peripheral/timer.h:29:13:Time Timer_Get_Remain_Time(Clock)	40	static
+D:/Proiecte/stm/Kazan/Software/Peripheral/timer.h:40:13:bool Timer_Has_Passed(Clock)	16	static
 ../Software/Middleware/timed_motion.cpp:29:1:TimedMotion::TimedMotion()	16	static
 ../Software/Middleware/timed_motion.cpp:31:1:TimedMotion::TimedMotion(void (*)(Motor&), uint32_t)	24	static
 ../Software/Middleware/timed_motion.cpp:35:13:static TimedMotion TimedMotion::FORWARD_BRAKE()	16	static

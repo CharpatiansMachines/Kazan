@@ -44,6 +44,7 @@ Software/Middleware/strategist.o: ../Software/Middleware/strategist.cpp \
  D:/Proiecte/stm/Kazan/Software/Model/line_position.h \
  D:/Proiecte/stm/Kazan/Software/Peripheral/communication_driver.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h \
+ D:/Proiecte/stm/Kazan/Software/Middleware/tactician.h \
  ../Software/Middleware/motion.h
 ../Software/Middleware/strategist.h:
 ../Software/Middleware/tactician.h:
@@ -91,4 +92,5 @@ D:/Proiecte/stm/Kazan/Software/Peripheral/line_detection.h:
 D:/Proiecte/stm/Kazan/Software/Model/line_position.h:
 D:/Proiecte/stm/Kazan/Software/Peripheral/communication_driver.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:
+D:/Proiecte/stm/Kazan/Software/Middleware/tactician.h:
 ../Software/Middleware/motion.h:

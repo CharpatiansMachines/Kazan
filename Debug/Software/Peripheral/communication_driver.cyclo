@@ -1,4 +1,7 @@
 ../Software/Peripheral/communication_driver.cpp:15:1:Communication_Driver::Communication_Driver(const CommunicationDriverConfig&)	1
-../Software/Peripheral/communication_driver.cpp:29:19:HAL_StatusTypeDef Communication_Driver::config()	1
-../Software/Peripheral/communication_driver.cpp:38:19:)	1
-../Software/Peripheral/communication_driver.cpp:51:6:bool Communication_Driver::readStartModule()	1
+../Software/Peripheral/communication_driver.cpp:31:19:HAL_StatusTypeDef Communication_Driver::config()	1
+../Software/Peripheral/communication_driver.cpp:40:19:)	1
+../Software/Peripheral/communication_driver.cpp:52:6:bool Communication_Driver::readStartModule()	1
+../Software/Peripheral/communication_driver.cpp:57:6:void Communication_Driver::resetBuffer()	1
+../Software/Peripheral/communication_driver.cpp:60:6:void Communication_Driver::downloadBuffer()	3
+../Software/Peripheral/communication_driver.cpp:70:6:void Communication_Driver::storeInBuffer(Tactician::Tactic)	1

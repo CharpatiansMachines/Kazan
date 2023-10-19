@@ -9,13 +9,15 @@
 #include "Timer.h"
 #include "motion.h"
 
-Tactician::Tactician(Motor& motor) : motor(motor) {}
+Tactician::Tactician(Motor& motor) : motor(motor) {
+	currentTactic = nullptr;
+}
 
 void Tactician::config() {
    STOP_CURRENT_TACTIC();
 }
 
-void Tactician::setTactic(void (Tactician::*newTactic)(State state)) {
+void Tactician::setTactic(Tactic newTactic) {
     if (!hasTactic()) {
         STOP_CURRENT_TACTIC();
     }
@@ -65,7 +67,7 @@ void Tactician::addMotion(const TimedMotion& motion) {
 
 void Tactician::changeTacticStep(uint8_t step) {
     tacticStep = step;
-    stepStartClock = Timer_Get_Now_Time();
+    stepStartClock = Timer_Get_Now_Clock();
 }
 
 /**

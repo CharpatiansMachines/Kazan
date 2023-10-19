@@ -14,8 +14,9 @@
 
 class Strategist{
 public:
+	using Strategy = void (Strategist::*)(void);
 	Strategist(StateControl& stateCtrl, Motor& motor, Communication_Driver& communication);
-	void setStrategy(void (Strategist::*currentStrategy)(void));
+	void setStrategy(Strategy newStrategy);
 	void runCurrentSrategy();
 	void runTestMotion(void (*motionFunction)(Motor& motor));
 	void runTestTimedMotion(TimedMotion timeMotion);
@@ -26,7 +27,7 @@ private:
 	Communication_Driver& communication;
 	StateControl &stateControl;
 	Tactician tactician;
-	void (Strategist::*currentStrategy)(void) = nullptr;
+	Strategy currentStrategy;
 };
 
 

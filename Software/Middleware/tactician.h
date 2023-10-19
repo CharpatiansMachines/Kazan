@@ -12,9 +12,11 @@
 
 class Tactician {
 public:
+	using Tactic = void (Tactician::*)(State);
+
 	Tactician(Motor& motor);
 	void config();
-    void setTactic(void (Tactician::*newTactic)(State));
+    void setTactic(Tactic newTactic);
     void runCurrentTactic(State state);
     bool hasTactic();
 
@@ -26,7 +28,7 @@ public:
 private:
     static const uint8_t MAX_MOTIONS_NO = 20;
     Motor& motor;
-    void (Tactician::*currentTactic)(State) = nullptr;
+    Tactic currentTactic;
     TimedMotion motions[MAX_MOTIONS_NO];
 
     uint8_t totalMotionsNumber = 0;

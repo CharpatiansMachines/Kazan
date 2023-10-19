@@ -24,6 +24,8 @@ Communication_Driver::Communication_Driver(const CommunicationDriverConfig& conf
 	huart.Init.Mode = UART_MODE_TX_RX;
 	huart.Init.HwFlowCtl = UART_HWCONTROL_NONE;
 	huart.Init.OverSampling = UART_OVERSAMPLING_16;
+
+	resetBuffer();
 }
 
 HAL_StatusTypeDef Communication_Driver::config(){
@@ -35,8 +37,7 @@ HAL_StatusTypeDef Communication_Driver::config(){
 	return HAL_HalfDuplex_Init(&huart);
 }
 
-HAL_StatusTypeDef Communication_Driver::log(const char *format,...)
-{
+HAL_StatusTypeDef Communication_Driver::log(const char *format,...){
     char buffer[1024];
     va_list args;
 
@@ -51,6 +52,24 @@ HAL_StatusTypeDef Communication_Driver::log(const char *format,...)
 bool Communication_Driver::readStartModule()
 {
 	return HAL_GPIO_ReadPin(GPIOx_Start_Module, PIN_Start_Module) == GPIO_PIN_SET;
+}
+
+void Communication_Driver::resetBuffer(){
+	bufferIndex = 0;
+}
+void Communication_Driver::downloadBuffer(){
+	for(uint16_t i = 0; i < bufferIndex; i++){
+		switch(buffer[i]){
+			case TACTIC_BUFFER_TYPE:
+				break;
+			default:
+				log((char *)"NOT KNOWN BUFFER TYPE\r\n");
+		}
+	}
+}
+void Communication_Driver::storeInBuffer(Tactician::Tactic tactic){
+
+
 }
 
 

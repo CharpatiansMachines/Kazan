@@ -46,6 +46,7 @@ Software/App/strategy_selector.o: ../Software/App/strategy_selector.cpp \
  D:/Proiecte/stm/Kazan/Software/Model/line_position.h \
  D:/Proiecte/stm/Kazan/Software/Peripheral/communication_driver.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h \
+ D:/Proiecte/stm/Kazan/Software/Middleware/tactician.h \
  D:/Proiecte/stm/Kazan/Software/Middleware/user_inputs.h \
  D:/Proiecte/stm/Kazan/Software/Peripheral/button_driver.h \
  D:/Proiecte/stm/Kazan/Software/Peripheral/trimpot_driver.h \
@@ -99,6 +100,7 @@ D:/Proiecte/stm/Kazan/Software/Peripheral/line_detection.h:
 D:/Proiecte/stm/Kazan/Software/Model/line_position.h:
 D:/Proiecte/stm/Kazan/Software/Peripheral/communication_driver.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:
+D:/Proiecte/stm/Kazan/Software/Middleware/tactician.h:
 D:/Proiecte/stm/Kazan/Software/Middleware/user_inputs.h:
 D:/Proiecte/stm/Kazan/Software/Peripheral/button_driver.h:
 D:/Proiecte/stm/Kazan/Software/Peripheral/trimpot_driver.h:
