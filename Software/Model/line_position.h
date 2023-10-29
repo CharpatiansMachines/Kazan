@@ -45,6 +45,8 @@ public:
     bool isNone() const;
     bool isDetected() const;
 
+    void toString(char *s) const;
+
 
 private:
     LinePositionType linePosition;

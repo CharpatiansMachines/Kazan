@@ -11,6 +11,8 @@
 #include <stdarg.h>
 #include "stm32f4xx_hal_uart.h"
 #include "stm32f4xx_hal_def.h"
+#include <iostream>
+#include "timer.h"
 
 Communication_Driver::Communication_Driver(const CommunicationDriverConfig& config)
     : GPIOx_Start_Module(config.GPIOx_Start_Module),
@@ -60,16 +62,34 @@ void Communication_Driver::resetBuffer(){
 void Communication_Driver::downloadBuffer(){
 	for(uint16_t i = 0; i < bufferIndex; i++){
 		switch(buffer[i]){
-			case TACTIC_BUFFER_TYPE:
+			case ENEMY_POSITION_BUFFER_TYPE:
+				log("Enemy Position Change %d %d\r\n", buffer[i + 1],*((uint32_t *) buffer + i + 2));
+				i += 6;
+				break;
+			case LINE_POSITION_BUFFER_TYPE:
 				break;
 			default:
 				log((char *)"NOT KNOWN BUFFER TYPE\r\n");
 		}
 	}
 }
-void Communication_Driver::storeInBuffer(Tactician::Tactic tactic){
-
-
+void Communication_Driver::storeInBuffer(EnemyPosition& enemyPosition){
+	constexpr uint8_t STORE_SIZE = 6;
+	if(bufferIndex < BUFFER_SIZE - STORE_SIZE){
+		buffer[bufferIndex] = (uint8_t)ENEMY_POSITION_BUFFER_TYPE;
+		buffer[bufferIndex + 1] = enemyPosition.toID();
+		*((uint32_t *)buffer + 2) = Timer_Get_Now_Clock();
+		bufferIndex += 6;
+	}
+}
+void Communication_Driver::storeInBuffer(LinePosition& linePosition){
+//	constexpr uint8_t STORE_SIZE = 6;
+//	if(bufferIndex < BUFFER_SIZE - STORE_SIZE){
+//		buffer[bufferIndex] = (uint8_t)LINE_POSITION_BUFFER_TYPE;
+//		buffer[bufferIndex + 1] = (uint8_t)linePosition.getLinePosition();
+//		*((uint32_t *)buffer + 2) = Timer_Get_Now_Clock();
+//		bufferIndex += 6;
+//	}
 }
 
 

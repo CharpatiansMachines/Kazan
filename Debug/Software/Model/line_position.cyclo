@@ -1,15 +1,16 @@
-../Software/Model/line_position.cpp:10:1:LinePosition::LinePosition()	1
-../Software/Model/line_position.cpp:12:6:void LinePosition::setLinePosition(LinePositionType)	1
-../Software/Model/line_position.cpp:16:18:LinePositionType LinePosition::getLinePosition() const	1
-../Software/Model/line_position.cpp:20:6:bool LinePosition::operator==(const LinePosition&) const	1
-../Software/Model/line_position.cpp:24:6:bool LinePosition::operator!=(const LinePosition&) const	1
-../Software/Model/line_position.cpp:28:6:bool LinePosition::isFrontLeft() const	1
-../Software/Model/line_position.cpp:32:6:bool LinePosition::isFront() const	1
-../Software/Model/line_position.cpp:36:6:bool LinePosition::isFrontRight() const	1
-../Software/Model/line_position.cpp:40:6:bool LinePosition::isBackLeft() const	1
-../Software/Model/line_position.cpp:44:6:bool LinePosition::isBack() const	1
-../Software/Model/line_position.cpp:48:6:bool LinePosition::isBackRight() const	1
-../Software/Model/line_position.cpp:52:6:bool LinePosition::isLeft() const	1
-../Software/Model/line_position.cpp:56:6:bool LinePosition::isRight() const	1
-../Software/Model/line_position.cpp:60:6:bool LinePosition::isNone() const	1
-../Software/Model/line_position.cpp:64:6:bool LinePosition::isDetected() const	1
+../Software/Model/line_position.cpp:11:1:LinePosition::LinePosition()	1
+../Software/Model/line_position.cpp:13:6:void LinePosition::setLinePosition(LinePositionType)	1
+../Software/Model/line_position.cpp:17:18:LinePositionType LinePosition::getLinePosition() const	1
+../Software/Model/line_position.cpp:21:6:bool LinePosition::operator==(const LinePosition&) const	1
+../Software/Model/line_position.cpp:25:6:bool LinePosition::operator!=(const LinePosition&) const	1
+../Software/Model/line_position.cpp:29:6:bool LinePosition::isFrontLeft() const	1
+../Software/Model/line_position.cpp:33:6:bool LinePosition::isFront() const	1
+../Software/Model/line_position.cpp:37:6:bool LinePosition::isFrontRight() const	1
+../Software/Model/line_position.cpp:41:6:bool LinePosition::isBackLeft() const	1
+../Software/Model/line_position.cpp:45:6:bool LinePosition::isBack() const	1
+../Software/Model/line_position.cpp:49:6:bool LinePosition::isBackRight() const	1
+../Software/Model/line_position.cpp:53:6:bool LinePosition::isLeft() const	1
+../Software/Model/line_position.cpp:57:6:bool LinePosition::isRight() const	1
+../Software/Model/line_position.cpp:61:6:bool LinePosition::isNone() const	1
+../Software/Model/line_position.cpp:65:6:bool LinePosition::isDetected() const	1
+../Software/Model/line_position.cpp:69:6:void LinePosition::toString(char*) const	9

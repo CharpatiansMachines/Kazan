@@ -411,7 +411,7 @@ static void MX_UART4_Init(void)
 
   /* USER CODE END UART4_Init 1 */
   huart4_data.Instance = UART4;
-  huart4_data.Init.BaudRate = 115200;
+  huart4_data.Init.BaudRate = 38400;
   huart4_data.Init.WordLength = UART_WORDLENGTH_8B;
   huart4_data.Init.StopBits = UART_STOPBITS_1;
   huart4_data.Init.Parity = UART_PARITY_NONE;

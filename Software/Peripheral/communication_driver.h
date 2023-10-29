@@ -12,6 +12,7 @@
 #include "stm32f4xx_hal_uart.h"
 #include "stm32f4xx_hal_def.h"
 #include "tactician.h"
+#include "state.h"
 
 struct CommunicationDriverConfig {
     USART_TypeDef* uartx;
@@ -27,7 +28,8 @@ public:
 
 	void inline resetBuffer();
 	void downloadBuffer() ;
-	void storeInBuffer(Tactician::Tactic tactic);
+	void storeInBuffer(EnemyPosition& enemyPosition);
+	void storeInBuffer(LinePosition& linePosition);
 private:
 	HAL_StatusTypeDef log(const char *format,...) ;
 	GPIO_TypeDef* GPIOx_Start_Module;
@@ -35,7 +37,8 @@ private:
 	UART_HandleTypeDef huart;
 
 	enum BufferStoreType{
-		TACTIC_BUFFER_TYPE = 0x00,
+		ENEMY_POSITION_BUFFER_TYPE = 0x00,
+		LINE_POSITION_BUFFER_TYPE = 0x01,
 	};
 
 	static constexpr uint16_t BUFFER_SIZE = 1000;

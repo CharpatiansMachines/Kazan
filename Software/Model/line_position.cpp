@@ -6,6 +6,7 @@
  */
 
 #include "line_position.h"
+#include <stdio.h>
 
 LinePosition::LinePosition() : linePosition(LinePositionType::None) {}
 
@@ -63,4 +64,36 @@ bool LinePosition::isNone() const {
 
 bool LinePosition::isDetected() const {
     return linePosition != LinePositionType::None;
+}
+
+void LinePosition::toString(char *s) const{
+	switch(linePosition){
+		case LinePositionType::FrontLeft:
+			sprintf(s,"Front Left");
+			break;
+		case LinePositionType::Front:
+			sprintf(s,"Front");
+			break;
+		case LinePositionType::FrontRight:
+			sprintf(s,"Front Right");
+			break;
+		case LinePositionType::BackLeft:
+			sprintf(s,"Back Left");
+			break;
+		case LinePositionType::Back:
+			sprintf(s,"Back");
+			break;
+		case LinePositionType::BackRight:
+			sprintf(s,"Back Right");
+			break;
+		case LinePositionType::Left:
+			sprintf(s,"Left");
+			break;
+		case LinePositionType::Right:
+			sprintf(s,"Right");
+			break;
+		default:
+			break;
+
+	}
 }
