@@ -30,7 +30,7 @@ Application::Application()
                   LINE_SENSOR_FL_1_CHANNEL,
                   LINE_SENSOR_FL_2_CHANNEL,
                   LINE_SENSOR_FL_3_CHANNEL,
-                  LINE_SENSOR_FR_1_CHANNEL,  // Note the comma here
+                  LINE_SENSOR_FR_1_CHANNEL,
                   LINE_SENSOR_FR_2_CHANNEL,
                   LINE_SENSOR_FR_3_CHANNEL,
                   LINE_SENSOR_BL_CHANNEL,
@@ -94,14 +94,15 @@ void Application::run()
 			case Initialize_Parameters_Screen:
 				Display_Title_Screen((char *)"Initialize Parameters");
 				if(userInputs.isSelectRequest()){
-					InitializeParameters initializeParameters = InitializeParameters(userInputs,stateControl,motor, communication);
+					InitializeParameters initializeParameters = InitializeParameters(userInputs, stateControl, motor, communication);
 					initializeParameters.run();
 				}
 				break;
+
 			case Battle_Application:
 				Display_Title_Screen((char *)"Battle");
 				if(userInputs.isSelectRequest()){
-					StrategySelector strategySelectorApp = StrategySelector(userInputs,stateControl,motor, communication);
+					StrategySelector strategySelectorApp = StrategySelector(userInputs, stateControl, motor, communication);
 					strategySelectorApp.run();
 				}
 				break;
